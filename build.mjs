@@ -6,6 +6,7 @@
    ============================================================ */
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -13,6 +14,12 @@ const DATA = path.join(ROOT, "data");
 const SRC = path.join(ROOT, "src");
 const ASSETS = path.join(ROOT, "assets");
 const DIST = path.join(ROOT, "dist");
+
+// Content-hash cache-busting: styles.css / app.js carry ?v=<hash> so browsers
+// fetch fresh copies whenever the file changes (GitHub Pages caches assets).
+const hash8 = (file) => crypto.createHash("sha256").update(fs.readFileSync(path.join(SRC, file))).digest("hex").slice(0, 8);
+const CSS_VER = hash8("styles.css");
+const JS_VER = hash8("app.js");
 
 const esc = (s) => String(s == null ? "" : s)
   .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -114,13 +121,13 @@ function layout({ title, desc, body, navDark = false, accentVar = "", draft = fa
 <meta name="theme-color" content="#1a2b19">
 <link rel="icon" href="assets/logo/localismfund-logo-01.svg">
 <link rel="preload" href="assets/fonts/aquavit-semibold.otf" as="font" type="font/otf" crossorigin>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=${CSS_VER}">
 </head>
 <body${accentVar ? ` style="${accentVar}"` : ""}>
 ${nav(navDark)}
 ${body}
 ${footer(draft)}
-<script src="app.js"></script>
+<script src="app.js?v=${JS_VER}"></script>
 </body>
 </html>`;
 }

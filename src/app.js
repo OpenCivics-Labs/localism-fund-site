@@ -27,6 +27,28 @@
     navIO.observe(darkHero);
   }
 
+  // Mobile nav: hamburger toggles the collapsed menu
+  var navToggle = document.querySelector(".nav__toggle");
+  var navEl = document.querySelector(".nav");
+  if (navToggle && navEl) {
+    var setOpen = function (open) {
+      navEl.classList.toggle("is-open", open);
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+    navToggle.addEventListener("click", function () {
+      setOpen(!navEl.classList.contains("is-open"));
+    });
+    navEl.querySelectorAll(".nav__links a").forEach(function (a) {
+      a.addEventListener("click", function () { setOpen(false); });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") setOpen(false);
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 720) setOpen(false);
+    });
+  }
+
   // Parallax: translate [data-parallax] layers against scroll
   var px = Array.prototype.slice.call(document.querySelectorAll("[data-parallax]"));
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;

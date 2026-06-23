@@ -64,7 +64,8 @@ function expertGraph() {
 function nav(navDark) {
   return `<nav class="nav${navDark ? " on-dark" : ""}">
   <a class="nav__brand" href="index.html"><span class="nav__logo" aria-hidden="true"></span><span>Localism&nbsp;Fund</span></a>
-  <div class="nav__links">
+  <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  <div class="nav__links" id="nav-links">
     <a href="index.html#mission">Mission</a>
     <a href="index.html#rounds">Rounds</a>
     <a href="operators.html">Operators</a>

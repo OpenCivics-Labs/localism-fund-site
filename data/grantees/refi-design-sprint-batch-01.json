@@ -1,0 +1,146 @@
+{
+  "slug": "refi-design-sprint-batch-01",
+  "name": "ReFi Design Sprint - Batch 01",
+  "shortName": "ReFi Design Sprint",
+  "hub": "ReFi Italia",
+  "leads": "Raffaele Izzia (lead facilitator); Lorenzo Di Ciaccio (Ridaje, beneficiary)",
+  "place": "Veracura Space, Rome — Italy's capital and its dense Third Sector fabric",
+  "region": "Italy (Rome)",
+  "themes": ["regeneration", "social enterprise", "attestation", "web3"],
+  "localismFocus": ["Ecological", "Social", "Technological"],
+  "tagline": "Four days that turned a gardener's data into public proof.",
+  "whyItMattered": "Ridaje does real ecological and social work — maintaining Rome's green spaces while employing people rebuilding their lives — but that impact stayed locked in a manual process, invisible to funders. The sprint built infrastructure to make it visible, verifiable, and fundable.",
+  "stats": [
+    {"value": "$4,630", "label": "community grant to Ridaje (verified)"},
+    {"value": "~140 hrs", "label": "paid gardening work funded"},
+    {"value": "1 of 2", "label": "planned sprints delivered"}
+  ],
+  "story": [
+    "The first thing ReFi Italia did after the December 2025 payout was not run a sprint — it was research. A distributed Italian team spent months adapting the Google Ventures sprint for non-crypto-native social cooperatives, in Italian, on tiny budgets. In January they selected Ridaje, a Rome cooperative maintaining 19 green spaces while employing people leaving homelessness and incarceration.",
+    "The sprint ran February 24-27, 2026 at Veracura Space: 18 hours over four days. They mapped Ridaje's value chain and confronted a hard constraint — gardeners would not change their five-minute routine — splitting data into off-chain (timestamped) and on-chain (validated). Lorenzo Di Ciaccio, Ridaje's founder, was the Decider; every critical call was his.",
+    "Within days of closing, ReFi Italia released OpenGarden — an open-source, EAS-native attestation protocol never named in the original plan. The same team that facilitated the design built the protocol, so four days turned directly into working infrastructure. A $4,630 community grant funded ~140 hours of paid gardening: real jobs, real green space, and the first verified impact data.",
+    "Today one of two planned sprints is complete; the second (a rural reforestation and solidarity-purchasing group near Verona) is selected and in planning. The delivered work is solid and on-chain verified. Most of the headline impact — the dashboard, mainnet deployment, enterprise interest — is still honestly labelled as emerging."
+  ],
+  "signatureStory": {
+    "title": "The DAJE voucher that nobody knew about",
+    "text": "Before the sprint, Lorenzo had already tried to solve one of Ridaje's core problems alone: how to connect the green spaces his gardeners maintain to the local economy around them. He printed DAJE paper vouchers, partnered with restaurants near Ridaje's parks, then stood outside Stazione Termini convincing tourists to eat at those restaurants using the vouchers. Scrappy, personal, entirely analog — but it worked well enough to prove the willingness to participate in local exchange existed, among businesses, citizens, and visitors alike. Nobody on the sprint team knew DAJE existed. It surfaced in passing during the Day 1 stakeholder mapping exercise, and it reshuffled the sprint's priorities on the spot: community engagement was elevated over ESG credits, because the foundation for neighbourhood-level economic circulation was not hypothetical — it was already being tested on the ground. The surprise reshaped both the sprint and the methodology: communities have more infrastructure than they can fit in an intake form.",
+    "quote": "",
+    "quoteAttribution": ""
+  },
+  "delivered": [
+    "Ran one high-touch 1:1 design sprint with Ridaje (Rome social cooperative) — 18 hours over 4 days, Feb 24-27 2026 at Veracura Space — preceded by a substantial pre-sprint research phase",
+    "Deployed and operated an on-chain program treasury (Gnosis Safe) that held the LF matching plus co-funding and made every disbursement — all verified on-chain",
+    "Disbursed a $4,630 cUSD community grant to a Ridaje-controlled Safe (3 Mar 2026), funding ~140 hours of paid gardening work plus dashboard development",
+    "Released OpenGarden — an open-source, EAS-native attestation protocol with a public GitHub repo and TypeScript SDK — built fast after the sprint and not in the original application",
+    "Onboarded Lorenzo Di Ciaccio onto MetaMask and a Safe multisig, and ran EAS attestation activity on Optimism Sepolia testnet (155 attestations made; the report under-claims this as 49)",
+    "Pooled ~$9,003 in cash co-funding from five aligned partners, slightly above the $8,500 committed; Sprint 2 (GAS Bovolone / Radici in Movimento) selected and in planning"
+  ],
+  "outcomes": [
+    {"text": "Ridaje gained on-chain infrastructure it controls — an open verification protocol designed around its operations, a wallet and multisig, and access to web3 funding ecosystems previously closed to it", "status": "Realized"},
+    {"text": "~140 hours of paid gardening work for people in social reinsertion is underway, generating the first real verified impact data", "status": "Emerging"},
+    {"text": "A replicable sprint methodology and an open-source protocol now exist, with a cross-territorial network of 7 organisations across Rome, Sicily, and Veneto", "status": "Emerging"},
+    {"text": "A reporting dashboard meant to cut Lorenzo's admin from 8-12h to under 2h/month, plus mainnet deployment and enterprise interest, remain to be validated", "status": "Expected"}
+  ],
+  "status": "Active and early — one sprint delivered and verified, one in planning; most impact still emerging",
+  "verdict": {
+    "tier": "Solid",
+    "composite": 26,
+    "financial": "Mostly verified",
+    "line": "Solid — a credible, on-chain-verified first sprint and a genuine open-source protocol, honestly reported; the main clarifications needed are the community-grant recipient's identity, conflict-of-interest disclosure, and the absent Declaration."
+  },
+  "honesty": "Every load-bearing claim verifies: the financial flows on independent block explorers, OpenGarden in the public repo, the attestations on testnet — and the team notably under-claimed its own attestation count. The honest caveats are that this is one of two planned sprints, the community-grant recipient address could not be independently tied to Ridaje, conflict of interest went unaddressed (the operator was both facilitator and a co-funder), and most outcomes are still emerging rather than realized.",
+  "proposed": {
+    "summary": "Productise the Rifai Sicilia pilot into a repeatable high-touch onboarding sprint for established non-crypto-native Italian regenerative organisations.",
+    "points": [
+      "Run facilitated 5-day Google-Ventures-style design sprints with 2-3 pilot communities",
+      "Deploy an on-chain Gnosis Safe treasury and onboard local leaders onto wallets",
+      "Give a seed grant as first capital in a community-governed treasury",
+      "Produce 1-2 case studies and playbooks, and track in-kind co-funding via Grassroots Economics vouchers"
+    ]
+  },
+  "correlation": [
+    {"proposed": "Run 5-day sprints with 2-3 pilot communities", "status": "Partial", "outcome": "One sprint delivered (Ridaje, 18hrs over 4 days); a second is selected and in planning. Format shortened, disclosed."},
+    {"proposed": "Deploy on-chain Gnosis Safe treasury, onboard local leaders", "status": "Delivered", "outcome": "Program Safe deployed and operated (verified on-chain); Lorenzo Di Ciaccio onboarded onto MetaMask and a Ridaje multisig."},
+    {"proposed": "Seed grant as first capital in a community treasury", "status": "Delivered", "outcome": "$4,630 cUSD sent to a Ridaje-controlled Safe (3 Mar 2026), funding ~140 paid gardening hours; transfer verified on-chain."},
+    {"proposed": "Produce 1-2 case studies and playbooks", "status": "Partial", "outcome": "Pilot 1 Report, a playbook folder, and best-practices docs exist; methodology documented but not yet a polished public case study."},
+    {"proposed": "Track in-kind co-funding via Grassroots Economics vouchers", "status": "Not done", "outcome": "Voucher commitment pool dropped and in-kind co-funding (Rifai Sicilia, YOMI) vanished; all co-funding was cash, undisclosed in changes."},
+    {"proposed": "Raise $25-30k to fund 2-3 pilots", "status": "Partial", "outcome": "~$9,003 cash co-funding from five partners (above the $8,500 hard commit but below target); plan scaled to two sprints."}
+  ],
+  "team": [
+    {"name": "Raffaele Izzia", "role": "Lead Facilitator and Program Strategist, ReFi Italia — designed the sprint methodology, led facilitation across all four days, conducted pre-sprint research, and coordinated the program"},
+    {"name": "Lorenzo Di Ciaccio", "role": "Founder of Ridaje and the sprint's Decider — provided operational knowledge, participated all four days, made the four critical decisions on Day 4, and is leading the post-sprint pilot"},
+    {"name": "Lorenzo (Ridaje operations coordinator)", "role": "Ridaje operations coordinator — the person who talks daily with gardeners, squad leaders, and citizens, bringing ground-level reality into every design conversation"},
+    {"name": "George", "role": "Ridaje gardener — provided a frontline perspective on the daily workflow and documentation habits"},
+    {"name": "Alessandro Malventano", "role": "Impact and Scaling Support, Veracura Network — hosted the sprint at Veracura Space in Rome and contributed to impact framing and post-sprint scaling strategy"},
+    {"name": "Matteo Tambussi", "role": "Technical Partner, SpaghettETH — provided blockchain expertise (EAS, IPFS, Celo) on Days 1-2 and validated architectural feasibility"},
+    {"name": "Roberto Valenti", "role": "Liminal Village / Holons — delivered the Liminal Village and Holons bot lightning talk during the sprint"},
+    {"name": "Claudia Patricolo", "role": "President of Rifai Sicilia — delivered the Day 1 lightning talk remotely"},
+    {"name": "Livio Lombardo", "role": "Software Development Consultant, ETHNA/YOMI — consulted on dashboard and software development"}
+  ],
+  "funding": {
+    "granted": 9520,
+    "matched": 9000,
+    "disbursements": [
+      {"to": "ReFi Italia", "amount": 2315, "purpose": "Sprint 1 facilitation, travel, and accommodation"},
+      {"to": "Veracura", "amount": 1390, "purpose": "Sprint 1 venue, logistics, food and beverage"},
+      {"to": "Ridaje", "amount": 4630, "purpose": "Community grant — ~140 hours of paid gardening work plus impact dashboard development and follow-up grant research"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "The DAJE voucher that nobody knew about",
+      "text": "Before the sprint, Lorenzo had already printed DAJE paper vouchers, partnered with restaurants near Ridaje's parks, and stood outside Stazione Termini convincing tourists to eat there. It surfaced in passing during Day 1 mapping and reshuffled the sprint's priorities on the spot.",
+      "quote": "",
+      "quoteAttribution": ""
+    },
+    {
+      "title": "The discovery that reshaped the methodology",
+      "text": "The team had filed community engagement as distant future work and asked about prior experiments in the intake form. DAJE never came up there — it emerged in the room. That single moment elevated community circulation over ESG credits and changed how ReFi Italia runs sprints.",
+      "quote": "Communities have more infrastructure than they can articulate in a form.",
+      "quoteAttribution": "ReFi Italia, Report 5.3"
+    },
+    {
+      "title": "Four days that became working infrastructure",
+      "text": "Within days of the sprint closing, ReFi Italia released OpenGarden — an open-source, EAS-native attestation protocol never named in the original plan. Because the same team that facilitated the design built the protocol, four compressed days turned directly into a public good rather than a report awaiting implementation.",
+      "quote": "",
+      "quoteAttribution": ""
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Ecological", "evidence": "The community grant funds ~140 hours of direct urban green-space care across Ridaje's 25,000 m² and 19 Rome sites, and OpenGarden makes ecological stewardship verifiable on-chain as a reusable standard. Independently scored 3 — deliberate ecological support, though measurable outcomes remain emerging (protocol on testnet, the grant a small slice of Ridaje's work)."},
+    {"dimension": "Social", "evidence": "The grant funds paid work for people in social reinsertion (Ridaje has trained 70+, employed 18, reintegrated 9), and the sprint bridged previously disconnected organisations across Rome, Sicily, and Veneto. Independently scored 3 — a real strength, but durable persisting partnerships are not yet proven and the 70/18/9 figures are Ridaje's track record, not grant outcomes."},
+    {"dimension": "Technological", "evidence": "OpenGarden is an open-source, chain-agnostic protocol built on EAS; a Safe multisig was deployed and Lorenzo trained hands-on, with blockchain kept invisible to gardeners. Independently scored 3 (matching the self-score) — open-source tools adapted to local needs, with community uptake still emerging and single-person dependency flagged."}
+  ],
+  "timeline": [
+    {"when": "Nov 2025", "what": "Call for Pilots published across Italy"},
+    {"when": "Dec 2025", "what": "Localism Fund matching grant received ($9,520)"},
+    {"when": "Jan 2026", "what": "Ridaje selected as first sprint community"},
+    {"when": "Feb 24-27, 2026", "what": "Four-day design sprint at Veracura Space, Rome"},
+    {"when": "Mar 2026", "what": "$4,630 community grant disbursed to Ridaje"},
+    {"when": "Mar 2026", "what": "OpenGarden open-source protocol released"}
+  ],
+  "resources": [
+    {"label": "OpenGarden Protocol (GitHub)", "url": "https://github.com/ReFi-Italia/opengarden", "type": "site"},
+    {"label": "OpenGarden EAS attestations (Optimism Sepolia)", "url": "https://optimism-sepolia.easscan.org/address/0xe125d2eFe5a15C20f97F7fEE4AeAE1597CB15AaD", "type": "dashboard"},
+    {"label": "ReFi Italia on Karma GAP", "url": "https://gap.karmahq.xyz/project/refi-italia", "type": "karma"},
+    {"label": "First ReFi Design Sprint announcement (X)", "url": "https://x.com/i/status/2031334598546723003", "type": "social"},
+    {"label": "Program public assets & Pilot 1 Report (Drive)", "url": "https://drive.google.com/drive/folders/1ymq8K1s_C1j5EDdgRu6wQrGA_Jbcq-lx", "type": "doc"},
+    {"label": "Design Sprint best practices & case studies", "url": "https://docs.google.com/document/d/1HQOsMAvORtwXZlW8dN81nPh9zaRMnONz0fr-LU-aFbI", "type": "doc"},
+    {"label": "Beneficiary one-pager", "url": "https://docs.google.com/document/d/1KNvdW8ZwdQ6vHf3bgoMFO1JftaTCBmobUbbowNJmHx8", "type": "doc"},
+    {"label": "Ridaje (sprint beneficiary)", "url": "https://www.ridaje.com/", "type": "site"}
+  ],
+  "operatorChecks": [
+    "Confirm the Safe 0xCCC0710f…Ebdb24 that received the $4,630 is Ridaje-controlled via a signer list or public reference.",
+    "Resolve the conflict-of-interest disclosure gap: ReFi Italia was paid facilitation from the treasury while also a co-funder.",
+    "Obtain the completed and signed Declaration section, which is absent from the submitted report.",
+    "Confirm whether the Grassroots Economics voucher pool and Rifai Sicilia/YOMI in-kind co-funding were dropped, and why.",
+    "Reconcile the team: Antonio Paglino (named Technical Steward) is absent, and the 1.3 headcount lists two uncredited names.",
+    "Confirm the community-grant token: it moved as cUSD on Celo but parts of the report say USDC."
+  ],
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-design-sprint-batch-01-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/refi-design-sprint-batch-01-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/refi-design-sprint-batch-01.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/refi-design-sprint-batch-01.md"
+  }
+}

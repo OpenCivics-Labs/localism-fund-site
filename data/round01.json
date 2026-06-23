@@ -1,0 +1,102 @@
+{
+  "round": "01",
+  "kicker": "Round 01 · Local Grant Programs",
+  "title": "Twelve local hubs, one year, and what really happened.",
+  "dek": "In late 2025 the Localism Fund backed twelve community hubs across six continents to run their own local grant programs — using Ethereum as the rails. This is the honest retrospective: what each one set out to do, what they actually did, and what the money really touched.",
+  "intro": [
+    "The Localism Fund exists on a simple bet: that the people closest to a place are the ones best placed to regenerate it — and that open, on-chain money can move trust and resources to them without a middle layer skimming the meaning out.",
+    "Round 01 put that bet to work. Rather than fund projects directly, the Fund funded twelve local hubs to each run their own grant program — choosing local projects, moving money, and reporting back. Each received roughly $8,000–$18,000 and four months. The brief: distribute it locally, on Ethereum, and tell us honestly what happened.",
+    "Four months on, every hub submitted a report. We read all twelve against their original applications, traced the money on-chain where we could, and wrote an evaluation for each. What follows is a project-by-project account — grockable at a glance, with the full evidence a click away."
+  ],
+  "findings": {
+    "lede": "The headline isn't the spending. It's the gap between designing a local grant round and actually running one.",
+    "paragraphs": [
+      "Most of these hubs are real, active, locally-rooted projects doing genuine work — solar installs in wartime Ukraine, gardeners paid in Rome, savings circles in Dar es Salaam, ten landscapes telling their own story in Cascadia. The energy is real.",
+      "But the specific thing Round 01 funded — an open local grant round that moves money to independent local projects on-chain — often didn't execute as designed. In several cases the grant still sits intact in a treasury months later. In others it paid for the hub's own build or operations rather than a round of local grants. In a few, the reported numbers simply didn't reconcile against the chain.",
+      "A handful delivered the real thing cleanly: GEN Ukraine funded eleven ecovillage projects, fully traced on-chain; the ReFi Design Sprint paid a verified grant to a community gardening cooperative. The rest sit somewhere between intention and delivery — which is exactly what a first round is for surfacing.",
+      "We've kept the account fair and specific. A thin report from a strong project, and a polished report from a stalled one, are both possible — so each story separates what the program did from how well it was reported, and says plainly where the evidence runs out."
+    ]
+  },
+  "cohortStats": [
+    { "value": "12", "label": "local grant programs" },
+    { "value": "11", "label": "regions, six continents" },
+    { "value": "100k+", "label": "USD committed to local hubs" }
+  ],
+  "timeline": [
+    { "when": "Oct 2025", "what": "Applications open; expert evaluation" },
+    { "when": "Dec 2025", "what": "Agreements signed; grants disbursed" },
+    { "when": "Apr 2026", "what": "Grantee reports submitted" },
+    { "when": "Jun 2026", "what": "Independent evaluation" }
+  ],
+  "byNumbers": [
+    { "value": "12", "label": "local grant programs funded" },
+    { "value": "$100k+", "label": "committed to local hubs" },
+    { "value": "2 / 12", "label": "ran a clean local round, fully on-chain" },
+    { "value": "5 / 12", "label": "grants still largely held in treasury" }
+  ],
+  "insights": [
+    { "lead": "Running a local round is harder than funding one.", "body": "Most hubs did real local work; far fewer completed an open round that actually reached independent local projects on-chain." },
+    { "lead": "Treasuries filled, but didn't always empty.", "body": "In several cases the grant still sits intact in a Safe months after payout — the money arrived, the local round didn't." },
+    { "lead": "Co-funding needs a tighter definition.", "body": "More than one hub counted its own prior grant or a standing treasury as new co-funding raised for the round." },
+    { "lead": "On-chain verification only works when there's something on-chain.", "body": "Where disbursements were fiat, undeployed, or routed to the hub's own wallets, the claims couldn't be independently checked." },
+    { "lead": "The cleanest delivery came from existing trust.", "body": "GEN Ukraine's ecovillage network and a Rome gardening co-op moved fastest — relationships, not tooling, carried the round." }
+  ],
+  "tierSummary": [
+    { "tier": "Solid", "count": 2, "note": "credible, well-evidenced delivery" },
+    { "tier": "Mixed", "count": 5, "note": "real work; meaningful gaps to resolve" },
+    { "tier": "Needs Follow-Up", "count": 5, "note": "significant unresolved questions" }
+  ],
+  "order": [
+    "gen-ukraine-grant-program-01",
+    "refi-design-sprint-batch-01",
+    "refi-colombia",
+    "regenerate-cascadia-phase-one-lhc-grant-program",
+    "tech-and-sun-tas-round",
+    "regenerant-catalunya",
+    "metachrysalis-changemaker-community-fraser-lowland",
+    "greenpill-brasil-commons",
+    "kolektivo-curacao-onchain-island-program",
+    "builder-incubation-for-african-universities-east-west-africa",
+    "refi-tanzania-solar-saving-circles",
+    "homewood-housing-circle-community-renewal-affordable-housing-platform"
+  ],
+  "method": [
+    "Each project was evaluated twice. An AI evaluation worked through four phases — structural completeness, evidence and on-chain financial verification, substantive assessment against the application, and a synthesis with a composite score out of 35. Every financial finding was then independently re-verified by a second, adversarial pass before being committed.",
+    "A steward companion sits alongside each one, carrying the human judgement and the follow-up questions the Fund will actually send. Both are still drafts: this site is a working retrospective, not a final verdict.",
+    "Where a block explorer wouldn't resolve, we say so rather than guess. \"We couldn't verify this\" and \"the evidence contradicts this\" are kept strictly apart throughout."
+  ],
+  "meta": {
+    "evaluationPeriod": "June 2026",
+    "status": "draft",
+    "repo": "https://github.com/montymerlin/localism-fund",
+    "repoBlobBase": "https://github.com/montymerlin/localism-fund/blob/main/"
+  },
+  "locations": {
+    "gen-ukraine-grant-program-01": [[49.0, 31.0]],
+    "refi-design-sprint-batch-01": [[41.9, 12.5]],
+    "refi-colombia": [[10.4, -75.5], [-4.2, -69.9]],
+    "regenerate-cascadia-phase-one-lhc-grant-program": [[47.6, -122.3]],
+    "tech-and-sun-tas-round": [[6.21, 7.07]],
+    "regenerant-catalunya": [[41.6, 1.9]],
+    "metachrysalis-changemaker-community-fraser-lowland": [[49.05, -122.3]],
+    "greenpill-brasil-commons": [[-22.9, -43.2]],
+    "kolektivo-curacao-onchain-island-program": [[12.17, -68.99]],
+    "builder-incubation-for-african-universities-east-west-africa": [[6.5, -0.2], [-1.3, 36.8]],
+    "refi-tanzania-solar-saving-circles": [[-6.82, 39.27]],
+    "homewood-housing-circle-community-renewal-affordable-housing-platform": [[40.45, -79.93]]
+  },
+  "accents": {
+    "gen-ukraine-grant-program-01": "#c4623d",
+    "refi-design-sprint-batch-01": "#6f8f3e",
+    "refi-colombia": "#d99a2b",
+    "regenerate-cascadia-phase-one-lhc-grant-program": "#2f7e7e",
+    "tech-and-sun-tas-round": "#cb9a2b",
+    "regenerant-catalunya": "#b8765a",
+    "metachrysalis-changemaker-community-fraser-lowland": "#7b8f5a",
+    "greenpill-brasil-commons": "#3f8f5e",
+    "kolektivo-curacao-onchain-island-program": "#4a7fb0",
+    "builder-incubation-for-african-universities-east-west-africa": "#a8584e",
+    "refi-tanzania-solar-saving-circles": "#d9772b",
+    "homewood-housing-circle-community-renewal-affordable-housing-platform": "#7b6ba0"
+  }
+}

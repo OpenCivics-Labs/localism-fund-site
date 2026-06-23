@@ -1,0 +1,154 @@
+{
+  "slug": "metachrysalis-changemaker-community-fraser-lowland",
+  "name": "Metachrysalis Changemaker Community — Fraser Lowland",
+  "shortName": "Metachrysalis",
+  "hub": "Thaumazo",
+  "leads": "Daniel Lindenberger & Alka Tandan",
+  "place": "Fraser Lowland, British Columbia",
+  "region": "British Columbia",
+  "themes": ["community-weaving", "mutual-aid", "bioregional", "emergent"],
+  "localismFocus": ["Social", "Economic", "Technological"],
+  "tagline": "Weaving isolated changemakers into one living network.",
+  "whyItMattered": "Across the Fraser Lowland, dozens of people quietly carry mutual-aid and regeneration work alone, unseen and unconnected. This pilot tried to find them and stitch them into a community where resources, not just money, could flow between projects.",
+  "stats": [
+    {"value": "8", "label": "changemakers funded"},
+    {"value": "~$10.8k", "label": "verified on-chain to six recipients"},
+    {"value": "22", "label": "nominees & applicants engaged"}
+  ],
+  "story": [
+    "Thaumazo set out to find eight local changemakers, weave them into a Discord and the open-source Community Mycelium platform, and let a sociocratic vote allocate the grants. Reality simplified the plan: only eight people finished their profiles in time, exactly matching the eight grants — so the competitive vote was quietly retired, and with it the one zero-sum moment in the process.",
+    "The real work was relational. 1:1 onboarding calls, weekly drop-ins, in-person game sessions, a potluck, and a 'mycelial mapping' exercise that treated money as just one of eight kinds of resource. People who'd been working in isolation started recognising each other's work — and helping.",
+    "The clearest proof came when participants spotted a synergy and one gifted surplus goods to another, redirecting items bound for landfill to a peer-led community supporting unhoused people, arriving just ahead of an atmospheric storm.",
+    "Honest texture runs through it: low turnout, busy leaders hard to schedule, a $2,000 loss when co-funding was briefly held as ETH. The Ethereum layer stayed minimal, and — quietly — the entire Localism Fund grant never moved."
+  ],
+  "signatureStory": {
+    "title": "Three wagonloads, and a bus that wouldn't start",
+    "text": "Katie Grant has spent a decade — her time, her money, her house — sourcing, cleaning, folding and distributing free supplies to people in need, mostly alone. Nominated by someone who saw her work, she joined the drop-in calls, where the team quickly recognised a synergy with Fiona York, whose peer-led organisation Ayx runs a minibus for the unhoused in Vancouver's Downtown East Side. Fiona listed what Ayx needed; Katie sourced and delivered three wagonloads. Ethan and Daniel spent a Spring Break day picking up and laundering supplies with her, mapping ways to make the work easier, and sourcing a pro-bono accountant to improve her cost recovery. Even the failures turned generative: on delivery day the Ayx bus wouldn't start — a dead battery — but the three-hour wait became a conversation that opened new avenues for supporting the unhoused. A subgroup of changemakers focused on the Downtown East Side began to form.",
+    "quote": "My takeaway is that I am not alone in this. There are other people out there also doing work that the world tells us is too idealistic and foolish to pursue.",
+    "quoteAttribution": "Divija Madhani, Next-Door Table"
+  },
+  "delivered": [
+    "Ran a real relationship-first local pilot funding eight changemakers at ~$1,800 USD (~$2,500 CAD) each across the Fraser Lowland",
+    "Disbursed six grants on-chain — verified at ~$10,778 USDC to six distinct recipients (two further grants paused or never paid)",
+    "Built and used the open-source Community Mycelium platform (fraserlowland.org) for changemaker profiles, project pages, and 8-resource 'mycelial mapping'",
+    "Convened the cohort through 1:1 onboarding, ~6 weekly drop-ins, in-person game sessions, a potluck, and per-participant deep-dive calls",
+    "Catalysed real cross-project mutual aid, including the externally corroborated Katie Grant ↔ Fiona York / Ayx supply-and-bus linkage",
+    "Disclosed its pivots candidly — the bypassed vote, scaled-down outreach, and a $2,000 ETH-volatility loss back-filled by Thaumazo"
+  ],
+  "outcomes": [
+    {"text": "Previously fragmented changemakers formed a small living cohort, with cross-project support offers and at least one CBC-corroborated mutual-aid linkage", "status": "Emerging"},
+    {"text": "Participants gained new ways to scope right-sized projects and map the many forms of capital flowing through their work", "status": "Emerging"},
+    {"text": "A reusable open-source platform (Community Mycelium) was advanced and put into real use by a handful of local members", "status": "Realized"},
+    {"text": "The promised on-chain layer — attestations, facet tokens, on-chain governance, dashboards — and a 'bioregional financing' model", "status": "Expected"}
+  ],
+  "status": "Continuing as a community — but the LF grant is still undisbursed and the financial record needs correcting",
+  "verdict": {
+    "tier": "Mixed",
+    "composite": 18,
+    "financial": "Contradicted by on-chain evidence",
+    "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant is still sitting undisbursed as cUSD on Celo (every grant that landed was paid from co-funding), and the Part 3 financial summary overstates disbursement and does not reconcile."
+  },
+  "honesty": "The community work is genuine and the team is candid about its failures, but the central financial fact is undisclosed: the full $11,200 Localism Fund grant never moved — it sits as cUSD on Celo while all six grants were paid from co-funding USDC on Ethereum. The report's '$0 remaining' is false on-chain, 'disbursed to local projects' is overstated, and the totals don't reconcile. No funds are missing — the grant is simply idle, and the report doesn't say so.",
+  "proposed": {
+    "summary": "Find and fund eight local changemakers through a peer-nominated, sociocratically governed bioregional grant round.",
+    "points": [
+      "Recruit changemakers by peer nomination into a Discord and the Community Mycelium platform",
+      "Adjudicate 32 participants (four per domain) through in-person Metachrysalis game sessions",
+      "Sociocratically elect eight to receive $2,500 micro-grants for one-month projects",
+      "Disburse grants on-chain via an L2 Safe multisig with EAS attestations and dashboards"
+    ]
+  },
+  "team": [
+    {"name": "Daniel Lindenberger", "role": "Project Lead / Facilitator / Framework Originator"},
+    {"name": "Alka Tandan", "role": "Admin Team, Researcher"},
+    {"name": "Ethan Schaltegger", "role": "Admin Team, Facilitation"},
+    {"name": "Ben Smith", "role": "Admin Assistance"},
+    {"name": "Harmony Barrer", "role": "Admin Assistance"},
+    {"name": "Elyes Mkacher", "role": "Domain Steward: Earth Erosion to Regenerative Abundance"},
+    {"name": "Faizan Abbasi", "role": "Domain Steward: Fragile Web to Interwoven Harmony"},
+    {"name": "Jessi Maness", "role": "Domain Steward: Power Pyramid to Equitable Commons"},
+    {"name": "Kristin Wilson (Kozar)", "role": "Domain Steward: Truth Tornado to Shared Light"},
+    {"name": "Ollie Rankin", "role": "Domain Steward: Extinction Edge to Resilient Renaissance"},
+    {"name": "Saeed Dyanatkar", "role": "Domain Steward: Tech Tsunami to Tech Symphony"},
+    {"name": "Soudeh Jamshidian", "role": "Domain Steward: Leadership Lapse to Adaptive Stewardship"}
+  ],
+  "funding": {
+    "granted": 11200,
+    "matched": 10000,
+    "disbursements": [
+      {"to": "Kelly Graham Tick — Hospice RMT pilot", "amount": 1800, "purpose": "Weekly no-charge RMT treatment for hospice patients and their families"},
+      {"to": "Chad Kohalyk — Canadian Fiscal Hosting Network", "amount": 1797, "purpose": "Exploring fiscal sponsorship for small mission-aligned projects lacking legal nonprofit structure"},
+      {"to": "Divija Madhani — Next-Door Table", "amount": 1796, "purpose": "Building social infrastructure for community connection in multi-unit housing"},
+      {"to": "Emily McGill — CoFood Collaborative Garden", "amount": 1796, "purpose": "Shared-stewardship urban garden growing food and medicine in Vancouver's Mt. Pleasant"},
+      {"to": "Fiona York — Pop-up Warming in the Downtown East Side", "amount": 1796, "purpose": "Grassroots spring warming and sheltering resources for the unhoused"},
+      {"to": "Katie Grant — Community-to-Shelter Household Goods Redistribution", "amount": 1793, "purpose": "Neighbourhood mutual-aid reuse: collecting and redistributing household goods to shelters"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "The grant that never moved",
+      "text": "The six grants that reached projects were all paid from co-funding USDC on Ethereum. The entire $11,200 Localism Fund grant arrived as cUSD on Celo in December and sat there untouched — the Celo Safe shows zero outbound transfers. The report's claim of '$0 remaining' is false on-chain.",
+      "quote": "",
+      "quoteAttribution": ""
+    },
+    {
+      "title": "When isolation lifts",
+      "text": "Many participants came in used to structured programs — clear instructions, timelines, defined roles — and the shift into emergent, participant-led work was a learning curve. What surprised the team was how fast these changemakers, long working alone, came together to build on each other's ideas and support each other's projects.",
+      "quote": "My takeaway is that I am not alone in this. There are other people out there also doing work that the world tells us is too idealistic and foolish to pursue.",
+      "quoteAttribution": "Divija Madhani, Next-Door Table"
+    },
+    {
+      "title": "Funding planned for two years",
+      "text": "For Kelly Graham Tick's One Caring Human Society, the micro-grant made it possible to launch a hospice RMT program they had been planning for two years — bringing consistency and dignity to end-of-life care, and a more sustainable footing for both recipients and practitioners.",
+      "quote": "I felt enormous relief and gratitude when told I was selected to receive financial support, as this made it possible to begin a program we've been planning to start for two years.",
+      "quoteAttribution": "Kelly Graham Tick, Hospice RMT pilot"
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Social", "evidence": "The program's genuine strength: it wove isolated Fraser Lowland changemakers into a small living cohort through drop-ins, in-person game sessions and gatherings. The Katie Grant to Fiona York / Ayx mutual-aid linkage — three wagonloads of sourced supplies for a peer-led cooling bus in the Downtown East Side — is externally corroborated by CBC. Durability is still emerging."},
+    {"dimension": "Economic", "evidence": "Real economic touches — six ~$1,800 micro-grants to local changemakers, a fiscal-hosting project (Chad Kohalyk), and a pro-bono accountant sourced for a participant. But these are one-off transfers; the 'bioregional financing' ambition remains aspirational, and the self-scored 4.5 sits well above the delivered evidence (independent re-score ~2)."},
+    {"dimension": "Technological", "evidence": "Community Mycelium (fraserlowland.org) is a real, live open-source platform with 8-resource 'mycelial mapping' used by a handful of local members. But the promised on-chain layer — EAS attestations, facet tokens, on-chain governance, public dashboards — did not materialise; the grantee self-rates Ethereum 'Minimal,' contradicting the self-scored 5."}
+  ],
+  "correlation": [
+    {"proposed": "Find and fund eight local changemakers with $2,500 micro-grants", "status": "Partial", "outcome": "Eight changemakers were funded on paper at ~$1,800 USD (~$2,500 CAD) each, but only six grants were actually disbursed on-chain; two (Jane Diopko, Cans for a Cause) were never paid."},
+    {"proposed": "Sociocratically elect eight recipients via a competitive vote", "status": "Pivoted", "outcome": "Only eight participants completed their profiles, exactly matching the eight grants, so the sociocratic election was bypassed — the democratic allocation mechanism reviewers praised did not run. Disclosed candidly in 1.2."},
+    {"proposed": "Disburse the Localism Fund grant on-chain to local projects", "status": "Not done", "outcome": "The full $11,200 LF grant remains undisbursed as cUSD on Celo; every grant that reached a project was paid from co-funding USDC on Ethereum. Not disclosed in the report."},
+    {"proposed": "Deliver EAS attestations, facet tokens, on-chain sociocratic record and public dashboards", "status": "Not done", "outcome": "None of the promised on-chain scaffolding materialised; the attestations field is left blank and Ethereum is self-rated 'Minimal.' Not flagged as a change in 1.2."},
+    {"proposed": "Build and use the open-source Community Mycelium platform", "status": "Delivered", "outcome": "fraserlowland.org is live and in real use by a handful of members for changemaker profiles, project pages and 8-resource mapping."},
+    {"proposed": "Raise at least $5,000 in co-funding", "status": "Delivered", "outcome": "$10,000 hard-committed and on-chain-isolated (11,390.61 USDC from a Kraken hot wallet, 2025-11-26), but single-donor; ~$2,000 was lost to ETH volatility and back-filled by Thaumazo."}
+  ],
+  "timeline": [
+    {"when": "Nov 2025", "what": "Application submitted to Localism Fund Round 01"},
+    {"when": "Nov 26, 2025", "what": "$10k co-funding raised on-chain (single donor)"},
+    {"when": "Dec 17, 2025", "what": "$11,200 LF grant received as cUSD on Celo"},
+    {"when": "Jan–Mar 2026", "what": "Cohort onboarded; drop-ins and mycelial mapping"},
+    {"when": "Mar 29–Apr 4, 2026", "what": "Six micro-grants paid from co-funding"},
+    {"when": "Apr 2026", "what": "LF grant still idle, undisbursed on Celo"},
+    {"when": "Apr 4, 2026", "what": "Grantee report finalised and submitted"}
+  ],
+  "resources": [
+    {"label": "Metachrysalis (framework site)", "url": "https://metachrysalis.org/", "type": "site"},
+    {"label": "Community Mycelium — Fraser Lowland", "url": "https://fraserlowland.org/", "type": "site"},
+    {"label": "Community Mycelium (open-source code)", "url": "https://github.com/thaumazo/CommunityMycelium/", "type": "doc"},
+    {"label": "Program wallet (Ethereum, Etherscan)", "url": "https://etherscan.io/address/0x7d93E73C1adEf2cbB724481b56a184A7370e1Eef", "type": "wallet"},
+    {"label": "Program wallet (Celo, Blockscout)", "url": "https://celo.blockscout.com/address/0x7d93E73C1adEf2cbB724481b56a184A7370e1Eef", "type": "wallet"},
+    {"label": "Fiona York / Ayx cooling bus (CBC)", "url": "https://www.youtube.com/watch?v=QNx5WfY-K_I", "type": "video"},
+    {"label": "Metachrysalis on LinkedIn", "url": "https://www.linkedin.com/company/metachrysalis/", "type": "social"},
+    {"label": "Community Discord", "url": "https://discord.gg/c4HUku4tJe", "type": "social"}
+  ],
+  "operatorChecks": [
+    "Confirm the $11,200 LF grant is still undisbursed as cUSD on Celo and obtain a deployment plan and timeline.",
+    "Request a corrected Part 3 financial summary that reconciles with on-chain figures and uses one currency.",
+    "Confirm current status and timing of the two unpaid grants — Jane Diopko and Cans for a Cause / Katryna Cole.",
+    "Verify evidence for the $10,000 Scott Nelson co-funding, since the Kraken inbound carries no donor identity on-chain.",
+    "Resolve the Economic (4.5) and Technological (5) self-scores against the report's own 'Minimal' Ethereum text.",
+    "Confirm the promised on-chain layer — attestations, facet tokens, dashboards — was dropped; reflect it as a change."
+  ],
+  "fundingNote": "Of the recorded funding, the entire $11,200 Localism Fund grant never moved — it remains as cUSD on Celo with zero outbound transfers. All six disbursed grants were paid from co-funding USDC on Ethereum, and two of the eight funded projects were never paid.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/metachrysalis-changemaker-community-fraser-lowland-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/metachrysalis-changemaker-community-fraser-lowland-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/metachrysalis-changemaker-community-fraser-lowland.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/metachrysalis-changemaker-community-fraser-lowland.md"
+  }
+}

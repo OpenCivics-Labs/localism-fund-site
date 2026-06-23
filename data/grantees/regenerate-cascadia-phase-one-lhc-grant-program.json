@@ -1,0 +1,170 @@
+{
+  "slug": "regenerate-cascadia-phase-one-lhc-grant-program",
+  "name": "Regenerate Cascadia: Phase One LHC Grant Program",
+  "shortName": "Regenerate Cascadia",
+  "hub": "Regenerate Cascadia (Department of Bioregion, 501(c)(3))",
+  "leads": "Brandon Letsinger, with Taya Seidler & Clare Attwell",
+  "place": "Cascadia bioregion — ten landscapes from the Salish Sea to the Willamette Valley",
+  "region": "Cascadia",
+  "themes": ["bioregionalism", "storytelling", "cohort", "regeneration"],
+  "localismFocus": ["Cultural", "Social", "Ecological"],
+  "tagline": "Ten landscapes learn to tell their own story.",
+  "whyItMattered": "Watershed-scale care across Cascadia needs social infrastructure that doesn't yet exist. This was an honest attempt to build the relational layer first — gathering scattered place-based groups into one cohort and helping each articulate its landscape before any larger capital flows.",
+  "stats": [
+    {"value": "10", "label": "landscape groups, 38 stewards"},
+    {"value": "~474", "label": "live Showcase attendees"},
+    {"value": "$12,480", "label": "LF grant received (verified)"}
+  ],
+  "story": [
+    "When the Localism Fund approval landed in late October 2025, the Landscape Hub Cultivator pilot was just getting underway. Regenerate Cascadia had launched its community platform and begun onboarding stewards from across the bioregion. The grant read as confirmation that building social infrastructure first, then routing funding through it, was legible to funders beyond traditional philanthropy.",
+    "The early weeks were relationship work. A Welcome Ceremony opened the cohort; stewards met weekly across three time-zone tracks, in office hours and steward calls. Each of the ten Landscape Groups did deep listening at home — surfacing stories, naming wisdom keepers, mapping what health and harm look like in their place, all scaffolded by a shared story-deck template.",
+    "The hardest part was holding tension between moving fast enough for a January Showcase and slowly enough to listen with care. Groups arrived at wildly different stages — some with years of shared history, others convening for the first time. A single program design could not optimally serve both, and the team is candid that pacing was uneven and the online platform under-performed.",
+    "The best moment came at the two-day Landscapes Showcase, where all ten groups presented to roughly 474 live attendees and nearly 1,000 registrations. Printed binders went to NoVo Foundation in person. The program has since entered Phase Two mapping, with a flow-funding pilot planned for later in 2026."
+  ],
+  "signatureStory": {
+    "title": "A bioregional story from a Superfund site",
+    "text": "The Duwamish River Valley sits at the historical center of Seattle, a city named for a chief whose people remain present but federally unrecognized. The last five miles of the city's only river run through one of the Pacific Northwest's most contaminated corridors — an EPA Superfund site laced with over forty hazardous substances, where life expectancy runs eight years short of the county average and residents have a tenth of the green space. When this group joined the cohort, they carried a hard question into the work: how do you tell a bioregional story for a landscape defined by both deep ecological harm and persistent community care? Their story deck named the river, the land, the people, the layers of industrial extraction — and the healers already at work. Stewards Kim Schwarzkopf, Debbie Pessein, and Christoph Strouse drew some of the Showcase's strongest response, with attendees reaching out afterward to support the mapping work. It was a demonstration that bioregional organizing can take root in the most contested and damaged places, not only the rural or island ones with clearer ecological identities.",
+    "quote": "A moment that stands out is realizing that we are not starting from nothing, we are stepping into a landscape already full of life, relationships, and effort, and the work is to listen, connect, and help make it more coherent.",
+    "quoteAttribution": "Marianne Wyne, Fraser Lowland steward"
+  },
+  "delivered": [
+    "Onboarded ten landscape groups / 38 stewards across the Salish Sea, Willamette Valley, and Columbia corridor — spanning two nations and three ecoregions",
+    "Produced ten place-based Landscape Story Decks and a two-day public Showcase (Jan/Feb 2026), reported at ~474 live attendees and ~1,000 registrations",
+    "Delivered printed landscape binders in person to NoVo Foundation; Showcase recordings posted openly on YouTube",
+    "Built a community of practice — weekly cohort tracks in three time-zone streams, office hours, monthly steward calls, and a Mighty Networks platform (the team notes it was under-adopted)",
+    "Connected 20+ anchor organizations and institutional partners across the ten landscapes",
+    "Received the $12,480 LF grant on-chain and confirmed it publicly; now in Phase Two mapping ($3,500/group) with a flow-funding pilot ($3,000/group) planned"
+  ],
+  "outcomes": [
+    {"text": "Ten landscape groups now hold a documented, shareable narrative of their place — story decks already reused for websites and grant applications", "status": "Realized"},
+    {"text": "A cross-bioregional community of practice formed across ten geographies and two nations, in sustained relationship for the first time", "status": "Emerging"},
+    {"text": "Latent public appetite for bioregional storytelling surfaced — registrations far exceeded expectations, reshaping plans for future showcases", "status": "Realized"},
+    {"text": "A practice run for community-directed allocation, with each group set to redistribute funds locally in the planned flow-funding pilot", "status": "Expected"}
+  ],
+  "status": "Active, ongoing into Phase Two — strong program, financial reporting needs follow-up",
+  "verdict": {
+    "tier": "Mixed",
+    "composite": 16,
+    "financial": "Contradicted by on-chain evidence",
+    "line": "A real, well-delivered cohort-building program with strong cultural/social localism and honest reflections, but its central financial claims are contradicted on-chain — the $12,480 grant is undisbursed and still in the program wallet, and the money section does not internally reconcile."
+  },
+  "honesty": "The program is genuinely real and reasonably well-delivered, and the team is unusually candid about its own limits. But the financial section cannot be relied on as submitted: it claims all funds distributed, yet the grant has made zero outbound transfers and still sits in the wallet, the totals self-contradict, and a standing crypto treasury is presented as co-funding raised. The most likely read is careless reporting of an off-chain-paid program, not missing money — but it needs correction.",
+  "proposed": {
+    "summary": "Run Phase One of the Landscape Hub Cultivator, seeding regenerative landscape groups across Cascadia social-infrastructure-first.",
+    "points": [
+      "Flow seed grants to six to ten pre-vetted landscape groups across the bioregion",
+      "Onboard local steward teams and run place-based inquiry with each group",
+      "Produce a Landscape Story Deck per group, culminating in a January 2026 Showcase",
+      "Position each landscape for Phase Two mapping workshops and flow-funding pilots"
+    ]
+  },
+  "correlation": [
+    {
+      "proposed": "Flow seed grants to six to ten landscape groups",
+      "status": "Pivoted",
+      "outcome": "Ten groups onboarded, but funds allocated as equal pre-decided stipends, not an open competitive local grant round"
+    },
+    {
+      "proposed": "Onboard steward teams; place-based inquiry per group",
+      "status": "Delivered",
+      "outcome": "Ten groups / 38 stewards onboarded across Cascadia, with weekly cohort tracks, office hours and deep listening at home"
+    },
+    {
+      "proposed": "Story Deck per group, January 2026 Showcase",
+      "status": "Delivered",
+      "outcome": "Ten Story Decks produced and a two-day Showcase held (slipped to late Jan/early Feb), ~474 attendees; Day-One recording confirmed"
+    },
+    {
+      "proposed": "Disburse on-chain to designated group wallets",
+      "status": "Not done",
+      "outcome": "Zero outbound transfers; $12,480 grant still held in wallet; stipends, if paid, went off-chain via the 501(c)(3), unevidenced"
+    },
+    {
+      "proposed": "Karma GAP milestones, attestations, public disbursement dashboard",
+      "status": "Not done",
+      "outcome": "Zero attestations, no group wallets, no dashboard; Karma GAP page not cited; on-chain use was receipt-only, self-rated Peripheral"
+    },
+    {
+      "proposed": "Raise co-funding including an $8,000 on-chain match",
+      "status": "Partial",
+      "outcome": "The $8,000 on-chain match is pre-existing USDGLO accrued Nov 2024-Jun 2025; donations and event revenue claimed but off-chain and unevidenced"
+    }
+  ],
+  "team": [
+    {"name": "Brandon Letsinger", "role": "Program Director — strategy, funder relations, overall arc (Vashon)"},
+    {"name": "Taya Seidler", "role": "LHC Program Manager — delivery, curriculum, coaching"},
+    {"name": "Clare Attwell", "role": "RC Co-Administrator — curriculum, Canadian BioFi co-lead (Victoria)"},
+    {"name": "Drew Alcoser", "role": "Community Steward — CRM, community coordination"},
+    {"name": "Susan Fine", "role": "Operations, fiscal sponsorship oversight"},
+    {"name": "Ben Moseley", "role": "Financial operations (South Willamette Valley)"}
+  ],
+  "funding": {
+    "granted": 12480,
+    "matched": 8000,
+    "disbursements": []
+  },
+  "stories": [
+    {
+      "title": "A bioregional story from a Superfund site",
+      "text": "The Duwamish River Valley sits at Seattle's historical center, where the city's only river runs through an EPA Superfund corridor laced with over forty hazardous substances. This group carried a hard question into the cohort: how to tell a bioregional story for a place defined by both deep harm and persistent care.",
+      "quote": "A moment that stands out is realizing that we are not starting from nothing, we are stepping into a landscape already full of life, relationships, and effort, and the work is to listen, connect, and help make it more coherent.",
+      "quoteAttribution": "Marianne Wyne, Fraser Lowland steward"
+    },
+    {
+      "title": "Ten landscapes find their voice at the Showcase",
+      "text": "Over two days in early 2026, all ten Landscape Groups presented place-based narratives to roughly 474 live attendees, with nearly 1,000 registrations. For the first time a public audience could see the full breadth of the bioregion through the voices of people rooted in it. Printed binders went in person to NoVo Foundation.",
+      "quote": "The Showcase Presentation slide deck and guidance I found very helpful at this stage of things, and I am very appreciative that our group now has our story down, articulated and out there. It helped our group move along quite a bit.",
+      "quoteAttribution": "Cory Sevin, Whatcom steward"
+    },
+    {
+      "title": "A cohort that became a community",
+      "text": "Thirty-eight stewards across ten geographies and two nations entered sustained relationship for the first time, meeting in weekly cohort tracks across three time-zone streams, office hours, and monthly steward calls. The team is candid that the Mighty Networks platform was under-adopted and pacing ran uneven — but the relational fabric held the hard parts together.",
+      "quote": "What stands out is learning to trust that with good communication, patience and openness to change, we are able to move through a time of lack of clarity and a muddled process to co-create a more effective container that meets the needs of all.",
+      "quoteAttribution": "David Ketter, Whatcom steward"
+    }
+  ],
+  "dimensionEvidence": [
+    {
+      "dimension": "Cultural",
+      "evidence": "Ten place-based Landscape Story Decks were produced and presented at a two-day public Showcase, each naming a landscape's ecology, history, and active regenerators. The Duwamish River Valley deck named industrial contamination and Indigenous displacement directly; Whidbey commissioned a logo from an Indigenous artist. The independently strongest-evidenced dimension — genuine, deliberate, place-rooted storytelling."
+    },
+    {
+      "dimension": "Social",
+      "evidence": "Social infrastructure was the program's foundational principle: a Welcome Ceremony, weekly classroom sessions in three cohort tracks, monthly steward calls, weekly office hours, and an online community of practice brought 38 stewards across ten groups and two nations into sustained relationship for the first time. The genuine core of the program, though durability is unproven (the team flags Mighty Networks under-adoption and attrition risk)."
+    },
+    {
+      "dimension": "Ecological",
+      "evidence": "Ecology is the program's motivation, and the Story Decks named watershed, salmon, and contamination issues across the ten landscapes. But Phase One produced narratives about ecology rather than stewardship activity or outcomes; restoration and bioregional mapping are Phase Two and beyond. Connected with environmental themes without it being a core Phase-One deliverable."
+    }
+  ],
+  "timeline": [
+    {"when": "Oct 2025", "what": "Localism Fund approval lands; LHC pilot underway"},
+    {"when": "Nov 2025", "what": "LHC program launches; cohort of 10 landscapes onboarded"},
+    {"when": "Nov 2025 – Jan 2026", "what": "Place-based listening; ten Story Decks produced"},
+    {"when": "Jan 6, 2026", "what": "$12,480 LF grant received on-chain (verified)"},
+    {"when": "Jan – Feb 2026", "what": "Two-day public Showcase, ~474 live attendees"},
+    {"when": "Mar 26, 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "Regenerate Cascadia", "url": "https://regeneratecascadia.org", "type": "site"},
+    {"label": "Landscapes Showcase — Day One", "url": "https://www.youtube.com/watch?v=V00YgxzHiQ4", "type": "video"},
+    {"label": "Landscapes Showcase — Day Two", "url": "https://www.youtube.com/watch?v=dLZHXt5zIOI", "type": "video"},
+    {"label": "Karma GAP project", "url": "https://gap.karmahq.xyz/project/regenerate-cascadia-bioregen--biofi", "type": "karma"},
+    {"label": "Program wallet (Celo, via Blockscout)", "url": "https://celo.blockscout.com/address/0xa1cE98594e6844d850Db9Db9FE01b9595D445ca4", "type": "wallet"}
+  ],
+  "operatorChecks": [
+    "Obtain off-chain ledger and receipts for the ten $2,000 stipends — the program wallet shows zero outbound transfers, ~$20,750 still held.",
+    "Correct the 2.1 status ('all funds distributed') — on-chain the $12,480 grant is still parked in the wallet.",
+    "Reconcile 3.1's contradictory figures — $33,244 'disbursed' vs $6,708 spent vs $26,536 remaining vs 2.2's $20,000.",
+    "Reclassify the '$8,000 on-chain match' — it is pre-existing USDGLO accrued ~11 months before the round, not co-funding raised.",
+    "Probe the undisclosed off-chain disbursement: the application promised on-chain transfers and a public per-landscape dashboard (0 delivered).",
+    "Examine conflicts — equal stipends were set centrally by a delivery team whose members lead funded groups; 2.3 asserts none arose."
+  ],
+  "fundingNote": "Recorded disbursements are empty because the program wallet has made zero outbound transfers — the $12,480 grant (plus ~$8,250 USDGLO) is still parked on-chain. The ten Phase-1 stipends, if paid, went off-chain through the 501(c)(3) and aren't evidenced (the report itself notes only ~$6,700 'paid out or in process'), and the financial summary doesn't reconcile.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/regenerate-cascadia-phase-one-lhc-grant-program-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/regenerate-cascadia-phase-one-lhc-grant-program-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/regenerate-cascadia-phase-one-lhc-grant-program.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/regenerate-cascadia-phase-one-lhc-grant-program.md"
+  }
+}

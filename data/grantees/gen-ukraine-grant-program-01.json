@@ -1,0 +1,171 @@
+{
+  "slug": "gen-ukraine-grant-program-01",
+  "name": "GEN Ukraine Grant Program 01",
+  "shortName": "GEN Ukraine",
+  "hub": "GEN Ukraine (Global Ecovillage Network)",
+  "leads": "Maksym Zalevskyi",
+  "place": "Rural ecovillages scattered across a country at war",
+  "region": "Ukraine",
+  "themes": ["ecovillages", "solar", "winter shelter", "mutual aid"],
+  "localismFocus": ["Social", "Ecological", "Economic"],
+  "tagline": "Eleven ecovillages preparing to keep each other warm through war.",
+  "whyItMattered": "As missiles hit Ukraine's heating infrastructure mid-winter, a network of rural ecovillages turned shared houses into places that could host displaced people. Small grants bought solar panels, bunk beds and insulation where they were needed most.",
+  "stats": [
+    {"value": "11", "label": "ecovillage projects funded"},
+    {"value": "$7,800", "label": "received & disbursed on-chain"},
+    {"value": "2", "label": "community solar systems installed"}
+  ],
+  "story": [
+    "When the funds arrived on 11 December 2025, the first move was not money but coordination: working out which communities were ready, what capacity existed, and how to run a process under wartime conditions. Proposals came not through formal applications but through Telegram chats, Zoom calls and existing relationships across the network.",
+    "Projects became real when they got practical — repairing shared houses, installing beds, improving heating, setting up small solar systems. Then winter attacks on thermal power infrastructure threatened large-scale heating failures, and the team made a rapid decision to activate shared spaces as #WinterShelters, calling the Localism Fund to request flexibility before redirecting funds.",
+    "Across roughly eleven ecovillages, communities held their own internal discussions about whether they could host people. When materials arrived, they acted fast: insulating buildings, installing beds, fixing kitchens and water systems, putting up two small solar arrays. The anticipated collapse of urban heating never fully came, so the spaces are now evolving from emergency shelters into places for recovery and longer stays.",
+    "It was not a clean plan executed step by step. It was a series of adaptations — local initiative, partial structure, on-chain funding through Celo and Sarafu, and a public Dune dashboard — done in a context of blackouts, air-raid alerts and coordinators called away to mobilisation."
+  ],
+  "signatureStory": {
+    "title": "Three bunk beds in Radaria",
+    "text": "Before the program, the Radaria ecovillage space hosted small gatherings and seasonal stays but couldn't accommodate larger groups, especially in winter. As attacks on energy infrastructure made alternative places to stay urgent, the community decided to open its doors — but the limit was very practical: not enough beds. With the grant, they bought and installed three bunk beds, and the space shifted from occasional-use to ready for continuous hosting, closer to a small hostel than an informal gathering place. The change was small in money but large in function.",
+    "quote": "Thanks to this support, we purchased three bunk beds and began setting up a hostel space. Soon we will be able to host people and provide comfortable living conditions. This is especially important during wartime, when people need not only safety, but also warmth, comfort, beauty, and a sense of home.",
+    "quoteAttribution": "The Radaria community"
+  },
+  "delivered": [
+    "Two community solar systems (Velyka Rodyna; Pokuttya Waldorf School), with Velyka Rodyna corroborated by an on-chain Sarafu report",
+    "Three production and workshop hubs: VeloSelo bicycle workshop, New Mayapur mechanical hub, and the Ohra ceramic workshop",
+    "Winter-resilience upgrades to shared spaces — Radaria bunk beds, Charivne house renovation, Busha community space, House of Warmth, Energy-Efficient Doors, and Dobra Maisternia insulation",
+    "Funds distributed through Sarafu pools via a two-leg model (pool withdrawal plus a USDC top-up from a GEN Safe), with a public Celo wallet (genukraine.eth) and a Dune dashboard as a standing transparency layer",
+    "The #WinterShelters pivot — funds redirected to urgent winter-prep micro-projects, with the team calling the Localism Fund to request flexibility before redirecting",
+    "$12,350 disbursed to local projects across roughly eleven ecovillages, all dated cleanly after the 11 December 2025 payout"
+  ],
+  "outcomes": [
+    {"text": "At least four ecovillages now operate with more energy and housing capacity — two solar systems (~10kW combined), upgraded shared spaces, and a frontline-adjacent hub (Dobra Maisternia) running reliably through winter.", "status": "Realized"},
+    {"text": "A hybrid resource-coordination system began forming across the network, combining on-chain funding (Celo), pooled coordination (Sarafu) and public visibility (Dune), enabling faster, parallel allocation than traditional grants.", "status": "Emerging"},
+    {"text": "Local economic activity was activated through workshops and small production (ceramics, bicycles, mechanical repair), creating early opportunities for self-sufficiency.", "status": "Emerging"}
+  ],
+  "status": "Active implementation — funds fully disbursed, several projects complete, others ongoing",
+  "verdict": {
+    "tier": "Solid",
+    "composite": 25,
+    "financial": "Financial claim mostly verified",
+    "line": "A credible, fully on-chain-verified wartime micro-grant program with real community impact; what holds it at Solid rather than Strong is documentation quality, not any financial concern."
+  },
+  "honesty": "Two of four proposed priority areas — water harvesting and biodiversity monitoring — were essentially not delivered and the change went unflagged, and selection was informal (about 92% of proposals funded, with coordinators tied to communities they funded). The largest co-funding line was GEN Ukraine's own prior Octant grant redeployed rather than new external money. The disbursement itself, though, reconciles in full on-chain.",
+  "proposed": {
+    "summary": "A transparent, on-chain micro-grant round funding 10-15 regenerative projects across Ukraine's ecovillage network during war.",
+    "points": [
+      "Fund 10-15 small projects across solar resilience, water harvesting, biodiversity monitoring, and community infrastructure",
+      "Distribute through named Sarafu pools with Karma GAP intake, Giveth matching, and Ecocert verification",
+      "Track impact via on-chain attestations and hypercerts, publishing a 2026 Climate Impact Report",
+      "Raise $20,000 with $5,000 confirmed co-funding, paying grants out against milestones via sociocratic consent"
+    ]
+  },
+  "correlation": [
+    {
+      "proposed": "Fund 10-15 small regenerative projects",
+      "status": "Delivered",
+      "outcome": "Funded 11 infrastructure projects across roughly eleven ecovillages, squarely within the proposed range."
+    },
+    {
+      "proposed": "Solar resilience and community infrastructure projects",
+      "status": "Delivered",
+      "outcome": "Two community solar systems plus workshops and winter-resilience upgrades; Velyka Rodyna solar corroborated by an on-chain Sarafu report."
+    },
+    {
+      "proposed": "Water harvesting and biodiversity monitoring projects",
+      "status": "Not done",
+      "outcome": "Neither delivered as distinct funded projects; the dropped priority areas were not flagged in the report."
+    },
+    {
+      "proposed": "Distribute through named Sarafu Network pools",
+      "status": "Delivered",
+      "outcome": "Grants disbursed on-chain through the named Sarafu pools via a two-leg model, with a public Celo wallet and Dune dashboard."
+    },
+    {
+      "proposed": "Karma GAP intake, Giveth matching, Ecocert attestations, Climate Impact Report",
+      "status": "Not done",
+      "outcome": "No formal intake, Giveth, or Ecocert layer; 0 attestations reported and no Climate Impact Report produced."
+    },
+    {
+      "proposed": "Raise $20,000 with $5,000 co-funding, milestone payouts",
+      "status": "Partial",
+      "outcome": "Raised about $14,750; decisions by consensus but no milestone tranching, and the largest co-funding line was a redeployed prior grant."
+    }
+  ],
+  "team": [
+    {"name": "Maksym Zalevskyi", "role": "Program coordinator (President, GEN Ukraine); overall coordination, reporting, PR and communications"},
+    {"name": "Oleksander Stepanov", "role": "Technical support; onboarding participants to Sarafu, Karma GAP and reporting tools (leads Omelyanivka ecovillage)"},
+    {"name": "Tatyana Chub", "role": "Financial coordination; fund flows, Sarafu pools and allocation; led the #WinterShelters redirect for shared spaces"},
+    {"name": "Anastasia Korolova", "role": "Community coordination; communication with local ecovillages and maintaining relationships across locations"}
+  ],
+  "funding": {
+    "granted": 7800,
+    "matched": 6950,
+    "disbursements": [
+      {"to": "Velyka Rodyna ecovillage", "amount": 3050, "purpose": "Solar energy system (5x450W panels, 6kW inverter, 5kWh battery)"},
+      {"to": "Pokuttya Waldorf School", "amount": 4150, "purpose": "Solar energy system for community space"},
+      {"to": "VeloSelo bicycle workshop", "amount": 750, "purpose": "Rural bicycle workshop for local mobility"},
+      {"to": "New Mayapur mechanical hub", "amount": 700, "purpose": "Rural mechanical training and production hub"},
+      {"to": "Radaria eco-center", "amount": 500, "purpose": "Three bunk beds to host displaced people"},
+      {"to": "Charivne ecovillage", "amount": 550, "purpose": "Shared community house renovation"},
+      {"to": "Busha ecovillage", "amount": 450, "purpose": "Community space upgrade"},
+      {"to": "Dobra Maisternia (Happy People of Ukraine)", "amount": 800, "purpose": "Insulation for a frontline-zone healing hub"},
+      {"to": "Ohra ceramic workshop (Yasni family)", "amount": 550, "purpose": "Ceramic workshop support in a high-risk region"},
+      {"to": "House of Warmth + Energy-Efficient Doors (via GEN coordinator)", "amount": 900, "purpose": "Winter-prep for shared spaces (insulation, beds, doors); routed via a shared coordinator address"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "Three bunk beds in Radaria",
+      "text": "The Radaria ecovillage hosted small gatherings but couldn't take larger groups in winter. As attacks on energy infrastructure made shelter urgent, the community decided to open its doors; the limit was simply beds. The grant bought three bunk beds, shifting the space from occasional-use to ready for continuous hosting.",
+      "quote": "Thanks to this support, we purchased three bunk beds and began setting up a hostel space. This is especially important during wartime, when people need not only safety, but also warmth, comfort, beauty, and a sense of home.",
+      "quoteAttribution": "The Radaria community"
+    },
+    {
+      "title": "Calling before pivoting",
+      "text": "When winter attacks on thermal power threatened mass heating failures, the team didn't quietly redirect funds. They paused, called the Localism Fund, and requested flexibility before turning shared spaces into #WinterShelters. Across roughly eleven ecovillages, each community then held its own discussion about whether it could host displaced people.",
+      "quote": "",
+      "quoteAttribution": ""
+    },
+    {
+      "title": "Warmth that outlasts the grant",
+      "text": "At least four ecovillages now run with more energy and housing capacity than before. Two community solar systems (~10kW combined) and a frontline-adjacent hub at Dobra Maisternia kept operating reliably through blackout winter, letting spaces host people for multi-day stays without depending on the central grid.",
+      "quote": "",
+      "quoteAttribution": ""
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Social", "evidence": "Activated cross-community collaboration across ~11 ecovillages; shared spaces prepared as #WinterShelters to host displaced people."},
+    {"dimension": "Ecological", "evidence": "Two community solar systems installed (Velyka Rodyna, Pokuttya Waldorf), cutting reliance on the centralised grid."},
+    {"dimension": "Economic", "evidence": "Funded ceramic, bicycle and mechanical workshops, with Sarafu voucher pools as early local economic coordination."}
+  ],
+  "timeline": [
+    {"when": "Dec 2025", "what": "$7,800 grant received on-chain to program wallet"},
+    {"when": "Jan 2026", "what": "First disbursements to Busha and Charivne ecovillages"},
+    {"when": "Winter 2026", "what": "Pivot to #WinterShelters as heating attacks escalate"},
+    {"when": "Feb 2026", "what": "Two community solar systems installed and funded"},
+    {"when": "Feb 2026", "what": "Final disbursements complete across eleven ecovillages"},
+    {"when": "Mar 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "GEN Ukraine website", "url": "https://genukraine.com.ua/index.php/en/", "type": "site"},
+    {"label": "GEN Ukraine on X (Twitter)", "url": "https://x.com/gen_ukraine", "type": "social"},
+    {"label": "GEN Ukraine on LinkedIn", "url": "https://www.linkedin.com/company/genukraine/", "type": "social"},
+    {"label": "Karma GAP community (project proposals)", "url": "https://www.karmahq.xyz/community/gen-ukraine-community", "type": "karma"},
+    {"label": "On-chain transparency dashboard (Dune)", "url": "https://dune.com/queries/6873303", "type": "dashboard"},
+    {"label": "GEN Fund MicroGrants pool (Sarafu)", "url": "https://sarafu.network/pools/0x34317Aed39356aBd482299595d42aEEF03EB62Da", "type": "dashboard"},
+    {"label": "Program wallet (Celo explorer)", "url": "https://celoscan.io/address/0x5157D8fF3FCfacAC630A1cB5bC9902dCC8433260", "type": "wallet"},
+    {"label": "Velyka Rodyna solar — Sarafu report", "url": "https://sarafu.network/reports/3888", "type": "doc"}
+  ],
+  "operatorChecks": [
+    "Confirm the House of Warmth and Energy-Efficient Doors $900 split, since it routed through a shared coordinator address and isn't pinned to the dollar.",
+    "Verify Ohra's reported $500 against its ~$550 on-chain total and replace the wrong cited top-up hash (0x888a83ce) with the real 200 USDC transfer.",
+    "Clarify whether the 2 ETH Octant line counts as co-funding distinct from GEN Ukraine's own prior grant, and evidence the $950 off-chain contribution.",
+    "Itemise which funded projects had a coordinator with a community tie and how each conflict of interest was handled, given ~92% of proposals were funded.",
+    "Confirm with the grantee that dropping water harvesting and biodiversity priority areas is acceptable to surface before publishing the unflagged scope-narrowing.",
+    "Request working project-post links (the notion.so/.../status URLs don't resolve) and the completed 2.2 second-leg top-up transactions for the public record."
+  ],
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/gen-ukraine-grant-program-01-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/gen-ukraine-grant-program-01-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/gen-ukraine-grant-program-01.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/gen-ukraine-grant-program-01.md"
+  }
+}

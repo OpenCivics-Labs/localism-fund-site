@@ -1,0 +1,150 @@
+{
+  "slug": "greenpill-brasil-commons",
+  "name": "GreenPill Brasil Commons",
+  "shortName": "GreenPill Brasil",
+  "hub": "GreenPill Brasil",
+  "leads": "Cauê Tomaz (Coi) & Nick Haaz",
+  "place": "Federated bioregional hubs across Brazil — Rio, São Paulo, Recife, Bahia, Minas",
+  "region": "Brazil",
+  "themes": ["coordination", "regeneration", "web3", "governance"],
+  "localismFocus": ["Technological", "Social", "Political"],
+  "tagline": "Wiring scattered Brazilian regen hubs into one commons.",
+  "whyItMattered": "Brazil is rich in regenerative initiatives but they work in fragmented isolation, losing memory and momentum. This was an honest attempt to build shared coordination infrastructure so dispersed local capacity could find each other and act together.",
+  "stats": [
+    {"value": "~$4k", "label": "verified grants to local partners"},
+    {"value": "~20", "label": "energizers onboarded to Web3"},
+    {"value": "~300", "label": "Atlantic Forest trees registered"}
+  ],
+  "story": [
+    "The plan was a tidy machine: bioregional hubs apply through Gardens conviction voting, earn Sarafu credits, unlock 1×–3× matching on verified delivery. Reality arrived as cognitive overload. Wallets wouldn't connect, staking failed, and participants drowned in tools and frameworks before any real work began.",
+    "So the team tore the funnel down and rebuilt around people. Instead of activating hubs top-down, they seeded 'energizers' — individuals who joined, onboarded, and contributed small actions. Coordination cells (Troikas) formed around real work. Around twenty energizers came through, ten-plus issuing vouchers, and four hubs began to emerge organically.",
+    "An early conflict over who could represent a hub nearly fractured the network. Rather than reach for rules that didn't yet exist, the group chose dialogue, started Nonviolent Communication sessions, and turned the rupture into the foundation for its governance. Roughly eight canonical documents and a diagnostic framework grew out of that repair.",
+    "What landed was less a grant round than an internal onboarding-and-coordination program. The Ethereum rails ran genuinely — Safe treasury, Gardens, Sarafu pools, EAS attestations — but only about $4,000 of the grant reached third-party local projects. Most of the rest sits in the treasury as BRLm pool liquidity and governance tokens."
+  ],
+  "signatureStory": {
+    "title": "When a conflict became the constitution",
+    "text": "Early on, before any rules existed, a dispute erupted over who could legitimately represent one of the hubs. It escalated fast — questions of legitimacy, tension between newcomers and established members, the network at risk of splintering. Instead of enforcing authority that wasn't there, the group treated the conflict as a signal of missing structure. They prioritised restoring communication, began recurring sessions inspired by Nonviolent Communication, and started building a diagnostic framework to surface adverse signals before they boiled over. The same people who clashed kept showing up to the sessions afterward — the clearest sign the repair held. A near-fracture became the founding event that shaped the program's whole governance architecture.",
+    "quote": "",
+    "quoteAttribution": ""
+  },
+  "delivered": [
+    "Pivoted from a stalled conviction-voting funnel to an energizer-first, participation-driven model where eligibility emerged from real contribution",
+    "Onboarded ~20 energizers into Web3 tooling, 10+ actively issuing Sarafu vouchers, with coordination cells (Troikas) forming around real work",
+    "~$4,000 in verified post-grant matching grants to local partners (AgroforestDAO $1k, Fabulosa/ARO $3k)",
+    "Produced ~8 canonical governance documents, a Nonviolent Communication practice, and a diagnostic/sensemaking framework born from an early conflict",
+    "Ran a live on-chain coordination stack — Safe treasury, Gardens, Sarafu pools, a Balaio incentive system, and 13 verified EAS attestations",
+    "Connected ecological restoration to coordination infrastructure via a Silvi Atlantic-Forest campaign — ~300 trees registered across ~15 projects"
+  ],
+  "outcomes": [
+    {"text": "Coordination shifted from speculative proposals to participation-driven activity, with groups forming around real work", "status": "Realized"},
+    {"text": "Explicit governance — roles, documents, communication practices — emerged from an early representation conflict", "status": "Realized"},
+    {"text": "A multi-tool on-chain coordination stack was tested under real conditions, with direct feedback loops to protocol teams", "status": "Emerging"},
+    {"text": "Ecological restoration linked to Web3 coordination through the Silvi Atlantic-Forest tree-registration campaign", "status": "Emerging"}
+  ],
+  "status": "Active and evolving; consolidating over expanding — financial reporting needs follow-up",
+  "verdict": {
+    "tier": "Needs Follow-Up",
+    "composite": 15,
+    "financial": "Contradicted by on-chain evidence",
+    "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile and whose claimed $19,600 disbursed to local projects is contradicted on-chain (only ~$4,000 of real post-grant local grants is verifiable)."
+  },
+  "honesty": "The program is real, intellectually serious, and distinctively Ethereum-native — and the team is candid about its own failures. But the financial account does not reconcile: the headline disbursement figure is contradicted on-chain, with co-funders double-counted as grantees and treasury liquidity counted as grants out. The core local-grant-round mandate became, in practice, an internal onboarding and coordination program.",
+  "proposed": {
+    "summary": "Federate Brazil's scattered regen hubs into one commons, incubating local initiatives on Ethereum coordination rails.",
+    "points": [
+      "Allocate funds via Gardens conviction voting and Sarafu credits, with 1×–3× matching on verified delivery",
+      "Support 20–25 regenerative initiatives and strengthen 2–4 bioregional hubs",
+      "Onboard 50 people to wallets, Gardens and Sarafu; register 1,000+ native trees via Silvi",
+      "Keep 100% of transactions publicly auditable, producing playbooks and documented impact stories"
+    ]
+  },
+  "team": [
+    {"name": "Cauê Marcell Tomaz (Coi)", "role": "Steward — program coordination, strategy design, governance architecture, onboarding design"},
+    {"name": "Nick Haaz", "role": "Steward — local program design and implementation, governance activation, documentation"},
+    {"name": "Luisa Fosco", "role": "Steward — local program design, onboarding and facilitation"},
+    {"name": "Diogo Jorge", "role": "Steward — local program design, operational support"},
+    {"name": "Beni Bara Ale", "role": "Energizer — Troika methodology and local articulation in São Paulo"},
+    {"name": "Deroila Marinho", "role": "Energizer — local coordination, governance activation, participant engagement"},
+    {"name": "Gustavo Cavalcanti", "role": "Energizer — cross-group articulation"},
+    {"name": "Henrique Bastos", "role": "Energizer — nonviolent communication practice, conflict management protocol"},
+    {"name": "Glocal VR", "role": "Netweaver — onboarding, community calls, cyber-cultural facilitation"},
+    {"name": "Tainá Buzatti", "role": "Energizer — onboarding, facilitation, local program design"},
+    {"name": "Pedro Corrêa", "role": "Energizer — communication strategy"},
+    {"name": "Catito Clark", "role": "Energizer — onboarding and support"}
+  ],
+  "funding": {
+    "granted": 14560,
+    "matched": 13000,
+    "disbursements": [
+      {"to": "AgroforestDAO", "amount": 1000, "purpose": "Matching grant to partner agroforestry org (cUSD, on-chain verified, 3 Apr 2026)"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "When a conflict became the constitution",
+      "text": "Before any rules existed, a dispute over who could represent a hub escalated fast and nearly fractured the network. Rather than enforce authority that wasn't there, the group treated it as a signal of missing structure, began Nonviolent Communication sessions, and built a diagnostic framework. The people who clashed kept showing up.",
+      "quote": "",
+      "quoteAttribution": ""
+    },
+    {
+      "title": "Tearing down the funnel",
+      "text": "The plan was a tidy machine: hubs apply through conviction voting, earn Sarafu credits, unlock matching on verified delivery. Reality arrived as cognitive overload — wallets wouldn't connect, staking failed. So the team rebuilt around people, seeding 'energizers' who joined and contributed small actions before any hub formed.",
+      "quote": "",
+      "quoteAttribution": ""
+    },
+    {
+      "title": "A round that became an onboarding program",
+      "text": "What landed was less a grant round than an internal onboarding-and-coordination program. The Ethereum rails ran genuinely — Safe treasury, Gardens, Sarafu pools, EAS attestations — but only about $4,000 reached third-party local projects. Most of the grant remained in the treasury as BRLm pool liquidity and governance tokens.",
+      "quote": "",
+      "quoteAttribution": ""
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Technological", "evidence": "The program's centre of gravity: a live multi-tool on-chain coordination stack (Safe, Gardens, Sarafu, Balaio, Celo, EAS) with 150+ transactions, real pools, a deployed EAS attestation tool, 13 verified attestations, and live feedback loops with protocol teams."},
+    {"dimension": "Social", "evidence": "Energizer onboarding (~20 in process, 10+ issuing vouchers), coordination cells (Troikas), weekly calls, and cross-regional connection — anchored by a representation conflict that was genuinely mediated and produced durable Nonviolent Communication practice."},
+    {"dimension": "Political", "evidence": "Real governance experimentation: a Gardens DAO, steward multisig, ~8 canonical governance documents, and a conflict that catalysed NVC practice and a diagnostic framework — though fund-allocation decisions ran informally/steward-led rather than via the proposed conviction voting."}
+  ],
+  "correlation": [
+    {"proposed": "Rapid onboarding of multiple bioregional hubs with allocated budgets", "delivered": "Phased, energizer-first activation; hubs emerged organically later (Regen Rio most advanced)", "note": "Early complexity created friction; prioritising individuals improved alignment and usability"},
+    {"proposed": "Gardens conviction voting → Sarafu tokenisation → 1×–3× credit multipliers on verified delivery", "delivered": "Informal, participation-driven, steward-validated process; eligibility emerged from observed engagement", "note": "Wallet, staking and verification friction made the proposed funnel largely unworkable"},
+    {"proposed": "Fixed 10/60/30 credit cycle on Sarafu Pools", "delivered": "Replaced by the Balaio task-based distribution and onboarding-incentive system", "note": "The original model lacked flexibility; Balaio enabled task-based rewards and quests"},
+    {"proposed": "SROI as the primary evaluation framework", "delivered": "Reframed as a 'sensemaking' signalling pool that participants largely didn't engage with", "note": "Initial implementation proved too abstract to operationalise early"},
+    {"proposed": "Support 20–25 regenerative initiatives; 1,000+ trees; 50 onboarded", "delivered": "4–6 main programs funded; ~300 trees registered; ~25–30 onboarded", "note": "Headline targets fell well short; a late (2 Feb) payout compressed the runway"},
+    {"proposed": "100% publicly auditable funds, ~$26k matching out to local programs", "delivered": "~$4,000 of verified post-grant grants to local partners; the rest held as treasury liquidity and ops", "note": "The core local-grant-round mandate became, in practice, an internal onboarding and coordination program"}
+  ],
+  "timeline": [
+    {"when": "Feb 2026", "what": "Received $14,560 cUSD from Localism Fund"},
+    {"when": "Feb–Mar 2026", "what": "Team operations payments (~$2,640) on Celo"},
+    {"when": "Apr 2026", "what": "Issued 5,000 $GPBRV; swapped cUSD to BRLm liquidity"},
+    {"when": "Apr 2026", "what": "Matching grant of $1,000 to AgroforestDAO"},
+    {"when": "Apr 2026", "what": "Matching grant of $3,000 to Fabulosa/ARO"},
+    {"when": "Through Apr 2026", "what": "~20 energizers onboarded; ~300 trees registered on Silvi"},
+    {"when": "Apr 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "Program Treasury (Safe, Celo)", "url": "https://app.safe.global/balances?safe=celo:0x6cA0493b04b025D4430032d7645130E5C3268E0C", "type": "wallet"},
+    {"label": "$GPBR Governance Token (CeloScan)", "url": "https://celoscan.io/token/0xd832B2F117db51021Ad0387c17182796DBEB69df", "type": "dashboard"},
+    {"label": "GreenPill Brasil Liquidity Pool (Sarafu)", "url": "https://sarafu.network/pools/0xD12F1aE0C018210d18F6cB01cD6c7bd669eF7529", "type": "dashboard"},
+    {"label": "Biorregional Champions Pool (Gardens DAO)", "url": "https://app.gardens.fund/gardens/42220/0x2eb49e06ba584079ef797ecf2118f73f6527adb4/0x7b37d228ba42629bddf2b16f52294c28da523897", "type": "dashboard"},
+    {"label": "Community Proposals (CharmVerse)", "url": "https://app.charmverse.io/greenpillbrasil/proposals", "type": "doc"},
+    {"label": "GPBR Journey Intro (video, PT)", "url": "https://youtu.be/MVXTda2ize0", "type": "video"},
+    {"label": "Atlantic Forest Tree Registry (Silvi)", "url": "https://app.silvi.earth", "type": "dashboard"},
+    {"label": "GreenPill Brasil (Instagram)", "url": "https://www.instagram.com/p/DVOFks7jtmX/", "type": "social"},
+    {"label": "GreenPill Brasil Strategic Framework (doc)", "url": "https://docs.google.com/document/d/1M0RuFePdPiixxom9lOHpO7S8gqUgis2Db53ZiJU3p70/edit?usp=sharing", "type": "doc"}
+  ],
+  "operatorChecks": [
+    "Confirm no published figure restates the report's $19,600 disbursed; on-chain only ~$4,000 of local-project grants is verifiable.",
+    "Verify the REGA/Agroecology Commons $1,000 is never shown as disbursed — that transfer never occurred on-chain.",
+    "Re-check the $13,000 matched figure before publishing; evals show co-funders double-counted as grantees, $4k own-treasury, and a non-existent REGA leg.",
+    "Confirm dimension claims aren't over-stated — independent scoring was 16/30 vs the grantee's self-reported 23/30 (Cultural +2).",
+    "Note the unresolved conflict-of-interest: steward orgs (AgroforestDAO, Regen Rio) received funds with no formal COI mechanism.",
+    "Get participant consent before publishing any signature-story quotes; quote fields are currently empty and unverified."
+  ],
+  "fundingNote": "A late payout (2 Feb 2026) and a pivot away from the proposed conviction-voting funnel meant only ~$4,000 of genuine post-grant grants reached third-party local projects (AgroforestDAO $1k, Fabulosa/ARO $3k). Most of the grant stayed in the hub's own treasury as BRLm pool liquidity, governance-token issuance, and team operations rather than moving out to independent local initiatives as planned.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/greenpill-brasil-commons-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/greenpill-brasil-commons-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/greenpill-brasil-commons.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/greenpill-brasil-commons.md"
+  }
+}

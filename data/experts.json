@@ -1,0 +1,101 @@
+{
+  "kicker": "Localism Fund · Expert Network",
+  "heroTitle": "Peer-validated experts who assess the grants.",
+  "heroDek": "A curated, peer-attested collective of practitioners advancing the intersection of localism and Ethereum-based coordination. They assess, advise, and amplify the local hubs the Fund backs — so every grant benefits from both high-level expertise and grounded community context.",
+  "what": {
+    "lede": "Not a panel of distant judges. A network of people who've run the rounds, built the tools, and done the local work.",
+    "paragraphs": [
+      "The Expert Network is how the Fund stays credible. Experts reach Validated status through peer attestation — vouched for by others in the network via TrustGraph, not appointed from above — and bring proven experience across one or more of three domains.",
+      "For Round 01, the network was the engine of evaluation: experts scored every local-hub application against the rubric, advised hubs as they designed their programs, and surfaced the localism and on-chain signal that the operators built funding decisions on."
+    ]
+  },
+  "domains": {
+    "items": [
+      { "name": "Grant-making", "body": "Designing, managing, or evaluating grant programs — across Web3, philanthropy, civic, and public sectors." },
+      { "name": "Web3 / Ethereum tooling", "body": "Fluency with Ethereum tools for coordination, funding, governance, and identity — Karma GAP, Gardens, Giveth, Allo, Prosperity Pass." },
+      { "name": "Localism", "body": "Hands-on experience building or advising initiatives across political, economic, cultural, ecological, or Ethereum localism." }
+    ]
+  },
+  "stats": [
+    { "value": "83", "label": "experts in the public network" },
+    { "value": "3", "label": "domains of proven expertise" },
+    { "value": "12", "label": "local programs assessed in Round 01" }
+  ],
+  "roster": {
+    "lede": "The network is a public database — practitioners who applied, were peer-attested, and vouched for one another via TrustGraph. These are the people behind Round 01.",
+    "note": "From the public Expert Network database. Round 01 contributors were selected from this group; the network isn't open for new applications right now.",
+    "members": ["ForkinWisdom","Chris Harris","Charlie","Nate Suits","Sidney Cano","Diogo Jorge","Stephen DeMeulenaere","alessandro","JORDI RIULAS","Grace McLain","Nicole Reese","Afolabi Aiyeloja","Giulio Quarta","Stanislav Zaytsev","Sarah Baxendell","Morphy, Trinity Ugba","Gerard Costa Orriols","Monty Merlin Bryant","Luuk Weber","Luiz Fernando","Matt Strachman","Benjamin Life","Patricia Parkinson","Spencer Saar Cavanaugh","Nduka Anthony Annaelechukwu","Max Lomu","Beni Bauer","Antonio Avocado","Mosa (Mosadoluwa Fasasi)","Md Faizan Aquil","Stuart Bond","Mike Cooper","Max Semenchuk","Daniel Friedman","Mateo Emilio","Vladimir Támara Patiño","Iberedem Udo","Oscar","benedictvs","Bugra Celik","Unai","Emmanuel Smith Kuleh","Pedro Parrachia","Daniel Lindenberger","Violet Maxwell Benson","Bear","Pranav","Caue Tomaz","Nena Jain","Pete Corke","Paul Glavin","Rashmi Abbigeri","Alejandra Verde Medina","Swift Evo","Mars Robertson","Timothy Carter","Gregory Landua","Rediet sileshi","Jon Ruth","Bernice nuna","Heenal Rajani","Leonardo Arias Fonseca","0xj4an","Renata Pauva do Nascimento","Tereza Bizkova","Ana","Aníbal adrian Valles","WairaMoon","Matthieu Hayoz","Gideonro","Kokebsolomon","Magenta Light","HEANG DARA","feems","Vincent Adrichem","Jorge C.","Jeremy Nathaniel Akers","Snax","Danibelle","Marcelo Silva","Donny","Michael Ukwuma","Edgar Kampers"]
+  },
+  "round01": {
+    "lede": "Round 01 was the network's first live use case. Validated experts contributed across three areas — pairing 3–4 reviewers per application, balanced for geography, language, and expertise.",
+    "roles": [
+      { "name": "Evaluation & intelligence", "body": "Score every application against the rubric and add structured qualitative feedback, surfacing the credible, high-potential programs." },
+      { "name": "Mentorship & advisory", "body": "Pair 1–3 experts with each selected hub for hands-on help on governance, tooling, grant operations, and impact reporting." },
+      { "name": "Tooling feedback", "body": "Stress-test the Web3 tools in real use and feed back what should change for the next round." }
+    ],
+    "rubric": [
+      { "name": "Program scope & strategic alignment", "weight": "30%" },
+      { "name": "Local co-funding & financial sustainability", "weight": "30%" },
+      { "name": "Impact measurement & Web3 integration", "weight": "20%" },
+      { "name": "Team capacity & community anchoring", "weight": "20%" }
+    ],
+    "matching": "Scores set the match: up to 2× a hub's local co-funding, capped at $20k per grantee.",
+    "compensation": "$5,500 USD + 10,000 CELO was allocated for expert compensation across contribution tiers."
+  },
+  "lifecycle": {
+    "lede": "Experts move through a five-step engagement lifecycle each cycle.",
+    "steps": [
+      { "title": "Join the network", "body": "Complete onboarding, give and receive peer attestations, and reach Validated Expert status via TrustGraph.", "when": "Step one" },
+      { "title": "Tier assignment", "body": "Operators confirm experts for the cycle and suggest a provisional contribution tier.", "when": "Step two" },
+      { "title": "Active contribution", "body": "Evaluate and score local-hub applications against the official rubric; advise hubs and give tooling feedback.", "when": "Step three" },
+      { "title": "Self-assessment & compensation", "body": "Experts reassess their contribution tier; compensation flows via Prosperity Pass.", "when": "Step four" },
+      { "title": "Reflection & re-attestation", "body": "Reflect on the cycle and refresh attestations, carrying the network into the next round.", "when": "Step five" }
+    ]
+  },
+  "operators": {
+    "lede": "Round 01 was operated by:",
+    "items": [
+      { "name": "Monty Merlin", "org": "Regen Coordination", "bio": "Short bio coming soon." },
+      { "name": "Benjamin Life", "org": "OpenCivics", "bio": "Short bio coming soon." },
+      { "name": "Patricia Parkinson", "org": "OpenCivics", "bio": "Short bio coming soon." }
+    ],
+    "blurb": "Localism Fund runs on a two-tier structure: three core operators run the rounds and make final operational calls, supported by the attested expert network of 9–12 evaluators. Operators aren't distant funders — they steward the flow of resources through local hubs while keeping the process transparent and accountable.",
+    "responsibilities": [
+      { "name": "Network coordination", "body": "Design funding architectures around subsidiarity; connect and weave local hubs across geographies." },
+      { "name": "Evaluation & allocation", "body": "Work with the expert network to assess programs and direct matching funds where they'll do the most good." },
+      { "name": "Communication & transparency", "body": "Keep clear channels with applicants, experts, and partners; publish public documentation." },
+      { "name": "Resource stewardship", "body": "Manage the disbursement of matching funds and track the progress of supported programs." },
+      { "name": "Learning & adaptation", "body": "Synthesise attestations and learnings across the network into better future rounds." }
+    ]
+  },
+  "join": {
+    "lede": "The network isn't open for applications right now.",
+    "body": "Round 01 is complete, and we're not actively onboarding new experts at the moment. If you've done this work and would like to be considered for a future cycle, get in touch.",
+    "links": [
+      { "label": "Inquire about the network", "href": "mailto:support@localism.fund", "primary": true }
+    ]
+  },
+  "eligibility": {
+    "lede": "To join, applicants meet three criteria and complete peer validation via TrustGraph:",
+    "items": [
+      "Demonstrated expertise in at least one of grant-making, Web3 / Ethereum tooling, or localism.",
+      "Commitment to the OpenCivics Ethical Standards — good-faith collaboration, honesty, accountability.",
+      "Intent to contribute constructively — through evaluation, mentorship, feedback, or knowledge-sharing."
+    ]
+  },
+  "faq": [
+    { "q": "What is TrustGraph?", "a": "An on-chain attestation network that maps relationships of trust and expertise. Each expert can attest to others; a dynamic TrustScore — powered by a PageRank-style algorithm — determines when a member becomes a Validated Expert. Credibility is earned peer-to-peer, not assigned top-down." },
+    { "q": "How do I become a validated expert?", "a": "Fill out the onboarding form, receive attestations from existing members via TrustGraph, and once your TrustScore crosses the validation threshold you're recognised as a Validated Expert — eligible to contribute to active rounds." },
+    { "q": "Is there compensation?", "a": "Yes. Round 01 had a pool of $5,500 USD + 10,000 CELO, distributed by contribution tier — roughly $200–$1,200 plus on-chain badges, reflecting time, quality, and impact." },
+    { "q": "How much time is expected?", "a": "Flexible. Experts choose their level — from light engagement (~3–6 hours) to deep mentorship and evaluation (~12–20+ hours) during each active cycle." },
+    { "q": "What is Prosperity Pass?", "a": "A smart-account wallet and reputation layer in the Ethereum and Celo ecosystems. Validated Experts receive a Localism Fund Expert Badge they can claim via Prosperity Pass — proof of contribution, a portable credential across future rounds, and a gateway to rewards and governance." },
+    { "q": "What's the longer-term vision?", "a": "To evolve into a standing guild of evaluators and mentors serving multiple rounds and partners — an open, interlinked expert commons spanning bioregional governance, ecological restoration & climate finance, cultural regeneration, civic tech, and on-chain coordination." }
+  ],
+  "meta": {
+    "repo": "https://github.com/montymerlin/localism-fund",
+    "telegram": "https://t.me/localismfund",
+    "twitter": "https://x.com/localismfund",
+    "email": "support@localism.fund",
+    "source": "Pulled live from the Localism Fund Notion (Expert Network Public Portal), 2026-06."
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "slug": "tech-and-sun-tas-round",
+  "name": "Tech and Sun (TAS) Round",
+  "shortName": "Tech and Sun",
+  "hub": "Greenpill Nigeria",
+  "leads": "Anthony Amio (@amioantho)",
+  "place": "UNIZIK campus, Awka, Nigeria",
+  "region": "South-East Nigeria",
+  "themes": ["solar energy", "internet access", "web3", "campus hub"],
+  "localismFocus": ["Technological", "Ecological", "Social"],
+  "tagline": "A solar-powered hub where the grid rarely stays on",
+  "whyItMattered": "South-East Nigeria has high crypto awareness but chronic power cuts and weak internet that stifle local builders. TAS built a real off-grid solar and Starlink hub on campus so students finally have a reliable place for deep digital work.",
+  "stats": [
+    {"value": "1", "label": "solar/internet hub built & activated"},
+    {"value": "40+", "label": "students using the hub"},
+    {"value": "$14,840", "label": "combined budget, fully traceable on-chain"}
+  ],
+  "story": [
+    "When the $7,840 Localism Fund grant hit the multisig on 9 December 2025, the mood at Greenpill Nigeria shifted from brainstorming to responsibility. With $14,840 secured against a $21,000 goal, the first move wasn't buying panels — it was hard internal meetings about how to honour commitments to two universities without compromising quality.",
+    "The early days were administrative marathons in Student Affairs and Works Department offices, securing land at UNIZIK Awka. Then the real work began: pouring a reinforced foundation, cutting a 20ft shipping container for doors and windows, fighting Nigerian inflation as battery and panel prices swung between the Q4 estimate and the Q1 buy.",
+    "Facing the shortfall, the team chose one exceptional hub over two mediocre ones — full operational capacity at UNIZIK, a staged plan for UNN. The best moment came when the Starlink dish was mounted and the 6KVA inverter hummed to life, delivering low-latency internet in a zone where the grid rarely stays on four consecutive hours.",
+    "Today the UNIZIK hub stands activated (14 March 2026): six 580W panels, a 7.2kWh battery, wood cladding, a custom workstation, and Switch smart meters pushing energy data on-chain. Real EAS attestations sit on Arbitrum. The second UNN hub is land-only so far, awaiting more funding."
+  ],
+  "signatureStory": {
+    "title": "The day the inverter came alive",
+    "text": "The project came alive during the wood cladding and insulation — the industrial coldness of the container vanished, replaced by a campus-friendly warmth. But the real victory was the day the Starlink dish was mounted and the 6KVA inverter hummed to life for the first time. Seeing the blue light on the router, the team realised they were providing stable, low-latency internet in a place where the public grid rarely holds for four hours straight. For hundreds of students who watched the build through heat and dust, decentralised coordination moved from their screens to their doorsteps.",
+    "quote": "A hub is standing, the nodes are prepping for uptime, and for the hundreds of students who have watched us build through the heat and the dust, the future of decentralized coordination has finally moved from their screens to their doorsteps.",
+    "quoteAttribution": "Anthony Amio, Greenpill Nigeria Steward & Grant Operator"
+  },
+  "delivered": [
+    "Built and activated one full solar/internet co-learning hub at UNIZIK Awka (launched 14 March 2026): reinforced foundation, fabricated 20ft container, ~3.5kW solar (6x 580W panels), 6KVA inverter, 7.2kWh battery, Starlink, and a workstation.",
+    "Deployed an on-chain energy/impact layer: Switch smart meters + M3tering Protocol metering, plus a Green Goods 'TAS HUB' garden carrying real, sampled-and-verified EAS attestations on Arbitrum.",
+    "Met and exceeded the co-funding commitment — roughly $7,001 raised on-chain against the $5,000 minimum / $7,000 committed.",
+    "Ran the funding as a direct grant exactly as proposed, with the full ~$14,840 budget traceable across a multi-chain (Celo, Optimism, Arbitrum, mainnet) 2-of-5 Safe.",
+    "Secured land at UNN for a staged second hub and disclosed the two-hubs-to-one pivot candidly, pre-flagged in the original application's risk section.",
+    "Set Ethereum staking hardware from NodeBridge in place at UNIZIK, ready to be configured (not yet live)."
+  ],
+  "outcomes": [
+    {"text": "A physical anchor for digital production: chronic power instability replaced by a reliable, off-grid workspace serving 40+ students and builders at UNIZIK.", "status": "Realized"},
+    {"text": "Verifiable, on-chain transparency of community infrastructure — energy data and fund flows brought on-chain via smart meters, M3tering, and Green Goods attestations.", "status": "Emerging"},
+    {"text": "A regenerative (ReFi) local ecosystem shifting students from speculative crypto toward Ethereum-aligned public goods.", "status": "Expected"}
+  ],
+  "status": "One hub live and activated; second hub land-only; staking not yet live",
+  "verdict": {
+    "tier": "Mixed",
+    "composite": 21,
+    "financial": "Partially verified — totals and co-funding verify to the dollar, full spend traceable on-chain, build itemized to ₦15,925,000; but 'disbursed to local projects' is misclassified and the largest share went to the operator's own wallet.",
+    "line": "A genuine, fully on-chain-traceable solar/internet hub was built and activated, but this was a self-build, not a local grant round; 'disbursed to local projects' misclassifies an internal build (the largest share to the operator's own wallet), and several Localism Dimensions are over-scored."
+  },
+  "honesty": "This was an organisational self-build, not a local grant round: there were no third-party local-project grantees on-chain, and ~$6,700 of the ~$14,831 spent flowed through the operator's own wallet (a Safe signer) as a Naira-cash conduit for vendor and labour costs. Every dollar is traceable with no sign of misuse, but the 'disbursed to local projects' framing and several inflated dimension self-scores overstate what happened.",
+  "proposed": {
+    "summary": "Build two solar-powered container hubs at South-East Nigerian universities to power and train local Web3 builders.",
+    "points": [
+      "Build two solar-powered container hubs at UNN and UNIZIK campuses.",
+      "Provide off-grid solar power, Starlink internet, and co-learning workspace.",
+      "Install Ethereum staking hardware for on-chain participation and transparent reporting.",
+      "Educate local students in Web3 and ReFi public goods."
+    ]
+  },
+  "correlation": [
+    {
+      "proposed": "Build two solar-powered container hubs (UNN and UNIZIK).",
+      "status": "Partial",
+      "outcome": "One full hub built and activated at UNIZIK (14 March 2026); UNN is land-only, deferred for funding after the disclosed two-to-one pivot."
+    },
+    {
+      "proposed": "Provide off-grid solar power, Starlink internet, co-learning space.",
+      "status": "Delivered",
+      "outcome": "UNIZIK hub runs ~3.5kW solar, 6KVA inverter, 7.2kWh battery, Starlink, and a workstation serving 40+ students."
+    },
+    {
+      "proposed": "Install Ethereum staking hardware and report transparently on-chain.",
+      "status": "Partial",
+      "outcome": "NodeBridge staking hardware in place but not yet configured or live; energy data and fund flows are on-chain via Switch/M3tering and verified EAS attestations."
+    },
+    {
+      "proposed": "Educate local students in Web3 and ReFi public goods.",
+      "status": "Partial",
+      "outcome": "Hub activated as a co-learning space with student partnerships; sustained education and the ReFi ecosystem shift are early-stage, not yet evidenced."
+    },
+    {
+      "proposed": "Run a local grant round disbursing to local projects.",
+      "status": "Pivoted",
+      "outcome": "Ran as a direct organisational self-build, exactly as the application proposed; $0 third-party grants on-chain, spend itemized to a ₦15,925,000 build."
+    },
+    {
+      "proposed": "Secure minimum co-funding to match the grant.",
+      "status": "Delivered",
+      "outcome": "Roughly $7,001 raised on-chain, exceeding the $5,000 minimum, though largely from related Greenpill entities and the paid solar vendor."
+    }
+  ],
+  "team": [
+    {"name": "Anthony Amio (@Amio)", "role": "Greenpill Nigeria Steward, Grant Operator, and Community & Services Lead"},
+    {"name": "Afolabi Aiyeloja", "role": "Grant Operator and Ethereum Staking Lead — node infrastructure, impact reporting and verification via Green Goods"},
+    {"name": "Nansel Rimsah", "role": "Design and Content Lead — TAS rebrand, website and marketing materials"},
+    {"name": "Mmeri Anosike", "role": "Greenpill Nigeria Steward and Switch Electric team member — physical deployment and technical setup of solar infrastructure"},
+    {"name": "Jon Ruth (MJ)", "role": "Advisor & Partnerships — guidance and support on the round design"}
+  ],
+  "funding": {
+    "granted": 7840,
+    "matched": 7000,
+    "disbursements": [
+      {"to": "Switch Electric", "amount": 3300, "purpose": "Solar system and smart-meter gateway installation (vendor; team member is also a Greenpill Nigeria steward) — not a third-party grant"},
+      {"to": "Anthony Amio (operator wallet, amioantho.eth)", "amount": 6700, "purpose": "UNIZIK hub build — operator's own EOA (a Safe signer) used as a Naira-cash conduit for itemized vendor and labour costs (container, transport, fabrication, interior, Starlink); self-build, not a grant"},
+      {"to": "NodeBridge Africa", "amount": 1800, "purpose": "Ethereum staking node hardware (vendor) — not a third-party grant"},
+      {"to": "Nansel Rimsah (team)", "amount": 1000, "purpose": "Website design, marketing materials and graphics — internal team payment, not a grant"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "Choosing one exceptional hub over two mediocre ones",
+      "text": "With $14,840 secured against a $21,000 goal, the first move after funding wasn't buying panels but hard internal meetings. Fighting Nigerian inflation as battery and panel prices swung between the Q4 estimate and the Q1 buy, the team chose full operational capacity at UNIZIK and a staged plan for UNN.",
+      "quote": "We faced a stark choice: build two mediocre hubs or one exceptional hub and one staged one. We chose the latter.",
+      "quoteAttribution": "Anthony Amio, Greenpill Nigeria Steward & Grant Operator"
+    },
+    {
+      "title": "The day the inverter came alive",
+      "text": "After pouring a reinforced foundation and cutting a 20ft shipping container for doors and windows, the project came alive with the wood cladding and insulation. The best moment was mounting the Starlink dish and hearing the 6KVA inverter hum to life — delivering low-latency internet where the grid rarely holds four hours.",
+      "quote": "A hub is standing, the nodes are prepping for uptime, and for the hundreds of students who have watched us build through the heat and the dust, the future of decentralized coordination has finally moved from their screens to their doorsteps.",
+      "quoteAttribution": "Anthony Amio, Greenpill Nigeria Steward & Grant Operator"
+    },
+    {
+      "title": "A campus anchor activated on-chain",
+      "text": "The UNIZIK hub was activated on 14 March 2026 with six 580W panels, a 7.2kWh battery, and a custom workstation. Switch smart meters and the M3tering Protocol push energy-generation data on-chain, and real EAS attestations — sampled and verified on Arbitrum — back a Green Goods 'TAS HUB' garden, serving 40+ students.",
+      "quote": "",
+      "quoteAttribution": ""
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Technological", "evidence": "The program's strongest dimension (independent 4/5, matching the self-score): on-chain energy metering via Switch smart meters and the M3tering Protocol, a live Green Goods 'TAS HUB' garden with sampled-and-verified EAS attestations on Arbitrum, fully on-chain multi-chain fund flows, and NodeBridge staking hardware in place — held off 5 only because staking isn't yet live and community self-maintenance isn't yet proven."},
+    {"dimension": "Ecological", "evidence": "Real but self-scored high (independent 3/5 vs self 5/5): off-grid solar (6x 580W panels, 6KVA inverter, 7.2kWh battery) replaces carbon-intensive petrol generators, with real-time generation data brought on-chain — a genuine, deliberate community-energy contribution, though one campus solar install falls short of documented ecological recovery."},
+    {"dimension": "Social", "evidence": "Well-calibrated (independent 3/5, matching the self-score): a shared co-learning space for 40+ students plus new partnerships with the UNIZIK Student Union, Google Developer Club, Osmaxin Developer, and the Anambra web3 community — deliberate social-infrastructure work; not scored higher because the supporting community-post evidence is paywalled."}
+  ],
+  "timeline": [
+    {"when": "Nov–Dec 2025", "what": "~$7,000 co-funding raised on-chain"},
+    {"when": "9 December 2025", "what": "$7,840 Localism Fund grant received"},
+    {"when": "4 February 2026", "what": "Switch Electric solar and smart-meter install paid"},
+    {"when": "Feb–Mar 2026", "what": "Foundation poured, container fabricated at UNIZIK"},
+    {"when": "14 March 2026", "what": "UNIZIK solar/internet hub activated"},
+    {"when": "March 2026", "what": "40+ students using the hub"},
+    {"when": "24 March 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "TAS Hub landing page", "url": "https://tas-hub.vercel.app/", "type": "site"},
+    {"label": "Green Goods — TAS HUB garden dashboard", "url": "https://dashboard.greengoods.app/gardens/0xA2DF8Eb73444A3f3cf9b8E3749313C7471d7D5E3?tab=overview&range=30d", "type": "dashboard"},
+    {"label": "Karma GAP — TAS Round application", "url": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-O5RALBG7-0R5655", "type": "karma"},
+    {"label": "Process documentation — Regen Coordination Hub thread", "url": "https://hub.regencoordination.xyz/t/tech-sun-round-by-greenpill-nigeria/393", "type": "doc"},
+    {"label": "TAS HUB structural drawing (PDF)", "url": "https://drive.google.com/file/d/13CH3EXhMONQNFOMBBkPTd4Z-b947E410/view?usp=drivesdk", "type": "deck"},
+    {"label": "Greenpill Nigeria on X", "url": "https://x.com/greenpill9ja", "type": "social"},
+    {"label": "Program Safe wallet (multi-chain)", "url": "https://app.safe.global/home?safe=celo:0x0216d92acF90b5E9Ab6d8808ADEAc87037F00A73", "type": "wallet"}
+  ],
+  "operatorChecks": [
+    "Re-label '$11,800 disbursed to local projects' — on-chain there were no third-party grantees; the budget funded Greenpill Nigeria's own hub build.",
+    "Confirm how the ~$6,700 to operator wallet amioantho.eth (a Safe signer) was disclosed — operator = recipient = signer.",
+    "Fix the 2.2 table — rows 1 and 2 cite the same Celo tx; the $2,000 staking-bond row has no recipient or tx.",
+    "Clarify how much of the $7,000 co-funding is external vs internal — two of three co-funders are Greenpill Nigeria/Network.",
+    "Confirm the second UNN hub status (land only) and whether the Owerri pilot will migrate.",
+    "Note the staking nodes are in place but not yet live — the self-sustaining revenue/yield thesis is unproven."
+  ],
+  "fundingNote": "The money moved and is fully traceable, but it funded a self-build, not a grant round: there were no third-party local grantees on-chain. The budget built one solar hub at UNIZIK (the second was deferred, as pre-flagged), with the largest single flow — ~$6,700 to a Safe signer's own wallet — acting as a Naira-cash conduit for itemised vendor and labour costs.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/tech-and-sun-tas-round-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/tech-and-sun-tas-round-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/tech-and-sun-tas-round.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/tech-and-sun-tas-round.md"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "refi-colombia",
+  "name": "ReFi Colombia",
+  "shortName": "ReFi Colombia",
+  "hub": "ReFi Colombia (national coordinator of regional ReFi nodes)",
+  "leads": "Ximena Monclou, with WairaMoon, 0xJ4an and Tereza Bizkova",
+  "place": "Rainforest, coastline and mountain city across Colombia's bioregions",
+  "region": "Colombia",
+  "themes": ["regeneration", "web3 onboarding", "subsidies", "node grants"],
+  "localismFocus": ["Ecological", "Social", "Technological"],
+  "tagline": "Regeneration and a first wallet, from the Amazon to the coast",
+  "whyItMattered": "Colombia is the second most biodiverse country on Earth, yet many communities don't feel the urgency of protecting it. ReFi Colombia tried to make stewardship tangible by pairing hands-on ecological work with on-chain tools that put real money and verifiable participation in local hands.",
+  "stats": [
+    {"value": "2", "label": "local nodes funded (Cartagena & Amazonas)"},
+    {"value": "9", "label": "community activities across nodes"},
+    {"value": "~$2,300", "label": "disbursed to nodes; ~$4,250 still held"}
+  ],
+  "story": [
+    "The $7,840 grant landed on-chain on 9 December 2025. The plan was ambitious: scale a subsidy program from 50 to 250 people, fund five nodes, and run an English course. Reality was smaller and more honest.",
+    "ReFi Colombia opened a mini-grants round for its nodes. Only two applied, Cartagena and Amazonas, and both were funded. Their first applications were incomplete, so the team held a meeting to walk through expectations, metrics and reporting before releasing funds.",
+    "Cartagena ran five activities and Amazonas four, weaving mangrove and native-tree planting, urban gardens and circular-economy workshops together with first wallets and POAPs. Weather and a safety incident forced postponements; the team adapted each time.",
+    "Today most of the grant, roughly $4,250, is still held in the treasury. The English course remains in preparation, and the flagship subsidy program, though genuinely live, predates this grant and barely grew."
+  ],
+  "signatureStory": {
+    "title": "Regenerative Roots: planting in the Amazon after the flood",
+    "text": "ReFi Amazonas planned a community tree-planting at the CercaViva Reserve, 11 km from Leticia, with 44 people registered. Heavy rain flooded the streets on the Friday; by Saturday travel was unsafe and the leader, worried for participants, postponed to the following week. When it finally happened, about half returned. The Environmental Police Brigade joined, native species went into the ground, and a session on composting and soil care followed. Nearly everyone present, 98%, downloaded a wallet and minted their first POAP. The day closed with a communal meal of Casabe, the traditional cassava dish, tying technology back to ancestral roots.",
+    "quote": "98% downloaded their first wallet and minted their first POAP as a record of participation.",
+    "quoteAttribution": "ReFi Colombia grantee report, 2.4"
+  },
+  "delivered": [
+    "Opened a 2-node mini-grants round and funded both applicants (Cartagena and Amazonas), ~$2,280 disbursed on-chain on 2026-02-03",
+    "Cartagena ran 5 activities; Amazonas ran 4 (mangrove planting, native-tree planting, urban pollinator garden, blockchain-over-coffee conversations)",
+    "Kept the ReFi Medellin subsidy smart contract live, with a public Dune dashboard and TuCOP wallet claiming",
+    "Used POAPs and wallets for event onboarding across nodes (9 POAP drops; 26 new wallets reported)",
+    "Maintained on-chain transparency via a public Safe and dashboard as promised",
+    "English course not launched; ~$4,250-4,700 of the grant still held in the treasury"
+  ],
+  "outcomes": [
+    {"text": "Two local nodes strengthened their capacity to run regenerative activities and onboard communities to Web3, with real cross-node collaboration", "status": "Emerging"},
+    {"text": "The subsidy program kept supporting low-income participants with weekly payments, but it predates the grant and grew only modestly (~50 to 65-78)", "status": "Realized"},
+    {"text": "Stronger alliances with local youth and environmental organisations, and demand for the still-pending English course", "status": "Expected"}
+  ],
+  "status": "Continuing; round ongoing, most of the grant still to be deployed",
+  "verdict": {
+    "tier": "Mixed",
+    "composite": 18,
+    "financial": "Largely verified",
+    "line": "A real, on-chain-verifiable program from a proven team whose financials largely hold up, with one genuine defect ($7,000 of pre-grant co-funding double-counted as spend) and low additionality."
+  },
+  "honesty": "The money moves cleanly on-chain and is fully accounted for, but the report over-claims scale: a $7,000 pre-grant co-funding deposit is double-counted as spend, the flagship subsidy program predates the grant, and order-of-magnitude target misses (250 to ~78 beneficiaries, 5 to 2 nodes, no English course) went undisclosed.",
+  "proposed": {
+    "summary": "Run three programs scaling regenerative activity and Web3 onboarding across Colombia's bioregions via 5 regional nodes.",
+    "points": [
+      "Scale the transferred ReFi Medellin subsidy contract from 50 to 250 beneficiaries",
+      "Fund 5 local nodes at $1,500-2,500 each via multisig transfers",
+      "Run a 4-month English course onboarding 15-20 participants to Web3",
+      "Hit 500+ participants, 450+ new wallets, 500+ trees, 30%+ women"
+    ]
+  },
+  "correlation": [
+    {"proposed": "Scale subsidy contract from 50 to 250 beneficiaries", "status": "Partial", "outcome": "Subsidy program stayed live but grew only to ~65-78 recipients (roughly flat) and predates the grant."},
+    {"proposed": "Fund 5 local nodes at $1,500-2,500 each", "status": "Partial", "outcome": "Only Cartagena and Amazonas applied; both funded, ~$2,280 disbursed on-chain on 2026-02-03. 3 of 5 nodes inactive."},
+    {"proposed": "Run 4-month English course onboarding 15-20 to Web3", "status": "Not done", "outcome": "Not launched; reported as still in preparation at submission."},
+    {"proposed": "Hit 500+ participants and 450+ new wallets", "status": "Partial", "outcome": "Far below target: ~161 participants and 26 new wallets reported across node events."},
+    {"proposed": "Plant 500+ trees across 3+ hectares (30%+ women)", "status": "Partial", "outcome": "Real ecological work (mangrove, native-tree planting, pollinator garden) but no measured tree/hectare/gender outcomes given."},
+    {"proposed": "Maintain on-chain transparency via public Safe and Dune", "status": "Delivered", "outcome": "Public Safe and live Dune dashboard maintained; both token ledgers reconcile to the penny on-chain."}
+  ],
+  "team": [
+    {"name": "0xJ4an", "role": "Project management oversight (Medellin)"},
+    {"name": "WairaMoon", "role": "ReFi Colombia lead, social media and design (Amazonas)"},
+    {"name": "Ximena Monclou", "role": "Legal advisor; led the grant request and oversight (Medellin)"},
+    {"name": "Tereza Bizkova", "role": "Advisor and public relations (Medellin)"}
+  ],
+  "funding": {
+    "granted": 7840,
+    "matched": 7000,
+    "disbursements": [
+      {"to": "ReFi Cartagena (node multisig)", "amount": 997, "purpose": "Local node grant for 5 community activities"},
+      {"to": "ReFi Amazonas (node multisig)", "amount": 1283, "purpose": "Local node grant for 4 community activities"},
+      {"to": "Program operations / coordination", "amount": 600, "purpose": "Ops and coordination, including a transfer to the legal lead's wallet"},
+      {"to": "Tools and software", "amount": 80, "purpose": "Canva subscription"},
+      {"to": "WairaMoon", "amount": 49, "purpose": "Social-media work (first instalment of a $150-of-$600 commitment)"}
+    ]
+  },
+  "stories": [
+    {
+      "title": "A round where everyone who applied got funded",
+      "text": "ReFi Colombia opened a mini-grants round for its five nodes, but only Cartagena and Amazonas applied. Their first applications were incomplete, so the team met with both to walk through expectations, metrics and reporting before releasing roughly $2,280 on-chain on 3 February 2026. Three of five nodes were inactive; Medellin opted out.",
+      "quote": "In the end, only two nodes participated: ReFi Cartagena and ReFi Amazonas. ReFi Medellin decided not to participate because they felt the funds could be more useful for nodes that needed them more.",
+      "quoteAttribution": "ReFi Colombia grantee report, 1.1"
+    },
+    {
+      "title": "Planting in the Amazon, after the flood",
+      "text": "ReFi Amazonas planned a tree-planting at the CercaViva Reserve, 11 km from Leticia, with 44 registered. Heavy rain flooded the streets, so the leader postponed a week for safety. About half returned. The Environmental Police Brigade joined, native species went into the ground, and the day closed with Casabe, the traditional cassava dish.",
+      "quote": "98% downloaded their first wallet and minted their first POAP as a record of participation.",
+      "quoteAttribution": "ReFi Colombia grantee report, 2.4"
+    },
+    {
+      "title": "The flagship that predated the grant",
+      "text": "The report foregrounds a live subsidy program paying weekly support through a Celo smart contract. It is genuinely active, but on-chain records show it ran since December 2024 and was fed by the $7,000 co-funding deposited before the grant arrived. Recipients grew only modestly, from about 50 to 65-78, well short of the 250 target.",
+      "quote": "",
+      "quoteAttribution": ""
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Ecological", "evidence": "Deliberate, multi-event ecological focus: mangrove planting in Cartagena, native-tree planting through Regenerative Roots in the Amazon, and an urban pollinator garden. Real hands-on stewardship, though no measured outcomes (trees survived, hectares, biodiversity sites) were reported."},
+    {"dimension": "Social", "evidence": "Cross-node activity and community events brought participants from Cartagena, Amazonas and Medellin together, and youth-organisation gatherings (the blockchain-over-coffee conversations) built new alliances. Reasonably evidenced via recaps and POAPs, though claims of durable networks are asserted rather than shown."},
+    {"dimension": "Technological", "evidence": "POAPs for attendance and the TuCOP wallet with cUSD/COPm on Celo for subsidies were genuinely used and verified on-chain, providing transparency and Web3 onboarding (26 new wallets reported). A well-calibrated 'Meaningful' role, with no local technical capacity built to maintain the systems independently."}
+  ],
+  "timeline": [
+    {"when": "Nov 2025", "what": "Celo Colombia and ReFi Medellin co-funding deposited on-chain"},
+    {"when": "9 Dec 2025", "what": "$7,840 Localism Fund grant received on-chain"},
+    {"when": "3 Feb 2026", "what": "Node grants disbursed to Cartagena and Amazonas"},
+    {"when": "Feb 2026", "what": "Regenerative Roots tree planting in the Amazon"},
+    {"when": "Feb-Mar 2026", "what": "Cartagena and Amazonas ran regeneration events"},
+    {"when": "22 Mar 2026", "what": "Final Amazonas activity held"},
+    {"when": "30 Mar 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "ReFi Colombia channels (Linktree)", "url": "https://linktr.ee/reficolombia", "type": "social"},
+    {"label": "ReFi Colombia on Instagram", "url": "https://www.instagram.com/reficolombia", "type": "social"},
+    {"label": "Subsidy program dashboard (Dune)", "url": "https://dune.com/reficolombia/refi-colombia", "type": "dashboard"},
+    {"label": "Local Nodes Mini Grant Round (Karma)", "url": "https://app.karmahq.xyz/refi-colombia-community/programs/1021/apply", "type": "karma"},
+    {"label": "Public events calendar (Luma)", "url": "https://luma.com/reficolombiapublic", "type": "site"},
+    {"label": "Program wallet on Celoscan", "url": "https://celoscan.io/address/0xb41c38818a18b736867d9640f0b191b7890da136", "type": "wallet"},
+    {"label": "Program graphic assets (Google Drive)", "url": "https://drive.google.com/drive/folders/1Nii8MpvsQEiqIVUR86O0I-wnCyu7qogU", "type": "doc"}
+  ],
+  "operatorChecks": [
+    "Confirm the $7,000 'Subsidies' line is the pre-grant co-funding, removed from 'total spent' to fix the double-count.",
+    "Label the $3,000 cUSD outflow as a Uniswap cUSD-to-COPm swap, not a node disbursement.",
+    "Get the grantee's plan and timeline for deploying the ~$4,250-4,700 still held in the Safe.",
+    "Ask why the undisclosed target misses (250 to ~78 subsidies, 5 to 2 nodes, no English course) are absent from the 1.2 table.",
+    "Verify COI handling: in-network funders and an ops payment to the legal lead's wallet (ximemonclou.eth).",
+    "Request working links for the broken '1,700 transactions' URL and unconfirmed POAP collector counts."
+  ],
+  "fundingNote": "Of the $7,840 grant, only ~$2,280 reached the two nodes; roughly $4,250-4,700 (over half) remains undeployed in the Safe.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-colombia-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/refi-colombia-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/refi-colombia.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/refi-colombia.md"
+  }
+}

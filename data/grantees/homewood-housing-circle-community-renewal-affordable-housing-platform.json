@@ -1,0 +1,146 @@
+{
+  "slug": "homewood-housing-circle-community-renewal-affordable-housing-platform",
+  "name": "Homewood Housing Circle: Community Renewal & Affordable Housing Platform",
+  "shortName": "Homewood Housing Circle",
+  "hub": "Homewood Children's Village (HCV)",
+  "leads": "Jomari Peterson, with Walter Lewis",
+  "place": "Homewood, a historically Black neighborhood in Pittsburgh marked by deep roots and decades of disinvestment",
+  "region": "Pittsburgh, PA",
+  "themes": ["affordable housing", "community renewal", "on-chain coordination", "land trust"],
+  "localismFocus": ["Technological", "Social", "Economic"],
+  "tagline": "Built the rails for community housing, but never ran the round",
+  "whyItMattered": "Homewood has trusted institutions and people doing the work, but no shared system tying participation, funding, and ownership together. The intent was to keep long-time residents in place through housing repair and community-directed reinvestment.",
+  "stats": [
+    {"value": "$0", "label": "reached a local housing project"},
+    {"value": "2 parcels", "label": "in escrow, not yet closed"},
+    {"value": "100%", "label": "of funds traceable on-chain"}
+  ],
+  "story": [
+    "Homewood Children's Village is a long-standing anchor in a neighborhood with strong leadership and a history of collective action, but fragmented systems for housing, funding, and decision-making. The plan was a community housing grant round: repair microgrants, block-level rehab, and affordability upgrades, prioritized by community voting.",
+    "After the grant landed, the team built infrastructure first. They stood up a 2-of-3 multisig, deployed an MVP platform called The Village for treasury and participation tracking, and drafted a legal framework for compliant community-owned assets.",
+    "Land acquisition was initiated with the Urban Redevelopment Authority and the Homewood Collaborative, putting two parcels into escrow. But the housing grant round itself never ran: no open call, no applicants, no community vote, no microgrants.",
+    "The team was candid that real-world land acquisition was the bottleneck, and that going straight to distributions might have served the community sooner."
+  ],
+  "signatureStory": {
+    "title": "A foundation, not yet a home",
+    "text": "The chosen story is the platform build itself: smart contracts for treasury and governance, a web app for onboarding and participation tracking, designed alongside HCV's Check & Connect program. The team's own words capture both the ambition and the gap. The infrastructure exists; the housing impact does not yet.",
+    "quote": "It turned an idea into something that can actually be used.",
+    "quoteAttribution": "Jomari Peterson, program lead"
+  },
+  "delivered": [
+    "Stood up a real 2-of-3 Gnosis Safe multisig and moved grant funds on-chain, with a fully traceable, now-empty wallet",
+    "Deployed an MVP platform (The Village) with treasury, governance, and participation-tracking components",
+    "Produced a legal and compliance framework for community-based tokenized ownership",
+    "Initiated land acquisition with the URA and Homewood Collaborative; two parcels reportedly in escrow (not closed)",
+    "Ran one workshop with Check & Connect students and coordinated with the HCV board",
+    "No open call, no applications, no community voting, and no housing microgrants; $0 reached an identifiable local housing project"
+  ],
+  "outcomes": [
+    {"text": "A working infrastructure layer (multisig, MVP, legal scaffolding) now exists that could support a housing model later", "status": "Realized"},
+    {"text": "Alignment between HCV and a coordination model for participation, funding, and decisions", "status": "Emerging"},
+    {"text": "A pathway to asset-backed community participation, conditional on closing the parcels in escrow", "status": "Expected"},
+    {"text": "Housing repaired, residents supported, or microgrants distributed", "status": "Expected"}
+  ],
+  "status": "Infrastructure built; the funded housing grant round did not happen",
+  "verdict": {
+    "tier": "Needs Follow-Up",
+    "composite": 14,
+    "financial": "Fully traceable on-chain, but the local-project disbursement claim is contradicted",
+    "line": "Needs Follow-Up: the grant is 100% on-chain-traceable and the wallet is empty, but none of it reached a local housing project, and the pivot from a housing grant round to a platform build is not disclosed."
+  },
+  "honesty": "This program built genuine technical infrastructure and kept an exemplary, fully transparent money trail, but it did not run the housing grant round it was funded for: no open call, no community vote, and $0 to any local housing project. Spend went to platform development, an off-chain land escrow that partly round-tripped to the co-funder, legal, and gas, and that change of direction was framed as delay rather than disclosed as a pivot.",
+  "proposed": {
+    "summary": "Run a community housing grant round to keep long-time Homewood residents in place.",
+    "points": [
+      "Fund 2 to 10 local housing repair, rehab, and affordability projects",
+      "Prioritize grants through HCV-permissioned community voting",
+      "Distribute capital on-chain via stablecoin disbursements and attestations",
+      "Direct 70% of the budget to local housing grants"
+    ]
+  },
+  "team": [
+    {"name": "Jomari Peterson", "role": "Program lead, digital infrastructure, partner coordination"},
+    {"name": "Walter Lewis", "role": "Strategic oversight, co-funding coordination, stakeholder alignment"},
+    {"name": "RaShall M. Brackney, Ph.D.", "role": "Board Secretary, policy and governance input"},
+    {"name": "Bill Lucas", "role": "Board Member, financial and governance review"},
+    {"name": "Aliya D. Durham, Ph.D., MSW, MPIA", "role": "Board Vice President, strategic and community alignment"},
+    {"name": "Dr. John M. Wallace Jr.", "role": "Board President, governance leadership, institutional alignment"},
+    {"name": "Jason Jones", "role": "Treasurer, financial oversight"},
+    {"name": "Christine Mondor", "role": "Board Member, development and planning perspective"},
+    {"name": "Kellie Ware", "role": "Board Member, community representation"}
+  ],
+  "funding": {
+    "granted": 10000,
+    "matched": 10000,
+    "disbursements": [
+      {"to": "Off-chain escrow (unlabelled EOAs)", "amount": 10000, "purpose": "Land-acquisition escrow for parcels; the $9,000 leg round-tripped to the co-funder's own address. Not a local-project grant."},
+      {"to": "Dr. Ears (developer)", "amount": 9930, "purpose": "Developmental support for the platform build; forwarded onward to a developer contract. Operations, not a local-project grant."},
+      {"to": "Legal vendor", "amount": 970, "purpose": "Legal work on structuring and compliance; forwarded onward to the co-funder's address."},
+      {"to": "Protocol / network", "amount": 71.42, "purpose": "Gas, bridging, and transaction fees for on-chain operations."}
+    ]
+  },
+  "stories": [
+    {
+      "title": "Building the rails before the round",
+      "text": "After funding landed, the team built infrastructure first: a 2-of-3 Gnosis Safe multisig, an MVP platform called The Village for treasury, governance, and participation tracking, and a legal framework for compliant community-owned assets, designed alongside HCV's Check & Connect program.",
+      "quote": "It turned an idea into something that can actually be used.",
+      "quoteAttribution": "Jomari Peterson, program lead"
+    },
+    {
+      "title": "Parcels in escrow, a round never run",
+      "text": "Land acquisition was initiated with the Urban Redevelopment Authority and the Homewood Collaborative, putting two parcels into escrow. But the housing grant round itself never happened: no open call, no applicants, no community vote, and no microgrants reached a local project.",
+      "quote": "Parcels are now in escrow, establishing a concrete asset base for the system.",
+      "quoteAttribution": "Grantee report"
+    },
+    {
+      "title": "Candid about the bottleneck",
+      "text": "The team named real-world land acquisition as the bottleneck, with escrow, approvals, and public-agency coordination taking far longer than expected. They reflected that going straight to Check & Connect distributions might have served the community sooner.",
+      "quote": "We would have taken more steps in the initial RWA acquisition or went straight to Check and Connect distributions to accelerate the process.",
+      "quoteAttribution": "Jomari Peterson, program lead"
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Technological", "evidence": "A real 2-of-3 Gnosis Safe multisig, a deployed MVP (treasury, governance, participation tracking), on-chain fund movement, and a legal/compliance scaffold. Technology meaningfully supported coordination and transparency, though there is no community uptake yet and the community is not actively transacting."},
+    {"dimension": "Social", "evidence": "Genuine relationship and coordination work: the HCV board, the Homewood Collaborative, and Hajj Media, plus one workshop with Check & Connect students. Integration into existing program infrastructure rather than parallel systems, though it stops short of durable mutual-support structures."},
+    {"dimension": "Economic", "evidence": "Local economic effect was minimal: no funds circulated to local housing projects, businesses, or residents. The asset-backed participation model is defined but not activated; the largest spend went to a developer and the rest to land escrow."}
+  ],
+  "correlation": [
+    {"claim": "Round status: launched and completed, all funds distributed", "reality": "The wallet is empty, but no grant round to local projects occurred; 'changed direction' was the accurate, unchecked box."},
+    {"claim": "$10,000 disbursed to local projects", "reality": "$0 reached an identifiable local housing project; $10,000 went to undefined off-chain land-acquisition escrow EOAs."},
+    {"claim": "Funded to run a community housing micro-grant round", "reality": "No open call, no applicants, no community voting, and no housing microgrants were run; the round never happened."},
+    {"claim": "Changes from plan framed as delay (section 1.2)", "reality": "The pivot from a housing grant round to a platform build was not disclosed as a change of direction."},
+    {"claim": "Ethereum rated 'Meaningful'; MVP showcased on-chain", "reality": "Ethereum functioned as a custody rail with funds off-ramped; the showcase platform runs on the Movement testnet, not Ethereum mainnet."}
+  ],
+  "timeline": [
+    {"when": "Oct 2025", "what": "Application submitted to Localism Fund Round 01"},
+    {"when": "Dec 2025", "what": "Co-funding and Localism Fund grant received on-chain"},
+    {"when": "Dec 2025", "what": "Multisig stood up; The Village MVP platform built"},
+    {"when": "Dec 2025 – Jan 2026", "what": "Two land parcels moved into escrow"},
+    {"when": "By Apr 2026", "what": "Housing grant round never run; no microgrants"},
+    {"when": "Apr 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "The Village MVP platform", "url": "https://thevillage.myfihub.com/", "type": "site"},
+    {"label": "Program wallet (Gnosis Safe on Etherscan)", "url": "https://etherscan.io/address/0x7E0bC986b17DCA6E2AA90c90b106dECeD9f99B36", "type": "wallet"},
+    {"label": "Homewood community plan (Homewood Collaborative)", "url": "https://homewood-collaborative.org/community-plan", "type": "doc"},
+    {"label": "Legal & compliance framework for community-based tokenization", "url": "https://hajjmedia.com/legal/legal-documents-checklist", "type": "doc"},
+    {"label": "Homewood Children's Village", "url": "https://hcvpgh.org/", "type": "site"},
+    {"label": "Faith & Cryptocurrency (book)", "url": "https://www.amazon.com/dp/B0G5JC2SGP", "type": "doc"},
+    {"label": "Application on Karma GAP", "url": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-FOPJBCV2-WZ3JEQ", "type": "karma"}
+  ],
+  "operatorChecks": [
+    "Confirm who controls the two escrow EOAs and what the $10,000 land-acquisition actually purchased before publishing.",
+    "Verify why the $9,000 escrow leg and $970 legal leg round-tripped to the co-funder's own address.",
+    "Reclassify the $9,930 'Dr. Ears' developer payment as operations, not a disbursement to local projects.",
+    "Confirm the program is described as a platform build, not a completed housing grant round; no open call or community vote occurred.",
+    "Substantiate or drop the unevidenced '27 new wallets' claim and the 'Meaningful' Ethereum rating.",
+    "Reconcile the 3.1 spend categories that sum to $21,100 against the $21,000 total."
+  ],
+  "fundingNote": "Recorded disbursements moved fully on-chain and are traceable, but none reached a local housing project: the $10,000 'disbursed to local projects' went to off-chain land-acquisition escrow (with $9,000 round-tripping to the co-funder), the largest spend was a developer pass-through, and 0% funded the promised housing microgrants.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/homewood-housing-circle-community-renewal-affordable-housing-platform-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/homewood-housing-circle-community-renewal-affordable-housing-platform-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/homewood-housing-circle-community-renewal-affordable-housing-platform.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/homewood-housing-circle-community-renewal-affordable-housing-platform.md"
+  }
+}

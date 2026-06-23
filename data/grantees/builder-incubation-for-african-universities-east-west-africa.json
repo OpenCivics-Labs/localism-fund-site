@@ -1,0 +1,131 @@
+{
+  "slug": "builder-incubation-for-african-universities-east-west-africa",
+  "name": "Builder Incubation for African Universities in East & West Africa",
+  "shortName": "Builders' OP",
+  "hub": "B<>rder/ess (West Africa) & Code 3 Spaces (East Africa)",
+  "leads": "KarlaGod & Oliseh Genesis",
+  "place": "University builder communities in Lagos, Nigeria and Kampala, Uganda",
+  "region": "East & West Africa",
+  "themes": ["builder incubation", "student founders", "web3", "investor readiness"],
+  "localismFocus": ["Economic", "Social", "Cultural"],
+  "tagline": "Helping student builders cross from hackathon idea to real business",
+  "whyItMattered": "Across Kampala and Lagos, first-time and student founders keep getting stuck at the same gap: they can build something cool, but not a business. This pilot paired two African hubs to walk founders across that line with structure, peer support, and real investor exposure.",
+  "stats": [
+    {"value": "2", "label": "regions, one joint pilot"},
+    {"value": "26+", "label": "founders actively engaged"},
+    {"value": "3", "label": "investor pitch events"}
+  ],
+  "story": [
+    "Two hubs ran one cross-regional experiment. In Lagos, B<>rder/ess opened a focused 2-week, 8-session Builders Sprint in late January: 60 founders registered, 26 stayed actively engaged through customer discovery, revenue models, and go-to-market experiments.",
+    "In Kampala, Code 3 Spaces started with a community meetup that drew over 50 builders, then let the projects in the room shape what came next. Uganda's election-period internet blackout pushed its start to March, so the two hubs ran on staggered timelines.",
+    "The hardest moment in both places came early, when facilitators delivered a blunt reality check: a hackathon project is not a startup, and your valuation is probably wrong. The founders who stayed past that friction became the most committed cohort members.",
+    "By the end, Lagos founders left with validated assumptions and structured pitch decks, and three Kampala projects, Drip, Geinz, and Pitbox, advanced into investor conversations through ongoing incubation."
+  ],
+  "signatureStory": {
+    "title": "Pitbox and the surprise of cultural roots",
+    "text": "The leads expected the fintech and economic projects to draw the most investor interest. Instead it was Pitbox, a local movie and creative-content platform built for Uganda's cultural economy, that resonated most, because of its cultural rootedness, not despite it. It was a genuine surprise, and a signal the team flagged as worth paying attention to.",
+    "quote": "hands-on learning... never had so much practical help in such a short time.",
+    "quoteAttribution": "Sprint participant, Nigeria cohort"
+  },
+  "delivered": [
+    "A 2-week, 8-session Builders Sprint in Nigeria (26 Jan–8 Feb 2026): 60 registered, 26 actively engaged across customer discovery, revenue models, go-to-market experiments, and structured pitch decks",
+    "A Kampala launch meetup that drew 50+ local builders and served as the community's own project-discovery mechanism",
+    "Four weekly Friday sprint sessions in Kampala building a consistent rhythm of building, pitching, and feedback",
+    "Three investor pitch events in Kampala (one was planned) giving local founders direct access to investor audiences",
+    "Ongoing incubation of three place-based Ugandan ventures: Drip (education), Geinz (economic participation), and Pitbox (creative/film)",
+    "Candid, transferable written reflections on what worked and what didn't (the post-program mentorship gap, financial-literacy gap, on-chain tooling friction)"
+  ],
+  "outcomes": [
+    {"text": "Founders shifted from vague ideation toward structured, revenue-focused thinking, leaving with validated customer assumptions and defined revenue models", "status": "Emerging"},
+    {"text": "Three place-based Ugandan projects (Drip, Geinz, Pitbox) moved from early-stage building toward investor-facing readiness", "status": "Emerging"},
+    {"text": "New peer networks formed across previously disconnected first-time and student founders in both regions", "status": "Realized"}
+  ],
+  "status": "Programs delivered; reporting and financial accountability under follow-up",
+  "verdict": {
+    "tier": "Needs Follow-Up",
+    "composite": 13,
+    "financial": "LF receipt of $5,600 verified on-chain; the disbursement breakdown is internally contradicted and unverifiable as local-project grants",
+    "line": "Needs Follow-Up — builder programs genuinely ran in both regions, but no local grant round was operated, the $5,600 was swept to three personal wallets (one a program-Safe signer) before the program began, and the report's financial breakdown is internally contradicted and unverifiable."
+  },
+  "honesty": "The builder programs are real and the organisations capable, but this did not run as a Round 01 local grant program: no application or selection round took place, and the full $5,600 left the program wallet within ~48 hours of arrival, to three unidentified personal wallets (one a signer of the program treasury), weeks before the activities ran. Co-funding has no on-chain trace and the report's money figures don't reconcile. The honest read is meaningful activity, weak accountability, pending the grantee's answers.",
+  "proposed": {
+    "summary": "A joint Nigeria–Uganda pilot to take university and first-time founders from idea to adopted product.",
+    "points": [
+      "Run a staged pipeline: onboarding, lean validation, incubation sprint, then a marketing sprint",
+      "Support 10–15 teams per cohort toward 100–1,000 active users each",
+      "Structure 30% of budget as a milestone-based, on-chain Adoption Sprint Prize Pool",
+      "Track milestones on Karma GAP with public dashboards and open-source playbooks"
+    ]
+  },
+  "team": [
+    {"name": "KarlaGod", "role": "Facilitator, B<>rder/ess (West Africa lead)"},
+    {"name": "Oliseh Genesis", "role": "Facilitator, Code 3 Spaces (East Africa lead)"},
+    {"name": "IB Soll", "role": "Team member, B<>rder/ess"},
+    {"name": "Godday", "role": "Team member, B<>rder/ess"},
+    {"name": "Praise", "role": "Team member, B<>rder/ess"},
+    {"name": "Ruth", "role": "Team member, B<>rder/ess"}
+  ],
+  "funding": {
+    "granted": 5600,
+    "matched": 0,
+    "disbursements": []
+  },
+  "stories": [
+    {
+      "title": "A 2-week sprint that reframed founders in Lagos",
+      "text": "B<>rder/ess opened a focused 2-week, 8-session Builders Sprint in late January. 60 founders registered and 26 stayed actively engaged, completing customer-discovery interviews, choosing single revenue models, running 2-day go-to-market experiments, and submitting structured pitch decks. Founders who arrived with abstract ideas left able to describe a business.",
+      "quote": "hands-on learning... never had so much practical help in such a short time.",
+      "quoteAttribution": "Sprint participant, Nigeria cohort"
+    },
+    {
+      "title": "A Kampala meetup that became the program",
+      "text": "Code 3 Spaces launched in Kampala with an open community meetup that drew over 50 builders. Rather than importing an agenda, the team let the projects in the room surface themselves. That meetup became the selection mechanism: founders stepped forward, and Drip, Geinz, and Pitbox were chosen on community reach and commitment.",
+      "quote": "",
+      "quoteAttribution": ""
+    },
+    {
+      "title": "Three pitch events where one was planned",
+      "text": "In Kampala, Code 3 Spaces ran three investor pitch events instead of the single event originally planned, as founder demand and investor interest exceeded expectations. Incubated founders stood in front of investors and held their own, with Drip, Geinz, and Pitbox advancing into follow-up investor conversations.",
+      "quote": "",
+      "quoteAttribution": ""
+    }
+  ],
+  "dimensionEvidence": [
+    {"dimension": "Economic", "evidence": "Direct support to local founders building businesses across both regions; incubation of three Ugandan ventures (Drip, Geinz, Pitbox) and a BizMarket funding pathway for sprint graduates; three investor pitch events keeping capital conversations in the local ecosystem. The program's strongest dimension, though venture outcomes remain unverified and no disbursement to local projects is evidenced."},
+    {"dimension": "Social", "evidence": "Both arms deliberately built community cohesion: Kampala's weekly Friday rhythm and launch meetup, Nigeria's peer-validation culture across the 8-session sprint. New peer networks formed across previously disconnected first-time and student founders; the most durable learning ran founder-to-founder."},
+    {"dimension": "Cultural", "evidence": "Pitbox explicitly supports Uganda's creative/film economy and resonated with investors because of its cultural rootedness; Nigeria programming incorporated founder storytelling and local identity. Cultural dimensions were deliberate in project selection but not the program's primary frame."}
+  ],
+  "timeline": [
+    {"when": "Dec 2025", "what": "Grant received on-chain (5,600 cUSD)"},
+    {"when": "Jan 26 – Feb 8, 2026", "what": "Lagos: 2-week, 8-session Builders Sprint"},
+    {"when": "Mar 2026", "what": "Kampala launch meetup, 50+ builders"},
+    {"when": "Mar 2026", "what": "Kampala: four weekly Friday sprint sessions"},
+    {"when": "Mar 2026", "what": "Three investor pitch events in Kampala"},
+    {"when": "Apr 8, 2026", "what": "Grantee report submitted"}
+  ],
+  "resources": [
+    {"label": "B<>rder/ess on X", "url": "https://x.com/BorderlessDev", "type": "social"},
+    {"label": "Code 3 Spaces on X", "url": "https://x.com/code3spaces", "type": "social"},
+    {"label": "B<>rder/ess Builders community (Telegram)", "url": "https://t.me/borderlessbuilders", "type": "social"},
+    {"label": "Builders' OP — Final Recap (Nigeria sprint)", "url": "https://x.com/BorderlessDev/status/2021588224624222548", "type": "social"},
+    {"label": "Builders' OP — Day 1 Recap", "url": "https://x.com/BorderlessDev/status/2017175994910527794", "type": "social"},
+    {"label": "Participant testimonial (Nigeria cohort)", "url": "https://x.com/seeya_hanna/status/2021870818360221784", "type": "social"},
+    {"label": "Program graphic assets (Google Drive)", "url": "https://drive.google.com/drive/folders/18Ld1UZn71RxD1LJRQLMVMdPgL77FK6A1", "type": "doc"},
+    {"label": "Program wallet / Safe multisig (Celo)", "url": "https://app.safe.global/home?safe=celo:0x08eec9137F67f0A772a7b48Ee388Fe5F91A6cA3f", "type": "wallet"}
+  ],
+  "operatorChecks": [
+    "Identify the three wallets that received the full $5,600 on 10-11 Dec 2025; confirm what each payment funded.",
+    "Clarify the $1,000 payment to a program-Safe signer against report 2.3's 'no conflicts of interest' claim.",
+    "Verify co-funding: report gives $2,500 / $5,000 / $5,600 with no on-chain trace against a $5,000 hard commit.",
+    "Confirm whether any selection/grant round ran; report 2.3 states no application or competitive selection process.",
+    "Reconcile '63 local projects funded' (4.1) with the three projects named elsewhere: Drip, Geinz, Pitbox.",
+    "Obtain the missing signed Declaration attesting figures and disclosure of changes before publishing."
+  ],
+  "fundingNote": "Recorded disbursements are empty because the full $5,600 left the program Safe within ~48 hours of receipt in three lump payments to unidentified personal wallets (one a signer of the program treasury), weeks before the activities ran. None could be reconciled as grants to identifiable local projects, and the report books the same $5,600 twice as both 'disbursed to local projects' and 'program operations'.",
+  "links": {
+    "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/builder-incubation-for-african-universities-east-west-africa-evaluation.md",
+    "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/builder-incubation-for-african-universities-east-west-africa-steward-eval.md",
+    "report": "rounds/01-local-grant-programs/grantee-report/builder-incubation-for-african-universities-east-west-africa.md",
+    "application": "rounds/01-local-grant-programs/approved-applications/builder-incubation-for-african-universities-east-west-africa.md"
+  }
+}

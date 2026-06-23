@@ -1,0 +1,194 @@
+{
+  "kicker": "Localism Fund",
+  "heroTitle": "The people closest to a place are often the ones who can regenerate it.",
+  "heroDek": "We back credible local hubs to grow localism — political, economic, cultural, and ecological — and resource them to do the work their own way.",
+  "mission": {
+    "paragraphs": [
+      "That conviction runs into a practical problem: the resources to act almost always sit far from the places that need them most.",
+      "So the Fund's whole job is to move resources the other way — toward the hubs already rooted in those places — and then to account for what happens, honestly and in public."
+    ],
+    "objectivesLede": "Across every round, the Fund works toward five things:",
+    "objectives": [
+      "Strengthen communities and economies by helping local hubs weave Ethereum-powered tools into their coordination, governance, and resource flows.",
+      "Advance Ethereum's adoption and legitimacy through practical, real-world use beyond speculation.",
+      "Catalyse tangible local impact across political, economic, cultural, and ecological dimensions.",
+      "Build an open knowledge commons so successful local models can be replicated and scaled.",
+      "Connect diverse local hubs into one coherent global-local movement for Ethereum localism."
+    ]
+  },
+  "dimensions": {
+    "lede": "We evaluate, fund, and support local programs through four dimensions of localism — a working framework, not a universal definition, but the shared lens that guides our work.",
+    "items": [
+      { "name": "Political", "body": "Decentralising power toward regional and municipal levels — community councils, participatory budgeting, local referenda.", "eg": "Cities setting their own climate policy when national governments lag." },
+      { "name": "Economic", "body": "Local ownership and circulation of wealth — co-ops, local business, community currencies, shorter value chains.", "eg": "Community-supported agriculture and local currencies." },
+      { "name": "Cultural", "body": "Local identity, traditions, stories, and heritage over homogenisation — the ties that make belonging and resilience.", "eg": "Bioregional movements linking culture to ecosystem." },
+      { "name": "Ecological", "body": "Sustainability and regeneration — community stewardship of land and commons, watershed and bioregional approaches.", "eg": "Community energy and watershed-based governance." },
+      { "name": "Ethereum", "body": "Credibly-neutral, decentralised infrastructure for community coordination, governance, and resource management — the rails the other four can run on.", "eg": "On-chain treasuries, attestations, and grant rounds." }
+    ]
+  },
+  "model": {
+    "lede": "The model is simple: fund the hub, not the project.",
+    "paragraphs": [
+      "Rather than choose local projects from afar, the Fund resources local hubs to act for themselves — they know their place, their people, and what will actually take root. Each hub shapes the work its own way, moves resources openly, and reports back.",
+      "Then we read every report against what was promised, trace the money on-chain where we can, and publish an honest account. The aim isn't a scoreboard — it's a learning commons that gets better every round."
+    ]
+  },
+  "rounds": [
+    {
+      "num": "01",
+      "title": "Local Grant Programs",
+      "status": "live",
+      "statusLabel": "Retrospective live",
+      "href": "round-01.html",
+      "dek": "Twelve local hubs across six continents, each given roughly $8k–$18k and four months to run their own local grant program on Ethereum. The full, honest retrospective — project by project.",
+      "stats": [
+        { "value": "12", "label": "local hubs" },
+        { "value": "11", "label": "regions" },
+        { "value": "100k+", "label": "USD committed" }
+      ]
+    },
+    {
+      "num": "02",
+      "title": "Local Meetups LATAM",
+      "status": "live",
+      "statusLabel": "Underway",
+      "href": "round-02.html",
+      "dek": "A lighter, content-first round with the Ethereum Foundation's Ethereum Everywhere team — a $30k pool seeding ten grassroots Ethereum meetups across Latin America.",
+      "stats": [
+        { "value": "$30k", "label": "pool" },
+        { "value": "10", "label": "meetups" },
+        { "value": "7", "label": "countries" }
+      ]
+    }
+  ],
+  "round02": {
+    "kicker": "Localism Fund · Round 02",
+    "heroTitle": "Local Meetups",
+    "statusLabel": "Underway",
+    "dek": "A lighter, content-first round seeding grassroots Ethereum meetups across Latin America — run in partnership with the Ethereum Foundation's Ethereum Everywhere team.",
+    "idea": {
+      "lede": "Where Round 01 funded twelve hubs to run full grant programs, Round 02 goes smaller and more frequent — backing the local meetups where communities actually gather.",
+      "paragraphs": [
+        "Local Meetups LATAM is a partnership between Localism Fund and the Ethereum Foundation's Ethereum Everywhere team. A $30,000 pool supports ten grassroots Ethereum meetups across Latin America for twelve months following Devconnect 2025 in Buenos Aires.",
+        "The format is deliberately modest — $3,000 per organiser for a year of consistent, lightweight, content-first gatherings, rather than a few oversized grants. Thirty-seven communities applied; ten were approved in the first wave."
+      ]
+    },
+    "stats": [
+      { "value": "$30k", "label": "meetup pool" },
+      { "value": "37", "label": "applications" },
+      { "value": "10", "label": "meetups approved" },
+      { "value": "12 mo", "label": "of funding each" }
+    ],
+    "meetups": {
+      "lede": "The first wave — ten meetups across seven countries. Open any one for its location, support, and reports.",
+      "items": [
+        { "slug": "la-movida-regia", "name": "La Movida Regia", "place": "Monterrey, Mexico", "country": "Mexico", "cities": "Monterrey", "coords": [25.69, -100.32] },
+        { "slug": "ethereum-meetups-frutales", "name": "Ethereum Meetups Frutales", "place": "Mexico City · Guadalajara · Puebla, Mexico", "country": "Mexico", "cities": "Mexico City · Guadalajara · Puebla", "coords": [19.43, -99.13] },
+        { "slug": "ethfloripa", "name": "ETHFloripa Community Meetups", "place": "Florianópolis, Brazil", "country": "Brazil", "cities": "Florianópolis", "coords": [-27.59, -48.55] },
+        { "slug": "erc55", "name": "ERC55 Monthly Meetups", "place": "São Paulo, Brazil", "country": "Brazil", "cities": "São Paulo", "coords": [-23.55, -46.63] },
+        { "slug": "web3-cafe", "name": "Web3 Café", "place": "Rio de Janeiro, Brazil", "country": "Brazil", "cities": "Rio de Janeiro", "coords": [-22.91, -43.17] },
+        { "slug": "patagonia-pulse", "name": "Patagonia Pulse", "place": "Buenos Aires, Argentina", "country": "Argentina", "cities": "Buenos Aires", "coords": [-34.60, -58.38] },
+        { "slug": "cripto-cafe-costa-rica", "name": "Cripto Café Costa Rica", "place": "San José, Costa Rica", "country": "Costa Rica", "cities": "San José", "coords": [9.93, -84.08] },
+        { "slug": "eth-ecuador-series", "name": "ETH Ecuador Series", "place": "Quito · Guayaquil · Cuenca, Ecuador", "country": "Ecuador", "cities": "Quito · Guayaquil · Cuenca", "coords": [-0.18, -78.47] },
+        { "slug": "ethereum-cartagena", "name": "Ethereum Cartagena", "place": "Cartagena, Colombia", "country": "Colombia", "cities": "Cartagena", "coords": [10.39, -75.51] },
+        { "slug": "ethereum-lab", "name": "Ethereum Lab", "place": "Santa Cruz de la Sierra, Bolivia", "country": "Bolivia", "cities": "Santa Cruz de la Sierra", "coords": [-17.78, -63.18] }
+      ]
+    },
+    "how": {
+      "lede": "How the funding works",
+      "items": [
+        "$3,000 per organiser for a full year of meetups — roughly $250–375 per gathering.",
+        "An initial $750 is released once the organiser completes their Post-Approval Form.",
+        "The remaining $2,250 is released quarterly, contingent on activity updates filed via Karma GAP."
+      ]
+    },
+    "status": {
+      "lede": "Where it stands",
+      "body": "Round 02 is underway. Ten meetups are approved and onboarding; disbursements begin as each organiser completes their Post-Approval Form, then continue quarterly across the twelve-month period. If you run a local community and want to hear when the next round opens, get in touch.",
+      "links": [
+        { "label": "Round 02 results & reports", "href": "https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "primary": true },
+        { "label": "Read the progress report", "href": "https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "primary": false }
+      ]
+    }
+  },
+  "expertsTeaser": {
+    "lede": "Many reviewers weigh every grant — no single authority.",
+    "body": "A peer-attested collective of 83 practitioners — grant-makers, Ethereum builders, and localism organisers — who vouch for one another through TrustGraph, then assess, advise, and amplify the hubs the Fund backs.",
+    "href": "experts.html",
+    "cta": "Meet the Expert Network"
+  },
+  "narrative": {
+    "chapters": [
+      { "toc": "Premise", "type": "statement", "kicker": "Localism Fund",
+        "text": "Big problems get solved closest to where they happen.",
+        "emph": "The money to solve them, almost never is." },
+      { "toc": "The model", "type": "statement",
+        "text": "So we don't fund projects from above.",
+        "emph": "We back the local hubs themselves — and resource them to do the work their own way." },
+      { "toc": "Open rails", "type": "statement",
+        "text": "The money runs on open, credibly-neutral rails — reaching communities directly.",
+        "sub": "Ethereum is the infrastructure here, not the point." },
+      { "toc": "Four dimensions", "type": "dimensions",
+        "lead": "We back localism across four dimensions.",
+        "items": [
+          { "name": "Political", "note": "Power closer to home — community councils, participatory budgeting, local referenda." },
+          { "name": "Economic", "note": "Wealth that circulates locally — co-ops, community currencies, shorter supply chains." },
+          { "name": "Cultural", "note": "Identity, story and heritage — the ties that make belonging and resilience." },
+          { "name": "Ecological", "note": "Stewardship of land and commons — watershed care and bioregional thinking." }
+        ],
+        "rail": "All four carried on open rails." },
+      { "toc": "Accountability", "type": "statement",
+        "text": "Then we do the unglamorous part:",
+        "emph": "read every report, trace the money on-chain, and publish an honest account — what worked, and what didn't." },
+      { "toc": "Round 01", "type": "statement",
+        "text": "Round 01 was the first test.",
+        "emph": "Twelve hubs. Six continents. Four months.",
+        "sub": "In this round, each hub ran its own local grant program. Some delivered beautifully. Some didn't. All of it is public." },
+      { "toc": "Round 02", "type": "statement",
+        "text": "Round 02 is already underway.",
+        "emph": "Local Meetups LATAM — ten grassroots Ethereum gatherings across Latin America.",
+        "sub": "A lighter, content-first round with the Ethereum Foundation's Ethereum Everywhere team, seeding the rooms where communities actually meet." },
+      { "toc": "Begin", "type": "cta",
+        "text": "This is why Localism Fund exists.",
+        "buttons": [
+          { "label": "Explore Round 01", "href": "round-01.html", "primary": true },
+          { "label": "Round 02 — Local Meetups", "href": "round-02.html", "primary": false },
+          { "label": "The Expert Network", "href": "experts.html", "primary": false }
+        ],
+        "altLink": { "label": "Prefer the standard overview? →", "href": "index.html" } }
+    ]
+  },
+  "partners": {
+    "lede": "Localism Fund is a partnership, not a platform — stewarded, funded, and built with aligned organisations.",
+    "groups": [
+      { "name": "Stewardship", "items": [
+        { "name": "OpenCivics Network", "note": "civic innovation, network coordination, operations", "domain": "opencivics.co" },
+        { "name": "Regen Coordination", "note": "regenerative finance, localism strategy, ecosystem connections", "domain": "regen.network" }
+      ] },
+      { "name": "Funding", "items": [
+        { "name": "Gitcoin", "note": "GG24 funding-cycle coordination", "domain": "gitcoin.co" },
+        { "name": "Targeted Development & Adoption (TDA)", "note": "strategic alignment + matching pool", "domain": "gitcoin.co" },
+        { "name": "Celo Public Goods", "note": "matching pool + ReFi expertise", "domain": "celo.org" },
+        { "name": "Ma Earth", "note": "matching pool for ecological & community work", "domain": "ma.earth" },
+        { "name": "Ethereum Foundation / Ethereum Everywhere", "note": "matching pool + adoption support", "domain": "ethereum.org" }
+      ] },
+      { "name": "Technical", "items": [
+        { "name": "KarmaGAP", "note": "application management & tracking", "domain": "karmahq.xyz" },
+        { "name": "TrustGraph", "note": "peer-attestation & reputation infrastructure", "domain": "trustgraph.network" }
+      ] },
+      { "name": "Development", "items": [
+        { "name": "Ethereum For the World (FTW)", "note": "ecosystem development & adoption strategy", "domain": "ethereum.org" }
+      ] }
+    ]
+  },
+  "deepFaq": [
+    { "q": "How do grants work?", "a": "A nested funding model: resources flow through aligned networks to reach local communities. Thematic rounds fund local hubs, who run their own funding processes and direct resources to local activities. Each hub makes its own allocation decisions — we provide matching pool, evaluation support, and ecosystem connection, not top-down control." },
+    { "q": "How is the fund structured?", "a": "A multi-scalar, polycentric network rather than a hierarchy. Grantees are local hubs anchored in place; the Fund is autonomous but aligned with Gitcoin's Targeted Development & Adoption (TDA) domain (cycles GG24, Oct 2025; GG25, Mar 2026). Subsidiarity cascades through every layer — decisions sit at the most local level able to make them." },
+    { "q": "How is it governed?", "a": "Two tiers: three core operators (Monty Merlin · Regen Coordination; Benjamin Life and Patricia Parkinson · OpenCivics) run the rounds and make final operational calls, supported by an attested network of 9–12 expert evaluators who inform decisions, support grantees, and improve tooling." },
+    { "q": "Who can apply?", "a": "Local hubs — community organisations, chapters, or coalitions anchored in a place — ready to run their own local grant program: local focus, Ethereum alignment, public-goods orientation, impact + on-chain reporting, operational capacity, and ethical/compliance alignment. Round 01 also required ≥ $5k local co-funding and a qualifying evaluation from ≥ 4 experts." }
+  ],
+  "meta": {
+    "repo": "https://github.com/montymerlin/localism-fund",
+    "site": "https://www.localism.fund"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "tagline": "Ethereum infrastructure and staking, grounded in Monterrey's institutions — where 40 government processes already run on-chain.",
+  "organizer": "0xDonPepe (Representing Ethereum Monterrey)",
+  "submitted": "November 11, 2025",
+  "appId": "APP-3EAF5WED-DWJGKN",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-3EAF5WED-DWJGKN",
+  "summary": "La Movida Regia: Sultana Descentralizada combines unusually strong, city-level institutional grounding with a distinct focus on Ethereum infrastructure and staking. The proposal is anchored in an already active Monterrey ecosystem (including prior large-scale events and university outreach), and emphasizes three pillars: infrastructure & builders, governance & public goods, and real-world adoption (including referenced on-chain government processes in Nuevo León). The main opportunities to strengthen the localism profile are to make the economic-localism pathway more explicit and to add lightweight outcome reporting tied to the project’s infrastructure focus.",
+  "standouts": [
+    {
+      "lead": "Rare and valuable focus on Ethereum infrastructure",
+      "body": "(not just general “Web3 education”), with explicit emphasis on staking and node operations: “sessions on staking, DVTs, node operations, security, and Ethereum client diversity, often with live demos or validator tours.”"
+    },
+    {
+      "lead": "Unusually strong political/local-institution grounding for a meetup proposal",
+      "body": "with concrete evidence of government engagement and applied blockchain usage in-state: “organized in collaboration with the state government and the Gobierno Municipal de Monterrey… The State of Nuevo León is already applying blockchain in practice, with around 40 government processes running on-chain through NLinea and Sovra.”"
+    },
+    {
+      "lead": "Demonstrated capacity and execution history at meaningful scale",
+      "body": "including a major flagship event: “Ethereum Mexico 2025… over 600 attendees and 140 hackathon participants… 38 project submissions.”"
+    },
+    {
+      "lead": "Credible, locally embedded leadership with real protocol governance experience",
+      "body": "(important for “governance & public goods” positioning), paired with builder infrastructure credibility (staking/DVT): the organizers are described as DAO delegates/council participants across major ecosystems and as operators of a large home-staking initiative."
+    },
+    {
+      "lead": "Strategic expansion beyond Mexico City",
+      "body": "aligning with the round’s intent to strengthen regional local nodes and sustain momentum outside the primary capital."
+    }
+  ],
+  "reviewerNotes": [
+    "The proposal is “beautiful — simple and to the point,” and the team “left an excellent impression” at Devconnect.",
+    "The series addresses an uncommon theme: Infrastructure & Builders with focus on staking.",
+    "Positive signal on regional ecosystem development: “aims to expand educational efforts beyond CDMX.”",
+    "Mexico’s broader track record: “continues to play a key role in bringing education to Spanish-speaking countries.”"
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem (very strong) via universities, local community history, and institutional ties.",
+    "Ethereum as local infrastructure (very strong) via staking/node focus and real-world governmental adoption examples.",
+    "Political localism (very strong) via explicit government participation and described on-chain public processes.",
+    "Local leadership and network effects (very strong) via experienced organizers and extensive ecosystem connectivity."
+  ],
+  "alignmentGaps": [
+    "Economic localism is present mainly as implied spillover (startups, World Cup moment), but lacks explicit local economic coordination pilots.",
+    "Ecological localism is not addressed in the application."
+  ]
+}

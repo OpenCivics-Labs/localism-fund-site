@@ -1,0 +1,46 @@
+{
+  "tagline": "From a proven ETH retreat to year-round builder infrastructure in Florianópolis.",
+  "organizer": "Gabriel Novak (Representing ETH Floripa / ETHFloripa)",
+  "submitted": "December 5, 2025",
+  "appId": "APP-KPF5LIK7-R1Y4IT",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-KPF5LIK7-R1Y4IT",
+  "summary": "ETHFloripa Community Meetups proposes a credible, year-long upgrade from a proven high-signal ETH retreat (ETH Floripa 2025) into consistent local meetup infrastructure in Florianópolis. The application combines strong place-based grounding (Floripa’s tech ecosystem and existing ETH community), a clear builder-first roadmap with well-scoped themes (from protocol development and security to governance and public goods), and strong execution readiness (experienced team, partner networks, and low/zero-cost venue access through universities and technology parks). This Acceptance Summary highlights the strongest fit signals, includes Ethereum Everywhere reviewer notes, and notes a few optional recommendations to strengthen explicit localism experiments and learning value over the year.",
+  "standouts": [
+    {
+      "lead": "Proven execution and local demand signal (not a “new meetup idea” with no history)",
+      "body": "grounded in a successful flagship event and an active community base: “Co-organized ETH Floripa 2025 (168 participants, 48 speakers, 16 partner communities)” and a “248-member Telegram group.”"
+    },
+    {
+      "lead": "Well-scoped, infrastructure-aware roadmap with strong technical themes",
+      "body": "indicating the series is designed for depth and builder outcomes (not generic Web3 talks): “Protocol development, L2 scaling, ZK research,” “Smart contract security and auditing practices,” and “Governance mechanisms and DAO tooling.”"
+    },
+    {
+      "lead": "Strong network effects and ecosystem connectivity",
+      "body": "with explicit ties to both local institutions and broader Ethereum networks: “16 partner communities including ETH Latam, Devconnect…,” plus “Protocol partnerships… Uniswap, Base, Octant, Chainlink, Fuel, Juicebox.”"
+    },
+    {
+      "lead": "High-quality experience orientation with a realistic, transparent budget and low-cost venue strategy",
+      "body": "aligning with the round’s intent to fund recurring IRL consistency: “Total Annual Budget Requested (for 12 Meetups): $3,000 USD,” and venues “at an extremely low or zero cost” via “Universities and Technology Parks.”"
+    },
+    {
+      "lead": "Clear intent to build durable local capacity (not one-off events)",
+      "body": "through leadership pathways and community ownership mechanisms: “Leadership pathways — Encourage attendees to lead sessions…” and “Collective ownership — Make community members feel like stakeholders…”."
+    }
+  ],
+  "reviewerNotes": [
+    "Good plan. It looks like all infrastructure needs are well accounted for in their roadmap.",
+    "The proposed core themes are very well thought out, and the team behind it seems fully capable of executing as planned.",
+    "Most of the requested financial support will go toward ensuring a high-quality experience.",
+    "Overall, a solid proposal."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem: a specific Florianópolis context and a clear local community nucleus with demonstrated activity.",
+    "Local leadership and execution capacity: an experienced core team and proof of event delivery.",
+    "Network effects & cosmo-localism: extensive community/protocol relationships that can bring high-signal knowledge into Floripa and export learnings outward.",
+    "Sustainability readiness: low/zero-cost venue strategy and a modest budget focused on attendee experience."
+  ],
+  "alignmentGaps": [
+    "Political and economic localism are present mainly as topic areas (“civic infrastructure,” “stablecoins… local economic applications”), but concrete local pilots are not clearly specified.",
+    "Ecological localism is lightly referenced (e.g., “regenerative finance”), but no explicit ecological project or partnership is described."
+  ]
+}

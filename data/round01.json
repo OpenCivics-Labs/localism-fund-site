@@ -29,10 +29,10 @@
     { "when": "Jun 2026", "what": "Independent evaluation" }
   ],
   "byNumbers": [
-    { "value": "12", "label": "local grant programs funded" },
-    { "value": "$100k+", "label": "committed to local hubs" },
-    { "value": "2 / 12", "label": "ran a clean local round, fully on-chain" },
-    { "value": "5 / 12", "label": "grants still largely held in treasury" }
+    { "value": "$125k", "label": "matching pool" },
+    { "value": "28", "label": "applications received" },
+    { "value": "12", "label": "local programs selected" },
+    { "value": "$100k+", "label": "verified local co-funding" }
   ],
   "insights": [
     { "lead": "Running a local round is harder than funding one.", "body": "Most hubs did real local work; far fewer completed an open round that actually reached independent local projects on-chain." },

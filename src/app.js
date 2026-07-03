@@ -192,7 +192,7 @@
   // Count-up stats: roll each numeric stat value up to its final figure the
   // first time it scrolls into view. Ease-out cubic so it lands softly.
   // Skipped entirely under prefers-reduced-motion (values render as authored).
-  var statVals = Array.prototype.slice.call(document.querySelectorAll(".statband .stat__value"));
+  var statVals = Array.prototype.slice.call(document.querySelectorAll(".statband .stat__value, .statbar__v"));
   if (statVals.length && !reduce && "IntersectionObserver" in window) {
     var countIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -219,6 +219,41 @@
     }, { threshold: 0.4 });
     statVals.forEach(function (el) { countIO.observe(el); });
   }
+
+  // Map tooltips (Round 01 + Round 02): hover/focus a marker for a mini
+  // profile card, positioned beside the dot and flipped near the map edge.
+  document.querySelectorAll(".mapwrap").forEach(function (tipWrap) {
+    var maptip = tipWrap.querySelector(".maptip");
+    if (!maptip) return;
+    var tipName = maptip.querySelector(".maptip__name");
+    var tipPlace = maptip.querySelector(".maptip__place");
+    var tipTag = maptip.querySelector(".maptip__tag");
+    function showTip(a) {
+      tipName.textContent = a.getAttribute("data-name") || "";
+      tipPlace.textContent = a.getAttribute("data-place") || "";
+      tipTag.textContent = a.getAttribute("data-tag") || "";
+      tipTag.style.display = tipTag.textContent ? "" : "none";
+      var dot = a.querySelectorAll("circle")[1] || a;
+      var r = dot.getBoundingClientRect();
+      var w = tipWrap.getBoundingClientRect();
+      var x = r.left + r.width / 2 - w.left;
+      var y = r.top + r.height / 2 - w.top;
+      maptip.classList.add("is-on");
+      var tw = maptip.offsetWidth, th = maptip.offsetHeight;
+      var left = x + 16;
+      if (left + tw > w.width - 8) left = x - tw - 16;
+      var top = Math.max(8, Math.min(y - th / 2, w.height - th - 8));
+      maptip.style.left = left + "px";
+      maptip.style.top = top + "px";
+    }
+    function hideTip() { maptip.classList.remove("is-on"); }
+    tipWrap.querySelectorAll(".map a[data-name]").forEach(function (a) {
+      a.addEventListener("mouseenter", function () { showTip(a); });
+      a.addEventListener("mouseleave", hideTip);
+      a.addEventListener("focus", function () { showTip(a); });
+      a.addEventListener("blur", hideTip);
+    });
+  });
 
   // Interactive expert graph — highlight a person's connections on hover/focus
   document.querySelectorAll(".egraph").forEach(function (svg) {

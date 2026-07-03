@@ -1,0 +1,44 @@
+{
+  "tagline": "Brazil's veteran Ethereum developer meetup — running monthly and non-commercial since 2023.",
+  "organizer": "ERC55 (collective of Brazilian Ethereum developers) *(Representing ERC55)*",
+  "submitted": "|",
+  "appId": "APP-H4G5N00P-HJSWB4",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-H4G5N00P-HJSWB4",
+  "summary": "ERC55 Monthly Meetups has demonstrated its ability to deliver a consistent, high-quality, and non-commercial Ethereum developer meetup series that strengthens long-term local capacity in Brazil. Reviewers highlighted the team’s exceptional delivery track record, deep technical credibility, and efficient use of resources, supported by sustained monthly operations since August 2023 and prior collaboration with the Ethereum Foundation. The proposal shows particularly strong alignment with Ethereum-as-infrastructure, local leadership, sustainability, and cosmo-local network effects, positioning ERC55 as a reliable technical backbone for the Brazilian Ethereum ecosystem. While the initiative is not explicitly designed around political, economic, or ecological localism experiments, these gaps were not considered blockers given the project’s clear role in builder education, community continuity, and open-source public goods. Overall, ERC55 was accepted as a high-capacity, low-risk initiative with strong potential to compound local impact over time through consistent delivery and ecosystem stewardship. ---",
+  "standouts": [
+    {
+      "lead": "Existing, consistent, technically deep meetup cadence (since Aug 2023)",
+      "body": "Monthly meetups with advanced Ethereum content (hybrid + recorded), addressing a stated gap in *non-commercial, technically rigorous* recurring community infrastructure in São Paulo/Brazil."
+    },
+    {
+      "lead": "Demonstrated delivery track record with credible ecosystem programs",
+      "body": "Proven experience running substantive educational initiatives (e.g., ZKET Core Program Brazil in collaboration with the Ethereum Foundation; Ethereum Developer Pack training ~40 devs with downstream job outcomes; hackathon workshops/mentoring)."
+    },
+    {
+      "lead": "High-capacity organizer team with deep Ethereum roots",
+      "body": "Core organizers include a Devcon VI scholar leading ZKET Brazil (Thiago Rocha) and an early EthereumSP organizer / Pods Finance co-founder with industry delivery experience (Rob Junior, including work connected to DREX)."
+    },
+    {
+      "lead": "Strong “public goods” posture and documentation-first approach",
+      "body": "Meetups are free/open, operate on low budgets, record and publish sessions, and plan to share materials in open formats (slides/code/repos), increasing reuse and compounding learning."
+    },
+    {
+      "lead": "Clear cosmo-local network effects",
+      "body": "Hybrid format extends reach beyond São Paulo; ERC55 collaborates across multiple Brazilian cities and with universities/tech schools, supported by an expanded mentor/speaker network (Brazil + abroad)."
+    }
+  ],
+  "reviewerNotes": [
+    "Demonstrated ability to deliver “truly top-quality work” with limited resources; “I wouldn’t hesitate to double down on them.”",
+    "“They know they understand ROI and how to maximize efficiency.”",
+    "“Their plan is also well aligned with some of Ethereum’s most pressing priorities, and they have a clear mission to support students”(particularly via technical depth and builder pipeline)."
+  ],
+  "alignmentStrengths": [
+    "Ethereum-as-infrastructure (very strong): The proposal is explicitly about strengthening local Ethereum technical capacity (core protocol, L2s/rollups, security, programmable cryptography, and applied use cases).",
+    "Local capacity-building and durable community backbone: Consistent monthly cadence, low-cost ops, commitment to documentation, and intent to expand organizer/volunteer base.",
+    "Cosmo-local connectivity: National reach via hybrid attendance + multi-city collaborations + university relationships, while remaining anchored in São Paulo."
+  ],
+  "alignmentGaps": [
+    "Localism dimensions beyond builder infrastructure are under-specified: Political, economic (beyond talent uplift), and ecological localism are not explicit program pillars in the current design.",
+    "Limited articulation of “local problem” pilots: The application references “real world use cases” relevant to Brazil/LATAM, but does not yet outline concrete local coordination, civic, or regenerative experiments tied to meetup outputs."
+  ]
+}

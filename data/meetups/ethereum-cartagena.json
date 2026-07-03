@@ -1,0 +1,46 @@
+{
+  "tagline": "Sixty-plus events a year and a physical hub, focused into a consistent Ethereum-centred track.",
+  "organizer": "Cartagena Onchain Admin (Representing Cartagena Onchain / Ethereum Cartagena)",
+  "submitted": "December 5, 2025",
+  "appId": "APP-V61REXHT-OML2OU",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-V61REXHT-OML2OU",
+  "summary": "Ethereum Cartagena combines unusually strong local execution capacity (a reported 60+ events in 2025 and an operated physical hub) with a clear plan to focus that momentum into a consistent, Ethereum-centered meetup track. The proposal emphasizes practical onboarding and recurring IRL experiences where “every gathering includes at least one onchain interaction,” and it uses tools like POAPs to track and nurture participant journeys over time. This Acceptance Summary highlights the proposal’s strongest fit signals, includes Ethereum Everywhere reviewer notes, and notes a few optional recommendations to deepen localism experiments beyond education and onboarding.",
+  "standouts": [
+    {
+      "lead": "High demonstrated execution capacity and local legitimacy",
+      "body": "grounded in a real cadence and a durable space: “on this 2025 we hosted over 60 events” and “our HUB La Fantástica.”"
+    },
+    {
+      "lead": "Ethereum treated as practical infrastructure for adoption (not just content)",
+      "body": "with explicit onchain actions in every meetup: “every gathering includes at least one onchain interaction.”"
+    },
+    {
+      "lead": "Clear onboarding-to-contribution pathway with measurable progression signals",
+      "body": "supported by POAP-based tracking: “from creating their first wallet and claiming their first POAP… eventually contributing to projects or building their own ideas,” and “POAPs play a key role in our strategy, helping us track attendance, document milestones, and create a sense of continuity.”"
+    },
+    {
+      "lead": "Strong network effects and cross-city posture",
+      "body": "within Colombia and LATAM, with explicit collaboration intent: “we have worked with most of the Colombian communities already and also hosted events in other cities,” and “Partnerships & collaboration with universities, local institutions, and global protocols.”"
+    },
+    {
+      "lead": "Credible, detailed operations and a realistic budget aligned to recurring meetups",
+      "body": "“10 meetups × 300 USD per meetup = 3,000 USD total,” with line items for venue, snacks, multimedia, and contingency."
+    }
+  ],
+  "reviewerNotes": [
+    "Good team. Good plan. Good motives.",
+    "A strong team of educators with the ability to translate complex concepts into simple, human terms.",
+    "Supporting Cartagena aligns perfectly with the ideals of decentralization and helps expand new touchpoints across a key country with tremendous potential for building cool stuff in the web3 ecosystem."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem: clear Cartagena anchoring plus a persistent physical hub and high event cadence.",
+    "Ethereum as local infrastructure: explicit onchain interactions and POAP-based progression tracking woven into every gathering.",
+    "Local leadership and operational readiness: defined team roles and strong delivery history.",
+    "Network effects & cosmo-localism: demonstrated ties across Colombian communities and a stated cross-city collaboration intent."
+  ],
+  "alignmentGaps": [
+    "Political localism is mostly framed as aspiration (“build a better city”) rather than concrete civic/municipal pilots.",
+    "Economic localism is present mainly through context (remittances, small business needs) and IRL local-business activations, but not as a designed local economic coordination mechanism (e.g., a local treasury, co-op, or community funding pilot).",
+    "Ecological localism is not addressed in the application text."
+  ]
+}

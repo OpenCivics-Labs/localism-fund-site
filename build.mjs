@@ -39,6 +39,18 @@ const grantees = round.order.map((slug) => {
   catch (e) { console.warn("  ! bad JSON:", slug, e.message); return null; }
 }).filter(Boolean);
 
+/* Round 02 per-meetup enrichment (data/meetups/<slug>.json) — evaluation
+   summaries, standouts, reviewer notes, and alignment reads per grantee. */
+const meetupExtra = {};
+const MEETUP_DIR = path.join(DATA, "meetups");
+if (fs.existsSync(MEETUP_DIR)) {
+  for (const f of fs.readdirSync(MEETUP_DIR)) {
+    if (!f.endsWith(".json")) continue;
+    try { meetupExtra[f.replace(/\.json$/, "")] = JSON.parse(fs.readFileSync(path.join(MEETUP_DIR, f), "utf8")); }
+    catch (e) { console.warn("  ! bad meetup JSON:", f, e.message); }
+  }
+}
+
 const tierDot = { "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
 const chips = (arr, cls = "chip") => (arr || []).map((t) => `<span class="${cls}">${esc(t)}</span>`).join("");
 const statBlock = (s) => `<div class="stat reveal"><div class="stat__value">${esc(s.value)}</div><div class="stat__label">${esc(s.label)}</div></div>`;
@@ -249,11 +261,9 @@ function buildMap() {
     const pts = (round.locations || {})[g.slug] || [];
     pts.forEach((p) => {
       const [lat, lon] = p, [x, y] = proj(lon, lat);
-      markers += `<a href="${attr(g.slug)}.html" style="--accent:${attr(g.accent)}">
+      markers += `<a href="${attr(g.slug)}.html" style="--accent:${attr(g.accent)}" aria-label="${attr(g.name)} — ${attr(g.place)}. Click to explore." data-name="${attr(g.shortName || g.name)}" data-place="${attr(g.place)}" data-tag="${attr(g.tagline || "")}">
         <circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>
         <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/>
-        <text class="lbl" x="${x.toFixed(1)}" y="${(y - 5).toFixed(1)}">${esc(g.shortName || g.name)}</text>
-        <title>${esc(g.name)} — ${esc(g.region)}</title>
       </a>`;
     });
   });
@@ -261,6 +271,12 @@ function buildMap() {
     <svg class="map" viewBox="0 6 360 142" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Round 01 project locations">
       <g class="land">${land}</g><g class="markers">${markers}</g>
     </svg>
+    <div class="maptip" aria-hidden="true">
+      <b class="maptip__name"></b>
+      <span class="maptip__place"></span>
+      <p class="maptip__tag"></p>
+      <span class="maptip__cta">Click to explore →</span>
+    </div>
     <p class="mapcap">Twelve hubs across six continents — hover or tap a marker to open its story.</p>
   </div>`;
 }
@@ -649,9 +665,10 @@ function buildMeetupMap() {
   ((fund.round02 && fund.round02.meetups.items) || []).forEach((m) => {
     if (!m.coords || m.coords.length < 2) return;
     const [lat, lon] = m.coords, [x, y] = projLL(lon, lat);
-    markers += `<a href="${attr(m.slug)}.html" style="--accent:#4a7339"><circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/><title>${esc(m.name)} — ${esc(m.place)}</title></a>`;
+    const xtra = meetupExtra[m.slug] || {};
+    markers += `<a href="${attr(m.slug)}.html" style="--accent:#4a7339" aria-label="${attr(m.name)} — ${attr(m.place)}. Click to explore." data-name="${attr(m.name)}" data-place="${attr(m.place)}" data-tag="${attr(xtra.tagline || "")}"><circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/></a>`;
   });
-  return `<div class="mapwrap reveal"><svg class="map" viewBox="0 6 360 142" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Round 02 meetup locations"><g class="land">${land}</g><g class="markers">${markers}</g></svg><p class="mapcap">Ten meetups across Latin America — hover or tap a marker to open it.</p></div>`;
+  return `<div class="mapwrap reveal"><svg class="map" viewBox="0 6 360 142" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Round 02 meetup locations"><g class="land">${land}</g><g class="markers">${markers}</g></svg><div class="maptip" aria-hidden="true"><b class="maptip__name"></b><span class="maptip__place"></span><p class="maptip__tag"></p><span class="maptip__cta">Click to explore →</span></div><p class="mapcap">Ten meetups across Latin America — hover or tap a marker to open it.</p></div>`;
 }
 function round02Page() {
   const r = fund.round02;
@@ -663,7 +680,7 @@ function round02Page() {
       <div class="pcard__top"><span class="pcard__num">${n}</span><span class="chip">${esc(m.country)}</span></div>
       <div class="pcard__name">${esc(m.name)}</div>
       <div class="pcard__place">${esc(m.place)}</div>
-      <p class="pcard__tag">A year of consistent, content-first Ethereum gatherings.</p>
+      <p class="pcard__tag">${esc((meetupExtra[m.slug] || {}).tagline || "A year of consistent, open Ethereum gatherings.")}</p>
       <div class="pcard__foot"><div class="pcard__themes">${chips(["Approved · onboarding"])}</div><span class="arrow">→</span></div>
     </a>`;
   }).join("\n");
@@ -721,6 +738,11 @@ function meetupPage(m, i) {
   const accentVar = "--accent:#4a7339";
   const mini = meetupMiniMap(m);
   const isSeries = (m.cities || "").includes("·");
+  const x = meetupExtra[m.slug] || {};
+  const standouts = (x.standouts || []).map((s) => `<li>${s.lead ? `<b>${esc(s.lead)}.</b> ` : ""}${esc(s.body)}</li>`).join("");
+  const notes = (x.reviewerNotes || []).map((r) => `<li>${esc(r)}</li>`).join("");
+  const strengths = (x.alignmentStrengths || []).map((s) => `<li>${esc(s)}</li>`).join("");
+  const gaps = (x.alignmentGaps || []).map((g) => `<li>${esc(g)}</li>`).join("");
   const body = `
 <header class="phero reveal" style="${accentVar}">
   <div class="wrap">
@@ -730,6 +752,7 @@ function meetupPage(m, i) {
         <div class="phero__index">${n} / ${all.length}</div>
         <h1>${esc(m.name)}</h1>
         <p class="phero__place">${esc(m.place)}</p>
+        ${x.organizer ? `<p class="phero__people">Run by <b>${esc(x.organizer)}</b></p>` : ""}
         <div class="phero__chips"><span class="chip">${esc(m.country)}</span><span class="chip">Round 02 · Local Meetups</span></div>
       </div>
       ${mini ? `<div class="phero__map">${mini}<p class="phero__maploc">${esc(m.cities || m.place)}</p></div>` : ""}
@@ -737,12 +760,33 @@ function meetupPage(m, i) {
   </div>
 </header>
 
-<section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">A grassroots Ethereum meetup${isSeries ? " series" : ""} in ${esc(m.place)} — one of ten communities in Round 02's Local Meetups LATAM, hosting consistent local gatherings for a year following Devconnect 2025.</p></div></section>
+<section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">${esc(x.tagline || `A grassroots Ethereum meetup${isSeries ? " series" : ""} in ${m.place} — one of ten communities in Round 02's Local Meetups LATAM.`)}</p></div></section>
+
+${x.summary ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">The proposal</p>
+  <div class="prose reveal"><p>${esc(x.summary)}</p></div>
+</div></section>` : ""}
+
+${standouts ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Why it stood out</p>
+  <ul class="insights reveal">${standouts}</ul>
+</div></section>` : ""}
+
+${notes ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Ethereum Everywhere — reviewer notes</p>
+  <ul class="revnotes reveal">${notes}</ul>
+</div></section>` : ""}
+
+${strengths ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Localism alignment</p>
+  <ul class="howlist reveal">${strengths}</ul>
+  ${gaps ? `<p class="ghead ghead--sub reveal">Gaps acknowledged at selection</p><ul class="howlist gaps reveal">${gaps}</ul>` : ""}
+</div></section>` : ""}
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   <p class="ghead reveal">The support</p>
   <ul class="howlist reveal">
-    <li>$3,000 for twelve months of consistent, content-first meetups — roughly $250–375 per gathering.</li>
+    <li>$3,000 for twelve months of consistent meetups — roughly $250–375 per gathering.</li>
     <li>An initial $750 is released once the organiser completes their Post-Approval Form.</li>
     <li>The remaining $2,250 is released quarterly, contingent on activity updates filed via Karma GAP.</li>
   </ul>
@@ -752,8 +796,9 @@ function meetupPage(m, i) {
   <p class="ghead reveal">Status</p>
   <div class="pstatus reveal"><span class="tier" data-tier="Solid">Approved</span><p class="pstatus__desc">Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period. Updates and reports will appear on the Round 02 results portal as the year unfolds.</p></div>
   <div class="sources reveal" style="margin-top:clamp(1.6rem,4vw,2.6rem)">
-    ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results &amp; reports", "Live tracker on the Localism Fund portal")}
-    ${source("https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "Progress &amp; reflections report", "How Round 02 was designed")}
+    ${x.appLink ? source(x.appLink, "Original application", `What they proposed — on Karma GAP${x.submitted ? ` · submitted ${esc(x.submitted)}` : ""}`) : ""}
+    ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results & reports", "Live tracker on the Localism Fund portal")}
+    ${source("https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "Progress & reflections report", "How Round 02 was designed")}
   </div>
 </div></section>
 
@@ -761,7 +806,7 @@ function meetupPage(m, i) {
   <a class="prev" href="${attr(prev.slug)}.html"><div class="dir">← Previous</div><div class="nm">${esc(prev.name)}</div></a>
   <a class="next" href="${attr(next.slug)}.html"><div class="dir">Next →</div><div class="nm">${esc(next.name)}</div></a>
 </nav>`;
-  return layout({ title: `${m.name} — Round 02 · Localism Fund`, desc: `${m.name}, ${m.place} — a Round 02 Local Meetups LATAM community.`, body, navDark: false, accentVar });
+  return layout({ title: `${m.name} — Round 02 · Localism Fund`, desc: x.tagline || `${m.name}, ${m.place} — a Round 02 Local Meetups LATAM community.`, body, navDark: false, accentVar });
 }
 
 /* ---------- emit ---------- */

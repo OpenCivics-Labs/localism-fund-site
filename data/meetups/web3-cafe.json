@@ -1,0 +1,45 @@
+{
+  "tagline": "A low-barrier breakfast meetup welcoming Rio's newcomers into real local coordination.",
+  "organizer": "luisa fosco (Representing Web3 Café / Fabulosa Lab)",
+  "submitted": "December 5, 2025",
+  "appId": "APP-WVF5Z90F-F6C6O4",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-WVF5Z90F-F6C6O4",
+  "summary": "Web3 Café proposes a fresh, low-barrier “breakfast meetup” format that is explicitly designed as a welcoming entry point for newcomers while still grounding Ethereum in real local coordination themes (public goods, regenerative tools, and community projects). The series is anchored in a concrete Rio venue (Fabulosa Lab) and a clearly described local ecosystem context (Rio’s active Web3 scene and existing regenerative networks), with strong collaboration signals across communities and projects that increase the probability of real impact. This Acceptance Summary highlights the strongest fit signals, includes Ethereum Everywhere reviewer notes, and notes a few optional recommendations to strengthen explicit pilots and learning value over the year.",
+  "standouts": [
+    {
+      "lead": "A distinctive, newcomer-friendly format that creates a repeatable community ritual",
+      "body": "not just “another meetup”: Web3 Café is explicitly framed as “a breakfast series” and “a community ritual and a welcoming entry point.”"
+    },
+    {
+      "lead": "Strong place-based grounding in a specific venue and an already active Rio ecosystem",
+      "body": "with a clear thesis about bridging fragmented communities: the series is hosted at “Fabulosa Lab… an established community innovation hub centrally located on Rua do Catete,” within a city described as hosting “one of the most active Web3 ecosystems in Latin America.”"
+    },
+    {
+      "lead": "Clear ecosystem collaboration signals that increase execution likelihood and impact",
+      "body": "including partnerships across Ethereum and regenerative networks: “Ethereum Brasil… Rio Crypto Hub… Regens Unite… Greenpill Brasil… Consensys – MetaMask Community and Education Partner.”"
+    },
+    {
+      "lead": "Ethereum framed as practical infrastructure for meaningful local work (beyond hype)",
+      "body": "the proposal emphasizes “tools that can empower local communities and support grounded, meaningful projects,” targeting people who “want to contribute to social and ecological solutions.”"
+    },
+    {
+      "lead": "Sustainability and realism signals via a clear budget and early co-funding",
+      "body": "supporting consistent cadence: “Budget per meetup: USD375…” and “we already have co-funding from Metamask for the first 3 meetups…”."
+    }
+  ],
+  "reviewerNotes": [
+    "Very nice proposal. Their collaborations with other projects are a strong plus, helping ensure this initiative can achieve real impact.",
+    "The format also feels fresh and welcoming to newcomers entering the web3 space.",
+    "Overall, a great proposal."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem: clear Rio anchoring through Fabulosa Lab and a well-mapped local Web3/regenerative context.",
+    "Cultural localism: the “breakfast / café” ritual and maker/creative hub orientation helps Ethereum enter existing social fabrics.",
+    "Network effects & cosmo-localism: strong cross-community collaborations and partnerships with national and global networks.",
+    "Sustainability readiness: realistic per-meetup budget and early co-funding support consistent delivery."
+  ],
+  "alignmentGaps": [
+    "Ethereum as infrastructure is articulated strongly in intent and partnerships, but concrete onchain coordination pilots (e.g., a specific local funding round or governance mechanism) are not fully specified.",
+    "Ecological localism is present in framing and partner context (ReFi/regeneration), but specific ecological pilots and measurable outcomes are not yet defined."
+  ]
+}

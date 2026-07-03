@@ -1,0 +1,44 @@
+{
+  "tagline": "A national community decentralising ownership across Quito, Guayaquil, and Cuenca.",
+  "organizer": "Alex Padilla (Representing ETH Ecuador)",
+  "submitted": "December 5, 2025",
+  "appId": "APP-ZF23QZ6N-487LAS",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-ZF23QZ6N-487LAS",
+  "summary": "ETH Ecuador Series combines a mature, already-operating national Ethereum community with a clear plan to decentralize ownership across three key cities (Quito, Guayaquil, and Cuenca). The application is unusually strong on place-based grounding (Ecuador’s legal and institutional environment plus a proven academic network), and on execution credibility (documented program history, consistent meetups, and outcomes for local builders). It also frames Ethereum as practical infrastructure—not only technical education, but also a legally recognized tool for business automation and transparent governance—while pairing that with a concrete meetup format and a sustainability strategy centered on long-term venue partnerships and distributed leadership.",
+  "standouts": [
+    {
+      "lead": "Demonstrated capability and national-scale community traction",
+      "body": "not a speculative plan: “growing a community of over 1,000 members and organizing consistent meetups across the country,” plus track record outcomes including alumni “securing roles in Web3 protocols/startups and winning top prizes at Hackathons like Aleph, ZKMonk and ETH Global.”"
+    },
+    {
+      "lead": "Rare enabling context: explicit legal recognition for smart contracts and blockchain-based ledgers",
+      "body": "creating a credible pathway from meetup education to real-world institutional use: “Smart Contracts… explicitly recognized under the Código de Comercio,” and the “Ley de Compañías… allows corporate books and share ledgers to be managed using blockchain technology, opening the door for transparent, on-chain governance.”"
+    },
+    {
+      "lead": "Clear multi-city organizational design that decentralizes leadership (“from onboarding to ownership”)",
+      "body": "via “Core 5” squads in each city and an “Ownership” track of roundtables: “cultivating a ‘Core 5’ leadership squad in each of our three target cities,” and “Roundtables… strategy sessions for our ‘Core 5’ leadership squads to plan local ecosystem growth.”"
+    },
+    {
+      "lead": "High-signal technical depth paired with accessibility",
+      "body": "including advanced privacy/ZK capacity building: “Applied Privacy & ZK (Advanced Track)… moving them from basic Solidity to advanced protocols (ZK, Privacy tools).”"
+    },
+    {
+      "lead": "Strong ecosystem connectivity and cross-sector partnerships",
+      "body": "reinforcing network effects and sustainability: “strong academic network… (University of Cuenca, CEDIA)” plus “Google Developer Groups and AWS User Group,” and “secured long-term partnerships with universities, CEDIA, and IMPAQTO Coworking, ensuring access to subsidized venues indefinitely.”"
+    }
+  ],
+  "reviewerNotes": [
+    "This community is well known and has previously delivered programs that consistently exceeded expectations. Based on the application review, they show strong capacity to maximize impact if selected in this round.",
+    "They have proven before to be more than capable of making good use of funds and provide transparency to the community - hence I have no doubt they can bring this transparency to our group as well."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem: detailed Ecuador-specific context plus concrete institutions and networks.",
+    "Ethereum as local infrastructure: a clear “real-world adoption” pathway enabled by the legal framework and thematic tracks.",
+    "Local leadership and network effects: distributed “Core 5” squads across cities and strong academic/Web2/Web3 partnerships.",
+    "Sustainability & local capacity building: explicit long-term venue partnerships and a decentralization strategy that reduces single-organizer fragility."
+  ],
+  "alignmentGaps": [
+    "Political and economic localism are supported by strong enabling conditions (legal framework), but the application only partially specifies concrete pilots that apply these conditions to named local institutions or coordination problems.",
+    "Ecological localism is signaled via the “Local Impact (ReFi & Regeneration)” track, but it is not yet tied to specific ecological/regenerative projects or partners."
+  ]
+}

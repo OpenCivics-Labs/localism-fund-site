@@ -1,0 +1,45 @@
+{
+  "tagline": "A distributed meetup network raising the quality bar across Mexico City, Guadalajara, and Puebla.",
+  "organizer": "mel (Representing Frutero Club + ETHCDM)",
+  "submitted": "December 5, 2025",
+  "appId": "APP-ZBBA6YAI-N8DZB0",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-ZBBA6YAI-N8DZB0",
+  "summary": "Ethereum Meetups Frutales proposes a high-capability, multi-city “distributed meetup network” designed to reduce geographic fragmentation and raise quality standards across Mexico’s Ethereum ecosystem. The proposal pairs a structured, repeatable curriculum (three tracks per session) with clear operational systems (content review, speaker prep, checklists, documentation, and live streaming) and unusually specific measurement and transparency commitments (including Karma GAP reporting and on-chain attestations). This Acceptance Summary highlights the application’s strongest fit signals, includes Ethereum Everywhere reviewer notes, and notes a few optional recommendations to further strengthen localism depth and execution resilience.",
+  "standouts": [
+    {
+      "lead": "Network-level coordination to address Mexico’s fragmentation problem",
+      "body": "(explicitly named in the application), with a clear multi-region cadence: “Geographic fragmentation… lack systematic coordination across regions” and a “distributed hub-and-spoke network” across “Mexico City… Guadalajara / Aguascalientes… Puebla / Cuernavaca.”"
+    },
+    {
+      "lead": "A concrete, standardized program design (not just “we’ll do meetups”)",
+      "body": "including a repeatable 3-track session structure and progressive quarterly curriculum: “Three-Track Format (Each Meetup = 3 Hours + Networking)” with “Track 1: Onboarding & fundamentals… Track 2: DeFi fundamentals… Track 3: AI tools for builders,” plus quarter-by-quarter content themes."
+    },
+    {
+      "lead": "Strong execution credibility with unusually specific track record claims and metrics",
+      "body": "spanning both co-leads: “50+ events across 15 countries with consistent quality delivery” and ETHCDM’s reported “1200+ participants” and “100k+ USD distributed in prizes.”"
+    },
+    {
+      "lead": "Explicit quality assurance and operating systems that can protect consistency across cities",
+      "body": "including review and training processes: “Content Pre-Review: All workshop materials reviewed by Frutero technical team before delivery” and “Speaker preparation: Training for local speakers ensuring quality delivery,” supported by “Proven checklists and reporting frameworks.”"
+    },
+    {
+      "lead": "Clear transparency + measurement orientation (including verifiable/on-chain elements)",
+      "body": "with a defined reporting cadence: “Post-Meetup (Within 72 hours)… Quarterly (Public via Karma GAP)…,” plus “Karma GAP Milestones: Systematic quarterly documentation with on-chain attestations” and “POAP distribution.”"
+    }
+  ],
+  "reviewerNotes": [
+    "The team has worked hard to remain an objective player in the Mexico ecosystem, making them well positioned to offer inclusive education opportunities.",
+    "They are a reputable group of serious builders with a strong track record.",
+    "Proven ability to deliver high-quality events and create real opportunities for builders in the ecosystem."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding through concrete regional hubs, named venues, and an explicit Mexico ecosystem diagnosis focused on access and coordination.",
+    "Ethereum-as-infrastructure orientation via L2 onboarding content, DeFi practice tracks, live-streamed educational infrastructure, and explicit Karma GAP + attestation/POAP reporting intent.",
+    "Strong network effects/cosmo-local coordination: shared content libraries, mentor deployment across regions, and “collaboration-first” resource pooling.",
+    "Strong local leadership and operational readiness signals through named roles, regional leads, and documented operating systems."
+  ],
+  "alignmentGaps": [
+    "Ecological localism is not addressed in the application text.",
+    "Political localism is present mainly as stakeholder context and relationships, but not as a defined civic pilot or municipal process integration."
+  ]
+}

@@ -145,6 +145,81 @@
     rPaint();
   }
 
+  // Attested experts modal (experts.html): click a roster name for photo + why
+  var emodal = document.getElementById("expert-modal");
+  if (emodal) {
+    var expertsData = [];
+    try { expertsData = JSON.parse((document.getElementById("experts-data") || {}).textContent || "[]"); } catch (err) { }
+    var emPhoto = emodal.querySelector(".emodal__photo");
+    var emName = emodal.querySelector("#emodal-name");
+    var emEns = emodal.querySelector(".emodal__ens");
+    var emWhyWrap = emodal.querySelector(".emodal__whywrap");
+    var emWhy = emodal.querySelector(".emodal__why");
+    var emLastFocus = null;
+    function emClose() {
+      emodal.hidden = true;
+      document.body.style.overflow = "";
+      if (emLastFocus) emLastFocus.focus();
+    }
+    function emOpen(i) {
+      var d = expertsData[i];
+      if (!d) return;
+      emName.textContent = d.name;
+      emEns.textContent = d.ens || "";
+      emEns.hidden = !d.ens;
+      if (d.img) { emPhoto.src = d.img; emPhoto.alt = d.name; emPhoto.hidden = false; }
+      else { emPhoto.hidden = true; }
+      if (d.why) { emWhy.textContent = d.why; emWhyWrap.hidden = false; }
+      else { emWhyWrap.hidden = true; }
+      emodal.hidden = false;
+      document.body.style.overflow = "hidden";
+      emodal.querySelector(".emodal__close").focus();
+    }
+    document.querySelectorAll(".roster [data-expert]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        emLastFocus = b;
+        emOpen(parseInt(b.getAttribute("data-expert"), 10));
+      });
+    });
+    emodal.addEventListener("click", function (ev) {
+      if (ev.target.hasAttribute && ev.target.hasAttribute("data-close")) emClose();
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && !emodal.hidden) emClose();
+    });
+  }
+
+  // Count-up stats: roll each numeric stat value up to its final figure the
+  // first time it scrolls into view. Ease-out cubic so it lands softly.
+  // Skipped entirely under prefers-reduced-motion (values render as authored).
+  var statVals = Array.prototype.slice.call(document.querySelectorAll(".statband .stat__value"));
+  if (statVals.length && !reduce && "IntersectionObserver" in window) {
+    var countIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        countIO.unobserve(en.target);
+        var el = en.target;
+        var final = el.textContent;
+        var m = final.match(/\d+/);
+        if (!m) return;
+        var target = parseInt(m[0], 10);
+        var prefix = final.slice(0, m.index);
+        var suffix = final.slice(m.index + m[0].length);
+        var t0 = null, DUR = 1400;
+        function tick(ts) {
+          if (t0 === null) t0 = ts;
+          var p = Math.min(1, (ts - t0) / DUR);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + Math.round(eased * target) + suffix;
+          if (p < 1) window.requestAnimationFrame(tick);
+          else el.textContent = final;
+        }
+        window.requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.4 });
+    statVals.forEach(function (el) { countIO.observe(el); });
+  }
+
   // Interactive expert graph — highlight a person's connections on hover/focus
   document.querySelectorAll(".egraph").forEach(function (svg) {
     var edges = Array.prototype.slice.call(svg.querySelectorAll(".eedge"));

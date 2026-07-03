@@ -96,9 +96,9 @@ function footer(draft) {
         <li><a href="experts.html">Expert Network</a></li>
       </ul></div>
       <div class="footer__col"><h4>Connect</h4><ul>
-        <li><a href="${attr(fund.meta.site)}" target="_blank" rel="noopener">localism.fund ↗</a></li>
-        <li><a href="${attr(round.meta.repo)}" target="_blank" rel="noopener">Evaluations on GitHub ↗</a></li>
-        <li><a href="${attr(experts.meta.twitter)}" target="_blank" rel="noopener">@localismfund ↗</a></li>
+        <li><a href="${attr(round.meta.repo)}" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="${attr(experts.meta.twitter)}" target="_blank" rel="noopener">X ↗</a></li>
+        <li><a href="${attr(fund.meta.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a></li>
       </ul></div>
     </div>
     <div class="footer__note">
@@ -377,14 +377,19 @@ function operatorsPage() {
 function expertsPage() {
   const e = experts;
   const opItems = e.operators.items;
-  const domains = e.domains.items.map((d) => `<div class="dcard reveal"><div class="dcard__k">Domain</div><h3>${esc(d.name)}</h3><p>${esc(d.body)}</p></div>`).join("");
-  const steps = e.lifecycle.steps.map((s) => `<div class="step reveal"><div class="step__n"></div><h4>${esc(s.title)}</h4><p>${esc(s.body)}</p></div>`).join("");
-  const roster = (e.roster.members || []).map((m) => {
-    const isOp = opItems.some((o) => m.includes(o.name) || o.name.includes(m));
-    return `<li class="${isOp ? "is-op" : ""}">${esc(m)}${isOp ? `<span class="role">Operator</span>` : ""}</li>`;
+  const domains = e.domains.items.map((d) => `<div class="dcard reveal"><div class="dcard__k">Expert Domain</div><h3>${esc(d.name)}</h3><p>${esc(d.body)}</p></div>`).join("");
+  const isOperator = (m) => opItems.some((o) => m.name.includes(o.name) || o.name.includes(m.name));
+  // operators lead the roster (in operator-team order), everyone else stays alphabetical
+  const rosterMembers = [
+    ...opItems.map((o) => (e.roster.members || []).find((m) => m.name.includes(o.name) || o.name.includes(m.name))).filter(Boolean),
+    ...(e.roster.members || []).filter((m) => !isOperator(m)),
+  ];
+  const roster = rosterMembers.map((m, i) => {
+    const isOp = isOperator(m);
+    return `<li class="${isOp ? "is-op" : ""}"><button type="button" class="roster__btn" data-expert="${i}">${esc(m.name)}</button>${isOp ? `<span class="role">Operator</span>` : ""}</li>`;
   }).join("");
+  const expertsData = JSON.stringify(rosterMembers.map((m) => ({ name: m.name, ens: m.ens || "", img: m.img || "", why: m.why || "" }))).replace(/</g, "\\u003c");
   const roles = e.round01.roles.map((r) => `<div class="dcard reveal"><div class="dcard__k">Role</div><h3>${esc(r.name)}</h3><p>${esc(r.body)}</p></div>`).join("");
-  const rubric = e.round01.rubric.map((r) => `<li><span class="nm">${esc(r.name)}</span><span class="w">${esc(r.weight)}</span></li>`).join("");
   const joinLinks = e.join.links.map((l) => `<a class="btn ${l.primary ? "btn--lime" : ""}" href="${attr(l.href)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("");
   const faqItems = (e.faq || []).map((q) => `<details class="disc"><summary>${esc(q.q)} <span class="disc__plus"></span></summary><div class="disc__body"><p>${esc(q.a)}</p></div></details>`).join("");
   const elig = ((e.eligibility && e.eligibility.items) || []).map((x) => `<li>${esc(x)}</li>`).join("");
@@ -416,23 +421,34 @@ function expertsPage() {
 
 <section class="section" id="network">
   <div class="wrap">
-    ${sectionHead("03", "The network", e.roster.lede)}
+    <div class="split split--top">
+      <div>${sectionHead("03", "Attested Experts", e.roster.lede)}</div>
+      <div class="graphbox graphbox--sm reveal">${expertGraph()}</div>
+    </div>
     <ul class="roster reveal">${roster}</ul>
     <p class="rosternote reveal">${esc(e.roster.note)}</p>
   </div>
 </section>
 
+<div class="emodal" id="expert-modal" hidden>
+  <div class="emodal__backdrop" data-close></div>
+  <div class="emodal__card" role="dialog" aria-modal="true" aria-labelledby="emodal-name">
+    <button class="emodal__close" type="button" data-close aria-label="Close">&times;</button>
+    <div class="emodal__head">
+      <img class="emodal__photo" src="" alt="" hidden>
+      <div><h3 id="emodal-name"></h3><p class="emodal__ens"></p></div>
+    </div>
+    <div class="emodal__whywrap"><p class="emodal__k">Why they applied</p><p class="emodal__why"></p></div>
+  </div>
+</div>
+<script id="experts-data" type="application/json">${expertsData}</script>
+
 <section class="section section--alt" id="round01">
   <div class="wrap">
     ${sectionHead("04", "Inside Round 01", e.round01.lede)}
     <div class="cardgrid">${roles}</div>
-    <div class="reveal" style="margin-top:clamp(2rem,5vw,3.2rem)">
-      <p class="eyebrow">How applications were scored</p>
-      <ul class="rubric">${rubric}</ul>
-      <div class="round01-note">
-        <span>${esc(e.round01.matching)}</span>
-        <span>${esc(e.round01.compensation)}</span>
-      </div>
+    <div class="btnrow reveal" style="margin-top:clamp(2rem,5vw,3rem)">
+      <a class="btn btn--lime" href="round-01.html">Explore Round 01 →</a>
     </div>
   </div>
 </section>
@@ -444,17 +460,7 @@ function expertsPage() {
   </div>
 </section>
 
-<section class="scene scene--mid scene--dark" id="lifecycle">
-  <div class="wrap">
-    <div class="section__head section__head--plain reveal">
-      <h2 class="section__title">The engagement lifecycle</h2>
-      <p class="section__lede" style="color:var(--lime)">${esc(e.lifecycle.lede)}</p>
-    </div>
-    <div class="steps">${steps}</div>
-  </div>
-</section>
-
-<section class="section" id="join">
+<section class="section section--alt" id="join">
   <div class="wrap">
     <div class="reveal" style="max-width:var(--prose)">
       <p class="eyebrow">Join</p>

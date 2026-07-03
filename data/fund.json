@@ -113,7 +113,7 @@
   },
   "expertsTeaser": {
     "lede": "Many reviewers weigh every grant — no single authority.",
-    "body": "A peer-attested collective of 83 practitioners — grant-makers, Ethereum builders, and localism organisers — who vouch for one another through TrustGraph, then assess, advise, and amplify the hubs the Fund backs.",
+    "body": "A peer-attested collective of 36 validated experts — grant-makers, Ethereum builders, and localism organisers — who vouch for one another through TrustGraph, then assess, advise, and amplify the hubs the Fund backs.",
     "href": "experts.html",
     "cta": "Meet the Expert Network"
   },
@@ -180,6 +180,7 @@
   ],
   "meta": {
     "repo": "https://github.com/montymerlin/localism-fund-docs",
-    "site": "https://www.localism.fund"
+    "site": "https://www.localism.fund",
+    "linkedin": "https://www.linkedin.com/company/localismfund"
   }
 }

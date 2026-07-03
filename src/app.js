@@ -15,14 +15,18 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  // Nav: switch to on-dark styling while over a dark hero (index only)
+  // Nav: switch to on-dark styling while over a dark hero, or the narrative
+  // scroll (index). Two signals share one apply so they can't fight.
   var nav = document.querySelector(".nav");
   var darkHero = document.querySelector("[data-darknav]");
+  var navDarkHero = false, navDarkReport = false;
+  function applyNavDark() { if (nav) nav.classList.toggle("on-dark", navDarkHero || navDarkReport); }
   if (nav && darkHero) {
     var navIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        nav.classList.toggle("on-dark", e.isIntersecting && e.intersectionRatio > 0.1);
+        navDarkHero = e.isIntersecting && e.intersectionRatio > 0.1;
       });
+      applyNavDark();
     }, { rootMargin: "-48px 0px 0px 0px", threshold: [0, 0.1, 0.5] });
     navIO.observe(darkHero);
   }
@@ -87,20 +91,6 @@
     paintOrbs();
   }
 
-  // Scroll progress bar (narrative page)
-  var bar = document.querySelector(".progress");
-  if (bar) {
-    var pTick = false;
-    function prog() {
-      var h = document.documentElement;
-      var max = h.scrollHeight - h.clientHeight;
-      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
-      pTick = false;
-    }
-    window.addEventListener("scroll", function () { if (!pTick) { window.requestAnimationFrame(prog); pTick = true; } }, { passive: true });
-    prog();
-  }
-
   // Keep one detail open at a time? No — allow many. Just smooth-scroll a newly opened one into view if off-screen.
   document.querySelectorAll("details.disc").forEach(function (d) {
     d.addEventListener("toggle", function () {
@@ -111,11 +101,15 @@
     });
   });
 
-  // Pinned narrative report: scroll drives the active chapter; frame stays set
+  // Pinned narrative report: scroll drives the active chapter; frame stays set.
+  // Embedded mid-page (below the hero), so the fixed chrome — side TOC and
+  // progress bar — only shows while the report itself is on screen.
   var report = document.querySelector(".report");
   if (report) {
     var chapters = Array.prototype.slice.call(report.querySelectorAll(".chapter"));
     var tocItems = Array.prototype.slice.call(report.querySelectorAll(".toc li"));
+    var tocEl = report.querySelector(".toc");
+    var barEl = report.querySelector(".progress");
     var N = chapters.length, cur = -1, rTick = false;
     function setActive(idx) {
       idx = Math.max(0, Math.min(N - 1, idx));
@@ -128,6 +122,15 @@
       var p = total > 0 ? (window.pageYOffset - report.offsetTop) / total : 0;
       p = Math.max(0, Math.min(0.9999, p));
       setActive(Math.floor(p * N));
+      var rect = report.getBoundingClientRect();
+      var engaged = rect.top < window.innerHeight * 0.5 && rect.bottom > window.innerHeight * 0.5;
+      if (tocEl) tocEl.classList.toggle("is-visible", engaged);
+      if (barEl) {
+        barEl.classList.toggle("is-visible", engaged);
+        barEl.style.width = (p * 100) + "%";
+      }
+      navDarkReport = rect.top < 56 && rect.bottom > 56;
+      applyNavDark();
       rTick = false;
     }
     window.addEventListener("scroll", function () { if (!rTick) { window.requestAnimationFrame(rPaint); rTick = true; } }, { passive: true });

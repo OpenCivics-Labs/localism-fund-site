@@ -1,6 +1,6 @@
 /* ============================================================
    Localism Fund — static site generator
-   index.html (the Fund) · intro.html (narrative walkthrough) ·
+   index.html (the Fund — hero + narrative scroll walkthrough) ·
    round-01.html (retrospective + map) · experts.html ·
    <slug>.html (12 projects). No dependencies. node build.mjs
    ============================================================ */
@@ -73,8 +73,7 @@ function nav(navDark) {
   <a class="nav__brand" href="index.html"><span class="nav__logo" aria-hidden="true"></span><span>Localism&nbsp;Fund</span></a>
   <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   <div class="nav__links" id="nav-links">
-    <a href="index.html#mission">Mission</a>
-    <a href="index.html#rounds">Rounds</a>
+    <a href="index.html#story">About</a>
     <a href="operators.html">Operators</a>
     <a href="experts.html">Expert&nbsp;Network</a>
     <a class="nav__round" href="round-01.html">Round 01</a>
@@ -91,9 +90,9 @@ function footer(draft) {
         <h3 class="reveal">Funding the people closest to the place.</h3>
       </div>
       <div class="footer__col"><h4>Explore</h4><ul>
-        <li><a href="index.html#mission">Mission</a></li>
-        <li><a href="intro.html">Narrative intro</a></li>
-        <li><a href="round-01.html">The retrospective</a></li>
+        <li><a href="index.html#story">About</a></li>
+        <li><a href="round-01.html">Round 01</a></li>
+        <li><a href="round-02.html">Round 02</a></li>
         <li><a href="experts.html">Expert Network</a></li>
       </ul></div>
       <div class="footer__col"><h4>Connect</h4><ul>
@@ -133,47 +132,64 @@ ${footer(draft)}
 }
 
 /* ============================================================
-   LANDING — index.html
+   NARRATIVE SCROLL — the pinned walkthrough, embedded on index.html
+   below the hero. One viewport-height of scroll per chapter.
+   ============================================================ */
+const monogram = (name) => {
+  const paren = name.match(/\(([A-Z]{2,5})\)/);
+  if (paren) return paren[1];
+  const caps = (name.match(/[A-Z]/g) || []);
+  if (caps.length >= 2) return caps.slice(0, 3).join("");
+  return name.replace(/[^A-Za-z ]/g, "").split(/\s+/).filter(Boolean).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
+};
+const partnerMark = (it) => {
+  const img = it.logo || (it.domain ? it.domain + ".png" : null);
+  return img
+    ? `<span class="pcard2__mark" data-mono="${attr(monogram(it.name))}"><img class="pcard2__fav" src="assets/img/partners/${attr(img)}" alt="" onerror="this.closest('.pcard2__mark').classList.add('no-img')"></span>`
+    : `<span class="pcard2__mark" aria-hidden="true">${esc(monogram(it.name))}</span>`;
+};
+
+function narrativeScroll() {
+  const chapters = (fund.narrative && fund.narrative.chapters) || [];
+  const wordify = (s) => { let wi = 0; return esc(s).split(/(\s+)/).map((tok) => /^\s+$/.test(tok) ? tok : `<span class="w" style="--i:${wi++}">${tok}</span>`).join(""); };
+  const renderCh = (c, i) => {
+    let inner;
+    if (c.type === "dimensions") {
+      const items = c.items.map((it) => `<div class="chdim"><span class="chdim__ic">${dimShapes[it.name] || ""}</span><div><h3>${esc(it.name)}</h3><p>${esc(it.note)}</p></div></div>`).join("");
+      inner = `<p class="chlead ctext">${wordify(c.lead)}</p><div class="chdims">${items}</div>${c.rail ? `<p class="chrail">${esc(c.rail)}</p>` : ""}`;
+    } else if (c.type === "round") {
+      const r = (fund.rounds || []).find((x) => x.num === c.num) || {};
+      const stats = (r.stats || []).map((s) => `<div class="chstat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
+      inner = `<p class="chbig ctext">${wordify(c.text)}${c.emph ? `<span class="emph">${esc(c.emph)}</span>` : ""}</p>${c.sub ? `<p class="chsub">${esc(c.sub)}</p>` : ""}${stats ? `<div class="chstats">${stats}</div>` : ""}${r.href ? `<div class="btnrow"><a class="btn btn--lime" href="${attr(r.href)}">${esc(c.cta || "Round " + r.num)} →</a></div>` : ""}`;
+    } else if (c.type === "experts") {
+      const t = fund.expertsTeaser;
+      inner = `<div class="chsplit"><div><p class="eyebrow chkicker">Expert Network</p><p class="chlead ctext">${wordify(t.lede)}</p><p class="chsub chsub--tight">${esc(t.body)}</p><div class="btnrow"><a class="btn btn--lime" href="${attr(t.href)}">${esc(t.cta)} →</a></div></div><div class="graphbox chgraph">${expertGraph()}</div></div>`;
+    } else if (c.type === "partners") {
+      const [leadTxt, subTxt] = String(fund.partners.lede || "").split(" — ");
+      const groups = ((fund.partners && fund.partners.groups) || []).map((gr) => `<div class="chpartnercat"><h4>${esc(gr.name)}</h4><div class="chpartnercards">${gr.items.map((it) =>
+        `<div class="pcard2">${partnerMark(it)}<div class="pcard2__body"><b>${esc(it.name)}</b><span>${esc(it.note)}</span></div></div>`).join("")}</div></div>`).join("");
+      inner = `<p class="eyebrow chkicker">Partners</p><p class="chlead ctext">${wordify(leadTxt)}</p>${subTxt ? `<p class="chsub chsub--tight">${esc(subTxt.charAt(0).toUpperCase() + subTxt.slice(1))}</p>` : ""}<div class="chpartners">${groups}</div>`;
+    } else {
+      inner = `${c.kicker ? `<p class="eyebrow chkicker">${esc(c.kicker)}</p>` : ""}<p class="chbig ctext">${wordify(c.text)}${c.emph ? `<span class="emph">${esc(c.emph)}</span>` : ""}</p>${c.sub ? `<p class="chsub">${esc(c.sub)}</p>` : ""}`;
+    }
+    return `<div class="chapter${c.type === "partners" ? " chapter--flow" : ""}${i === 0 ? " is-active" : ""}" data-ch="${i}"><div class="wrap">${inner}</div></div>`;
+  };
+  const toc = chapters.map((c, i) => `<li${i === 0 ? ' class="is-active"' : ""}><button data-go="${i}"><span class="toc__n">${String(i + 1).padStart(2, "0")}</span><span class="toc__t">${esc(c.toc)}</span></button></li>`).join("");
+  return `<section class="report" id="story" style="height:${chapters.length * 100}vh">
+  <div class="progress" aria-hidden="true"></div>
+  <nav class="toc" aria-label="Contents"><ol>${toc}</ol></nav>
+  <div class="stage">
+    <div class="stage__bg"><div class="photo"></div><div class="orb orb--1"></div><div class="orb orb--2"></div><div class="orb orb--3"></div></div>
+    <div class="stage__frame">${chapters.map(renderCh).join("\n")}</div>
+  </div>
+</section>`;
+}
+
+/* ============================================================
+   LANDING — index.html (hero + narrative scroll)
    ============================================================ */
 function landingPage() {
   const f = fund;
-  const objs = f.mission.objectives.map((o, i) => `<div class="objcard reveal"><div class="n">${String(i + 1).padStart(2, "0")}</div><p>${esc(o)}</p></div>`).join("");
-  const localismDims = f.dimensions.items.filter((d) => d.name !== "Ethereum");
-  const ethDim = f.dimensions.items.find((d) => d.name === "Ethereum");
-  const dimcards = localismDims.map((d) => `<div class="dimcompact reveal">
-      <span class="dimcompact__ic">${dimShapes[d.name] || ""}</span>
-      <div><h3>${esc(d.name)} localism</h3><p>${esc(d.body)}</p></div>
-    </div>`).join("");
-  const monogram = (name) => {
-    const paren = name.match(/\(([A-Z]{2,5})\)/);
-    if (paren) return paren[1];
-    const caps = (name.match(/[A-Z]/g) || []);
-    if (caps.length >= 2) return caps.slice(0, 3).join("");
-    return name.replace(/[^A-Za-z ]/g, "").split(/\s+/).filter(Boolean).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
-  };
-  const partnerCats = ((f.partners && f.partners.groups) || []).map((gr) => `<div class="partnercat reveal"><h4 class="partnercat__h">${esc(gr.name)}</h4><div class="partnercards">${gr.items.map((it) => {
-    const mark = it.domain
-      ? `<span class="pcard2__mark" data-mono="${attr(monogram(it.name))}"><img class="pcard2__fav" src="assets/img/partners/${attr(it.domain)}.png" alt="" loading="lazy" onerror="this.closest('.pcard2__mark').classList.add('no-img')"></span>`
-      : `<span class="pcard2__mark" aria-hidden="true">${esc(monogram(it.name))}</span>`;
-    return `<div class="pcard2">${mark}<div class="pcard2__body"><b>${esc(it.name)}</b><span>${esc(it.note)}</span></div></div>`;
-  }).join("")}</div></div>`).join("");
-  const deepFaqItems = (f.deepFaq || []).map((q) => `<details class="disc"><summary>${esc(q.q)} <span class="disc__plus"></span></summary><div class="disc__body"><p>${esc(q.a)}</p></div></details>`).join("");
-  const rounds = f.rounds.map((r) => {
-    const acc = r.status === "live" ? "#c4623d" : "#8a9382";
-    const stats = (r.stats || []).map((s) => `<div class="roundcard__stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
-    const inner = `
-      <div class="roundcard__num">${esc(r.num)}</div>
-      <div>
-        <div class="roundcard__title">Round ${esc(r.num)} — ${esc(r.title)}</div>
-        <div class="roundcard__dek">${esc(r.dek)}</div>
-        ${stats ? `<div class="roundcard__stats">${stats}</div>` : ""}
-      </div>
-      <div class="roundcard__side"><span class="statuschip ${r.status}">${esc(r.statusLabel)}</span>${r.href ? `<span class="arrow">→</span>` : ""}</div>`;
-    return r.href
-      ? `<a class="roundcard reveal" style="--accent:${acc}" href="${attr(r.href)}">${inner}</a>`
-      : `<div class="roundcard is-coming reveal" style="--accent:${acc}">${inner}</div>`;
-  }).join("");
-
   const body = `
 <header class="hero hero--scene scene scene--tall scene--dark" data-darknav>
   <div class="scene__bg"><img class="parallax" data-parallax="0.16" src="assets/img/hero-liana.jpg" alt=""></div>
@@ -184,101 +200,14 @@ function landingPage() {
     <p class="hero__dek reveal">${esc(f.heroDek)}</p>
     <div class="btnrow reveal">
       <a class="btn btn--lime" href="round-01.html">Explore Round 01 →</a>
+      <a class="btn" href="round-02.html" style="background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,0.35)">Explore Round 02 →</a>
       <a class="btn" href="experts.html" style="background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,0.35)">Expert Network</a>
     </div>
-    <p class="reveal" style="margin-top:1.7rem"><a href="intro.html" style="color:color-mix(in srgb,var(--paper) 64%, transparent);font-size:0.92rem;text-decoration:underline;text-underline-offset:4px">Read the narrative version →</a></p>
   </div>
 </header>
-
-<section class="section section--air" id="mission">
-  <div class="wrap">
-    <p class="eyebrow reveal">Why we exist</p>
-    <p class="missionlead reveal">${esc(f.mission.paragraphs[0])}</p>
-    ${f.mission.paragraphs.length > 1 ? `<div class="prose reveal">${f.mission.paragraphs.slice(1).map((p) => `<p>${esc(p)}</p>`).join("")}</div>` : ""}
-    <div class="objgrid">${objs}</div>
-  </div>
-</section>
-
-<section class="scene scene--mid scene--dark section--air" id="localism">
-  <div class="wrap">
-    <p class="eyebrow reveal">Localism</p>
-    <h2 class="section__title reveal" style="max-width:34ch">Four dimensions of localism</h2>
-    <p class="section__lede reveal" style="color:var(--paper);max-width:60ch">${esc(f.dimensions.lede)}</p>
-    <div class="dimgrid2">${dimcards}</div>
-    ${ethDim ? `<p class="railnote reveal"><span>On Ethereum rails.</span> ${esc(ethDim.body)}</p>` : ""}
-  </div>
-</section>
-
-<section class="scene scene--mid scene--dark" id="model">
-  <div class="wrap">
-    <p class="eyebrow reveal">How it works</p>
-    <h2 class="bigstatement reveal" style="margin-top:0.6rem">Fund the <span class="accent-word">hub</span>, not the project.</h2>
-    <p class="scene__sub reveal">${esc(f.model.paragraphs[0])}</p>
-  </div>
-</section>
-
-<section class="section section--air" id="rounds">
-  <div class="wrap">
-    <p class="eyebrow reveal">Rounds</p>
-    <h2 class="section__title reveal" style="margin-bottom:clamp(1.5rem,4vw,2.5rem)">Organised by round</h2>
-    <div class="roundlist">${rounds}</div>
-  </div>
-</section>
-
-<section class="section section--alt section--air" id="experts-teaser">
-  <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <p class="eyebrow">Expert Network</p>
-        <h2 class="section__title" style="max-width:15ch;margin:0.3rem 0 1rem">${esc(f.expertsTeaser.lede)}</h2>
-        <div class="prose"><p>${esc(f.expertsTeaser.body)}</p></div>
-        <div class="btnrow"><a class="btn" href="${attr(f.expertsTeaser.href)}">${esc(f.expertsTeaser.cta)} →</a></div>
-      </div>
-      <div class="graphbox reveal">${expertGraph()}</div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--alt section--air" id="partners">
-  <div class="wrap">
-    <p class="eyebrow reveal">Partners</p>
-    <h2 class="section__title reveal" style="max-width:48ch">${esc(f.partners.lede)}</h2>
-    <div class="partnercats">${partnerCats}</div>
-  </div>
-</section>`;
+${narrativeScroll()}`;
 
   return layout({ title: "Localism Fund — local hubs, funded close to the ground", desc: f.heroDek, body, navDark: true });
-}
-
-/* ============================================================
-   ALTERNATIVE HOME — intro.html (narrative parallax walkthrough)
-   ============================================================ */
-function narrativePage() {
-  const chapters = (fund.narrative && fund.narrative.chapters) || [];
-  const wordify = (s) => { let wi = 0; return esc(s).split(/(\s+)/).map((tok) => /^\s+$/.test(tok) ? tok : `<span class="w" style="--i:${wi++}">${tok}</span>`).join(""); };
-  const renderCh = (c, i) => {
-    let inner;
-    if (c.type === "dimensions") {
-      const items = c.items.map((it) => `<div class="chdim"><h3>${esc(it.name)}</h3><p>${esc(it.note)}</p></div>`).join("");
-      inner = `<p class="chlead ctext">${wordify(c.lead)}</p><div class="chdims">${items}</div>${c.rail ? `<p class="chrail">${esc(c.rail)}</p>` : ""}`;
-    } else if (c.type === "cta") {
-      const btns = c.buttons.map((x) => `<a class="btn ${x.primary ? "btn--lime" : ""}" href="${attr(x.href)}"${x.primary ? "" : ` style="background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,0.35)"`}>${esc(x.label)} →</a>`).join("");
-      inner = `<p class="chbig ctext">${wordify(c.text)}</p><div class="btnrow">${btns}</div>${c.altLink ? `<a class="beat__altlink" href="${attr(c.altLink.href)}">${esc(c.altLink.label)}</a>` : ""}`;
-    } else {
-      inner = `${c.kicker ? `<p class="eyebrow chkicker">${esc(c.kicker)}</p>` : ""}<p class="chbig ctext">${wordify(c.text)}${c.emph ? `<span class="emph">${esc(c.emph)}</span>` : ""}</p>${c.sub ? `<p class="chsub">${esc(c.sub)}</p>` : ""}`;
-    }
-    return `<div class="chapter${i === 0 ? " is-active" : ""}" data-ch="${i}"><div class="wrap">${inner}</div></div>`;
-  };
-  const toc = chapters.map((c, i) => `<li${i === 0 ? ' class="is-active"' : ""}><button data-go="${i}"><span class="toc__n">${String(i + 1).padStart(2, "0")}</span><span class="toc__t">${esc(c.toc)}</span></button></li>`).join("");
-  const body = `<div class="progress"></div>
-<div class="report" style="height:${chapters.length * 100}vh">
-  <nav class="toc" aria-label="Contents"><ol>${toc}</ol></nav>
-  <div class="stage">
-    <div class="stage__bg"><div class="photo"></div><div class="orb orb--1"></div><div class="orb orb--2"></div><div class="orb orb--3"></div></div>
-    <div class="stage__frame">${chapters.map(renderCh).join("\n")}</div>
-  </div>
-</div>`;
-  return layout({ title: "Localism Fund — why we exist", desc: fund.heroDek, body, navDark: true });
 }
 
 /* ============================================================
@@ -411,7 +340,13 @@ function round01Page() {
    ============================================================ */
 function operatorsPage() {
   const o = experts.operators;
-  const cards = (o.items || []).map((p) => { const ini = String(p.name || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase(); return `<div class="opcard reveal"><span class="opcard__avatar" aria-hidden="true">${esc(ini)}</span><div class="opcard__body"><b>${esc(p.name)}</b><span class="opcard__org">${esc(p.org)}</span>${p.bio ? `<p class="opcard__bio">${esc(p.bio)}</p>` : ""}</div></div>`; }).join("");
+  const cards = (o.items || []).map((p) => {
+    const ini = String(p.name || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
+    const avatar = p.img
+      ? `<span class="opcard__avatar opcard__avatar--photo"><img src="assets/img/operators/${attr(p.img)}" alt="${attr(p.name)}"></span>`
+      : `<span class="opcard__avatar" aria-hidden="true">${esc(ini)}</span>`;
+    return `<div class="opcard reveal">${avatar}<div class="opcard__body"><b>${esc(p.name)}</b><span class="opcard__org">${esc(p.org)}</span>${p.bio ? `<p class="opcard__bio">${esc(p.bio)}</p>` : ""}</div></div>`;
+  }).join("");
   const resp = (o.responsibilities || []).map((r) => `<div class="dcard reveal"><h3>${esc(r.name)}</h3><p>${esc(r.body)}</p></div>`).join("");
   const body = `
 <header class="hero" data-darknav>
@@ -837,7 +772,6 @@ copyDir(ASSETS, path.join(DIST, "assets"));
 fs.copyFileSync(path.join(SRC, "styles.css"), path.join(DIST, "styles.css"));
 fs.copyFileSync(path.join(SRC, "app.js"), path.join(DIST, "app.js"));
 fs.writeFileSync(path.join(DIST, "index.html"), landingPage());
-fs.writeFileSync(path.join(DIST, "intro.html"), narrativePage());
 fs.writeFileSync(path.join(DIST, "round-01.html"), round01Page());
 fs.writeFileSync(path.join(DIST, "round-02.html"), round02Page());
 ((fund.round02 && fund.round02.meetups.items) || []).forEach((m, i) => fs.writeFileSync(path.join(DIST, m.slug + ".html"), meetupPage(m, i)));
@@ -845,5 +779,5 @@ fs.writeFileSync(path.join(DIST, "experts.html"), expertsPage());
 fs.writeFileSync(path.join(DIST, "operators.html"), operatorsPage());
 grantees.forEach((g, i) => fs.writeFileSync(path.join(DIST, g.slug + ".html"), projectPage(g, i)));
 
-console.log(`✓ built ${grantees.length + 6 + ((fund.round02 && fund.round02.meetups.items.length) || 0)} pages -> dist/`);
-console.log(`  index · intro · round-01 · round-02 · experts · operators · ${grantees.length} projects`);
+console.log(`✓ built ${grantees.length + 5 + ((fund.round02 && fund.round02.meetups.items.length) || 0)} pages -> dist/`);
+console.log(`  index · round-01 · round-02 · experts · operators · ${grantees.length} projects`);

@@ -647,7 +647,7 @@ html.snap .beat { scroll-snap-align: center; }
 .stage__frame { position: absolute; inset: 0; z-index: 2; }
 .chapter { position: absolute; inset: 0; display: flex; align-items: center; opacity: 0; transform: translateY(28px); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); pointer-events: none; }
 .chapter.is-active { opacity: 1; transform: none; pointer-events: auto; }
-@media (min-width: 900px){ .stage__frame .wrap { padding-right: clamp(7rem, 14vw, 13rem); } }
+@media (min-width: 900px){ .stage__frame .wrap { padding-right: clamp(14rem, 18vw, 16rem); } }
 
 .chbig { font-family: var(--display); font-size: clamp(2rem, 5vw, 4.4rem); line-height: 1.07; letter-spacing: -0.02em; max-width: 20ch; text-wrap: balance; }
 .chbig .emph { display: block; margin-top: 0.35em; color: var(--lime); }
@@ -844,7 +844,9 @@ html.snap .beat { scroll-snap-align: center; }
 .pcard2 { display: flex; align-items: center; gap: 0.9rem; padding: 1rem 1.1rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--r-sm); transition: border-color 0.2s, transform 0.2s; }
 .pcard2:hover { border-color: color-mix(in srgb, var(--ink) 30%, var(--line)); transform: translateY(-2px); }
 .pcard2__mark { position: relative; flex: 0 0 auto; width: 46px; height: 46px; border-radius: 11px; background: #fff; border: 1px solid var(--line); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 0.92rem; letter-spacing: 0.02em; overflow: hidden; }
-.pcard2__mark[data-mono]::before { content: attr(data-mono); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+/* Monogram is a fallback only — logos are transparent PNGs, so a monogram
+   painted behind them bleeds through. Show it only when the image fails. */
+.pcard2__mark.no-img[data-mono]::before { content: attr(data-mono); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 .pcard2__fav { position: relative; z-index: 1; width: 28px; height: 28px; object-fit: contain; background: #fff; }
 .pcard2__mark.no-img .pcard2__fav { display: none; }
 .pcard2__body { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
@@ -859,8 +861,9 @@ html.snap .beat { scroll-snap-align: center; }
 .carry__carry { font-size: 0.92rem; color: var(--ink-soft); margin: 0; line-height: 1.45; }
 
 /* operators — avatar placeholder + bio */
-.opcard { display: flex; gap: 1rem; align-items: flex-start; }
-.opcard__avatar { flex: 0 0 auto; width: 48px; height: 48px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 0.95rem; color: #4a7339; background: color-mix(in srgb, #4a7339 14%, var(--paper-2)); border: 1px solid color-mix(in srgb, #4a7339 26%, var(--line)); }
+.opcard { display: flex; gap: 1.1rem; align-items: flex-start; }
+.opcard__avatar { flex: 0 0 auto; width: 72px; height: 72px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 1.1rem; color: #4a7339; background: color-mix(in srgb, #4a7339 14%, var(--paper-2)); border: 1px solid color-mix(in srgb, #4a7339 26%, var(--line)); overflow: hidden; }
+.opcard__avatar--photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .opcard__body { display: flex; flex-direction: column; gap: 0.2rem; min-width: 0; }
 .opcard__org { font-size: 0.85rem; color: var(--ink-soft); }
 .opcard__bio { font-size: 0.9rem; color: var(--ink-faint); font-style: italic; line-height: 1.45; margin: 0.5rem 0 0; }
@@ -872,3 +875,69 @@ html.snap .beat { scroll-snap-align: center; }
 .meetup span { font-size: 0.84rem; color: var(--ink-soft); }
 .howlist { margin: 1.2rem 0 0; padding-left: 1.2rem; display: grid; gap: 0.6rem; max-width: 62ch; }
 .howlist li { line-height: 1.5; }
+
+/* ============================================================
+   Narrative scroll embedded on index — chapter add-ons
+   ============================================================ */
+
+/* Fixed chrome (side TOC + progress bar) only shows while the scroll is engaged */
+.toc, .progress { opacity: 0; pointer-events: none; transition: opacity 0.35s var(--ease); }
+.toc.is-visible { opacity: 1; pointer-events: auto; }
+.progress.is-visible { opacity: 1; }
+
+/* Dimensions chapter — the landing framework's line icons */
+.chdim { display: flex; gap: 1rem; align-items: flex-start; }
+.chdim__ic { color: var(--lime); flex: none; }
+.chdim__ic svg { width: 38px; height: 38px; display: block; }
+@media (max-width: 680px), (max-height: 700px){
+  .chdim__ic svg { width: 26px; height: 26px; }
+  .chdim { padding: 0.8rem 0.95rem; gap: 0.75rem; }
+  .chdims { gap: 0.55rem; }
+  .chdim h3 { font-size: 1.05rem; margin-bottom: 0.2rem; }
+  .chdim p { font-size: 0.84rem; }
+  .chlead { margin-bottom: 1rem; }
+  .chrail { margin-top: 0.9rem; font-size: 1rem; }
+}
+
+/* Round chapters — stat row + CTA */
+.chstats { display: flex; flex-wrap: wrap; gap: clamp(1.2rem, 3vw, 2.6rem); margin-top: clamp(1.4rem, 3vh, 2.2rem); padding-top: clamp(0.9rem, 2vh, 1.4rem); border-top: 1px solid rgba(255,255,255,0.18); }
+.chstat b { display: block; font-family: var(--display); font-size: clamp(1.4rem, 2.6vw, 2.1rem); color: var(--lime); line-height: 1.1; }
+.chstat span { font-size: 0.85rem; color: color-mix(in srgb, var(--paper) 70%, transparent); }
+
+/* Expert Network chapter — text + graph split on the dark stage */
+.chsplit { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(1.6rem, 4vw, 3.5rem); align-items: center; width: 100%; }
+@media (max-width: 860px){ .chsplit { grid-template-columns: 1fr; gap: 1.2rem; } .chsplit .graphbox { min-height: 0; max-width: 400px; } }
+.chsub--tight { margin-top: 0.8rem; font-size: clamp(0.95rem, 0.9rem + 0.4vw, 1.2rem); }
+.chgraph .av { fill: var(--lime); stroke: rgba(255,255,255,0.5); }
+.chgraph .eedge { stroke: rgba(255,255,255,0.22); }
+.chgraph .eedge.hot { stroke: var(--lime); }
+.chgraph .enode.hot .av { stroke: #fff; }
+.chgraph .netgraph__g { animation-duration: 20s; }
+
+/* Partners chapter — compact dark rendition of the partner groups */
+.chpartners { display: grid; gap: clamp(0.9rem, 2vh, 1.5rem); margin-top: clamp(1.2rem, 2.5vh, 2rem); width: 100%; }
+.chpartnercat h4 { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: color-mix(in srgb, var(--paper) 55%, transparent); margin: 0 0 0.55rem; }
+.chpartnercards { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.55rem; }
+.chpartners .pcard2 { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.14); padding: 0.6rem 0.8rem; gap: 0.75rem; }
+.chpartners .pcard2:hover { border-color: rgba(255,255,255,0.32); transform: none; }
+.chpartners .pcard2__mark { width: 34px; height: 34px; border-radius: 9px; }
+.chpartners .pcard2__fav { width: 21px; height: 21px; }
+.chpartners .pcard2__body b { color: var(--paper); font-size: 0.88rem; }
+.chpartners .pcard2__body span { color: color-mix(in srgb, var(--paper) 62%, transparent); font-size: 0.75rem; }
+
+/* Partners is the densest chapter — let it breathe from the top and, on short
+   or narrow screens, compress rather than overflow the pinned stage. */
+.chapter--flow { align-items: center; }
+@media (max-width: 680px), (max-height: 760px){
+  .chapter--flow .chkicker { margin-bottom: 0.7rem; }
+  .chapter--flow .chlead { font-size: clamp(1.4rem, 5.4vw, 2rem); margin-bottom: 0.6rem; }
+  .chapter--flow .chsub { display: none; }
+  .chpartners { gap: 0.7rem; margin-top: 0.9rem; }
+  .chpartnercat h4 { margin-bottom: 0.35rem; }
+  .chpartnercards { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 0.4rem; }
+  .chpartners .pcard2 { padding: 0.4rem 0.65rem; }
+  .chpartners .pcard2__body b { font-size: 0.82rem; }
+  .chpartners .pcard2__body span { display: none; }
+  .chpartners .pcard2__mark { width: 26px; height: 26px; border-radius: 7px; }
+  .chpartners .pcard2__fav { width: 17px; height: 17px; }
+}

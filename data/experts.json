@@ -55,11 +55,11 @@
   "operators": {
     "lede": "Round 01 was operated by:",
     "items": [
-      { "name": "Monty Merlin", "org": "Regen Coordination", "bio": "Short bio coming soon." },
-      { "name": "Benjamin Life", "org": "OpenCivics", "bio": "Short bio coming soon." },
-      { "name": "Patricia Parkinson", "org": "OpenCivics", "bio": "Short bio coming soon." }
+      { "name": "Monty Merlin Bryant", "org": "ReFi DAO & Regen Coordination", "img": "monty.jpeg", "bio": "Regenerative finance practitioner, community builder, and systems entrepreneur working at the intersection of Web3, AI, nature finance, and economic transformation." },
+      { "name": "Benjamin Life", "org": "OpenCivics", "img": "benjamin.jpg", "bio": "Civic innovator, researcher, and artist working at the intersection of regenerative crypto-economics, bioregional coordination, and participatory systems design." },
+      { "name": "Patricia Parkinson", "org": "OpenCivics", "img": "patricia.jpg", "bio": "Participation systems architect, ontological designer, and civic innovator with over twenty years leading development programs across Southeast Asia and the Pacific Islands." }
     ],
-    "blurb": "Localism Fund runs on a two-tier structure: three core operators run the rounds and make final operational calls, supported by the attested expert network of 9–12 evaluators. Operators aren't distant funders — they steward the flow of resources through local hubs while keeping the process transparent and accountable.",
+    "blurb": "Supported by the peer-attested expert network, operators steward the flow of resources through local hubs while keeping the process transparent and accountable.",
     "responsibilities": [
       { "name": "Network coordination", "body": "Design funding architectures around subsidiarity; connect and weave local hubs across geographies." },
       { "name": "Evaluation & allocation", "body": "Work with the expert network to assess programs and direct matching funds where they'll do the most good." },

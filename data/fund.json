@@ -119,7 +119,7 @@
   },
   "narrative": {
     "chapters": [
-      { "toc": "Premise", "type": "statement", "kicker": "Localism Fund",
+      { "toc": "Premise", "type": "statement", "kicker": "About Localism Fund",
         "text": "Big problems get solved closest to where they happen.",
         "emph": "The money to solve them, almost never is." },
       { "toc": "The model", "type": "statement",
@@ -140,44 +140,35 @@
       { "toc": "Accountability", "type": "statement",
         "text": "Then we do the unglamorous part:",
         "emph": "read every report, trace the money on-chain, and publish an honest account — what worked, and what didn't." },
-      { "toc": "Round 01", "type": "statement",
+      { "toc": "Round 01", "type": "round", "num": "01", "cta": "Explore Round 01",
         "text": "Round 01 was the first test.",
         "emph": "Twelve hubs. Six continents. Four months.",
         "sub": "In this round, each hub ran its own local grant program. Some delivered beautifully. Some didn't. All of it is public." },
-      { "toc": "Round 02", "type": "statement",
-        "text": "Round 02 is already underway.",
-        "emph": "Local Meetups LATAM — ten grassroots Ethereum gatherings across Latin America.",
-        "sub": "A lighter, content-first round with the Ethereum Foundation's Ethereum Everywhere team, seeding the rooms where communities actually meet." },
-      { "toc": "Begin", "type": "cta",
-        "text": "This is why Localism Fund exists.",
-        "buttons": [
-          { "label": "Explore Round 01", "href": "round-01.html", "primary": true },
-          { "label": "Round 02 — Local Meetups", "href": "round-02.html", "primary": false },
-          { "label": "The Expert Network", "href": "experts.html", "primary": false }
-        ],
-        "altLink": { "label": "Prefer the standard overview? →", "href": "index.html" } }
+      { "toc": "Round 02", "type": "round", "num": "02", "cta": "Round 02 — Local Meetups",
+        "text": "Round 02 is underway.",
+        "emph": "Ten grassroots Ethereum gatherings across Latin America.",
+        "sub": "Run with the Ethereum Everywhere team to back a year of open monthly gatherings — sustaining the momentum of Devconnect in the rooms where communities actually meet." },
+      { "toc": "Expert Network", "type": "experts" },
+      { "toc": "Partners", "type": "partners" }
     ]
   },
   "partners": {
     "lede": "Localism Fund is a partnership, not a platform — stewarded, funded, and built with aligned organisations.",
     "groups": [
-      { "name": "Stewardship", "items": [
+      { "name": "Lead Stewardship", "items": [
         { "name": "OpenCivics Network", "note": "civic innovation, network coordination, operations", "domain": "opencivics.co" },
         { "name": "Regen Coordination", "note": "regenerative finance, localism strategy, ecosystem connections", "domain": "regen.network" }
       ] },
       { "name": "Funding", "items": [
         { "name": "Gitcoin", "note": "GG24 funding-cycle coordination", "domain": "gitcoin.co" },
-        { "name": "Targeted Development & Adoption (TDA)", "note": "strategic alignment + matching pool", "domain": "gitcoin.co" },
         { "name": "Celo Public Goods", "note": "matching pool + ReFi expertise", "domain": "celo.org" },
         { "name": "Ma Earth", "note": "matching pool for ecological & community work", "domain": "ma.earth" },
         { "name": "Ethereum Foundation / Ethereum Everywhere", "note": "matching pool + adoption support", "domain": "ethereum.org" }
       ] },
-      { "name": "Technical", "items": [
-        { "name": "KarmaGAP", "note": "application management & tracking", "domain": "karmahq.xyz" },
-        { "name": "TrustGraph", "note": "peer-attestation & reputation infrastructure", "domain": "trustgraph.network" }
-      ] },
-      { "name": "Development", "items": [
-        { "name": "Ethereum For the World (FTW)", "note": "ecosystem development & adoption strategy", "domain": "ethereum.org" }
+      { "name": "Technical & Development", "items": [
+        { "name": "Karma", "note": "application management & tracking", "domain": "karmahq.xyz" },
+        { "name": "TrustGraph", "note": "peer-attestation & reputation infrastructure", "domain": "trustgraph.network" },
+        { "name": "Ethereum For the World (FTW)", "note": "ecosystem development & adoption strategy", "logo": "eth-ftw.png" }
       ] }
     ]
   },

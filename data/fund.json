@@ -179,7 +179,7 @@
     { "q": "Who can apply?", "a": "Local hubs — community organisations, chapters, or coalitions anchored in a place — ready to run their own local grant program: local focus, Ethereum alignment, public-goods orientation, impact + on-chain reporting, operational capacity, and ethical/compliance alignment. Round 01 also required ≥ $5k local co-funding and a qualifying evaluation from ≥ 4 experts." }
   ],
   "meta": {
-    "repo": "https://github.com/montymerlin/localism-fund",
+    "repo": "https://github.com/montymerlin/localism-fund-docs",
     "site": "https://www.localism.fund"
   }
 }

@@ -68,8 +68,8 @@
   "meta": {
     "evaluationPeriod": "June 2026",
     "status": "draft",
-    "repo": "https://github.com/montymerlin/localism-fund",
-    "repoBlobBase": "https://github.com/montymerlin/localism-fund/blob/main/"
+    "repo": "https://github.com/montymerlin/localism-fund-docs",
+    "repoBlobBase": "https://github.com/montymerlin/localism-fund-docs/blob/main/"
   },
   "locations": {
     "gen-ukraine-grant-program-01": [[49.0, 31.0]],

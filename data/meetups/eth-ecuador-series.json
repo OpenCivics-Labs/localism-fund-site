@@ -40,5 +40,10 @@
   "alignmentGaps": [
     "Political and economic localism are supported by strong enabling conditions (legal framework), but the application only partially specifies concrete pilots that apply these conditions to named local institutions or coordination problems.",
     "Ecological localism is signaled via the “Local Impact (ReFi & Regeneration)” track, but it is not yet tied to specific ecological/regenerative projects or partners."
-  ]
+  ],
+  "payout": {
+    "received": "$1,500 of $3,000",
+    "label": "Initial + Q1 paid",
+    "detail": "First quarterly $750 verified on-chain on 26 Jun 2026 to the wallet named in the application; the initial $750 was paid in the January 2026 onboarding batches."
+  }
 }

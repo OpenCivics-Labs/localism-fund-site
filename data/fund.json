@@ -102,9 +102,21 @@
         "The remaining $2,250 is released quarterly, contingent on activity updates filed via Karma GAP."
       ]
     },
+    "payouts": {
+      "lede": "The money so far — verified on-chain",
+      "asOf": "22 Jul 2026",
+      "summary": "Every payment is public: funds move from the Localism Fund Safe on Ethereum (0x749e…111E) as $750 DAI releases. Sixteen payments totalling $12,000 of the $30,000 pool have been made so far.",
+      "batches": [
+        {"when": "10 Jan 2026", "what": "Six initial payments of $750 — first onboarding wave"},
+        {"when": "19 Jan 2026", "what": "Four initial payments of $750 — all ten meetups now paid"},
+        {"when": "16 May 2026", "what": "Four first-quarterly releases of $750"},
+        {"when": "26 Jun 2026", "what": "Two first-quarterly releases of $750"}
+      ],
+      "note": "Five meetups' payments are directly attributable to the payout wallet listed on their Karma page (La Movida Regia, Cripto Café, Ethereum Cartagena, ETH Ecuador, Web3 Café). The remaining payments went to wallets not published on Karma, so they are attributed by batch count rather than named per meetup."
+    },
     "status": {
       "lede": "Where it stands",
-      "body": "Round 02 is underway. Ten meetups are approved and onboarding; disbursements begin as each organiser completes their Post-Approval Form, then continue quarterly across the twelve-month period. If you run a local community and want to hear when the next round opens, get in touch.",
+      "body": "Round 02 is underway. All ten meetups completed onboarding and received their initial $750 in January 2026, and quarterly releases began in May — $12,000 of the $30,000 pool has been disbursed on-chain so far, with activity updates filed via Karma GAP. If you run a local community and want to hear when the next round opens, get in touch.",
       "links": [
         { "label": "Round 02 results & reports", "href": "https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "primary": true },
         { "label": "Read the progress report", "href": "https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "primary": false }

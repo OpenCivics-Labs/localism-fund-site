@@ -42,5 +42,10 @@
   "alignmentGaps": [
     "Political and economic localism are present mainly as topic areas (“civic infrastructure,” “stablecoins… local economic applications”), but concrete local pilots are not clearly specified.",
     "Ecological localism is lightly referenced (e.g., “regenerative finance”), but no explicit ecological project or partnership is described."
-  ]
+  ],
+  "payout": {
+    "received": "$750 of $3,000",
+    "label": "Initial paid",
+    "detail": "Initial $750 paid in the January 2026 onboarding batches, when all ten meetups received their first release. The receiving wallet isn't published on the project's Karma page, so the payment is attributed by batch count; one further quarterly release (16 May 2026) also belongs to one of the five meetups in this group."
+  }
 }

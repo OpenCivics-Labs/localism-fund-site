@@ -707,7 +707,7 @@ function round02Page() {
       <div class="pcard__name">${esc(m.name)}</div>
       <div class="pcard__place">${esc(m.place)}</div>
       <p class="pcard__tag">${esc((meetupExtra[m.slug] || {}).tagline || "A year of consistent, open Ethereum gatherings.")}</p>
-      <div class="pcard__foot"><div class="pcard__themes">${chips(["Approved · onboarding"])}</div><span class="arrow">→</span></div>
+      <div class="pcard__foot"><div class="pcard__themes">${chips([((meetupExtra[m.slug] || {}).payout || {}).label || "Approved · onboarding"])}</div><span class="arrow">→</span></div>
     </a>`;
   }).join("\n");
   const statbar = (r.stats || []).map((s) => `<div class="statbar__item"><div class="statbar__v">${esc(s.value)}</div><div class="statbar__l">${esc(s.label)}</div></div>`).join("");
@@ -747,9 +747,18 @@ function round02Page() {
   </div>
 </section>
 
+${r.payouts ? `<section class="section section--ink" id="payouts">
+  <div class="wrap">
+    ${sectionHead("04", r.payouts.lede, r.payouts.summary)}
+    <ol class="tl reveal" style="max-width:44rem">${(r.payouts.batches || []).map((b) => `<li><span class="tl__when">${esc(b.when)}</span><span class="tl__what">${esc(b.what)}</span></li>`).join("")}</ol>
+    ${r.payouts.note ? `<p class="reveal" style="margin-top:1.4rem;max-width:72ch;font-size:0.92rem;color:color-mix(in srgb, var(--paper) 72%, transparent)">${esc(r.payouts.note)}</p>` : ""}
+    <p class="reveal" style="margin-top:0.8rem;font-size:0.85rem;color:color-mix(in srgb, var(--paper) 55%, transparent)">As of ${esc(r.payouts.asOf)} · <a style="color:inherit" href="https://eth.blockscout.com/address/0x749eE7dD0474C7ab477fd2E4303bb966051b111E?tab=token_transfers" target="_blank" rel="noopener">view the Safe's transfers ↗</a></p>
+  </div>
+</section>` : ""}
+
 <section class="section section--alt" id="status">
   <div class="wrap">
-    ${sectionHead("04", r.status.lede)}
+    ${sectionHead("05", r.status.lede)}
     <div class="prose reveal" style="max-width:62ch"><p>${esc(r.status.body)}</p></div>
     <div class="btnrow reveal" style="margin-top:1.6rem">${links}</div>
   </div>
@@ -819,8 +828,8 @@ ${strengths ? `<section class="gsec" style="${accentVar}"><div class="wrap">
 </div></section>
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
-  <p class="ghead reveal">Status</p>
-  <div class="pstatus reveal"><span class="tier" data-tier="Solid">Approved</span><p class="pstatus__desc">Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period. Updates and reports will appear on the Round 02 results portal as the year unfolds.</p></div>
+  <p class="ghead reveal">Status &amp; payouts</p>
+  <div class="pstatus reveal"><span class="tier" data-tier="Solid">${esc((x.payout || {}).label || "Approved")}</span><p class="pstatus__desc">${x.payout ? `<b>${esc(x.payout.received)} received.</b> ${esc(x.payout.detail)} Remaining releases continue quarterly against activity updates filed via Karma GAP.` : "Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period."}</p></div>
   <div class="sources reveal" style="margin-top:clamp(1.6rem,4vw,2.6rem)">
     ${x.appLink ? source(x.appLink, "Original application", `What they proposed — on Karma GAP${x.submitted ? ` · submitted ${esc(x.submitted)}` : ""}`) : ""}
     ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results & reports", "Live tracker on the Localism Fund portal")}

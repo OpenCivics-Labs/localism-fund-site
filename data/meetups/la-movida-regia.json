@@ -42,5 +42,10 @@
   "alignmentGaps": [
     "Economic localism is present mainly as implied spillover (startups, World Cup moment), but lacks explicit local economic coordination pilots.",
     "Ecological localism is not addressed in the application."
-  ]
+  ],
+  "payout": {
+    "received": "$1,500 of $3,000",
+    "label": "Initial + Q1 paid",
+    "detail": "Initial $750 paid 10 Jan 2026 and first quarterly $750 paid 16 May 2026 — both verified on-chain to the project's Karma payout wallet."
+  }
 }

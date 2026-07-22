@@ -42,5 +42,10 @@
     "Political localism is mostly framed as aspiration (“build a better city”) rather than concrete civic/municipal pilots.",
     "Economic localism is present mainly through context (remittances, small business needs) and IRL local-business activations, but not as a designed local economic coordination mechanism (e.g., a local treasury, co-op, or community funding pilot).",
     "Ecological localism is not addressed in the application text."
-  ]
+  ],
+  "payout": {
+    "received": "$1,500 of $3,000",
+    "label": "Initial + Q1 paid",
+    "detail": "First quarterly $750 verified on-chain to the project's Karma payout wallet on 16 May 2026; the initial $750 was paid in the January 2026 onboarding batches, to a wallet not listed on the Karma page."
+  }
 }

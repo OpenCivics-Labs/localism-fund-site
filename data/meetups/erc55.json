@@ -40,5 +40,10 @@
   "alignmentGaps": [
     "Localism dimensions beyond builder infrastructure are under-specified: Political, economic (beyond talent uplift), and ecological localism are not explicit program pillars in the current design.",
     "Limited articulation of “local problem” pilots: The application references “real world use cases” relevant to Brazil/LATAM, but does not yet outline concrete local coordination, civic, or regenerative experiments tied to meetup outputs."
-  ]
+  ],
+  "payout": {
+    "received": "$750 of $3,000",
+    "label": "Initial paid",
+    "detail": "Initial $750 paid in the January 2026 onboarding batches, when all ten meetups received their first release. The receiving wallet isn't published on the project's Karma page, so the payment is attributed by batch count; one further quarterly release (16 May 2026) also belongs to one of the five meetups in this group."
+  }
 }

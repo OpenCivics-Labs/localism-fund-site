@@ -42,5 +42,10 @@
   "alignmentGaps": [
     "Political and ecological localism are not meaningfully developed in the submitted text.",
     "Economic localism is present mainly via entrepreneurship/talent pathways, but explicit local economic coordination mechanisms are not described."
-  ]
+  ],
+  "payout": {
+    "received": "$750 of $3,000",
+    "label": "Initial paid",
+    "detail": "Initial $750 paid in the January 2026 onboarding batches, when all ten meetups received their first release. The receiving wallet isn't published on the project's Karma page, so the payment is attributed by batch count; one further quarterly release (16 May 2026) also belongs to one of the five meetups in this group."
+  }
 }

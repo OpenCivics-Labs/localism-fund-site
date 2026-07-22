@@ -41,5 +41,10 @@
   "alignmentGaps": [
     "Ethereum as infrastructure is articulated strongly in intent and partnerships, but concrete onchain coordination pilots (e.g., a specific local funding round or governance mechanism) are not fully specified.",
     "Ecological localism is present in framing and partner context (ReFi/regeneration), but specific ecological pilots and measurable outcomes are not yet defined."
-  ]
+  ],
+  "payout": {
+    "received": "$1,500 of $3,000",
+    "label": "Initial + Q1 paid",
+    "detail": "First quarterly $750 verified on-chain to the project's Karma payout wallet on 26 Jun 2026; the initial $750 was paid in the January 2026 onboarding batches."
+  }
 }

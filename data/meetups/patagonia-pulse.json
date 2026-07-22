@@ -1,0 +1,44 @@
+{
+  "tagline": "Spanish-first Ethereum education in Buenos Aires, from onboarding through to building.",
+  "organizer": "Eugenia Estefania Granado (Representing Patagonia Pulse)",
+  "submitted": "December 10, 2025",
+  "appId": "APP-4BGZ0391-A99TOA",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-4BGZ0391-A99TOA",
+  "summary": "Patagonia Pulse Ethereum Meetups proposes a credible monthly meetup series in Buenos Aires built on top of an already active Spanish-first education and community infrastructure, with strong inclusion intent and a clear pathway from learning to real builder outcomes. The application describes a structured progression from onboarding to building and showcases, anchored by concrete venue access and an extensive partner network across universities, tech institutes, and communities (including Mujeres en Crypto). This Acceptance Summary highlights the application’s strongest fit signals, includes Ethereum Everywhere reviewer notes, and notes a few optional recommendations to strengthen Ethereum-as-local-infrastructure and localism depth.",
+  "standouts": [
+    {
+      "lead": "Strong demonstrated capacity + real community scale to build from",
+      "body": "not a cold start: the proposal states Patagonia Pulse “has grown organically from 0 to more than 1,700 developer students… with members across 5+ countries and 15+ universities,” and highlights prior event formats and consistent attendance."
+    },
+    {
+      "lead": "Spanish-first, inclusion-forward design that lowers barriers to entry and broadens who benefits from Ethereum",
+      "body": "with explicit emphasis on women and youth access: “Fully in Spanish, reducing language barriers…” and collaboration “with communities (e.g., Mujeres en Crypto) to prioritize inclusion, gender diversity and youth access.”"
+    },
+    {
+      "lead": "A coherent learning-to-outcomes pipeline (education → building → demo days → careers)",
+      "body": "rather than isolated meetups: “Clear learning paths (intro → intermediate → advanced → hackathon → demo day),” with goals framed as “education → builders → projects → startups → jobs.”"
+    },
+    {
+      "lead": "Concrete collaboration and partner strategy with named institutions and communities",
+      "body": "supporting legitimacy and reach: universities/tech institutes including “Universidad Tecnológica Nacional (UTN)… Universidad de Innovación y Tecnología… Digital House,” and communities including “Mujeres en Crypto… Fundación Blockchain Argentina…”."
+    },
+    {
+      "lead": "Credible delivery mechanics and continuity beyond single events",
+      "body": "including hybrid participation and retention loops: “Live streaming / hybrid events to include participants from other cities and countries,” plus ongoing WhatsApp/Telegram/Discord groups and community challenges."
+    }
+  ],
+  "reviewerNotes": [
+    "Overall, the plan looks solid.",
+    "There is a strong list of collaborating projects, clear experimentation around collaboration with other communities such as Mujeres en Crypto, and a strong emphasis on inclusion, gender diversity, and youth access."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem: clear Buenos Aires anchor with a concrete diagnosis of the education gap and interest from universities/training centers.",
+    "Economic localism (capacity-building pathway): strong emphasis on careers, internships, grants/bounties, and startup formation pathways.",
+    "Network effects & cosmo-localism: broad partner network plus hybrid reach across cities/countries.",
+    "Local leadership and execution readiness: clear team roles and strong claimed event/program experience."
+  ],
+  "alignmentGaps": [
+    "Ethereum is framed primarily as education and builder onboarding; explicit use of Ethereum as *local coordination infrastructure* (e.g., a local funding round, governance mechanism, or concrete public-goods coordination pilot) is not clearly specified.",
+    "Political and ecological localism are not meaningfully described in the application text."
+  ]
+}

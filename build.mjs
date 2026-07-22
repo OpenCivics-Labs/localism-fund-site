@@ -1,6 +1,6 @@
 /* ============================================================
    Localism Fund — static site generator
-   index.html (the Fund) · intro.html (narrative walkthrough) ·
+   index.html (the Fund — hero + narrative scroll walkthrough) ·
    round-01.html (retrospective + map) · experts.html ·
    <slug>.html (12 projects). No dependencies. node build.mjs
    ============================================================ */
@@ -39,6 +39,18 @@ const grantees = round.order.map((slug) => {
   catch (e) { console.warn("  ! bad JSON:", slug, e.message); return null; }
 }).filter(Boolean);
 
+/* Round 02 per-meetup enrichment (data/meetups/<slug>.json) — evaluation
+   summaries, standouts, reviewer notes, and alignment reads per grantee. */
+const meetupExtra = {};
+const MEETUP_DIR = path.join(DATA, "meetups");
+if (fs.existsSync(MEETUP_DIR)) {
+  for (const f of fs.readdirSync(MEETUP_DIR)) {
+    if (!f.endsWith(".json")) continue;
+    try { meetupExtra[f.replace(/\.json$/, "")] = JSON.parse(fs.readFileSync(path.join(MEETUP_DIR, f), "utf8")); }
+    catch (e) { console.warn("  ! bad meetup JSON:", f, e.message); }
+  }
+}
+
 const tierDot = { "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
 const chips = (arr, cls = "chip") => (arr || []).map((t) => `<span class="${cls}">${esc(t)}</span>`).join("");
 const statBlock = (s) => `<div class="stat reveal"><div class="stat__value">${esc(s.value)}</div><div class="stat__label">${esc(s.label)}</div></div>`;
@@ -73,8 +85,7 @@ function nav(navDark) {
   <a class="nav__brand" href="index.html"><span class="nav__logo" aria-hidden="true"></span><span>Localism&nbsp;Fund</span></a>
   <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   <div class="nav__links" id="nav-links">
-    <a href="index.html#mission">Mission</a>
-    <a href="index.html#rounds">Rounds</a>
+    <a href="index.html#story">About</a>
     <a href="operators.html">Operators</a>
     <a href="experts.html">Expert&nbsp;Network</a>
     <a class="nav__round" href="round-01.html">Round 01</a>
@@ -91,15 +102,15 @@ function footer(draft) {
         <h3 class="reveal">Funding the people closest to the place.</h3>
       </div>
       <div class="footer__col"><h4>Explore</h4><ul>
-        <li><a href="index.html#mission">Mission</a></li>
-        <li><a href="intro.html">Narrative intro</a></li>
-        <li><a href="round-01.html">The retrospective</a></li>
+        <li><a href="index.html#story">About</a></li>
+        <li><a href="round-01.html">Round 01</a></li>
+        <li><a href="round-02.html">Round 02</a></li>
         <li><a href="experts.html">Expert Network</a></li>
       </ul></div>
       <div class="footer__col"><h4>Connect</h4><ul>
-        <li><a href="${attr(fund.meta.site)}" target="_blank" rel="noopener">localism.fund ↗</a></li>
-        <li><a href="${attr(round.meta.repo)}" target="_blank" rel="noopener">Evaluations on GitHub ↗</a></li>
-        <li><a href="${attr(experts.meta.twitter)}" target="_blank" rel="noopener">@localismfund ↗</a></li>
+        <li><a href="${attr(round.meta.repo)}" target="_blank" rel="noopener">GitHub ↗</a></li>
+        <li><a href="${attr(experts.meta.twitter)}" target="_blank" rel="noopener">X ↗</a></li>
+        <li><a href="${attr(fund.meta.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a></li>
       </ul></div>
     </div>
     <div class="footer__note">
@@ -133,47 +144,64 @@ ${footer(draft)}
 }
 
 /* ============================================================
-   LANDING — index.html
+   NARRATIVE SCROLL — the pinned walkthrough, embedded on index.html
+   below the hero. One viewport-height of scroll per chapter.
+   ============================================================ */
+const monogram = (name) => {
+  const paren = name.match(/\(([A-Z]{2,5})\)/);
+  if (paren) return paren[1];
+  const caps = (name.match(/[A-Z]/g) || []);
+  if (caps.length >= 2) return caps.slice(0, 3).join("");
+  return name.replace(/[^A-Za-z ]/g, "").split(/\s+/).filter(Boolean).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
+};
+const partnerMark = (it) => {
+  const img = it.logo || (it.domain ? it.domain + ".png" : null);
+  return img
+    ? `<span class="pcard2__mark" data-mono="${attr(monogram(it.name))}"><img class="pcard2__fav" src="assets/img/partners/${attr(img)}" alt="" onerror="this.closest('.pcard2__mark').classList.add('no-img')"></span>`
+    : `<span class="pcard2__mark" aria-hidden="true">${esc(monogram(it.name))}</span>`;
+};
+
+function narrativeScroll() {
+  const chapters = (fund.narrative && fund.narrative.chapters) || [];
+  const wordify = (s) => { let wi = 0; return esc(s).split(/(\s+)/).map((tok) => /^\s+$/.test(tok) ? tok : `<span class="w" style="--i:${wi++}">${tok}</span>`).join(""); };
+  const renderCh = (c, i) => {
+    let inner;
+    if (c.type === "dimensions") {
+      const items = c.items.map((it) => `<div class="chdim"><span class="chdim__ic">${dimShapes[it.name] || ""}</span><div><h3>${esc(it.name)}</h3><p>${esc(it.note)}</p></div></div>`).join("");
+      inner = `<p class="chlead ctext">${wordify(c.lead)}</p><div class="chdims">${items}</div>${c.rail ? `<p class="chrail">${esc(c.rail)}</p>` : ""}`;
+    } else if (c.type === "round") {
+      const r = (fund.rounds || []).find((x) => x.num === c.num) || {};
+      const stats = (r.stats || []).map((s) => `<div class="chstat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
+      inner = `<p class="chbig ctext">${wordify(c.text)}${c.emph ? `<span class="emph">${esc(c.emph)}</span>` : ""}</p>${c.sub ? `<p class="chsub">${esc(c.sub)}</p>` : ""}${stats ? `<div class="chstats">${stats}</div>` : ""}${r.href ? `<div class="btnrow"><a class="btn btn--lime" href="${attr(r.href)}">${esc(c.cta || "Round " + r.num)} →</a></div>` : ""}`;
+    } else if (c.type === "experts") {
+      const t = fund.expertsTeaser;
+      inner = `<div class="chsplit"><div><p class="eyebrow chkicker">Expert Network</p><p class="chlead ctext">${wordify(t.lede)}</p><p class="chsub chsub--tight">${esc(t.body)}</p><div class="btnrow"><a class="btn btn--lime" href="${attr(t.href)}">${esc(t.cta)} →</a></div></div><div class="graphbox chgraph">${expertGraph()}</div></div>`;
+    } else if (c.type === "partners") {
+      const [leadTxt, subTxt] = String(fund.partners.lede || "").split(" — ");
+      const groups = ((fund.partners && fund.partners.groups) || []).map((gr) => `<div class="chpartnercat"><h4>${esc(gr.name)}</h4><div class="chpartnercards">${gr.items.map((it) =>
+        `<div class="pcard2">${partnerMark(it)}<div class="pcard2__body"><b>${esc(it.name)}</b><span>${esc(it.note)}</span></div></div>`).join("")}</div></div>`).join("");
+      inner = `<p class="eyebrow chkicker">Partners</p><p class="chlead ctext">${wordify(leadTxt)}</p>${subTxt ? `<p class="chsub chsub--tight">${esc(subTxt.charAt(0).toUpperCase() + subTxt.slice(1))}</p>` : ""}<div class="chpartners">${groups}</div>`;
+    } else {
+      inner = `${c.kicker ? `<p class="eyebrow chkicker">${esc(c.kicker)}</p>` : ""}<p class="chbig ctext">${wordify(c.text)}${c.emph ? `<span class="emph">${esc(c.emph)}</span>` : ""}</p>${c.sub ? `<p class="chsub">${esc(c.sub)}</p>` : ""}`;
+    }
+    return `<div class="chapter${c.type === "partners" ? " chapter--flow" : ""}${i === 0 ? " is-active" : ""}" data-ch="${i}"><div class="wrap">${inner}</div></div>`;
+  };
+  const toc = chapters.map((c, i) => `<li${i === 0 ? ' class="is-active"' : ""}><button data-go="${i}"><span class="toc__n">${String(i + 1).padStart(2, "0")}</span><span class="toc__t">${esc(c.toc)}</span></button></li>`).join("");
+  return `<section class="report" id="story" style="height:${chapters.length * 100}vh">
+  <div class="progress" aria-hidden="true"></div>
+  <nav class="toc" aria-label="Contents"><ol>${toc}</ol></nav>
+  <div class="stage">
+    <div class="stage__bg"><div class="photo"></div><div class="orb orb--1"></div><div class="orb orb--2"></div><div class="orb orb--3"></div></div>
+    <div class="stage__frame">${chapters.map(renderCh).join("\n")}</div>
+  </div>
+</section>`;
+}
+
+/* ============================================================
+   LANDING — index.html (hero + narrative scroll)
    ============================================================ */
 function landingPage() {
   const f = fund;
-  const objs = f.mission.objectives.map((o, i) => `<div class="objcard reveal"><div class="n">${String(i + 1).padStart(2, "0")}</div><p>${esc(o)}</p></div>`).join("");
-  const localismDims = f.dimensions.items.filter((d) => d.name !== "Ethereum");
-  const ethDim = f.dimensions.items.find((d) => d.name === "Ethereum");
-  const dimcards = localismDims.map((d) => `<div class="dimcompact reveal">
-      <span class="dimcompact__ic">${dimShapes[d.name] || ""}</span>
-      <div><h3>${esc(d.name)} localism</h3><p>${esc(d.body)}</p></div>
-    </div>`).join("");
-  const monogram = (name) => {
-    const paren = name.match(/\(([A-Z]{2,5})\)/);
-    if (paren) return paren[1];
-    const caps = (name.match(/[A-Z]/g) || []);
-    if (caps.length >= 2) return caps.slice(0, 3).join("");
-    return name.replace(/[^A-Za-z ]/g, "").split(/\s+/).filter(Boolean).map((w) => w[0]).join("").slice(0, 2).toUpperCase();
-  };
-  const partnerCats = ((f.partners && f.partners.groups) || []).map((gr) => `<div class="partnercat reveal"><h4 class="partnercat__h">${esc(gr.name)}</h4><div class="partnercards">${gr.items.map((it) => {
-    const mark = it.domain
-      ? `<span class="pcard2__mark" data-mono="${attr(monogram(it.name))}"><img class="pcard2__fav" src="assets/img/partners/${attr(it.domain)}.png" alt="" loading="lazy" onerror="this.closest('.pcard2__mark').classList.add('no-img')"></span>`
-      : `<span class="pcard2__mark" aria-hidden="true">${esc(monogram(it.name))}</span>`;
-    return `<div class="pcard2">${mark}<div class="pcard2__body"><b>${esc(it.name)}</b><span>${esc(it.note)}</span></div></div>`;
-  }).join("")}</div></div>`).join("");
-  const deepFaqItems = (f.deepFaq || []).map((q) => `<details class="disc"><summary>${esc(q.q)} <span class="disc__plus"></span></summary><div class="disc__body"><p>${esc(q.a)}</p></div></details>`).join("");
-  const rounds = f.rounds.map((r) => {
-    const acc = r.status === "live" ? "#c4623d" : "#8a9382";
-    const stats = (r.stats || []).map((s) => `<div class="roundcard__stat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
-    const inner = `
-      <div class="roundcard__num">${esc(r.num)}</div>
-      <div>
-        <div class="roundcard__title">Round ${esc(r.num)} — ${esc(r.title)}</div>
-        <div class="roundcard__dek">${esc(r.dek)}</div>
-        ${stats ? `<div class="roundcard__stats">${stats}</div>` : ""}
-      </div>
-      <div class="roundcard__side"><span class="statuschip ${r.status}">${esc(r.statusLabel)}</span>${r.href ? `<span class="arrow">→</span>` : ""}</div>`;
-    return r.href
-      ? `<a class="roundcard reveal" style="--accent:${acc}" href="${attr(r.href)}">${inner}</a>`
-      : `<div class="roundcard is-coming reveal" style="--accent:${acc}">${inner}</div>`;
-  }).join("");
-
   const body = `
 <header class="hero hero--scene scene scene--tall scene--dark" data-darknav>
   <div class="scene__bg"><img class="parallax" data-parallax="0.16" src="assets/img/hero-liana.jpg" alt=""></div>
@@ -184,101 +212,14 @@ function landingPage() {
     <p class="hero__dek reveal">${esc(f.heroDek)}</p>
     <div class="btnrow reveal">
       <a class="btn btn--lime" href="round-01.html">Explore Round 01 →</a>
+      <a class="btn" href="round-02.html" style="background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,0.35)">Explore Round 02 →</a>
       <a class="btn" href="experts.html" style="background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,0.35)">Expert Network</a>
     </div>
-    <p class="reveal" style="margin-top:1.7rem"><a href="intro.html" style="color:color-mix(in srgb,var(--paper) 64%, transparent);font-size:0.92rem;text-decoration:underline;text-underline-offset:4px">Read the narrative version →</a></p>
   </div>
 </header>
-
-<section class="section section--air" id="mission">
-  <div class="wrap">
-    <p class="eyebrow reveal">Why we exist</p>
-    <p class="missionlead reveal">${esc(f.mission.paragraphs[0])}</p>
-    ${f.mission.paragraphs.length > 1 ? `<div class="prose reveal">${f.mission.paragraphs.slice(1).map((p) => `<p>${esc(p)}</p>`).join("")}</div>` : ""}
-    <div class="objgrid">${objs}</div>
-  </div>
-</section>
-
-<section class="scene scene--mid scene--dark section--air" id="localism">
-  <div class="wrap">
-    <p class="eyebrow reveal">Localism</p>
-    <h2 class="section__title reveal" style="max-width:34ch">Four dimensions of localism</h2>
-    <p class="section__lede reveal" style="color:var(--paper);max-width:60ch">${esc(f.dimensions.lede)}</p>
-    <div class="dimgrid2">${dimcards}</div>
-    ${ethDim ? `<p class="railnote reveal"><span>On Ethereum rails.</span> ${esc(ethDim.body)}</p>` : ""}
-  </div>
-</section>
-
-<section class="scene scene--mid scene--dark" id="model">
-  <div class="wrap">
-    <p class="eyebrow reveal">How it works</p>
-    <h2 class="bigstatement reveal" style="margin-top:0.6rem">Fund the <span class="accent-word">hub</span>, not the project.</h2>
-    <p class="scene__sub reveal">${esc(f.model.paragraphs[0])}</p>
-  </div>
-</section>
-
-<section class="section section--air" id="rounds">
-  <div class="wrap">
-    <p class="eyebrow reveal">Rounds</p>
-    <h2 class="section__title reveal" style="margin-bottom:clamp(1.5rem,4vw,2.5rem)">Organised by round</h2>
-    <div class="roundlist">${rounds}</div>
-  </div>
-</section>
-
-<section class="section section--alt section--air" id="experts-teaser">
-  <div class="wrap">
-    <div class="split">
-      <div class="reveal">
-        <p class="eyebrow">Expert Network</p>
-        <h2 class="section__title" style="max-width:15ch;margin:0.3rem 0 1rem">${esc(f.expertsTeaser.lede)}</h2>
-        <div class="prose"><p>${esc(f.expertsTeaser.body)}</p></div>
-        <div class="btnrow"><a class="btn" href="${attr(f.expertsTeaser.href)}">${esc(f.expertsTeaser.cta)} →</a></div>
-      </div>
-      <div class="graphbox reveal">${expertGraph()}</div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--alt section--air" id="partners">
-  <div class="wrap">
-    <p class="eyebrow reveal">Partners</p>
-    <h2 class="section__title reveal" style="max-width:48ch">${esc(f.partners.lede)}</h2>
-    <div class="partnercats">${partnerCats}</div>
-  </div>
-</section>`;
+${narrativeScroll()}`;
 
   return layout({ title: "Localism Fund — local hubs, funded close to the ground", desc: f.heroDek, body, navDark: true });
-}
-
-/* ============================================================
-   ALTERNATIVE HOME — intro.html (narrative parallax walkthrough)
-   ============================================================ */
-function narrativePage() {
-  const chapters = (fund.narrative && fund.narrative.chapters) || [];
-  const wordify = (s) => { let wi = 0; return esc(s).split(/(\s+)/).map((tok) => /^\s+$/.test(tok) ? tok : `<span class="w" style="--i:${wi++}">${tok}</span>`).join(""); };
-  const renderCh = (c, i) => {
-    let inner;
-    if (c.type === "dimensions") {
-      const items = c.items.map((it) => `<div class="chdim"><h3>${esc(it.name)}</h3><p>${esc(it.note)}</p></div>`).join("");
-      inner = `<p class="chlead ctext">${wordify(c.lead)}</p><div class="chdims">${items}</div>${c.rail ? `<p class="chrail">${esc(c.rail)}</p>` : ""}`;
-    } else if (c.type === "cta") {
-      const btns = c.buttons.map((x) => `<a class="btn ${x.primary ? "btn--lime" : ""}" href="${attr(x.href)}"${x.primary ? "" : ` style="background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,0.35)"`}>${esc(x.label)} →</a>`).join("");
-      inner = `<p class="chbig ctext">${wordify(c.text)}</p><div class="btnrow">${btns}</div>${c.altLink ? `<a class="beat__altlink" href="${attr(c.altLink.href)}">${esc(c.altLink.label)}</a>` : ""}`;
-    } else {
-      inner = `${c.kicker ? `<p class="eyebrow chkicker">${esc(c.kicker)}</p>` : ""}<p class="chbig ctext">${wordify(c.text)}${c.emph ? `<span class="emph">${esc(c.emph)}</span>` : ""}</p>${c.sub ? `<p class="chsub">${esc(c.sub)}</p>` : ""}`;
-    }
-    return `<div class="chapter${i === 0 ? " is-active" : ""}" data-ch="${i}"><div class="wrap">${inner}</div></div>`;
-  };
-  const toc = chapters.map((c, i) => `<li${i === 0 ? ' class="is-active"' : ""}><button data-go="${i}"><span class="toc__n">${String(i + 1).padStart(2, "0")}</span><span class="toc__t">${esc(c.toc)}</span></button></li>`).join("");
-  const body = `<div class="progress"></div>
-<div class="report" style="height:${chapters.length * 100}vh">
-  <nav class="toc" aria-label="Contents"><ol>${toc}</ol></nav>
-  <div class="stage">
-    <div class="stage__bg"><div class="photo"></div><div class="orb orb--1"></div><div class="orb orb--2"></div><div class="orb orb--3"></div></div>
-    <div class="stage__frame">${chapters.map(renderCh).join("\n")}</div>
-  </div>
-</div>`;
-  return layout({ title: "Localism Fund — why we exist", desc: fund.heroDek, body, navDark: true });
 }
 
 /* ============================================================
@@ -320,11 +261,9 @@ function buildMap() {
     const pts = (round.locations || {})[g.slug] || [];
     pts.forEach((p) => {
       const [lat, lon] = p, [x, y] = proj(lon, lat);
-      markers += `<a href="${attr(g.slug)}.html" style="--accent:${attr(g.accent)}">
+      markers += `<a href="${attr(g.slug)}.html" style="--accent:${attr(g.accent)}" aria-label="${attr(g.name)} — ${attr(g.place)}. Click to explore." data-name="${attr(g.shortName || g.name)}" data-place="${attr(g.place)}" data-tag="${attr(g.tagline || "")}">
         <circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/>
         <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/>
-        <text class="lbl" x="${x.toFixed(1)}" y="${(y - 5).toFixed(1)}">${esc(g.shortName || g.name)}</text>
-        <title>${esc(g.name)} — ${esc(g.region)}</title>
       </a>`;
     });
   });
@@ -332,6 +271,12 @@ function buildMap() {
     <svg class="map" viewBox="0 6 360 142" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Round 01 project locations">
       <g class="land">${land}</g><g class="markers">${markers}</g>
     </svg>
+    <div class="maptip" aria-hidden="true">
+      <b class="maptip__name"></b>
+      <span class="maptip__place"></span>
+      <p class="maptip__tag"></p>
+      <span class="maptip__cta">Click to explore →</span>
+    </div>
     <p class="mapcap">Twelve hubs across six continents — hover or tap a marker to open its story.</p>
   </div>`;
 }
@@ -411,7 +356,13 @@ function round01Page() {
    ============================================================ */
 function operatorsPage() {
   const o = experts.operators;
-  const cards = (o.items || []).map((p) => { const ini = String(p.name || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase(); return `<div class="opcard reveal"><span class="opcard__avatar" aria-hidden="true">${esc(ini)}</span><div class="opcard__body"><b>${esc(p.name)}</b><span class="opcard__org">${esc(p.org)}</span>${p.bio ? `<p class="opcard__bio">${esc(p.bio)}</p>` : ""}</div></div>`; }).join("");
+  const cards = (o.items || []).map((p) => {
+    const ini = String(p.name || "").split(/\s+/).filter(Boolean).map((w) => w[0]).slice(0, 2).join("").toUpperCase();
+    const avatar = p.img
+      ? `<span class="opcard__avatar opcard__avatar--photo"><img src="assets/img/operators/${attr(p.img)}" alt="${attr(p.name)}"></span>`
+      : `<span class="opcard__avatar" aria-hidden="true">${esc(ini)}</span>`;
+    return `<div class="opcard reveal">${avatar}<div class="opcard__body"><b>${esc(p.name)}</b><span class="opcard__org">${esc(p.org)}</span>${p.bio ? `<p class="opcard__bio">${esc(p.bio)}</p>` : ""}</div></div>`;
+  }).join("");
   const resp = (o.responsibilities || []).map((r) => `<div class="dcard reveal"><h3>${esc(r.name)}</h3><p>${esc(r.body)}</p></div>`).join("");
   const body = `
 <header class="hero" data-darknav>
@@ -442,14 +393,19 @@ function operatorsPage() {
 function expertsPage() {
   const e = experts;
   const opItems = e.operators.items;
-  const domains = e.domains.items.map((d) => `<div class="dcard reveal"><div class="dcard__k">Domain</div><h3>${esc(d.name)}</h3><p>${esc(d.body)}</p></div>`).join("");
-  const steps = e.lifecycle.steps.map((s) => `<div class="step reveal"><div class="step__n"></div><h4>${esc(s.title)}</h4><p>${esc(s.body)}</p></div>`).join("");
-  const roster = (e.roster.members || []).map((m) => {
-    const isOp = opItems.some((o) => m.includes(o.name) || o.name.includes(m));
-    return `<li class="${isOp ? "is-op" : ""}">${esc(m)}${isOp ? `<span class="role">Operator</span>` : ""}</li>`;
+  const domains = e.domains.items.map((d) => `<div class="dcard reveal"><div class="dcard__k">Expert Domain</div><h3>${esc(d.name)}</h3><p>${esc(d.body)}</p></div>`).join("");
+  const isOperator = (m) => opItems.some((o) => m.name.includes(o.name) || o.name.includes(m.name));
+  // operators lead the roster (in operator-team order), everyone else stays alphabetical
+  const rosterMembers = [
+    ...opItems.map((o) => (e.roster.members || []).find((m) => m.name.includes(o.name) || o.name.includes(m.name))).filter(Boolean),
+    ...(e.roster.members || []).filter((m) => !isOperator(m)),
+  ];
+  const roster = rosterMembers.map((m, i) => {
+    const isOp = isOperator(m);
+    return `<li class="${isOp ? "is-op" : ""}"><button type="button" class="roster__btn" data-expert="${i}">${esc(m.name)}</button>${isOp ? `<span class="role">Operator</span>` : ""}</li>`;
   }).join("");
+  const expertsData = JSON.stringify(rosterMembers.map((m) => ({ name: m.name, ens: m.ens || "", img: m.img || "", why: m.why || "" }))).replace(/</g, "\\u003c");
   const roles = e.round01.roles.map((r) => `<div class="dcard reveal"><div class="dcard__k">Role</div><h3>${esc(r.name)}</h3><p>${esc(r.body)}</p></div>`).join("");
-  const rubric = e.round01.rubric.map((r) => `<li><span class="nm">${esc(r.name)}</span><span class="w">${esc(r.weight)}</span></li>`).join("");
   const joinLinks = e.join.links.map((l) => `<a class="btn ${l.primary ? "btn--lime" : ""}" href="${attr(l.href)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("");
   const faqItems = (e.faq || []).map((q) => `<details class="disc"><summary>${esc(q.q)} <span class="disc__plus"></span></summary><div class="disc__body"><p>${esc(q.a)}</p></div></details>`).join("");
   const elig = ((e.eligibility && e.eligibility.items) || []).map((x) => `<li>${esc(x)}</li>`).join("");
@@ -481,23 +437,34 @@ function expertsPage() {
 
 <section class="section" id="network">
   <div class="wrap">
-    ${sectionHead("03", "The network", e.roster.lede)}
+    <div class="split split--top">
+      <div>${sectionHead("03", "Attested Experts", e.roster.lede)}</div>
+      <div class="graphbox graphbox--sm reveal">${expertGraph()}</div>
+    </div>
     <ul class="roster reveal">${roster}</ul>
     <p class="rosternote reveal">${esc(e.roster.note)}</p>
   </div>
 </section>
 
+<div class="emodal" id="expert-modal" hidden>
+  <div class="emodal__backdrop" data-close></div>
+  <div class="emodal__card" role="dialog" aria-modal="true" aria-labelledby="emodal-name">
+    <button class="emodal__close" type="button" data-close aria-label="Close">&times;</button>
+    <div class="emodal__head">
+      <img class="emodal__photo" src="" alt="" hidden>
+      <div><h3 id="emodal-name"></h3><p class="emodal__ens"></p></div>
+    </div>
+    <div class="emodal__whywrap"><p class="emodal__k">Why they applied</p><p class="emodal__why"></p></div>
+  </div>
+</div>
+<script id="experts-data" type="application/json">${expertsData}</script>
+
 <section class="section section--alt" id="round01">
   <div class="wrap">
     ${sectionHead("04", "Inside Round 01", e.round01.lede)}
     <div class="cardgrid">${roles}</div>
-    <div class="reveal" style="margin-top:clamp(2rem,5vw,3.2rem)">
-      <p class="eyebrow">How applications were scored</p>
-      <ul class="rubric">${rubric}</ul>
-      <div class="round01-note">
-        <span>${esc(e.round01.matching)}</span>
-        <span>${esc(e.round01.compensation)}</span>
-      </div>
+    <div class="btnrow reveal" style="margin-top:clamp(2rem,5vw,3rem)">
+      <a class="btn btn--lime" href="round-01.html">Explore Round 01 →</a>
     </div>
   </div>
 </section>
@@ -509,17 +476,7 @@ function expertsPage() {
   </div>
 </section>
 
-<section class="scene scene--mid scene--dark" id="lifecycle">
-  <div class="wrap">
-    <div class="section__head section__head--plain reveal">
-      <h2 class="section__title">The engagement lifecycle</h2>
-      <p class="section__lede" style="color:var(--lime)">${esc(e.lifecycle.lede)}</p>
-    </div>
-    <div class="steps">${steps}</div>
-  </div>
-</section>
-
-<section class="section" id="join">
+<section class="section section--alt" id="join">
   <div class="wrap">
     <div class="reveal" style="max-width:var(--prose)">
       <p class="eyebrow">Join</p>
@@ -708,9 +665,10 @@ function buildMeetupMap() {
   ((fund.round02 && fund.round02.meetups.items) || []).forEach((m) => {
     if (!m.coords || m.coords.length < 2) return;
     const [lat, lon] = m.coords, [x, y] = projLL(lon, lat);
-    markers += `<a href="${attr(m.slug)}.html" style="--accent:#4a7339"><circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/><title>${esc(m.name)} — ${esc(m.place)}</title></a>`;
+    const xtra = meetupExtra[m.slug] || {};
+    markers += `<a href="${attr(m.slug)}.html" style="--accent:#4a7339" aria-label="${attr(m.name)} — ${attr(m.place)}. Click to explore." data-name="${attr(m.name)}" data-place="${attr(m.place)}" data-tag="${attr(xtra.tagline || "")}"><circle class="halo" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2.6"/></a>`;
   });
-  return `<div class="mapwrap reveal"><svg class="map" viewBox="0 6 360 142" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Round 02 meetup locations"><g class="land">${land}</g><g class="markers">${markers}</g></svg><p class="mapcap">Ten meetups across Latin America — hover or tap a marker to open it.</p></div>`;
+  return `<div class="mapwrap reveal"><svg class="map" viewBox="0 6 360 142" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of Round 02 meetup locations"><g class="land">${land}</g><g class="markers">${markers}</g></svg><div class="maptip" aria-hidden="true"><b class="maptip__name"></b><span class="maptip__place"></span><p class="maptip__tag"></p><span class="maptip__cta">Click to explore →</span></div><p class="mapcap">Ten meetups across Latin America — hover or tap a marker to open it.</p></div>`;
 }
 function round02Page() {
   const r = fund.round02;
@@ -722,7 +680,7 @@ function round02Page() {
       <div class="pcard__top"><span class="pcard__num">${n}</span><span class="chip">${esc(m.country)}</span></div>
       <div class="pcard__name">${esc(m.name)}</div>
       <div class="pcard__place">${esc(m.place)}</div>
-      <p class="pcard__tag">A year of consistent, content-first Ethereum gatherings.</p>
+      <p class="pcard__tag">${esc((meetupExtra[m.slug] || {}).tagline || "A year of consistent, open Ethereum gatherings.")}</p>
       <div class="pcard__foot"><div class="pcard__themes">${chips(["Approved · onboarding"])}</div><span class="arrow">→</span></div>
     </a>`;
   }).join("\n");
@@ -780,6 +738,11 @@ function meetupPage(m, i) {
   const accentVar = "--accent:#4a7339";
   const mini = meetupMiniMap(m);
   const isSeries = (m.cities || "").includes("·");
+  const x = meetupExtra[m.slug] || {};
+  const standouts = (x.standouts || []).map((s) => `<li>${s.lead ? `<b>${esc(s.lead)}.</b> ` : ""}${esc(s.body)}</li>`).join("");
+  const notes = (x.reviewerNotes || []).map((r) => `<li>${esc(r)}</li>`).join("");
+  const strengths = (x.alignmentStrengths || []).map((s) => `<li>${esc(s)}</li>`).join("");
+  const gaps = (x.alignmentGaps || []).map((g) => `<li>${esc(g)}</li>`).join("");
   const body = `
 <header class="phero reveal" style="${accentVar}">
   <div class="wrap">
@@ -789,6 +752,7 @@ function meetupPage(m, i) {
         <div class="phero__index">${n} / ${all.length}</div>
         <h1>${esc(m.name)}</h1>
         <p class="phero__place">${esc(m.place)}</p>
+        ${x.organizer ? `<p class="phero__people">Run by <b>${esc(x.organizer)}</b></p>` : ""}
         <div class="phero__chips"><span class="chip">${esc(m.country)}</span><span class="chip">Round 02 · Local Meetups</span></div>
       </div>
       ${mini ? `<div class="phero__map">${mini}<p class="phero__maploc">${esc(m.cities || m.place)}</p></div>` : ""}
@@ -796,12 +760,33 @@ function meetupPage(m, i) {
   </div>
 </header>
 
-<section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">A grassroots Ethereum meetup${isSeries ? " series" : ""} in ${esc(m.place)} — one of ten communities in Round 02's Local Meetups LATAM, hosting consistent local gatherings for a year following Devconnect 2025.</p></div></section>
+<section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">${esc(x.tagline || `A grassroots Ethereum meetup${isSeries ? " series" : ""} in ${m.place} — one of ten communities in Round 02's Local Meetups LATAM.`)}</p></div></section>
+
+${x.summary ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">The proposal</p>
+  <div class="prose reveal"><p>${esc(x.summary)}</p></div>
+</div></section>` : ""}
+
+${standouts ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Why it stood out</p>
+  <ul class="insights reveal">${standouts}</ul>
+</div></section>` : ""}
+
+${notes ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Ethereum Everywhere — reviewer notes</p>
+  <ul class="revnotes reveal">${notes}</ul>
+</div></section>` : ""}
+
+${strengths ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Localism alignment</p>
+  <ul class="howlist reveal">${strengths}</ul>
+  ${gaps ? `<p class="ghead ghead--sub reveal">Gaps acknowledged at selection</p><ul class="howlist gaps reveal">${gaps}</ul>` : ""}
+</div></section>` : ""}
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   <p class="ghead reveal">The support</p>
   <ul class="howlist reveal">
-    <li>$3,000 for twelve months of consistent, content-first meetups — roughly $250–375 per gathering.</li>
+    <li>$3,000 for twelve months of consistent meetups — roughly $250–375 per gathering.</li>
     <li>An initial $750 is released once the organiser completes their Post-Approval Form.</li>
     <li>The remaining $2,250 is released quarterly, contingent on activity updates filed via Karma GAP.</li>
   </ul>
@@ -811,8 +796,9 @@ function meetupPage(m, i) {
   <p class="ghead reveal">Status</p>
   <div class="pstatus reveal"><span class="tier" data-tier="Solid">Approved</span><p class="pstatus__desc">Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period. Updates and reports will appear on the Round 02 results portal as the year unfolds.</p></div>
   <div class="sources reveal" style="margin-top:clamp(1.6rem,4vw,2.6rem)">
-    ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results &amp; reports", "Live tracker on the Localism Fund portal")}
-    ${source("https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "Progress &amp; reflections report", "How Round 02 was designed")}
+    ${x.appLink ? source(x.appLink, "Original application", `What they proposed — on Karma GAP${x.submitted ? ` · submitted ${esc(x.submitted)}` : ""}`) : ""}
+    ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results & reports", "Live tracker on the Localism Fund portal")}
+    ${source("https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "Progress & reflections report", "How Round 02 was designed")}
   </div>
 </div></section>
 
@@ -820,7 +806,7 @@ function meetupPage(m, i) {
   <a class="prev" href="${attr(prev.slug)}.html"><div class="dir">← Previous</div><div class="nm">${esc(prev.name)}</div></a>
   <a class="next" href="${attr(next.slug)}.html"><div class="dir">Next →</div><div class="nm">${esc(next.name)}</div></a>
 </nav>`;
-  return layout({ title: `${m.name} — Round 02 · Localism Fund`, desc: `${m.name}, ${m.place} — a Round 02 Local Meetups LATAM community.`, body, navDark: false, accentVar });
+  return layout({ title: `${m.name} — Round 02 · Localism Fund`, desc: x.tagline || `${m.name}, ${m.place} — a Round 02 Local Meetups LATAM community.`, body, navDark: false, accentVar });
 }
 
 /* ---------- emit ---------- */
@@ -837,7 +823,6 @@ copyDir(ASSETS, path.join(DIST, "assets"));
 fs.copyFileSync(path.join(SRC, "styles.css"), path.join(DIST, "styles.css"));
 fs.copyFileSync(path.join(SRC, "app.js"), path.join(DIST, "app.js"));
 fs.writeFileSync(path.join(DIST, "index.html"), landingPage());
-fs.writeFileSync(path.join(DIST, "intro.html"), narrativePage());
 fs.writeFileSync(path.join(DIST, "round-01.html"), round01Page());
 fs.writeFileSync(path.join(DIST, "round-02.html"), round02Page());
 ((fund.round02 && fund.round02.meetups.items) || []).forEach((m, i) => fs.writeFileSync(path.join(DIST, m.slug + ".html"), meetupPage(m, i)));
@@ -845,5 +830,5 @@ fs.writeFileSync(path.join(DIST, "experts.html"), expertsPage());
 fs.writeFileSync(path.join(DIST, "operators.html"), operatorsPage());
 grantees.forEach((g, i) => fs.writeFileSync(path.join(DIST, g.slug + ".html"), projectPage(g, i)));
 
-console.log(`✓ built ${grantees.length + 6 + ((fund.round02 && fund.round02.meetups.items.length) || 0)} pages -> dist/`);
-console.log(`  index · intro · round-01 · round-02 · experts · operators · ${grantees.length} projects`);
+console.log(`✓ built ${grantees.length + 5 + ((fund.round02 && fund.round02.meetups.items.length) || 0)} pages -> dist/`);
+console.log(`  index · round-01 · round-02 · experts · operators · ${grantees.length} projects`);

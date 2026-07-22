@@ -1,0 +1,45 @@
+{
+  "tagline": "Onboarding Costa Rica's real economies — coffee, producers, local stewards — onto Ethereum rails.",
+  "organizer": "Karla Cordoba Brenes (Representing Cripto Cafe / CofiBlocks)",
+  "submitted": "December 5, 2025",
+  "appId": "APP-XI97RRSP-USTULC",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-XI97RRSP-USTULC",
+  "summary": "Cripto Cafe offers a concrete, place-rooted onboarding pathway that connects Ethereum tooling to Costa Rica’s real economies and communities (coffee, organic food, producers, and local stewards), while also aiming to unify a fragmented local ecosystem across AsoBlockchain Costa Rica, ReFi Costa Rica, and Ethereum Costa Rica. The proposal is anchored by a team with a strong ethical reputation and demonstrated track record of onboarding and community education, and it includes clear Ethereum-as-infrastructure elements (social currencies, L2 tooling, wallets, RWA tokenization, and on-chain activity tracking). A key opportunity is to intentionally connect Cripto Cafe with Crypto Cantina - Osa Peninsula to create a shared pipeline and maximize regional learning and impact.",
+  "standouts": [
+    {
+      "lead": "Direct, real-world onboarding pathway that bridges outside-crypto communities into Ethereum",
+      "body": "(local stewards, farmers, producers, small businesses) using “concrete experiences connected to organic food and coffee” as the onramp."
+    },
+    {
+      "lead": "Clear Ethereum-as-infrastructure framing (not just education)",
+      "body": "via concrete Ethereum-aligned systems and topics: Starknet L2 (CofiBlocks marketplace), social currencies (Cambiatus / MUDA), wallets, on/off-ramping, and RWA tokenization for agricultural products."
+    },
+    {
+      "lead": "Strong economic + ecological localism alignment",
+      "body": "through regenerative economies and real value chains (coffee and organic food), coupled with ReFi Costa Rica’s ecological focus."
+    },
+    {
+      "lead": "Ecosystem-unifying intent in a fragmented local context",
+      "body": "explicitly designed to provide a consistent monthly convening layer across AsoBlockchain Costa Rica, ReFi Costa Rica, and Ethereum Costa Rica."
+    },
+    {
+      "lead": "High demonstrated capability and ethical credibility",
+      "body": "supported by a strong history of Costa Rica ecosystem work and prior meetup/event organizing experience (as described in the application and reinforced by Ethereum Everywhere’s reviewer notes)."
+    }
+  ],
+  "reviewerNotes": [
+    "The team “truly understand[s] the meaning of impact and onboarding” and has a track record of bringing people in from outside the crypto bubble.",
+    "The team has “a strong track record of organizing community events that genuinely educate and nurture the ecosystem in Costa Rica.”",
+    "A strong desire to see this initiative connected with the Crypto Cantina - Osa Peninsula meetup application."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem (strong) through a specific diagnosis of Costa Rica’s community nodes and the need for consistent, connective convenings.",
+    "Ethereum as local infrastructure (strong) through explicit use of Ethereum-aligned tools (L2s, social currencies, tokenization, wallets) for practical, local applications.",
+    "Economic localism (strong) through coffee and organic food value chains, producer-focused onboarding, and local economic coordination mechanisms.",
+    "Ecological localism (strong) via regenerative framing and direct linkage to ReFi Costa Rica’s ecological impact orientation.",
+    "Local leadership and network effects (strong) via Karla’s demonstrated ecosystem-building roles and cross-community coalition approach."
+  ],
+  "alignmentGaps": [
+    "Political localism appears mainly through community-owned funding and coordination mechanisms; formal civic/municipal engagement is not a central feature of the proposal."
+  ]
+}

@@ -15,14 +15,18 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  // Nav: switch to on-dark styling while over a dark hero (index only)
+  // Nav: switch to on-dark styling while over a dark hero, or the narrative
+  // scroll (index). Two signals share one apply so they can't fight.
   var nav = document.querySelector(".nav");
   var darkHero = document.querySelector("[data-darknav]");
+  var navDarkHero = false, navDarkReport = false;
+  function applyNavDark() { if (nav) nav.classList.toggle("on-dark", navDarkHero || navDarkReport); }
   if (nav && darkHero) {
     var navIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        nav.classList.toggle("on-dark", e.isIntersecting && e.intersectionRatio > 0.1);
+        navDarkHero = e.isIntersecting && e.intersectionRatio > 0.1;
       });
+      applyNavDark();
     }, { rootMargin: "-48px 0px 0px 0px", threshold: [0, 0.1, 0.5] });
     navIO.observe(darkHero);
   }
@@ -87,20 +91,6 @@
     paintOrbs();
   }
 
-  // Scroll progress bar (narrative page)
-  var bar = document.querySelector(".progress");
-  if (bar) {
-    var pTick = false;
-    function prog() {
-      var h = document.documentElement;
-      var max = h.scrollHeight - h.clientHeight;
-      bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
-      pTick = false;
-    }
-    window.addEventListener("scroll", function () { if (!pTick) { window.requestAnimationFrame(prog); pTick = true; } }, { passive: true });
-    prog();
-  }
-
   // Keep one detail open at a time? No — allow many. Just smooth-scroll a newly opened one into view if off-screen.
   document.querySelectorAll("details.disc").forEach(function (d) {
     d.addEventListener("toggle", function () {
@@ -111,11 +101,15 @@
     });
   });
 
-  // Pinned narrative report: scroll drives the active chapter; frame stays set
+  // Pinned narrative report: scroll drives the active chapter; frame stays set.
+  // Embedded mid-page (below the hero), so the fixed chrome — side TOC and
+  // progress bar — only shows while the report itself is on screen.
   var report = document.querySelector(".report");
   if (report) {
     var chapters = Array.prototype.slice.call(report.querySelectorAll(".chapter"));
     var tocItems = Array.prototype.slice.call(report.querySelectorAll(".toc li"));
+    var tocEl = report.querySelector(".toc");
+    var barEl = report.querySelector(".progress");
     var N = chapters.length, cur = -1, rTick = false;
     function setActive(idx) {
       idx = Math.max(0, Math.min(N - 1, idx));
@@ -128,6 +122,15 @@
       var p = total > 0 ? (window.pageYOffset - report.offsetTop) / total : 0;
       p = Math.max(0, Math.min(0.9999, p));
       setActive(Math.floor(p * N));
+      var rect = report.getBoundingClientRect();
+      var engaged = rect.top < window.innerHeight * 0.5 && rect.bottom > window.innerHeight * 0.5;
+      if (tocEl) tocEl.classList.toggle("is-visible", engaged);
+      if (barEl) {
+        barEl.classList.toggle("is-visible", engaged);
+        barEl.style.width = (p * 100) + "%";
+      }
+      navDarkReport = rect.top < 56 && rect.bottom > 56;
+      applyNavDark();
       rTick = false;
     }
     window.addEventListener("scroll", function () { if (!rTick) { window.requestAnimationFrame(rPaint); rTick = true; } }, { passive: true });
@@ -141,6 +144,116 @@
     });
     rPaint();
   }
+
+  // Attested experts modal (experts.html): click a roster name for photo + why
+  var emodal = document.getElementById("expert-modal");
+  if (emodal) {
+    var expertsData = [];
+    try { expertsData = JSON.parse((document.getElementById("experts-data") || {}).textContent || "[]"); } catch (err) { }
+    var emPhoto = emodal.querySelector(".emodal__photo");
+    var emName = emodal.querySelector("#emodal-name");
+    var emEns = emodal.querySelector(".emodal__ens");
+    var emWhyWrap = emodal.querySelector(".emodal__whywrap");
+    var emWhy = emodal.querySelector(".emodal__why");
+    var emLastFocus = null;
+    function emClose() {
+      emodal.hidden = true;
+      document.body.style.overflow = "";
+      if (emLastFocus) emLastFocus.focus();
+    }
+    function emOpen(i) {
+      var d = expertsData[i];
+      if (!d) return;
+      emName.textContent = d.name;
+      emEns.textContent = d.ens || "";
+      emEns.hidden = !d.ens;
+      if (d.img) { emPhoto.src = d.img; emPhoto.alt = d.name; emPhoto.hidden = false; }
+      else { emPhoto.hidden = true; }
+      if (d.why) { emWhy.textContent = d.why; emWhyWrap.hidden = false; }
+      else { emWhyWrap.hidden = true; }
+      emodal.hidden = false;
+      document.body.style.overflow = "hidden";
+      emodal.querySelector(".emodal__close").focus();
+    }
+    document.querySelectorAll(".roster [data-expert]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        emLastFocus = b;
+        emOpen(parseInt(b.getAttribute("data-expert"), 10));
+      });
+    });
+    emodal.addEventListener("click", function (ev) {
+      if (ev.target.hasAttribute && ev.target.hasAttribute("data-close")) emClose();
+    });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "Escape" && !emodal.hidden) emClose();
+    });
+  }
+
+  // Count-up stats: roll each numeric stat value up to its final figure the
+  // first time it scrolls into view. Ease-out cubic so it lands softly.
+  // Skipped entirely under prefers-reduced-motion (values render as authored).
+  var statVals = Array.prototype.slice.call(document.querySelectorAll(".statband .stat__value, .statbar__v"));
+  if (statVals.length && !reduce && "IntersectionObserver" in window) {
+    var countIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        countIO.unobserve(en.target);
+        var el = en.target;
+        var final = el.textContent;
+        var m = final.match(/\d+/);
+        if (!m) return;
+        var target = parseInt(m[0], 10);
+        var prefix = final.slice(0, m.index);
+        var suffix = final.slice(m.index + m[0].length);
+        var t0 = null, DUR = 1400;
+        function tick(ts) {
+          if (t0 === null) t0 = ts;
+          var p = Math.min(1, (ts - t0) / DUR);
+          var eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + Math.round(eased * target) + suffix;
+          if (p < 1) window.requestAnimationFrame(tick);
+          else el.textContent = final;
+        }
+        window.requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.4 });
+    statVals.forEach(function (el) { countIO.observe(el); });
+  }
+
+  // Map tooltips (Round 01 + Round 02): hover/focus a marker for a mini
+  // profile card, positioned beside the dot and flipped near the map edge.
+  document.querySelectorAll(".mapwrap").forEach(function (tipWrap) {
+    var maptip = tipWrap.querySelector(".maptip");
+    if (!maptip) return;
+    var tipName = maptip.querySelector(".maptip__name");
+    var tipPlace = maptip.querySelector(".maptip__place");
+    var tipTag = maptip.querySelector(".maptip__tag");
+    function showTip(a) {
+      tipName.textContent = a.getAttribute("data-name") || "";
+      tipPlace.textContent = a.getAttribute("data-place") || "";
+      tipTag.textContent = a.getAttribute("data-tag") || "";
+      tipTag.style.display = tipTag.textContent ? "" : "none";
+      var dot = a.querySelectorAll("circle")[1] || a;
+      var r = dot.getBoundingClientRect();
+      var w = tipWrap.getBoundingClientRect();
+      var x = r.left + r.width / 2 - w.left;
+      var y = r.top + r.height / 2 - w.top;
+      maptip.classList.add("is-on");
+      var tw = maptip.offsetWidth, th = maptip.offsetHeight;
+      var left = x + 16;
+      if (left + tw > w.width - 8) left = x - tw - 16;
+      var top = Math.max(8, Math.min(y - th / 2, w.height - th - 8));
+      maptip.style.left = left + "px";
+      maptip.style.top = top + "px";
+    }
+    function hideTip() { maptip.classList.remove("is-on"); }
+    tipWrap.querySelectorAll(".map a[data-name]").forEach(function (a) {
+      a.addEventListener("mouseenter", function () { showTip(a); });
+      a.addEventListener("mouseleave", hideTip);
+      a.addEventListener("focus", function () { showTip(a); });
+      a.addEventListener("blur", hideTip);
+    });
+  });
 
   // Interactive expert graph — highlight a person's connections on hover/focus
   document.querySelectorAll(".egraph").forEach(function (svg) {

@@ -1,0 +1,46 @@
+{
+  "tagline": "Four years of Ethereum Bolivia momentum, structured into a year-long builder pathway.",
+  "organizer": "Ayrton Paredes (Representing Ethereum Bolivia / Ethereum Lab)",
+  "submitted": "December 3, 2025",
+  "appId": "APP-W2Y416Q6-HLYCD8",
+  "appLink": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-W2Y416Q6-HLYCD8",
+  "summary": "Ethereum Lab builds on a proven multi-year Ethereum Bolivia meetup series and proposes a well-structured, year-long progression that deepens builder capacity (from newcomer-friendly sessions into advanced technical themes). The application provides strong evidence of real execution and momentum (four years of activity plus major events like the Ethereum Bolivia Buildathon 2025), and it positions the series as a durable community touchpoint in a country that has received relatively limited ecosystem support. This Acceptance Summary highlights the strongest fit signals, includes Ethereum Everywhere reviewer notes, and notes a few optional recommendations to deepen explicit localism experiments over the year.",
+  "standouts": [
+    {
+      "lead": "Proven execution history and credibility (not a first-time series)",
+      "body": "including multi-year delivery and major national activation: “For the past four years, we’ve been bringing people into the Ethereum Bolivia community…” and “A major milestone this year was the Ethereum Bolivia Buildathon 2025, the biggest buildathon the country has hosted so far.”"
+    },
+    {
+      "lead": "A clearly structured technical roadmap that supports both newcomers and advanced builders",
+      "body": "with quarterly themes: “Q1: DeFi… Q2: Privacy… ZK concepts, rollups… Q3: Security… Q4: Interoperability…,” alongside “technical workshops and sessions for people who want to build.”"
+    },
+    {
+      "lead": "Strong local leadership with named organizers and clear roles",
+      "body": "plus real community traction: “our meetups average between 50 and 70 attendees,” and the series is “led by a core group of community members who have been actively building and sustaining Ethereum Bolivia…”."
+    },
+    {
+      "lead": "Strong network effects and collaborations across local and international communities",
+      "body": "supporting speaker access and cross-ecosystem learning: “strong collaborations with… Google Developers Group, EsLibertad, Women in Tech, Eth Kipu, and Crecimiento…,” plus hackathon hubs for ETHOnline and Aleph and presence at Devconnect."
+    },
+    {
+      "lead": "A practical operations and sustainability approach",
+      "body": "with realistic venue/format cost ranges and measurable goals: “budget per meetup ranges from $100 to $400+,” and targets for “10 to 12 meetups,” “~35% growth” in online channels, and “four to six active partnerships with coworking spaces, universities, or ecosystem projects…”."
+    }
+  ],
+  "reviewerNotes": [
+    "The team seems reputable and capable of turning their plans into reality.",
+    "Cochabamba - and Bolivia in general - hasn’t received much support from the web3 ecosystem in recent years, and this group seems ready to rise to the challenge and prove their worth.",
+    "Their plan is also very well structured: starting with lighter topics for newcomers, then moving into more advanced content for students and experienced developers.",
+    "Finally, their ties with other local communities appear strong."
+  ],
+  "alignmentStrengths": [
+    "Place-based grounding & local ecosystem: clear picture of the Bolivia context and existing hubs, with evidence of sustained activity.",
+    "Ethereum as local infrastructure (builder capacity): concrete quarterly technical curriculum and ongoing courses/hackathon participation.",
+    "Local leadership and execution readiness: multi-year organizing track record with clear community traction.",
+    "Network effects & cosmo-localism: strong collaborations across communities and participation in regional/global programs."
+  ],
+  "alignmentGaps": [
+    "Political and ecological localism are not meaningfully developed in the submitted text.",
+    "Economic localism is present mainly via entrepreneurship/talent pathways, but explicit local economic coordination mechanisms are not described."
+  ]
+}

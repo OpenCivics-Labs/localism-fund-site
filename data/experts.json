@@ -1,43 +1,412 @@
 {
   "kicker": "Localism Fund · Expert Network",
-  "heroTitle": "Peer-validated experts who assess the grants.",
-  "heroDek": "A curated, peer-attested collective of practitioners advancing the intersection of localism and Ethereum-based coordination. They assess, advise, and amplify the local hubs the Fund backs — so every grant benefits from both high-level expertise and grounded community context.",
+  "heroTitle": "Peer-validated domain experts.",
+  "heroDek": "A peer-attested network of practitioners advancing the intersection of localism, capital allocation, and Ethereum-based coordination.",
   "what": {
     "lede": "Not a panel of distant judges. A network of people who've run the rounds, built the tools, and done the local work.",
     "paragraphs": [
-      "The Expert Network is how the Fund stays credible. Experts reach Validated status through peer attestation — vouched for by others in the network via TrustGraph, not appointed from above — and bring proven experience across one or more of three domains.",
-      "For Round 01, the network was the engine of evaluation: experts scored every local-hub application against the rubric, advised hubs as they designed their programs, and surfaced the localism and on-chain signal that the operators built funding decisions on."
+      "Experts reach Validated status through peer attestation — vouched for by others in the network via TrustGraph, not appointed from above — and bring proven experience across one or more of three domains. For Round 01, the network was the engine of evaluation: experts scored every local-hub application against the rubric, advised hubs as they designed their programs, and surfaced the localism and on-chain signal that the operators built funding decisions on."
     ]
   },
   "domains": {
     "items": [
-      { "name": "Grant-making", "body": "Designing, managing, or evaluating grant programs — across Web3, philanthropy, civic, and public sectors." },
-      { "name": "Web3 / Ethereum tooling", "body": "Fluency with Ethereum tools for coordination, funding, governance, and identity — Karma GAP, Gardens, Giveth, Allo, Prosperity Pass." },
-      { "name": "Localism", "body": "Hands-on experience building or advising initiatives across political, economic, cultural, ecological, or Ethereum localism." }
+      {
+        "name": "Grant-making",
+        "body": "Designing, managing, or evaluating grant programs — across Web3, philanthropy, civic, and public sectors."
+      },
+      {
+        "name": "Web3 / Ethereum tooling",
+        "body": "Fluency with Ethereum tools for coordination, funding, governance, and identity — Karma GAP, Gardens, Giveth, Allo, Prosperity Pass."
+      },
+      {
+        "name": "Localism",
+        "body": "Hands-on experience building or advising initiatives across political, economic, cultural, ecological, or Ethereum localism."
+      }
     ]
   },
   "stats": [
-    { "value": "83", "label": "experts in the public network" },
-    { "value": "3", "label": "domains of proven expertise" },
-    { "value": "12", "label": "local programs assessed in Round 01" }
+    {
+      "value": "85",
+      "label": "applications to join the network"
+    },
+    {
+      "value": "36",
+      "label": "passed peer-validation via TrustGraph"
+    },
+    {
+      "value": "14",
+      "label": "selected for active Round 01 contribution"
+    }
   ],
   "roster": {
-    "lede": "The network is a public database — practitioners who applied, were peer-attested, and vouched for one another via TrustGraph. These are the people behind Round 01.",
-    "note": "From the public Expert Network database. Round 01 contributors were selected from this group; the network isn't open for new applications right now.",
-    "members": ["ForkinWisdom","Chris Harris","Charlie","Nate Suits","Sidney Cano","Diogo Jorge","Stephen DeMeulenaere","alessandro","JORDI RIULAS","Grace McLain","Nicole Reese","Afolabi Aiyeloja","Giulio Quarta","Stanislav Zaytsev","Sarah Baxendell","Morphy, Trinity Ugba","Gerard Costa Orriols","Monty Merlin Bryant","Luuk Weber","Luiz Fernando","Matt Strachman","Benjamin Life","Patricia Parkinson","Spencer Saar Cavanaugh","Nduka Anthony Annaelechukwu","Max Lomu","Beni Bauer","Antonio Avocado","Mosa (Mosadoluwa Fasasi)","Md Faizan Aquil","Stuart Bond","Mike Cooper","Max Semenchuk","Daniel Friedman","Mateo Emilio","Vladimir Támara Patiño","Iberedem Udo","Oscar","benedictvs","Bugra Celik","Unai","Emmanuel Smith Kuleh","Pedro Parrachia","Daniel Lindenberger","Violet Maxwell Benson","Bear","Pranav","Caue Tomaz","Nena Jain","Pete Corke","Paul Glavin","Rashmi Abbigeri","Alejandra Verde Medina","Swift Evo","Mars Robertson","Timothy Carter","Gregory Landua","Rediet sileshi","Jon Ruth","Bernice nuna","Heenal Rajani","Leonardo Arias Fonseca","0xj4an","Renata Pauva do Nascimento","Tereza Bizkova","Ana","Aníbal adrian Valles","WairaMoon","Matthieu Hayoz","Gideonro","Kokebsolomon","Magenta Light","HEANG DARA","feems","Vincent Adrichem","Jorge C.","Jeremy Nathaniel Akers","Snax","Danibelle","Marcelo Silva","Donny","Michael Ukwuma","Edgar Kampers"]
+    "lede": "Fifty-five practitioners who applied and vouched for one another on TrustGraph — the peer-to-peer attestation web the network's credibility is built on. Click a name to meet them.",
+    "note": "From the TrustGraph attestation graph, December 2025. Round 01 contributors were selected from this group; the network isn't open for new applications right now.",
+    "members": [
+      {
+        "name": "0xj4an",
+        "ens": "personal.0xj4an.eth",
+        "img": "assets/img/experts/0xj4an.jpg",
+        "why": "I want to serve as an Expert for the Localism Fund because this mission deeply aligns with my own path. Over the past years I’ve worked to bring Ethereum tools into real communities in Colombia and Latin America, helping people organize, fund projects, and build local resilience. I believe I can contribute by sharing that experience, supporting others doing similar work, and helping make these tools easier to use, more inclusive, and closer to the realities of local communities."
+      },
+      {
+        "name": "Afolabi Aiyeloja",
+        "ens": "afo.eth",
+        "img": "assets/img/experts/afolabi-aiyeloja.jpg",
+        "why": "As a core steward at Greenpill and regenerative builder in the space for 4 years, I have a wide breadth of knowledge and experience that is invaluable. I have a diverse set of skills from community building to engineering, which enable me to view problems from a multitude of perspectives and serve as a bridge between isolated pockets of interest and skill. I want to offer my knowledge and skills to help local regenerative projects get their footing in the Web3 space."
+      },
+      {
+        "name": "Alejandra Verde Medina",
+        "ens": "aleverde.eth",
+        "img": "assets/img/experts/alejandra-verde-medina.jpg",
+        "why": "For me, this is about serving the ecosystem. Local ecological projects need access to Web3 funding, and these mechanisms need experts who can evaluate whether ecological claims actually make sense. I'd love to help bridge that gap while continuing to learn how these technologies can better support regenerative work.\n\nI've spent 13 years building bridges between impact projects and innovative funding mechanisms, so serving as an expert here feels like a natural fit. Looking at the network, I notice most experts bring deep blockchain, governance, and civic tech expertise—which is great—but there seems to be room for someone who actually understands how ecosystems function scientifically and can evaluate ecological restoration projects technically.\n\nI've been on both sides: evaluating projects for Mexico City's Ministry of Environment and NAT5's certification protocol, and also developing projects that needed funding (like a Cozumel coral reef conservation initiative). This dual perspective helps me assess what makes ecological projects credible versus just well-packaged."
+      },
+      {
+        "name": "alessandro",
+        "ens": "",
+        "img": "assets/img/experts/alessandro.jpg",
+        "why": "I want to serve because my experience building web3 community infrastructure directly aligns with the Localism Fund's mission to bridge Ethereum coordination tools with local action. Having secured Polygon ecosystem grants for projects like Rose of Jericho (https://x.com/0xPolygon/status/1940408069831418021) and helped founders navigate grant programs through Colivingvalley.com, I've seen how protocol funding can empower community-led initiatives. My work scaling Safe{Wallet}'s developer adoption through gasless transactions guides (https://safe.global/blog/towards-chain-abstraction-introducing-safe-foundry-to-solve-multi-chain) taught me that Ethereum's value emerges when complex infrastructure becomes accessible to local builders. I want to help the Localism Fund ensure grants don't just fund projects, but cultivate ecosystems where communities own their coordination tools."
+      },
+      {
+        "name": "Ana",
+        "ens": "0xflypeztic.eth",
+        "img": "assets/img/experts/ana.jpg",
+        "why": "I want to join the Localism Fund Expert Network to help connect local action with global coordination. Through my work with Celo Colombia and as part of the Celo Regional Council, I’ve been supporting education, adoption, and local finance initiatives that empower communities to use blockchain for real-world impact.\n\nI’m also part of ReFi Medellín, where we explore regenerative projects and local credit systems built on Celo. These experiences have given me a grounded understanding of how Web3 tools like stablecoins, community governance, and grant platforms can strengthen local ecosystems.\n\nI believe the Localism Fund offers an opportunity to bring these lessons into a broader network and help build bridges between local practitioners and Ethereum-based systems for coordination, funding, and community growth."
+      },
+      {
+        "name": "Antonio Avocado",
+        "ens": "",
+        "img": "assets/img/experts/antonio-avocado.jpg",
+        "why": "Provide my expertise and background in regenerative finance, community building, and public goods to ensure the results of this round are as impactful as possible for both the individual projects and the overall ecosystem."
+      },
+      {
+        "name": "Aníbal adrian Valles",
+        "ens": "",
+        "img": "assets/img/experts/anibal-adrian-valles.jpg",
+        "why": "Me gustaría formar parte de esta iniciativa que considero muy valiosa. Para seguir aprendiendo y enseñar lo que pueda ya todos somos maestros y aprendices."
+      },
+      {
+        "name": "Bear",
+        "ens": "",
+        "img": "assets/img/experts/bear.jpg",
+        "why": "The world faces urgent social, economic, and environmental challenges. While Web3 holds immense potential to address these issues, its narrative is often overshadowed by misconceptions and a narrow focus on financial outcomes. Outside the crypto bubble, many transformative ideas and community-driven innovations remain unnoticed — leaving a critical gap between what’s possible and what’s actually implemented in local, real-world contexts.\n\nI believe in bridging that gap. Blockchain tech can serve as infrastructure for ethical and regenerative systems — helping communities solve real problems. I want to contribute to shaping that narrative and help design and implement practical solutions that demonstrate how Ethereum can empower people, build local resilience, and drive meaningful societal change."
+      },
+      {
+        "name": "benedictvs",
+        "ens": "benedictvs.eth",
+        "img": "assets/img/experts/benedictvs.jpg",
+        "why": "Through my PhD fieldwork on digital (decentralised) infrastructure in Aruba, Curaçao and the Marshall Islands, I am seeing the adverse effects of disconnects between globalised technology applied on a local level without consideration for local effects.\n\nAs an expert in digital identity, governance, and Web3 technology, I would like use my skills to fill this gap - an affordance I sadly cannot make within the scope of my PhD research to the extent I would like."
+      },
+      {
+        "name": "Benjamin Life",
+        "ens": "omniharmonic.eth",
+        "img": "assets/img/experts/benjamin-life.jpg",
+        "why": "As a co-steward of the last General Forum on Ethereum Localism, I feel confident in my ability to weave local groups across various social movements as they experiment and iterate with web3 technologies."
+      },
+      {
+        "name": "Bugra Celik",
+        "ens": "bugracelik.eth",
+        "img": "assets/img/experts/bugra-celik.jpg",
+        "why": "I believe deeply in the Localism Fund’s approach and framework. Over the past decade, I’ve applied similar principles in my work, most recently in community-based disaster risk reduction and post-disaster recovery."
+      },
+      {
+        "name": "Caue Tomaz",
+        "ens": "groweco.eth",
+        "img": "assets/img/experts/caue-tomaz.jpg",
+        "why": "I want to serve as an Expert for the Localism Fund because I see Ethereum as the most powerful infrastructure to coordinate regenerative action at scale, locally and globally. \n\nThrough my work with GreenPill Brasil, Regen Coordination, and Regen Commons, I’ve been building bridges between bioregional communities, Web3 coordination tools, and regenerative finance mechanisms that translate blockchain principles into practical local impact.\n\nJoining the Expert Network is an opportunity to contribute and learn from designing and running participatory funding rounds (via Gardens and Sarafu) to developing methodologies for biocultural credits and commons-based governance. \n\nI believe in open, peer-to-peer coordination as the foundation for credible local economies, and I want to help ensure that Localism Fund becomes a model for how communities everywhere can use Ethereum to build resilient, regenerative futures."
+      },
+      {
+        "name": "Charlie",
+        "ens": "charliefisher.eth",
+        "img": "assets/img/experts/charlie.jpg",
+        "why": "Attracted by the novel approach to inviting in those with expertise and curious to see the operators that come through"
+      },
+      {
+        "name": "Daniel Friedman",
+        "ens": "docxology.eth",
+        "img": "assets/img/experts/daniel-friedman.jpg",
+        "why": "I have been in Ethereum ecosystem for years, related DAOs/groups, developer of geospatial systems, organizer, non-profit, research, program management."
+      },
+      {
+        "name": "Daniel Lindenberger",
+        "ens": "",
+        "img": "assets/img/experts/daniel-lindenberger.jpg",
+        "why": "My work focus is mycelial approaches to the metacrisis, with an emphasis on bioregionalism. My primary exposure to blockchain at present is having used it for receipt of grants and donations for our nonprofit, but as a lifelong programmer with a solid track record on a wide range of projects, I'm recognizing that I need to expand into crypto"
+      },
+      {
+        "name": "Diogo Jorge",
+        "ens": "diogoj.eth",
+        "img": "assets/img/experts/diogo-jorge.jpg",
+        "why": "For the last 3 years I've been part of this effort to fund Public Goods on Ethereum, have seen the space mature over the years, and this next stage of a Network of Experts feels like a way for me to contribute with more than coding skills. I have been trough trainning and ran a round of QF with the support of other Regen Organizations, I supported the onboarding of many newcomers to the space, that continued to engage with the ecosystem with the mindset of coordination."
+      },
+      {
+        "name": "Emmanuel Smith Kuleh",
+        "ens": "",
+        "img": "assets/img/experts/emmanuel-smith-kuleh.jpg",
+        "why": "I’m eager to serve as an Expert with the Localism Fund because its mission deeply aligns with my commitment to empowering communities through locally driven, inclusive, and sustainable systems. I believe in strengthening local networks as the foundation for social, economic, and ecological resilience. The Fund’s integration of Web3 and Ethereum tools presents a powerful opportunity to make transparency, coordination, and trust more accessible to local initiatives.\n\nBy contributing my experience in grant-making, community development, and organizational capacity building, I hope to help design credible, participatory processes that enhance local ownership and measurable impact. Joining this peer-validated network also represents a meaningful way to collaborate with others who share a vision for equitable and decentralized local growth."
+      },
+      {
+        "name": "ForkinWisdom",
+        "ens": "forkinwisdom.eth",
+        "img": "assets/img/experts/forkinwisdom.jpg",
+        "why": "I am member of the Open Civics Consortium and huge fan of their work and the path forward. Want to contribute as much as possible to their success and want to build strong partnerships."
+      },
+      {
+        "name": "Gideonro",
+        "ens": "gideonro.eth",
+        "img": "assets/img/experts/gideonro.jpg",
+        "why": "My life's work is using tools to solve socio-economic problems and build public goods. I've helped hundreds of regional environmental organizations use databases and other tech to boost their community organizing and advocacy work. Through my work at the Token Engineering Commons, I've seen how blockchain technology can help build the new economic models we will need to forge a new path for the future. That is why I am interested in the Localism Fund. I want to root Ethereum in the soil of local community, and see this network as the best bet for doing so. I am currently involved in neighborhood-scale community organizing in Seattle and that is giving me a hands-on sense for the opportunities and challenges for having real impact on this front."
+      },
+      {
+        "name": "Giulio Quarta",
+        "ens": "giulioquarta.eth",
+        "img": "assets/img/experts/giulio-quarta.jpg",
+        "why": "I have worked in the space of alternative finance & blockchain for 5 years now, and I have always been driven by the quest of how to create a new distributed regenerative economy centred around the Commons. \n\nI have organized many events on the topic with international experts and conducted extensive research on distributed protocols, as well as kickcstarting projects / cooperatives / businesses myself, which I think gave me a solid view of where we have to go collectively to keep the regenerative economy & finance to evolve in the right direction. I have participated and observed the web3 grants / public goods space since its inception and I think I have a good sense of its strenghts and problems.\n\nI would like to serve as an Expert Evaluator because this is an interesting experiment in distributed funding programs I want to support, emerged out of networks I have participated in for years, and I think my perspective would be beneficial to the ecosystem. Eager to get in contact with other experts from around the world and enrich my perspectives with humbleness!"
+      },
+      {
+        "name": "Grace McLain",
+        "ens": "gracemclain.eth",
+        "img": "assets/img/experts/grace-mclain.jpg",
+        "why": "I’m excited by the Localism Fund’s experiment in connecting grounded, community-led initiatives with emerging coordination tools. My professional background is in evaluating social impact programs and grant mechanisms across nonprofits and humanitarian organizations, so I’m particularly drawn to this effort to merge rigorous evaluation with decentralized governance.\n\nWhile I’m not a Web3 expert, I’m very interested in how Ethereum-based coordination can make local decision-making more transparent, participatory, and accountable. My contribution would primarily come on the evaluation side: helping to interpret proposals through a learning and equity lens, ensuring that community-led programs have clear theories of change, feasible implementation plans, and meaningful measures of impact. Over more than a decade working in nonprofits, I’ve seen the strengths and shortcomings of traditional funding models, and I’m eager to bring those lessons forward to help avoid old pitfalls while exploring new ways of resourcing communities.\n\nI see this opportunity as a bridge between two worlds I care about - the rigor and integrity of traditional impact evaluation and fundraising, and the creativity and autonomy that decentralized tools can unlock. Participating as an evaluator feels like a natural extension of the work I already do on a daily basis: helping initiatives clarify what “impact” means in their local context and how to show it in a way that builds trust, not bureaucracy."
+      },
+      {
+        "name": "Gregory Landua",
+        "ens": "landua.eth",
+        "img": "assets/img/experts/gregory-landua.jpg",
+        "why": "Support the distribution to local projects and learn the trust graph system."
+      },
+      {
+        "name": "Heenal Rajani",
+        "ens": "heenal.eth",
+        "img": "assets/img/experts/heenal-rajani.jpg",
+        "why": "Ethereum localism isn't a side interest for me - it's my life's work finding its ultimate expression. I want to serve as an Expert for Localism Fund because this network represents what I've been building toward: a collective of peers who understands that genuine place-based coordination requires both deep community roots and sophisticated coordination infrastructure.\n\nFor 25 years I have been actively developing communities - working in government, the public sector, nonprofits, social enterprises and various civil society and informal networks. What makes my positioning fairly unusual in the web3 space is that I'm a localist, activist, community builder and social entrepreneur grounded in community practice before protocol. I came to tech through organizing, not organizing through tech, with web3 as my toolkit, not my identity. \n\nMy wife and I own and operate Reimagine Co - a community hub, event space, and Canada's first zero-waste, plant-based meal service. As founder of the Institute for Community Sustainability, a Canadian non-profit based in London, Ontario, and co-founder of SuperBenefit DAO, I've spent five years exploring Ethereum's potential for community coordination while simultaneously building grassroots infrastructure through repair cafés, solidarity networks, and local resource-sharing systems. Over the past two years, these parallel tracks have converged - I'm now beginning to use web3 tools in the real-world community spaces I've helped create.\n\nI can help Localism Fund identify projects that are actually strengthening local autonomy versus those just using the language. I know the difference between what sounds good in a Discord and what works in a community hall. As a localism expert, I can review applications and spot the difference between web3 fluency and real implementation. I can help to determine whether applicants have what it actually takes to make this work, whether they've grappled with the real challenges of onboarding normies to web3: how to make wallets meaningful to people who don't use crypto, how to bridge traditional nonprofit governance with on-chain coordination, how to secure institutional funding while experimenting with web3 mechanisms, how to build systems that strengthen place rather than extract from it. I've done the unglamorous work of actual implementation in a place where nobody cares about the latest protocol - they just want to fix their toaster or borrow a drill.\n\nI came to Ethereum carrying two decades of questions about how to resource community resilience, distribute power equitably, and create transparent systems that serve place-based flourishing rather than extraction add the centralization of power and resources. Over the past five years I've been relentlessly pursuing the practical intersection of web3 infrastructure and real-world community impact, exploring bringing Ethereum-based coordination tools into contexts where they can genuinely shift power and resource flows.\n\nWorking with AI coding tools has allowed me to adapt and build tools to run novel experiments and to better serve the communities I work with. This month I forked Allo IRL, improved its UI and UX, and deployed it at a live community event.\n\nMy work centers on bridging grassroots wisdom with technical innovation, translating between community organizers and protocol designers, and insisting that Ethereum localism must be grounded in actual local knowledge, relationships, and context.\n\nI'm eager to join this network of practitioners who understand that localism needs both roots and infrastructure, who are building the coordination layer for place-based flourishing. I look forward to contributing what I've learned, learning from peers working at this same intersection, and co-creating infrastructure that serves genuine localism."
+      },
+      {
+        "name": "Jeremy Nathaniel Akers",
+        "ens": "gospelofchange.eth",
+        "img": "assets/img/experts/jeremy-nathaniel-akers.jpg",
+        "why": ""
+      },
+      {
+        "name": "Jon Ruth",
+        "ens": "jonruth.eth",
+        "img": "assets/img/experts/jon-ruth.jpg",
+        "why": "I have spent the last few years working with and funding local community movements through my work at the Climate coordination Network and the Solar Foundation. The top down work of governments and mega corporations is failing local communities and often times adding extra pain and burden to their lives. I believe the way forward to regeneration is a bottoms up approach of a connected group of local communities supporting each other with love and care. I believe the Localism Fund can be an important part of sharing knowledge and resources to help bootstrap the localism movement."
+      },
+      {
+        "name": "JORDI RIULAS",
+        "ens": "jack41.eth",
+        "img": "assets/img/experts/jordi-riulas.jpg",
+        "why": "After an entrepreneurial journey leading several tech companies (COORDINA, CAPITALCELL) and serving as an advisor and mentor for impact investment funds (SHIP2B), I joined EthicHub in 2021 to combine my three core drivers: crowd economy, blockchain, and social impact.\n\nAfter four intense and rewarding years supporting the project, I now remain involved as an advisor, which allows me to focus my experience and energy on new initiatives. I believe this is the perfect moment—both for the ecosystem and my professional path—to dedicate myself to mentoring and evaluating blockchain and social impact projects."
+      },
+      {
+        "name": "Leonardo Arias Fonseca",
+        "ens": "elopio.eth",
+        "img": "assets/img/experts/leonardo-arias-fonseca.jpg",
+        "why": "I have been researching redistribution in Ethereum for 3 years and now I want to share with local teams some of the activities than have helped us at Flashbots and at my bioregional circle in Costa Rica to make space and escape from the constraints of capitalistic modernity."
+      },
+      {
+        "name": "Luiz Fernando",
+        "ens": "luizfernando.eth",
+        "img": "assets/img/experts/luiz-fernando.jpg",
+        "why": "Bring perspectives & current/past experience in both local organizing and global network coordination:\n\n1. **Local organizing:** with ReFi Barcelona (ReFi node being constituted as a local coop) and the organization of the Regenerant Catalunya localized funding round in Catalonia, Spain, which has already secured €11k from key local stakeholders\n2. **Global network coordination:** mostly through ReFi DAO & Regen Coordination\n\nMy main desire is to serve as an Expert as a way to:\n\n1. **Build capacity** for local organizers to be running localized rounds & programs on their own, as in Localism Fund round 01 - so programs/funds translate into durable structures and networks, not one-off flows.\n\n2. Keep a strong focus on **making processes and documentation easily understandable & accessible** - as I see this as a big pain point in the ecosystem and in GG24 in particular."
+      },
+      {
+        "name": "Luuk Weber",
+        "ens": "luukdao.eth",
+        "img": "assets/img/experts/luuk-weber.jpg",
+        "why": "I've spent the past 8 years building local ecosystems at the intersection of Impact and Blockchain, and have hosted dozens of events and activities - giving me great perspective and tips I would like to contribute to the Localism Fund."
+      },
+      {
+        "name": "Magenta Light",
+        "ens": "",
+        "img": "assets/img/experts/magenta-light.jpg",
+        "why": "To compare notes on how Bloom Network is doing evaluation with Localism Fund, and to contribute my experience doing impact report reviews through Bloom Network's Ethereum Localism funding mechanism. And to help local projects develop deep systems transformation capacity."
+      },
+      {
+        "name": "Marcelo Silva",
+        "ens": "marcelorefi.eth",
+        "img": "assets/img/experts/marcelo-silva.jpg",
+        "why": "Having co-founded ReFi Spring and helped incubate the first cohort of ReFi DAO Local Nodes across 29 countries, I've witnessed how credible local networks can catalyze regenerative economies. My work in Brazil—from founding Blockchain na Escola to advising UNESCO-SOST Transcriativa—has shown me that localism succeeds when supported by proper funding infrastructure and expert guidance. Localism Fund's mission to make Ethereum practical infrastructure for place-based flourishing aligns perfectly with my commitment to bridging Global South communities with regenerative finance tools."
+      },
+      {
+        "name": "Matt Strachman",
+        "ens": "mattycompost.eth",
+        "img": "assets/img/experts/matt-strachman.jpg",
+        "why": "Feel pretty strongly that the killer use case for blockchain is funding public goods in a participatory, transparent and efficient manner. Local funding rounds/programs are one of the most powerful examples of that and I'd like to help make them as effective and impactful as possible."
+      },
+      {
+        "name": "Matthieu Hayoz",
+        "ens": "",
+        "img": "assets/img/experts/matthieu-hayoz.jpg",
+        "why": "I am passionate about decentralization and empowering end users and local communities through innovative technologies. I would like to contribute my 3+ years of experience evaluating and managing Web3 projects focused on social impact and sustainability. Building systems that enable people in need to improve their lives is a mission I’m deeply committed to, and participating in the Localism Fund would be a meaningful way to advance that mission.\n\nDuring my work in the Web3 for Good space, I’ve developed expertise in ReFi, decentralized identity, governance, and sustainability, with a strong understanding of the importance of involving local communities in such initiatives. As Lead Project Manager for a grant giving and VC Association, I evaluated, onboarded, and managed projects from inception to delivery. I’m eager to put this experience to work for the Localism Fund, helping assess project quality and guide grantees toward successful outcomes that create genuine, lasting impact."
+      },
+      {
+        "name": "Max Semenchuk",
+        "ens": "",
+        "img": "assets/img/experts/max-semenchuk.jpg",
+        "why": "I want to serve as an Expert Evaluator to help credible, place-based teams turn Ethereum-native coordination into real outcomes. My background spans grant-making design and evaluation, hands-on Web3 tooling, and locally grounded programs. I’m motivated by quality, integrity, and transparent feedback. I’ll bring clear rubric‑aligned scoring, practical mentorship where useful, and actionable tooling feedback so Round 01 produces fundable, resilient local programs."
+      },
+      {
+        "name": "Mike Cooper",
+        "ens": "",
+        "img": "assets/img/experts/mike-cooper.jpg",
+        "why": "I worked on IMM for localization objectives with the World Bank, USAID, MCC, and other foreign assistance funders for 15 years.  Localization was an umbrella term used for any strategy aiming to enable locally led solutions to local problems (which included everything from direct funding to various types of technical assistance, but most of all...the need to have high levels of adaptability in funder strategy).  Before the disbanding of USAID I sat on the Digital Asset Working Group and we were creating a Localization sub-group within USAID.  I am now working with the Grant Innovation Lab at Metagov on creating a Grant Impact Handbook that outlines the general task list and guidance for each phase of the grant program lifecycle (from planning to measurement, to iterative learning) and am now contributing to research on advancing capital allocation mechanism curation and data standards with DAO Star. I am not a developer; I am a web3 social scientist (with a decade of responsibility in managing program budgets and staff)  specializing in IMM with high levels of technical knowledge on localization and social impact."
+      },
+      {
+        "name": "Monty Merlin Bryant",
+        "ens": "montymerlin.celo.eth",
+        "img": "assets/img/experts/monty-merlin-bryant.jpg",
+        "why": "My work has long focused on building credible bridges between global Web3 infrastructure and locally grounded regenerative action. Through ReFi DAO, Regen Coordination, and Celo Public Goods (CeloPG), I’ve helped design and operate funding programs that have supported hundreds of projects and distributed millions in capital worldwide.\n\nJoining as an Expert is an opportunity to contribute that experience across multiple layers — from evaluating and mentoring local programs to strengthening the shared tooling and data standards that underpin trust in decentralized funding. I’m motivated to help ensure the Localism Fund becomes a credible, learning-driven bridge between Ethereum’s public-good infrastructure and real-world local economies, modeling what regenerative, peer-validated coordination can look like at scale."
+      },
+      {
+        "name": "Morphy, Trinity Ugba",
+        "ens": "trinitymorphy.eth",
+        "img": "assets/img/experts/morphy-trinity-ugba.jpg",
+        "why": "For some time now, I’ve been deeply interested in the idea of recognized regen communities serving as funding funnels for local impact initiatives, rather than being the direct executors of those projects. I believe local impact workers shouldn’t have to join regen groups to access funding or abandon their own initiatives to fit into existing regen agendas. The Localism Fund embodies this vision in practice, empowering local actors where they are.\n\nServing as an Expert Evaluator for the Localism Fund will give me firsthand insight into donor behavior, grantee behavior, and program operator dynamics. It will also allow me to apply the knowledge I’ve gathered from studying similar programs across different disciplines to help ensure the fund achieves its intended local impact."
+      },
+      {
+        "name": "Mosa (Mosadoluwa Fasasi)",
+        "ens": "",
+        "img": "assets/img/experts/mosa-mosadoluwa-fasasi.jpg",
+        "why": "My work sits at the intersection of decentralized science (DeSci), commons-based peer coordination, and public good. Previously an Admin at PeopleDAO and now leading DeSci Nigeria (the region’s first decentralized research infrastructure), my journey has shown me firsthand the power and challenges of building resilient community-driven systems. I’m keen on building bridges between global Web3 tools and locally grounded initiatives."
+      },
+      {
+        "name": "Nate Suits",
+        "ens": "natesuits.eth",
+        "img": "assets/img/experts/nate-suits.jpg",
+        "why": "Provide my insights and experience to further the localism movement."
+      },
+      {
+        "name": "Nena Jain",
+        "ens": "nenajs.eth",
+        "img": "assets/img/experts/nena-jain.jpg",
+        "why": "I have been working in this space for the past four years, through Regen Foundation and the many community networks it supports. I joined as a skeptical but curious observer, wanting to understand how web3 technologies could contribute to a community-owned and governed regenerative future.\n\nWhile the technical and conceptual developments in the space have grown tremendously, my focus has been on how grassroots groups can practically adopt these tools and mechanisms to advance their impact outcomes. Over the years, I have supported various project-specific journeys across the globe, and through that work, I have explored a number of interesting ideas, such as:\n\nCommunity Staking DAO: collective ownership and governance of Regen Network.\n\nPrototyping commons stewardship through DAO tooling: experimenting with participatory budgeting and peer attestation of impact.\n\nDeveloping hybrid models: creating incremental pathways for capacity building by connecting off-chain events and discussions with on-chain data and attestations.\n\nMy interest in the Localism Fund Expert Network comes from this same place. I would love to support local networks in making the best use of these tools—helping them design custom workflows that meet their technical, economic, and cultural needs, while building the capacity to engage with more complex mechanisms over time."
+      },
+      {
+        "name": "Nicole Reese",
+        "ens": "",
+        "img": "assets/img/experts/nicole-reese.jpg",
+        "why": "I've built a platform on local-scale societal redesign using regenerative community frameworks. \n\nDesigning collective ownership models to participatory systems, as applied to physical community hubs in the bioregions of Southern California, central Mexico, and Western Europe."
+      },
+      {
+        "name": "Patricia Parkinson",
+        "ens": "patriciaparkinson.eth",
+        "img": "assets/img/experts/patricia-parkinson.jpg",
+        "why": "I want to serve as an Expert for the Localism Fund because a large amount of my work lives at the intersection of civic innovation, regenerative economics, and governance design. I’ve been active in the blockchain and web3 space since 2016 — pioneering early governance experiments, developing large-scale community-led governance mechanisms, and advancing user experience paradigms for socio-technical systems.\n\nAs a founding steward of the Localism Fund, lead designer of TrustGraph, and co-founder of OpenCivics, I’ve helped architect frameworks that link Ethereum-based coordination with locally grounded regenerative practice. I’ve also stewarded multiple Gitcoin rounds and led traditional grant-making initiatives, giving me perspective across both decentralized and institutional funding systems."
+      },
+      {
+        "name": "Paul Glavin",
+        "ens": "paul2.eth",
+        "img": "assets/img/experts/paul-glavin.jpg",
+        "why": "I work in community governance, and I'm excited about the potential of coordination infrastructure as a tool enabling large networks of small, local communities. I'm happy to share my experience in this space and I'm optimistic that this tooling can have a big positive impact on the world."
+      },
+      {
+        "name": "Pedro Parrachia",
+        "ens": "parrachia.eth",
+        "img": "assets/img/experts/pedro-parrachia.jpg",
+        "why": "I see the Localism Fund's mission to cement Ethereum as de facto infrastructure for political, economic, cultural, and ecological localism. I want to contribute my experience in mapping ecosystems, designing participatory systems, and mentoring projects to help strengthen the integrity and impact of locally-led funding programs.\n\nMy life's work revolves around building bridges between technology, nature, and society to foster radical cooperative systems. For over 8 years in web3, I have been researching, educating, and writing about the very systems this project aims to nurture: from grant-making and governance design to community empowerment and regenerative economics.\n\nI see the Localism Fund as a giant, collaborative garden, and I’m the nerd who shows up with seeds and funky, custom tools to help everyone’s plants grow better."
+      },
+      {
+        "name": "Pranav",
+        "ens": "",
+        "img": "assets/img/experts/pranav.jpg",
+        "why": "1. Continuation of work as part of working group supporting early stage local climate action.\n2. Develop local India specific hubs/hotsports for localism around climate and public goods"
+      },
+      {
+        "name": "Rashmi Abbigeri",
+        "ens": "",
+        "img": "assets/img/experts/rashmi-abbigeri.jpg",
+        "why": "A couple of reasons, \n- Contribute hands on to GG24\n- Understand the gaps if any to improve future GG rounds, \n- Might be fun\n- Working on something other than Development\n- Be part of trust graph and understand what the future of public good funding could be"
+      },
+      {
+        "name": "Spencer Saar Cavanaugh",
+        "ens": "clinamenic.eth",
+        "img": "assets/img/experts/spencer-saar-cavanaugh.jpg",
+        "why": "I am deeply curious about how p2p attestations, using existing semantic web standards and novel distributed financial settlement layers, can facilitate the collaboration necessary to construct the digital public infrastructure we need to address systemic issues."
+      },
+      {
+        "name": "Stanislav Zaytsev",
+        "ens": "routineforbots.eth",
+        "img": "assets/img/experts/stanislav-zaytsev.jpg",
+        "why": "I want to contribute as an Expert Evaluator because I see the Localism Fund as a meaningful experiment in funding innovation that is rooted in place, not just in code. My experience working with early-stage founders and ecosystem builders can help assess proposals both for technical feasibility and community value. I’m motivated by projects that align local prosperity with global coordination networks."
+      },
+      {
+        "name": "Stephen DeMeulenaere",
+        "ens": "steviedeeee.eth",
+        "img": "assets/img/experts/stephen-demeulenaere.jpg",
+        "why": "This is an important initiative that I have been supporting for a very long time. I also have experience as a Grants Fund Manager for UNDP East Timor."
+      },
+      {
+        "name": "Swift Evo",
+        "ens": "swiftevo.eth",
+        "img": "assets/img/experts/swift-evo.jpg",
+        "why": "While focusing on DeSci and public goods in Asia, I would like to leverage my exp and skill for public goods development in Asia."
+      },
+      {
+        "name": "Tereza Bizkova",
+        "ens": "terezabb.eth",
+        "img": "assets/img/experts/tereza-bizkova.jpg",
+        "why": "I've spent the past four years documenting and supporting projects at the intersection of Ethereum, coordination, and real-world impact, from Funding the Commons to Crypto Altruists. I believe the next step for Ethereum lies in grounded, locally-led, empowered ecosystems that translate the technical innovation of the past decade or so into tangible community outcomes. That's why joining the Expert Network feels exciting to me; I want to find ways to contribute to this evolution, whether it's through evaluation, mentorship, or any other way that strengthens local initiatives."
+      },
+      {
+        "name": "Timothy Carter",
+        "ens": "swarthyhatter.eth",
+        "img": "assets/img/experts/timothy-carter.jpg",
+        "why": "I have extensive experience on both ends of web3 grant programs. 2021-2023 I helped raise 300,000$ from sponsors including CELO - Gitcoin - File Coin & OceanProtocol for the strategic research and development of scalable applications for regenerative finance under the dMeter project. dMeter coordinated funding and support for 6 pilot projects testing diverse applications for regenerative finance and natural capital asset tokenization. All 6 of our projects shipped mvp's and transparent retrospectives before the bear market killed the next round of experimentation. \n\nToday, I spend nearly all of my \"free\" work time ideating on and designing incentive models and grant funding mechanisms to help improve the flow of capitol in public goods.\n\nI'm about as familiar as you get with tools like some of these tools ( Karma, Gitcoin, Giveth )  I could stand to come up to speed on some others, and feel participation with the Localism Fund will help bring me up to speed on newer tools and programs. \n\nLocalim has defined every aspect of my career. Whether I was helping organize underground raves in my teen years, or consensus building and collectivizing communities around public health and environmental policy with the Public Interest Research Group throughout my 20's, I have always been drawn to work where I get to help bring out the best in others, and where I can help bring communities together around their shared passions and mutual wellbeing. My passion lies in redesigning social incentives and institutions to benefit those constituents most effected by them, making them accessible, flexible, and equitable. \n\nToday I am working to develop interoperability solutions to empower the next generation of DAOs to thrive where their predecessors struggled to survive. Foremost of my projects at the moment is the NounsWorld Bridge & Fractal Nouns, which seeks to develop tools to empower fractal governance in DAOs. Fractal governance provides a framework for building consensus in both local and distributed communities with many applications to explore."
+      },
+      {
+        "name": "Unai",
+        "ens": "mettodo.eth",
+        "img": "assets/img/experts/unai.jpg",
+        "why": "I want to learn about the inner works of running a local web3 grant program (hope to run one in the future) while contributing."
+      },
+      {
+        "name": "Vincent Adrichem",
+        "ens": "vinviable.eth",
+        "img": "assets/img/experts/vincent-adrichem.jpg",
+        "why": "I want to help make it easier for funds to reach the people and projects they’re meant to support."
+      },
+      {
+        "name": "Violet Maxwell Benson",
+        "ens": "",
+        "img": "assets/img/experts/violet-maxwell-benson.jpg",
+        "why": "I’m deeply interested in how decentralized coordination can strengthen local economies and cultural ecosystems.\n\nMy work through The DAO Network focuses on building regenerative, community powered systems that connect founders, local hubs, and investors across Africa using Web3 infrastructure.\n\nJoining the Localism Fund Expert Network feels like a natural extension of that mission to help design funding and governance models that don’t just distribute resources, but build self sustaining local value loops."
+      }
+    ]
   },
   "round01": {
     "lede": "Round 01 was the network's first live use case. Validated experts contributed across three areas — pairing 3–4 reviewers per application, balanced for geography, language, and expertise.",
     "roles": [
-      { "name": "Evaluation & intelligence", "body": "Score every application against the rubric and add structured qualitative feedback, surfacing the credible, high-potential programs." },
-      { "name": "Mentorship & advisory", "body": "Pair 1–3 experts with each selected hub for hands-on help on governance, tooling, grant operations, and impact reporting." },
-      { "name": "Tooling feedback", "body": "Stress-test the Web3 tools in real use and feed back what should change for the next round." }
+      {
+        "name": "Evaluation & intelligence",
+        "body": "Score every application against the rubric and add structured qualitative feedback, surfacing the credible, high-potential programs."
+      },
+      {
+        "name": "Mentorship & advisory",
+        "body": "Pair 1–3 experts with each selected hub for hands-on help on governance, tooling, grant operations, and impact reporting."
+      },
+      {
+        "name": "Tooling feedback",
+        "body": "Stress-test the Web3 tools in real use and feed back what should change for the next round."
+      }
     ],
     "rubric": [
-      { "name": "Program scope & strategic alignment", "weight": "30%" },
-      { "name": "Local co-funding & financial sustainability", "weight": "30%" },
-      { "name": "Impact measurement & Web3 integration", "weight": "20%" },
-      { "name": "Team capacity & community anchoring", "weight": "20%" }
+      {
+        "name": "Program scope & strategic alignment",
+        "weight": "30%"
+      },
+      {
+        "name": "Local co-funding & financial sustainability",
+        "weight": "30%"
+      },
+      {
+        "name": "Impact measurement & Web3 integration",
+        "weight": "20%"
+      },
+      {
+        "name": "Team capacity & community anchoring",
+        "weight": "20%"
+      }
     ],
     "matching": "Scores set the match: up to 2× a hub's local co-funding, capped at $20k per grantee.",
     "compensation": "$5,500 USD + 10,000 CELO was allocated for expert compensation across contribution tiers."
@@ -45,34 +414,88 @@
   "lifecycle": {
     "lede": "Experts move through a five-step engagement lifecycle each cycle.",
     "steps": [
-      { "title": "Join the network", "body": "Complete onboarding, give and receive peer attestations, and reach Validated Expert status via TrustGraph.", "when": "Step one" },
-      { "title": "Tier assignment", "body": "Operators confirm experts for the cycle and suggest a provisional contribution tier.", "when": "Step two" },
-      { "title": "Active contribution", "body": "Evaluate and score local-hub applications against the official rubric; advise hubs and give tooling feedback.", "when": "Step three" },
-      { "title": "Self-assessment & compensation", "body": "Experts reassess their contribution tier; compensation flows via Prosperity Pass.", "when": "Step four" },
-      { "title": "Reflection & re-attestation", "body": "Reflect on the cycle and refresh attestations, carrying the network into the next round.", "when": "Step five" }
+      {
+        "title": "Join the network",
+        "body": "Complete onboarding, give and receive peer attestations, and reach Validated Expert status via TrustGraph.",
+        "when": "Step one"
+      },
+      {
+        "title": "Tier assignment",
+        "body": "Operators confirm experts for the cycle and suggest a provisional contribution tier.",
+        "when": "Step two"
+      },
+      {
+        "title": "Active contribution",
+        "body": "Evaluate and score local-hub applications against the official rubric; advise hubs and give tooling feedback.",
+        "when": "Step three"
+      },
+      {
+        "title": "Self-assessment & compensation",
+        "body": "Experts reassess their contribution tier; compensation flows via Prosperity Pass.",
+        "when": "Step four"
+      },
+      {
+        "title": "Reflection & re-attestation",
+        "body": "Reflect on the cycle and refresh attestations, carrying the network into the next round.",
+        "when": "Step five"
+      }
     ]
   },
   "operators": {
     "lede": "Round 01 was operated by:",
     "items": [
-      { "name": "Monty Merlin", "org": "Regen Coordination", "bio": "Short bio coming soon." },
-      { "name": "Benjamin Life", "org": "OpenCivics", "bio": "Short bio coming soon." },
-      { "name": "Patricia Parkinson", "org": "OpenCivics", "bio": "Short bio coming soon." }
+      {
+        "name": "Monty Merlin Bryant",
+        "org": "ReFi DAO & Regen Coordination",
+        "img": "monty.jpeg",
+        "bio": "Regenerative finance practitioner, community builder, and systems entrepreneur working at the intersection of Web3, AI, nature finance, and economic transformation."
+      },
+      {
+        "name": "Benjamin Life",
+        "org": "OpenCivics",
+        "img": "benjamin.jpg",
+        "bio": "Civic innovator, researcher, and artist working at the intersection of regenerative crypto-economics, bioregional coordination, and participatory systems design."
+      },
+      {
+        "name": "Patricia Parkinson",
+        "org": "OpenCivics",
+        "img": "patricia.jpg",
+        "bio": "Participation systems architect, ontological designer, and civic innovator with over twenty years leading development programs across Southeast Asia and the Pacific Islands."
+      }
     ],
-    "blurb": "Localism Fund runs on a two-tier structure: three core operators run the rounds and make final operational calls, supported by the attested expert network of 9–12 evaluators. Operators aren't distant funders — they steward the flow of resources through local hubs while keeping the process transparent and accountable.",
+    "blurb": "Supported by the peer-attested expert network, operators steward the flow of resources through local hubs while keeping the process transparent and accountable.",
     "responsibilities": [
-      { "name": "Network coordination", "body": "Design funding architectures around subsidiarity; connect and weave local hubs across geographies." },
-      { "name": "Evaluation & allocation", "body": "Work with the expert network to assess programs and direct matching funds where they'll do the most good." },
-      { "name": "Communication & transparency", "body": "Keep clear channels with applicants, experts, and partners; publish public documentation." },
-      { "name": "Resource stewardship", "body": "Manage the disbursement of matching funds and track the progress of supported programs." },
-      { "name": "Learning & adaptation", "body": "Synthesise attestations and learnings across the network into better future rounds." }
+      {
+        "name": "Network coordination",
+        "body": "Design funding architectures around subsidiarity; connect and weave local hubs across geographies."
+      },
+      {
+        "name": "Evaluation & allocation",
+        "body": "Work with the expert network to assess programs and direct matching funds where they'll do the most good."
+      },
+      {
+        "name": "Communication & transparency",
+        "body": "Keep clear channels with applicants, experts, and partners; publish public documentation."
+      },
+      {
+        "name": "Resource stewardship",
+        "body": "Manage the disbursement of matching funds and track the progress of supported programs."
+      },
+      {
+        "name": "Learning & adaptation",
+        "body": "Synthesise attestations and learnings across the network into better future rounds."
+      }
     ]
   },
   "join": {
     "lede": "The network isn't open for applications right now.",
     "body": "Round 01 is complete, and we're not actively onboarding new experts at the moment. If you've done this work and would like to be considered for a future cycle, get in touch.",
     "links": [
-      { "label": "Inquire about the network", "href": "mailto:support@localism.fund", "primary": true }
+      {
+        "label": "Inquire about the network",
+        "href": "mailto:support@localism.fund",
+        "primary": true
+      }
     ]
   },
   "eligibility": {
@@ -84,15 +507,33 @@
     ]
   },
   "faq": [
-    { "q": "What is TrustGraph?", "a": "An on-chain attestation network that maps relationships of trust and expertise. Each expert can attest to others; a dynamic TrustScore — powered by a PageRank-style algorithm — determines when a member becomes a Validated Expert. Credibility is earned peer-to-peer, not assigned top-down." },
-    { "q": "How do I become a validated expert?", "a": "Fill out the onboarding form, receive attestations from existing members via TrustGraph, and once your TrustScore crosses the validation threshold you're recognised as a Validated Expert — eligible to contribute to active rounds." },
-    { "q": "Is there compensation?", "a": "Yes. Round 01 had a pool of $5,500 USD + 10,000 CELO, distributed by contribution tier — roughly $200–$1,200 plus on-chain badges, reflecting time, quality, and impact." },
-    { "q": "How much time is expected?", "a": "Flexible. Experts choose their level — from light engagement (~3–6 hours) to deep mentorship and evaluation (~12–20+ hours) during each active cycle." },
-    { "q": "What is Prosperity Pass?", "a": "A smart-account wallet and reputation layer in the Ethereum and Celo ecosystems. Validated Experts receive a Localism Fund Expert Badge they can claim via Prosperity Pass — proof of contribution, a portable credential across future rounds, and a gateway to rewards and governance." },
-    { "q": "What's the longer-term vision?", "a": "To evolve into a standing guild of evaluators and mentors serving multiple rounds and partners — an open, interlinked expert commons spanning bioregional governance, ecological restoration & climate finance, cultural regeneration, civic tech, and on-chain coordination." }
+    {
+      "q": "What is TrustGraph?",
+      "a": "An on-chain attestation network that maps who vouches for whom. Each expert can attest to others, and a PageRank-style algorithm turns that web of vouches into a dynamic TrustScore — cross the threshold and you're a Validated Expert. Credibility is earned peer-to-peer and recorded in public, not assigned top-down."
+    },
+    {
+      "q": "How did someone become an attested expert?",
+      "a": "Anyone could apply — 85 practitioners did. Existing members then attested on TrustGraph to the people they'd genuinely vouch for, and TrustScores did the rest. The three operators acted as seed nodes to bootstrap the first attestations, with their influence designed to shrink automatically as peer-to-peer vouching took over — trust has to start somewhere, but it doesn't stay centralised."
+    },
+    {
+      "q": "What did experts actually do in Round 01?",
+      "a": "Every local-hub application was scored by 3–4 experts — paired for geography, language, and domain fit — against a weighted rubric, and those scores directly set the money: up to 2× matching on a hub's local co-funding, capped at $20k. Evaluation then flowed into mentorship, with experts self-selecting the hubs they could genuinely help, and their hands-on use of the tools fed back to the builders."
+    },
+    {
+      "q": "Were experts compensated?",
+      "a": "Yes — a pool of $5,500 USD plus 10,000 CELO, distributed by contribution tier, roughly $200–$1,200 per expert. Tiers were self-assessed in consent with the operators rather than clocked, and every contributor received an on-chain Expert Badge via Prosperity Pass — a portable, verifiable record of contribution that travels to future rounds and other networks."
+    },
+    {
+      "q": "Why peer attestation instead of an appointed panel?",
+      "a": "An appointed panel is only as credible as whoever appointed it. A peer-attested network distributes that judgement: the people evaluating local programs actually know the places, languages, and tools involved; the trust graph is public and self-correcting; and reputations are earned, portable, and revocable. It turns evaluation from gatekeeping into shared infrastructure."
+    },
+    {
+      "q": "What happens to the network next?",
+      "a": "It stands as reusable infrastructure. The longer-term vision is a standing guild of evaluators and mentors serving multiple rounds and partners — an open expert commons spanning bioregional governance, ecological restoration, cultural regeneration, civic tech, and on-chain coordination. The network isn't open for new applications right now; it will grow with future cycles."
+    }
   ],
   "meta": {
-    "repo": "https://github.com/montymerlin/localism-fund",
+    "repo": "https://github.com/montymerlin/localism-fund-docs",
     "telegram": "https://t.me/localismfund",
     "twitter": "https://x.com/localismfund",
     "email": "support@localism.fund",

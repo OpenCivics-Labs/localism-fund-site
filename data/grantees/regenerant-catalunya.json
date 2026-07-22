@@ -25,7 +25,7 @@
     "title": "\"How do we know this isn't a scam?\"",
     "text": "At the kickoff workshop, only the local co-funding had been on-ramped — the Localism Fund money hadn't arrived, and the matching figure had already shrunk. A participant put the unease into words directly, in front of the room: how do we know you won't run away with our money? The team had braced for crypto skepticism from Catalan cooperative circles, but the moment crystallised why: in a movement built on trust, any inconsistency — late funds, a changing number — reads as a red flag. The lesson they drew was blunt: working with these communities means being overzealous with transparency, staying ahead of the question before it's asked.",
     "quote": "How do we know this isn't a scam? How do we know you're not going to run away with our money?",
-    "quoteAttribution": "A kickoff workshop participant, recounted in the grantee report, 5.3"
+    "quoteAttribution": "A kickoff workshop participant, recounted in the grantee report"
   },
   "delivered": [
     "Secured and on-ramped €11,000 (~$12,432) of local co-funding from Miceli and La Fundició before the grant arrived — verified on-chain to the dollar",
@@ -128,7 +128,7 @@
   "operatorChecks": [
     "! Please confirm $0 has reached any of the 11 projects ~6 months post-payout — the full $18,000 grant still sits in the Celo Safe.",
     "! The only outflow ($5,812 ops fee) went to operator-associated wallets, one named in the application — please address the conflict of interest.",
-    "Please correct the 2.1 status box — it claims 'some funds distributed' but no local-project funds have moved on-chain.",
+    "Please correct your report's status summary — it claims 'some funds distributed' but no local-project funds have moved on-chain.",
     "! Are Miceli (€6,000) and La Fundició (€5,000) genuinely two distinct co-funders? Both tranches arrived from one EOA.",
     "Did the Phase-2 Web3 pilots (Silvi, Gainforest, Hypercerts, Sarafu) run? The report itemises almost none.",
     "! What is the distribution plan and date for the $24,622 held undistributed — or is the round closing without disbursing?"

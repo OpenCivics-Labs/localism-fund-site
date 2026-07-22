@@ -110,7 +110,7 @@
     {"claim": "Round status: launched and completed, all funds distributed", "reality": "The wallet is empty, but no grant round to local projects occurred; 'changed direction' was the accurate, unchecked box."},
     {"claim": "$10,000 disbursed to local projects", "reality": "$0 reached an identifiable local housing project; $10,000 went to undefined off-chain land-acquisition escrow EOAs."},
     {"claim": "Funded to run a community housing micro-grant round", "reality": "No open call, no applicants, no community voting, and no housing microgrants were run; the round never happened."},
-    {"claim": "Changes from plan framed as delay (section 1.2)", "reality": "The pivot from a housing grant round to a platform build was not disclosed as a change of direction."},
+    {"claim": "Changes from plan framed as delay in the report", "reality": "The pivot from a housing grant round to a platform build was not disclosed as a change of direction."},
     {"claim": "Ethereum rated 'Meaningful'; MVP showcased on-chain", "reality": "Ethereum functioned as a custody rail with most funds paid off-chain: 0 attestations, minimal on-chain activity, no community transacting — the evidence supports 'Peripheral', not 'Meaningful'."}
   ],
   "timeline": [
@@ -137,7 +137,7 @@
     "Please confirm the program should be described as a platform build rather than a completed housing grant round — no open call or community vote occurred.",
     "Can you substantiate the '27 new wallets' claim and the 'Meaningful' Ethereum rating? Otherwise both will be dropped or hedged.",
     "! Did any of the application's named co-funders — R.K. Mellon, Heinz Endowments, Hillman — materialize? The sole on-chain co-funder is an unidentified 'Angel Source' wallet.",
-    "! Your 3.1 spend categories sum to $21,100 against the $21,000 total — please reconcile."
+    "! Your report's spend categories sum to $21,100 against the $21,000 total — please reconcile."
   ],
   "fundingNote": "The $11,200 allocation arrived as ~$10,989 USDC net of bridge fees. Recorded disbursements moved fully on-chain and are traceable, but none reached a local housing project: the $10,000 'disbursed to local projects' went to off-chain land-acquisition escrow (with $9,000 round-tripping to the co-funder), the largest spend was a developer pass-through, and 0% funded the promised housing microgrants.",
   "links": {

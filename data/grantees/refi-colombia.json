@@ -25,7 +25,7 @@
     "title": "Regenerative Roots: planting in the Amazon after the flood",
     "text": "ReFi Amazonas planned a community tree-planting at the CercaViva Reserve, 11 km from Leticia, with 44 people registered. Heavy rain flooded the streets on the Friday; by Saturday travel was unsafe and the leader, worried for participants, postponed to the following week. When it finally happened, about half returned. The Environmental Police Brigade joined, native species went into the ground, and a session on composting and soil care followed. Nearly everyone present, 98%, downloaded a wallet and minted their first POAP. The day closed with a communal meal of Casabe, the traditional cassava dish, tying technology back to ancestral roots.",
     "quote": "98% downloaded their first wallet and minted their first POAP as a record of participation.",
-    "quoteAttribution": "ReFi Colombia grantee report, 2.4"
+    "quoteAttribution": "ReFi Colombia grantee report"
   },
   "delivered": [
     "Opened a 2-node mini-grants round and funded both applicants (Cartagena and Amazonas), ~$2,280 disbursed on-chain on 2026-02-03",
@@ -95,7 +95,7 @@
       "title": "Planting in the Amazon, after the flood",
       "text": "ReFi Amazonas planned a tree-planting at the CercaViva Reserve, 11 km from Leticia, with 44 registered. Heavy rain flooded the streets, so the leader postponed a week for safety. About half returned. The Environmental Police Brigade joined, native species went into the ground, and the day closed with Casabe, the traditional cassava dish.",
       "quote": "98% downloaded their first wallet and minted their first POAP as a record of participation.",
-      "quoteAttribution": "ReFi Colombia grantee report, 2.4"
+      "quoteAttribution": "ReFi Colombia grantee report"
     },
     {
       "title": "The flagship that predated the grant",
@@ -131,7 +131,7 @@
     "! Please confirm the $7,000 'Subsidies' line is the pre-grant co-funding and remove it from 'total spent' to fix the double-count.",
     "! Please confirm the $3,000 cUSD outflow was a Uniswap cUSD-to-COPm swap, not a node disbursement, so it can be relabelled.",
     "! What is the plan and timeline for deploying the ~$4,250–4,700 still held in the Safe?",
-    "Why are the target misses (250 → ~78 subsidies, 5 → 2 nodes, no English course) absent from the 1.2 table?",
+    "Why are the target misses (250 → ~78 subsidies, 5 → 2 nodes, no English course) absent from your report's changes-from-plan section?",
     "! How were conflicts of interest handled? Funders are in-network and an ops payment went to the legal lead's wallet (ximemonclou.eth).",
     "Please provide working links for the broken '1,700 transactions' URL and the unconfirmed POAP collector counts."
   ],

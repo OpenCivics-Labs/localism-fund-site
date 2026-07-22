@@ -46,7 +46,7 @@
     "tier": "Mixed",
     "composite": 18,
     "financial": "Contradicted by on-chain evidence",
-    "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant is still sitting undisbursed as cUSD on Celo (every grant that landed was paid from co-funding), and the Part 3 financial summary overstates disbursement and does not reconcile."
+    "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant is still sitting undisbursed as cUSD on Celo (every grant that landed was paid from co-funding), and the report's financial summary overstates disbursement and does not reconcile."
   },
   "honesty": "The community work is genuine and the team is candid about its shortcomings, but the central financial fact is undisclosed: the full $11,200 Localism Fund grant never moved — it sits as cUSD on Celo while all six grants were paid from co-funding USDC on Ethereum. The report's '$0 remaining' doesn't match what's on-chain, 'disbursed to local projects' is overstated, and the totals don't reconcile. No funds are missing — the grant is simply idle, and the report doesn't say so.",
   "proposed": {
@@ -140,10 +140,10 @@
   ],
   "operatorChecks": [
     "! The $11,200 LF grant is still undisbursed as cUSD on Celo — what is the deployment plan and timeline?",
-    "! Please provide a corrected Part 3 financial summary that reconciles with on-chain figures and uses one currency.",
+    "! Please provide a corrected financial summary that reconciles with on-chain figures and uses one currency.",
     "! What is the status and timing of the two unpaid grants — Jane Diopko and Cans for a Cause / Katryna Cole?",
     "! Can you evidence the $10,000 Scott Nelson co-funding? The Kraken inbound carries no donor identity on-chain.",
-    "Please revisit the Economic (4.5) and Technological (5) self-scores against your report's own 'Minimal' Ethereum description.",
+    "Please revisit the Economic and Technological self-scores against your report's own 'Minimal' Ethereum description.",
     "Was the promised on-chain layer — attestations, facet tokens, dashboards — dropped? If so it should be reflected as a change."
   ],
   "fundingNote": "Of the recorded funding, the entire $11,200 Localism Fund grant never moved — it remains as cUSD on Celo with zero outbound transfers. All six disbursed grants were paid from co-funding USDC on Ethereum, and two of the eight funded projects were never paid.",

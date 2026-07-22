@@ -156,11 +156,11 @@
   ],
   "operatorChecks": [
     "! Please provide the off-chain ledger and receipts for the ten $2,000 stipends — the program wallet shows zero outbound transfers, ~$20,750 still held.",
-    "Please correct the 2.1 status ('all funds distributed') — on-chain the $12,480 grant is still parked in the wallet.",
-    "! Please reconcile 3.1's contradictory figures — $33,244 'disbursed' vs $6,708 spent vs $26,536 remaining vs 2.2's $20,000.",
+    "Please correct your report's status summary ('all funds distributed') — on-chain the $12,480 grant is still parked in the wallet.",
+    "! Please reconcile your report's contradictory figures — $33,244 'disbursed' vs $6,708 spent vs $26,536 remaining vs the $20,000 stated elsewhere in it.",
     "! The '$8,000 on-chain match' is pre-existing USDGLO accrued ~11 months before the round — please confirm so it can be reclassified, or evidence new co-funding.",
     "! The application promised on-chain transfers and a public per-landscape dashboard — why were disbursements moved off-chain without disclosure?",
-    "! Equal stipends were set centrally by a delivery team whose members lead funded groups, yet 2.3 asserts no conflicts arose — please explain how this was handled."
+    "! Equal stipends were set centrally by a delivery team whose members lead funded groups, yet the report asserts no conflicts arose — please explain how this was handled."
   ],
   "fundingNote": "Recorded disbursements are empty because the program wallet has made zero outbound transfers — the $12,480 grant (plus ~$8,250 USDGLO) is still parked on-chain. The ten Phase-1 stipends, if paid, went off-chain through the 501(c)(3) and aren't evidenced (the report itself notes only ~$6,700 'paid out or in process'), and the financial summary doesn't reconcile.",
   "links": {

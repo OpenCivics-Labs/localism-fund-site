@@ -6,9 +6,9 @@
   "leads": "David Machuche & Victor Muhagachi",
   "place": "Mburahati, a dense, hustling neighbourhood of Dar es Salaam where women run the street economy",
   "region": "Tanzania",
-  "themes": ["solar energy", "savings circles", "women's economic power", "digital finance"],
+  "themes": ["solar", "savings circles", "women's economy"],
   "localismFocus": ["Economic", "Social", "Ecological"],
-  "tagline": "Solar lanterns lit the street; the grant round never opened",
+  "tagline": "Solar lanterns lit the street; the grant round hasn't opened yet",
   "whyItMattered": "In a neighbourhood where the grid is unreliable and banks are out of reach, women run the economy on informal savings groups. Giving them a solar asset they own turns saved kerosene money into working capital and extends their trading day past dark.",
   "stats": [
     {"value": "100", "label": "solar lanterns distributed to women"},
@@ -32,11 +32,11 @@
     "Distributed 100 solar lanterns to women across participating groups, a real and durable household asset",
     "Built and deployed Washikadau, the JUKUMU Digital Hub, a genuinely active platform with a live site and 222-commit repo",
     "Ran Swahili-language education sessions and began migrating groups from paper savings records onto the platform",
-    "Renovated a solar-powered computer-lab and training space at the JUKUMU community hub",
+    "Paid first rent and began renovating a solar-powered computer-lab and training space at the JUKUMU community hub",
     "Stood up the Bagamoyo Farmers Group solar-pump pipeline with a member-authored proposal and a SimuSolar demonstration"
   ],
   "outcomes": [
-    {"text": "Women extending trading hours after dark with solar lanterns and redirecting kerosene spend into savings pools", "status": "Realized"},
+    {"text": "Women extending trading hours after dark with solar lanterns and redirecting kerosene spend into savings pools (per coordinators' direct observation; independent evidence paywalled)", "status": "Realized"},
     {"text": "Solar infrastructure becoming shared neighbourhood good, from the lit police station to an informal gathering point", "status": "Emerging"},
     {"text": "Groups beginning to move from paper savings records to the Washikadau digital hub", "status": "Emerging"},
     {"text": "Bagamoyo Farmers Group acquiring a shared solar water pump, funds still held in treasury", "status": "Expected"}
@@ -59,7 +59,7 @@
     ]
   },
   "team": [
-    {"name": "Alinagwe Mwasela", "role": "Director of JUKUMU TZ, network of 200+ savings and community groups (local)"},
+    {"name": "Alinagwe Mwaselela", "role": "Director of JUKUMU TZ, network of 200+ savings and community groups (local)"},
     {"name": "Victor Muhagachi", "role": "Co-Founder NEDA Labs / ReFi Tanzania; round coordinator, tech developer, trainer (local)"},
     {"name": "David Machuche", "role": "Co-Founder NEDA Labs / ReFi Tanzania; round coordinator, tech developer, trainer (local)"},
     {"name": "Jon Ruth", "role": "Round coordinator, solar consultant, tech consultant"},
@@ -68,7 +68,11 @@
   "funding": {
     "granted": 7800,
     "matched": 5000,
-    "disbursements": []
+    "matchCommitted": 5000,
+    "disbursements": [
+      {"to": "Operators' own wallets", "amount": 4069, "purpose": "Lanterns, computer-lab and platform costs paid through the team's own wallets — real program spend, but not grants to independent local groups."},
+      {"to": "Personal-wallet bridge (unreturned)", "amount": 2500, "purpose": "Bridged out via a personal wallet and never returned to the Safe; unreconciled in the financial summary."}
+    ]
   },
   "stories": [
     {
@@ -133,7 +137,7 @@
   "timeline": [
     {"when": "Dec 2025", "what": "Localism Fund grant received (7,800 cUSD on Celo)"},
     {"when": "Feb 2026", "what": "Grant funds bridged from Celo to Optimism"},
-    {"when": "Mar 2026", "what": "100 solar lanterns distributed to women's savings circles"},
+    {"when": "Feb–Mar 2026", "what": "100 solar lanterns distributed to women's savings circles"},
     {"when": "Mar 2026", "what": "10+ savings circles active; groups migrating onto Washikadau"},
     {"when": "31 Mar 2026", "what": "Grantee report submitted; local grant round not yet launched"},
     {"when": "Apr 2026", "what": "$5,000 Solar Foundation co-funding received on-chain"}
@@ -144,17 +148,17 @@
     {"label": "Program multisig (Optimism Safe)", "url": "https://optimistic.etherscan.io/address/0x6640dB71aBEa375afE6958105AD49cD268E39e38", "type": "wallet"},
     {"label": "Program graphic assets (Google Drive)", "url": "https://drive.google.com/drive/folders/15kzfrMHcDWGxWGGev_cV_vCJttolerBb?usp=sharing", "type": "doc"},
     {"label": "Solar Foundation co-funding transaction ($5,003)", "url": "https://optimistic.etherscan.io/tx/0xd0b547370def49f15c044e229213c9e9f7f0f9499b15cc2ad5a99ab79fd9bfb2", "type": "dashboard"},
-    {"label": "Localism Fund grant receipt (7,800 cUSD on Celo)", "url": "https://celo.blockscout.com/tx/0xa81f1eef7ad3d6c1bd4cf439a15ed0134a0f648ae4a6c423b937e8eb89a9baf1", "type": "dashboard"}
+    {"label": "Outbound transfer to coordinator wallet (pre-bridge leg, Celo)", "url": "https://celo.blockscout.com/tx/0xa81f1eef7ad3d6c1bd4cf439a15ed0134a0f648ae4a6c423b937e8eb89a9baf1", "type": "dashboard"}
   ],
   "operatorChecks": [
-    "Confirm whether any funds reached an independent local-project or savings-group wallet — all ~$4,069 in outflows went to operator-controlled EOAs.",
-    "Trace the ~$2,500 bridge shortfall: 7,800 cUSD left via a coordinator's personal EOA, only 5,300 USDT returned to the Safe.",
-    "Reconcile the financials — $7,568 vs $4,068 'disbursed' totals, and reported $6,232 remaining vs ~$560 actually held.",
-    "Confirm the reused tx hash 0x4cda… (one transfer shown as three disbursements) is corrected before publishing.",
-    "Verify when the community-validated round seeding ~$1k into 10 groups will run — the core deliverable hasn't launched.",
-    "Obtain non-paywalled evidence for the 138 participants / 3 workshops / 15 new groups (current X links return HTTP 402)."
+    "! Did any funds reach an independent local-project or savings-group wallet? All ~$4,069 in outflows went to operator-controlled wallets.",
+    "! Please trace the ~$2,500 bridge shortfall: 7,800 cUSD left via a coordinator's personal EOA and only 5,300 USDT returned to the Safe.",
+    "! Please reconcile the financials — $7,568 vs $4,068 'disbursed' totals, and reported $6,232 remaining vs ~$560 actually held.",
+    "! The tx hash 0x4cda… is reused (one transfer shown as three disbursements) — please provide the correct transactions.",
+    "When will the community-validated round seeding ~$1k into 10 groups run? The core deliverable hasn't launched.",
+    "Please provide non-paywalled evidence for the 138 participants / 3 workshops / 15 new groups (the current X links return HTTP 402)."
   ],
-  "fundingNote": "Recorded disbursements are empty because the funded local grant round never launched. The only ~$4,069 that left the program Safe went to the team's own operator wallets for lanterns, the computer lab and platform costs — $0 reached an independent local project — and a further ~$2,500 went missing in a personal-wallet bridge the financial summary doesn't reconcile.",
+  "fundingNote": "The funded local grant round never launched, so $0 reached an independent local project. The outflows above are what's known: ~$4,069 went to the team's own operator wallets for lanterns, the computer lab and platform costs, and a further ~$2,500 never returned from a personal-wallet bridge, which the financial summary doesn't reconcile. After the report, a further ~$5,674 left the Safe to operator wallets and a bridge (Apr–May 2026), leaving ~$560.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-tanzania-solar-saving-circles-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/refi-tanzania-solar-saving-circles-steward-eval.md",

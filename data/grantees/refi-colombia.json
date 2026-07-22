@@ -6,7 +6,7 @@
   "leads": "Ximena Monclou, with WairaMoon, 0xJ4an and Tereza Bizkova",
   "place": "Rainforest, coastline and mountain city across Colombia's bioregions",
   "region": "Colombia",
-  "themes": ["regeneration", "web3 onboarding", "subsidies", "node grants"],
+  "themes": ["regeneration", "community nodes", "web3 onboarding"],
   "localismFocus": ["Ecological", "Social", "Technological"],
   "tagline": "Regeneration and a first wallet, from the Amazon to the coast",
   "whyItMattered": "Colombia is the second most biodiverse country on Earth, yet many communities don't feel the urgency of protecting it. ReFi Colombia tried to make stewardship tangible by pairing hands-on ecological work with on-chain tools that put real money and verifiable participation in local hands.",
@@ -16,7 +16,7 @@
     {"value": "~$2,300", "label": "disbursed to nodes; ~$4,250 still held"}
   ],
   "story": [
-    "The $7,840 grant landed on-chain on 9 December 2025. The plan was ambitious: scale a subsidy program from 50 to 250 people, fund five nodes, and run an English course. Reality was smaller and more honest.",
+    "The $7,840 grant landed on-chain on 9 December 2025. The plan was ambitious: scale a subsidy program from 50 to 250 people, fund five nodes, and run an English course. Reality was smaller and more modest.",
     "ReFi Colombia opened a mini-grants round for its nodes. Only two applied, Cartagena and Amazonas, and both were funded. Their first applications were incomplete, so the team held a meeting to walk through expectations, metrics and reporting before releasing funds.",
     "Cartagena ran five activities and Amazonas four, weaving mangrove and native-tree planting, urban gardens and circular-economy workshops together with first wallets and POAPs. Weather and a safety incident forced postponements; the team adapted each time.",
     "Today most of the grant, roughly $4,250, is still held in the treasury. The English course remains in preparation, and the flagship subsidy program, though genuinely live, predates this grant and barely grew."
@@ -29,7 +29,7 @@
   },
   "delivered": [
     "Opened a 2-node mini-grants round and funded both applicants (Cartagena and Amazonas), ~$2,280 disbursed on-chain on 2026-02-03",
-    "Cartagena ran 5 activities; Amazonas ran 4 (mangrove planting, native-tree planting, urban pollinator garden, blockchain-over-coffee conversations)",
+    "Cartagena ran 5 activities (including mangrove reforestation); Amazonas ran 4 (native-tree planting, urban pollinator garden, blockchain-over-coffee conversations)",
     "Kept the ReFi Medellin subsidy smart contract live, with a public Dune dashboard and TuCOP wallet claiming",
     "Used POAPs and wallets for event onboarding across nodes (9 POAP drops; 26 new wallets reported)",
     "Maintained on-chain transparency via a public Safe and dashboard as promised",
@@ -47,7 +47,7 @@
     "financial": "Largely verified",
     "line": "A real, on-chain-verifiable program from a proven team whose financials largely hold up, with one genuine defect ($7,000 of pre-grant co-funding double-counted as spend) and low additionality."
   },
-  "honesty": "The money moves cleanly on-chain and is fully accounted for, but the report over-claims scale: a $7,000 pre-grant co-funding deposit is double-counted as spend, the flagship subsidy program predates the grant, and order-of-magnitude target misses (250 to ~78 beneficiaries, 5 to 2 nodes, no English course) went undisclosed.",
+  "honesty": "The money moves cleanly on-chain and is fully accounted for, but the report claims more scale than the numbers support: a $7,000 pre-grant co-funding deposit is double-counted as spend, the flagship subsidy program predates the grant, the application's $5k-cash-plus-$5k-in-kind co-funding quietly became a flat $7,000 with the in-kind absent, and order-of-magnitude target misses (250 to ~78 beneficiaries, 5 to 2 nodes, no English course) went undisclosed.",
   "proposed": {
     "summary": "Run three programs scaling regenerative activity and Web3 onboarding across Colombia's bioregions via 5 regional nodes.",
     "points": [
@@ -74,6 +74,8 @@
   "funding": {
     "granted": 7840,
     "matched": 7000,
+    "matchCommitted": 7000,
+    "matchNote": "Verified on-chain, but deposited before the grant arrived and double-counted as program spend in the report; the committed $5k cash + $5k in-kind became a flat $7,000 with the in-kind absent.",
     "disbursements": [
       {"to": "ReFi Cartagena (node multisig)", "amount": 997, "purpose": "Local node grant for 5 community activities"},
       {"to": "ReFi Amazonas (node multisig)", "amount": 1283, "purpose": "Local node grant for 4 community activities"},
@@ -86,7 +88,7 @@
     {
       "title": "A round where everyone who applied got funded",
       "text": "ReFi Colombia opened a mini-grants round for its five nodes, but only Cartagena and Amazonas applied. Their first applications were incomplete, so the team met with both to walk through expectations, metrics and reporting before releasing roughly $2,280 on-chain on 3 February 2026. Three of five nodes were inactive; Medellin opted out.",
-      "quote": "In the end, only two nodes participated: ReFi Cartagena and ReFi Amazonas. ReFi Medellin decided not to participate because they felt the funds could be more useful for nodes that needed them more.",
+      "quote": "In the end, only two nodes participated: ReFi Cartagena and ReFi Amazonas. ReFi Medellin decided not to participate because they felt the funds could be more useful for nodes that needed them more…",
       "quoteAttribution": "ReFi Colombia grantee report, 1.1"
     },
     {
@@ -113,7 +115,7 @@
     {"when": "3 Feb 2026", "what": "Node grants disbursed to Cartagena and Amazonas"},
     {"when": "Feb 2026", "what": "Regenerative Roots tree planting in the Amazon"},
     {"when": "Feb-Mar 2026", "what": "Cartagena and Amazonas ran regeneration events"},
-    {"when": "22 Mar 2026", "what": "Final Amazonas activity held"},
+    {"when": "22 Mar 2026", "what": "Final Amazonas activity scheduled"},
     {"when": "30 Mar 2026", "what": "Grantee report submitted"}
   ],
   "resources": [
@@ -126,14 +128,14 @@
     {"label": "Program graphic assets (Google Drive)", "url": "https://drive.google.com/drive/folders/1Nii8MpvsQEiqIVUR86O0I-wnCyu7qogU", "type": "doc"}
   ],
   "operatorChecks": [
-    "Confirm the $7,000 'Subsidies' line is the pre-grant co-funding, removed from 'total spent' to fix the double-count.",
-    "Label the $3,000 cUSD outflow as a Uniswap cUSD-to-COPm swap, not a node disbursement.",
-    "Get the grantee's plan and timeline for deploying the ~$4,250-4,700 still held in the Safe.",
-    "Ask why the undisclosed target misses (250 to ~78 subsidies, 5 to 2 nodes, no English course) are absent from the 1.2 table.",
-    "Verify COI handling: in-network funders and an ops payment to the legal lead's wallet (ximemonclou.eth).",
-    "Request working links for the broken '1,700 transactions' URL and unconfirmed POAP collector counts."
+    "! Please confirm the $7,000 'Subsidies' line is the pre-grant co-funding and remove it from 'total spent' to fix the double-count.",
+    "! Please confirm the $3,000 cUSD outflow was a Uniswap cUSD-to-COPm swap, not a node disbursement, so it can be relabelled.",
+    "! What is the plan and timeline for deploying the ~$4,250–4,700 still held in the Safe?",
+    "Why are the target misses (250 → ~78 subsidies, 5 → 2 nodes, no English course) absent from the 1.2 table?",
+    "! How were conflicts of interest handled? Funders are in-network and an ops payment went to the legal lead's wallet (ximemonclou.eth).",
+    "Please provide working links for the broken '1,700 transactions' URL and the unconfirmed POAP collector counts."
   ],
-  "fundingNote": "Of the $7,840 grant, only ~$2,280 reached the two nodes; roughly $4,250-4,700 (over half) remains undeployed in the Safe.",
+  "fundingNote": "Of the $7,840 grant, only ~$2,280 reached the two nodes; roughly $4,250-4,700 (over half) remains undeployed in the Safe. The list below shows itemised, on-chain-verifiable outflows; the report's own totals run slightly higher (e.g. $690 claimed for tools vs the $80 Canva row verified, $150 claimed paid to social media vs the $49 instalment verified).",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-colombia-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/refi-colombia-steward-eval.md",

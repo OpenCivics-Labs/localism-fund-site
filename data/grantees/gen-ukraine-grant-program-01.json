@@ -6,13 +6,13 @@
   "leads": "Maksym Zalevskyi",
   "place": "Rural ecovillages scattered across a country at war",
   "region": "Ukraine",
-  "themes": ["ecovillages", "solar", "winter shelter", "mutual aid"],
+  "themes": ["ecovillages", "solar", "mutual aid"],
   "localismFocus": ["Social", "Ecological", "Economic"],
   "tagline": "Eleven ecovillages preparing to keep each other warm through war.",
   "whyItMattered": "As missiles hit Ukraine's heating infrastructure mid-winter, a network of rural ecovillages turned shared houses into places that could host displaced people. Small grants bought solar panels, bunk beds and insulation where they were needed most.",
   "stats": [
     {"value": "11", "label": "ecovillage projects funded"},
-    {"value": "$7,800", "label": "received & disbursed on-chain"},
+    {"value": "$12,400", "label": "disbursed on-chain ($7,800 LF grant + co-funding, commingled)"},
     {"value": "2", "label": "community solar systems installed"}
   ],
   "story": [
@@ -33,9 +33,10 @@
     "Winter-resilience upgrades to shared spaces — Radaria bunk beds, Charivne house renovation, Busha community space, House of Warmth, Energy-Efficient Doors, and Dobra Maisternia insulation",
     "Funds distributed through Sarafu pools via a two-leg model (pool withdrawal plus a USDC top-up from a GEN Safe), with a public Celo wallet (genukraine.eth) and a Dune dashboard as a standing transparency layer",
     "The #WinterShelters pivot — funds redirected to urgent winter-prep micro-projects, with the team calling the Localism Fund to request flexibility before redirecting",
-    "$12,350 disbursed to local projects across roughly eleven ecovillages, all dated cleanly after the 11 December 2025 payout"
+    "$12,400 disbursed on-chain to local projects across roughly eleven ecovillages (the report claimed $12,350; the Ohra grant ran ≈$50 over), all dated cleanly after the 11 December 2025 payout"
   ],
   "outcomes": [
+    {"text": "On-chain transparency unexpectedly improved internal coordination and trust — communities began referencing shared financial flows and aligning actions based on visible transactions", "status": "Emerging"},
     {"text": "At least four ecovillages now operate with more energy and housing capacity — two solar systems (~10kW combined), upgraded shared spaces, and a frontline-adjacent hub (Dobra Maisternia) running reliably through winter.", "status": "Realized"},
     {"text": "A hybrid resource-coordination system began forming across the network, combining on-chain funding (Celo), pooled coordination (Sarafu) and public visibility (Dune), enabling faster, parallel allocation than traditional grants.", "status": "Emerging"},
     {"text": "Local economic activity was activated through workshops and small production (ceramics, bicycles, mechanical repair), creating early opportunities for self-sufficiency.", "status": "Emerging"}
@@ -98,6 +99,8 @@
   "funding": {
     "granted": 7800,
     "matched": 6950,
+    "matchCommitted": 5000,
+    "matchNote": "Commitment exceeded on paper, but the largest line is GEN Ukraine's own prior Octant grant redeployed rather than new external money.",
     "disbursements": [
       {"to": "Velyka Rodyna ecovillage", "amount": 3050, "purpose": "Solar energy system (5x450W panels, 6kW inverter, 5kWh battery)"},
       {"to": "Pokuttya Waldorf School", "amount": 4150, "purpose": "Solar energy system for community space"},
@@ -107,7 +110,7 @@
       {"to": "Charivne ecovillage", "amount": 550, "purpose": "Shared community house renovation"},
       {"to": "Busha ecovillage", "amount": 450, "purpose": "Community space upgrade"},
       {"to": "Dobra Maisternia (Happy People of Ukraine)", "amount": 800, "purpose": "Insulation for a frontline-zone healing hub"},
-      {"to": "Ohra ceramic workshop (Yasni family)", "amount": 550, "purpose": "Ceramic workshop support in a high-risk region"},
+      {"to": "Ohra ceramic workshop (Yasni family)", "amount": 550, "purpose": "Ceramic workshop support in a high-risk region (report claimed $500; ≈$550 on-chain)"},
       {"to": "House of Warmth + Energy-Efficient Doors (via GEN coordinator)", "amount": 900, "purpose": "Winter-prep for shared spaces (insulation, beds, doors); routed via a shared coordinator address"}
     ]
   },
@@ -115,7 +118,7 @@
     {
       "title": "Three bunk beds in Radaria",
       "text": "The Radaria ecovillage hosted small gatherings but couldn't take larger groups in winter. As attacks on energy infrastructure made shelter urgent, the community decided to open its doors; the limit was simply beds. The grant bought three bunk beds, shifting the space from occasional-use to ready for continuous hosting.",
-      "quote": "Thanks to this support, we purchased three bunk beds and began setting up a hostel space. This is especially important during wartime, when people need not only safety, but also warmth, comfort, beauty, and a sense of home.",
+      "quote": "Thanks to this support, we purchased three bunk beds and began setting up a hostel space… This is especially important during wartime, when people need not only safety, but also warmth, comfort, beauty, and a sense of home.",
       "quoteAttribution": "The Radaria community"
     },
     {
@@ -155,12 +158,12 @@
     {"label": "Velyka Rodyna solar — Sarafu report", "url": "https://sarafu.network/reports/3888", "type": "doc"}
   ],
   "operatorChecks": [
-    "Confirm the House of Warmth and Energy-Efficient Doors $900 split, since it routed through a shared coordinator address and isn't pinned to the dollar.",
-    "Verify Ohra's reported $500 against its ~$550 on-chain total and replace the wrong cited top-up hash (0x888a83ce) with the real 200 USDC transfer.",
-    "Clarify whether the 2 ETH Octant line counts as co-funding distinct from GEN Ukraine's own prior grant, and evidence the $950 off-chain contribution.",
-    "Itemise which funded projects had a coordinator with a community tie and how each conflict of interest was handled, given ~92% of proposals were funded.",
-    "Confirm with the grantee that dropping water harvesting and biodiversity priority areas is acceptable to surface before publishing the unflagged scope-narrowing.",
-    "Request working project-post links (the notion.so/.../status URLs don't resolve) and the completed 2.2 second-leg top-up transactions for the public record."
+    "! How was the $900 House of Warmth / Energy-Efficient Doors payment split? It routed through a shared coordinator address and can't be separated on-chain.",
+    "! Ohra's reported $500 shows ~$550 on-chain — please confirm the correct figure and the real top-up transaction (the cited hash 0x888a83ce appears wrong).",
+    "! Does the 2 ETH Octant line count as co-funding distinct from GEN Ukraine's own prior grant? Please also evidence the $950 off-chain co-funding.",
+    "! Which funded projects had a coordinator with a community tie, and how was each conflict of interest handled? (~92% of proposals were funded.)",
+    "Water harvesting and biodiversity priority areas were dropped without being flagged — please confirm this change so it can be surfaced before publishing.",
+    "Please share working project-post links (the notion.so status URLs don't resolve) and the completed 2.2 second-leg top-up transactions."
   ],
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/gen-ukraine-grant-program-01-evaluation.md",

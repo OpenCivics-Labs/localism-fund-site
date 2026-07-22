@@ -4,22 +4,22 @@
   "shortName": "Builders' OP",
   "hub": "B<>rder/ess (West Africa) & Code 3 Spaces (East Africa)",
   "leads": "KarlaGod & Oliseh Genesis",
-  "place": "University builder communities in Lagos, Nigeria and Kampala, Uganda",
+  "place": "University builder communities in Nigeria and Kampala, Uganda",
   "region": "East & West Africa",
-  "themes": ["builder incubation", "student founders", "web3", "investor readiness"],
+  "themes": ["startup incubation", "students", "web3"],
   "localismFocus": ["Economic", "Social", "Cultural"],
   "tagline": "Helping student builders cross from hackathon idea to real business",
-  "whyItMattered": "Across Kampala and Lagos, first-time and student founders keep getting stuck at the same gap: they can build something cool, but not a business. This pilot paired two African hubs to walk founders across that line with structure, peer support, and real investor exposure.",
+  "whyItMattered": "Across Uganda and Nigeria, first-time and student founders keep getting stuck at the same gap: they can build something cool, but not a business. This pilot paired two African hubs to walk founders across that line with structure, peer support, and real investor exposure.",
   "stats": [
     {"value": "2", "label": "regions, one joint pilot"},
-    {"value": "26+", "label": "founders actively engaged"},
+    {"value": "26", "label": "founders actively engaged (Nigeria sprint)"},
     {"value": "3", "label": "investor pitch events"}
   ],
   "story": [
-    "Two hubs ran one cross-regional experiment. In Lagos, B<>rder/ess opened a focused 2-week, 8-session Builders Sprint in late January: 60 founders registered, 26 stayed actively engaged through customer discovery, revenue models, and go-to-market experiments.",
+    "Two hubs ran one cross-regional experiment. In Nigeria, B<>rder/ess opened a focused 2-week, 8-session Builders Sprint in late January: 60 founders registered, 26 stayed actively engaged through customer discovery, revenue models, and go-to-market experiments.",
     "In Kampala, Code 3 Spaces started with a community meetup that drew over 50 builders, then let the projects in the room shape what came next. Uganda's election-period internet blackout pushed its start to March, so the two hubs ran on staggered timelines.",
     "The hardest moment in both places came early, when facilitators delivered a blunt reality check: a hackathon project is not a startup, and your valuation is probably wrong. The founders who stayed past that friction became the most committed cohort members.",
-    "By the end, Lagos founders left with validated assumptions and structured pitch decks, and three Kampala projects, Drip, Geinz, and Pitbox, advanced into investor conversations through ongoing incubation."
+    "By the end, Nigeria's founders left with validated assumptions and structured pitch decks, and three Kampala projects, Drip, Geinz, and Pitbox, advanced into investor conversations through ongoing incubation."
   ],
   "signatureStory": {
     "title": "Pitbox and the surprise of cultural roots",
@@ -44,10 +44,10 @@
   "verdict": {
     "tier": "Needs Follow-Up",
     "composite": 13,
-    "financial": "LF receipt of $5,600 verified on-chain; the disbursement breakdown is internally contradicted and unverifiable as local-project grants",
-    "line": "Needs Follow-Up — builder programs genuinely ran in both regions, but no local grant round was operated, the $5,600 was swept to three personal wallets (one a program-Safe signer) before the program began, and the report's financial breakdown is internally contradicted and unverifiable."
+    "financial": "LF receipt of $5,600 verified on-chain; the disbursement breakdown doesn't reconcile with itself and couldn't be verified as local-project grants",
+    "line": "Needs Follow-Up — builder programs genuinely ran in both regions, but no local grant round was operated, the $5,600 was sent to three personal wallets (one a program-Safe signer) before the program began, and the report's financial breakdown doesn't reconcile with itself."
   },
-  "honesty": "The builder programs are real and the organisations capable, but this did not run as a Round 01 local grant program: no application or selection round took place, and the full $5,600 left the program wallet within ~48 hours of arrival, to three unidentified personal wallets (one a signer of the program treasury), weeks before the activities ran. Co-funding has no on-chain trace and the report's money figures don't reconcile. The honest read is meaningful activity, weak accountability, pending the grantee's answers.",
+  "honesty": "The builder programs are real and the organisations capable, but this did not run as a Round 01 local grant program: no application or selection round took place, and the full $5,600 left the program wallet within ~48 hours of arrival, to three unidentified personal wallets (one a signer of the program treasury), weeks before the activities ran. Co-funding has no on-chain trace and the report's money figures don't reconcile. The honest read is meaningful activity with real accountability gaps, pending the grantee's answers.",
   "proposed": {
     "summary": "A joint Nigeria–Uganda pilot to take university and first-time founders from idea to adopted product.",
     "points": [
@@ -68,11 +68,17 @@
   "funding": {
     "granted": 5600,
     "matched": 0,
-    "disbursements": []
+    "matchCommitted": 5000,
+    "matchNote": "The report gives co-funding as $2,500 / $5,000 / $5,600 in different places; none has an on-chain trace.",
+    "disbursements": [
+      {"to": "Program-Safe signer wallet (0xf7dbD286…cDD)", "amount": 1000, "purpose": "Outbound 2025-12-10, ~24h after the grant arrived. Recipient co-controls the program treasury; not shown to be a local project."},
+      {"to": "Unidentified personal wallet (0x13f82396…d0D)", "amount": 2800, "purpose": "Outbound 2025-12-11; unlabelled EOA, not tied to any named recipient in the report. Not shown to be a local project."},
+      {"to": "Unidentified personal wallet (0x9b6A52A8…8cB)", "amount": 1800, "purpose": "Outbound 2025-12-11; unlabelled EOA, not tied to any named recipient in the report. Not shown to be a local project."}
+    ]
   },
   "stories": [
     {
-      "title": "A 2-week sprint that reframed founders in Lagos",
+      "title": "A 2-week sprint that reframed founders in Nigeria",
       "text": "B<>rder/ess opened a focused 2-week, 8-session Builders Sprint in late January. 60 founders registered and 26 stayed actively engaged, completing customer-discovery interviews, choosing single revenue models, running 2-day go-to-market experiments, and submitting structured pitch decks. Founders who arrived with abstract ideas left able to describe a business.",
       "quote": "hands-on learning... never had so much practical help in such a short time.",
       "quoteAttribution": "Sprint participant, Nigeria cohort"
@@ -96,8 +102,9 @@
     {"dimension": "Cultural", "evidence": "Pitbox explicitly supports Uganda's creative/film economy and resonated with investors because of its cultural rootedness; Nigeria programming incorporated founder storytelling and local identity. Cultural dimensions were deliberate in project selection but not the program's primary frame."}
   ],
   "timeline": [
-    {"when": "Dec 2025", "what": "Grant received on-chain (5,600 cUSD)"},
-    {"when": "Jan 26 – Feb 8, 2026", "what": "Lagos: 2-week, 8-session Builders Sprint"},
+    {"when": "Dec 9, 2025", "what": "Grant received on-chain (5,600 cUSD)"},
+    {"when": "Dec 10–11, 2025", "what": "Full $5,600 moved out to three personal wallets"},
+    {"when": "Jan 26 – Feb 8, 2026", "what": "Nigeria: 2-week, 8-session Builders Sprint"},
     {"when": "Mar 2026", "what": "Kampala launch meetup, 50+ builders"},
     {"when": "Mar 2026", "what": "Kampala: four weekly Friday sprint sessions"},
     {"when": "Mar 2026", "what": "Three investor pitch events in Kampala"},
@@ -114,14 +121,15 @@
     {"label": "Program wallet / Safe multisig (Celo)", "url": "https://app.safe.global/home?safe=celo:0x08eec9137F67f0A772a7b48Ee388Fe5F91A6cA3f", "type": "wallet"}
   ],
   "operatorChecks": [
-    "Identify the three wallets that received the full $5,600 on 10-11 Dec 2025; confirm what each payment funded.",
-    "Clarify the $1,000 payment to a program-Safe signer against report 2.3's 'no conflicts of interest' claim.",
-    "Verify co-funding: report gives $2,500 / $5,000 / $5,600 with no on-chain trace against a $5,000 hard commit.",
-    "Confirm whether any selection/grant round ran; report 2.3 states no application or competitive selection process.",
-    "Reconcile '63 local projects funded' (4.1) with the three projects named elsewhere: Drip, Geinz, Pitbox.",
-    "Obtain the missing signed Declaration attesting figures and disclosure of changes before publishing."
+    "! Who received the three payments totalling $5,600 that left the program Safe on 10–11 Dec 2025, and what did each payment fund?",
+    "! One $1,000 payment went to a program-Safe signer — please explain this against your report's 'no conflicts of interest' statement (2.3).",
+    "! Your report gives co-funding as $2,500, $5,000 and $5,600 in different places, with no on-chain trace — how much was actually raised, from whom, and where can it be verified?",
+    "Did any application or selection round take place? Your report (2.3) states no competitive selection process ran.",
+    "How do the '63 local projects funded' (4.1) reconcile with the three projects named elsewhere — Drip, Geinz and Pitbox?",
+    "Was Karma GAP milestone tracking ever set up? The Borderless project page shows no LF grant or program milestones.",
+    "! Please provide the signed Declaration attesting your figures and disclosing changes — it is missing from the submitted report."
   ],
-  "fundingNote": "Recorded disbursements are empty because the full $5,600 left the program Safe within ~48 hours of receipt in three lump payments to unidentified personal wallets (one a signer of the program treasury), weeks before the activities ran. None could be reconciled as grants to identifiable local projects, and the report books the same $5,600 twice as both 'disbursed to local projects' and 'program operations'.",
+  "fundingNote": "The three outflows above are the full on-chain record: the entire $5,600 left the program Safe within ~48 hours of receipt, in three lump payments to personal wallets (one a signer of the program treasury), weeks before the activities ran. None could be reconciled as grants to identifiable local projects, and the report books the same $5,600 twice as both 'disbursed to local projects' and 'program operations'.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/builder-incubation-for-african-universities-east-west-africa-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/builder-incubation-for-african-universities-east-west-africa-steward-eval.md",

@@ -6,14 +6,14 @@
   "leads": "Luuk Weber",
   "place": "Curaçao, southern Caribbean",
   "region": "Curaçao",
-  "themes": ["onchain innovation", "ecological restoration", "stakeholder convening", "tokenization"],
+  "themes": ["island economy", "regeneration", "institutions"],
   "localismFocus": ["Ecological", "Social", "Economic"],
   "tagline": "An island ecosystem building toward onchain regeneration",
-  "whyItMattered": "Curaçao is a Small Island Developing State on the front lines of climate change and economic vulnerability, with high youth unemployment and brain drain. Kolektivo set out to channel onchain tools and serious institutional partnerships toward local regeneration and a more self-determined island economy.",
+  "whyItMattered": "Curaçao is a Small Island Developing State on the front lines of climate change and economic vulnerability, with high youth unemployment and brain drain. Kolektivo, an established local impact network, ran stakeholder workshops, a research report, and a public-facing Onchain Island platform during the grant period — though the grant itself has yet to be deployed — as early groundwork toward channelling onchain tools and institutional partnerships into local regeneration and a more self-determined island economy.",
   "stats": [
     {"value": "$11,200", "label": "LF grant — undeployed, still in the Safe"},
     {"value": "0", "label": "outbound on-chain transactions"},
-    {"value": "5", "label": "stakeholder events & workshops held"}
+    {"value": "5", "label": "stakeholder events & workshops reported"}
   ],
   "story": [
     "Kolektivo is no newcomer: an established Curaçao impact network since 2019, with four years of work, prior micro-grant rounds, a model farm, and standing relationships with government, CINEX and conservation leader Carmabi. The Onchain Island program set out to build on that trust rather than start from scratch.",
@@ -37,8 +37,8 @@
   ],
   "outcomes": [
     {"text": "The Curaçao Innovation Hub moved from a loose idea to a formalised, partner-backed initiative with a July 2026 launch date and 3+ secured partnerships", "status": "Emerging"},
-    {"text": "A tokenized biodiversity-credit project to fund reef restoration secured World Nature Fund backing, with fundraising and restoration still ahead", "status": "Emerging"},
-    {"text": "Genuine stakeholder alignment formed across government, finance and conservation institutions behind the Onchain Island vision", "status": "Realized"}
+    {"text": "A tokenized biodiversity-credit project to fund reef restoration with World Nature Fund backing reported as approved, with fundraising and restoration still ahead", "status": "Emerging"},
+    {"text": "Genuine stakeholder alignment formed across government, finance and conservation institutions behind the Onchain Island vision", "status": "Emerging"}
   ],
   "status": "Early-stage ecosystem work real; grant undeployed and finances under follow-up",
   "verdict": {
@@ -47,7 +47,7 @@
     "financial": "The $11,200 LF grant and $10,050 co-funding are verified inbound on-chain, but both sit undeployed in the Safe; the $14,650 reported spend has zero on-chain support and no receipts — not yet verifiable.",
     "line": "Needs Follow-Up — a credible local organisation did genuine early-stage ecosystem work, but the Localism Fund grant remains undeployed, the $14,650 reported spend is unverifiable, and the funded local grant round was never run."
   },
-  "honesty": "This is a real, established organisation doing genuine ecosystem-building — but very little is verified progress attributable to the grant. The Localism Fund's $11,200 has not moved on-chain; the program Safe holds essentially the full ~$21,250 combined budget, directly contradicting the reported $6,600 remaining; the $14,650 of fiat spend has no receipts; the co-funding came from Kolektivo's own wallet rather than the institutions named in the application; and no open grant round was run. The report is candid about its pivots and failures, but over-scores its own impact. The fair read: a real, early-stage program reported in a way that overstates delivery and does not yet account for the funds.",
+  "honesty": "This is a real, established organisation doing genuine ecosystem-building — but very little is verified progress attributable to the grant. The Localism Fund's $11,200 has not moved on-chain; the program Safe holds essentially the full ~$21,250 combined budget, directly contradicting the reported $6,600 remaining; the $14,650 of fiat spend has no receipts; the co-funding came from Kolektivo's own wallet rather than the institutions named in the application; and no open grant round was run. The report is candid about its pivots and shortcomings, but scores its own impact higher than the evidence supports. The fair read: a real, early-stage program reported in a way that overstates delivery and does not yet account for the funds.",
   "proposed": {
     "summary": "An onchain innovation program to fund local regenerative initiatives and accelerate Web3 adoption across Curaçao's economy.",
     "points": [
@@ -66,6 +66,8 @@
   "funding": {
     "granted": 11200,
     "matched": 10050,
+    "matchCommitted": 10000,
+    "matchNote": "Verified inbound on-chain, but it arrived from Kolektivo's own wallet rather than from the institutions named in the application (CINEX, the Ministry, DCSX).",
     "disbursements": []
   },
   "stories": [
@@ -97,7 +99,7 @@
     {"proposed": "Capacity & strategy building — meetups, workshops, presentations, vision materials", "delivered": "Delivered and externally corroborated: workshops and research, the Onchain Island Mixer, the launched onchainisland.co website, and CIH strategy/brand materials. The application's most concretely scoped non-funding activity, and it landed.", "status": "Delivered"},
     {"proposed": "Run an open call for proposals, scored by an Onchain Island working group, disbursing to selected local projects", "delivered": "No open grant round was run — no call, no applicant pool, no selection. Section 2.3 describes Kolektivo making proposals to third-party organisations and funding its own initiatives instead.", "status": "Not delivered"},
     {"proposed": "Onchain Pilots — 29% of planned budget supporting regional businesses to explore Web3", "delivered": "No corresponding spend appears in the funding table; the category was not funded as scoped, and the reallocation was not flagged as a change.", "status": "Not delivered"},
-    {"proposed": "Regenerative Actions — support to the top performers of prior microgrants", "delivered": "Reflected only partially, as preparatory redesign work on Kolektivo's own Hofi farm rather than direct support to prior microgrant performers.", "status": "Partially delivered"},
+    {"proposed": "Regenerative Actions — support to the top performers of prior microgrants", "delivered": "Reflected only partially, as preparatory redesign work on Kolektivo's own Hofi farm rather than direct support to prior microgrant performers.", "status": "Partial"},
     {"proposed": "Headline onchain goals — 750+ new Web3 users, 2,000+ onchain transactions, $25K+ circulated onchain", "delivered": "Missed by a wide margin: 50 wallets reported, transactions and attestations \"TBD,\" and zero on-chain circulation — the program Safe executed no outbound transfers.", "status": "Not delivered"},
     {"proposed": "Co-funding committed from local institutions — CINEX, the Ministry, DCSX", "delivered": "The verified $10,050 co-funding arrived from a Kolektivo-controlled wallet, not the named institutions. Disclosed in the report's source field, but the divergence is unexplained.", "status": "Changed"}
   ],
@@ -106,8 +108,8 @@
     {"when": "Dec 2025", "what": "Localism Fund grant ($11,200) received on-chain"},
     {"when": "Q1 2026", "what": "Two workshops and research convene 20+ stakeholders"},
     {"when": "Mar 2026", "what": "Onchain Island Mixer gathers new stakeholders in person"},
-    {"when": "Mar 2026", "what": "Grant still undeployed; full budget held in Safe"},
-    {"when": "Mar 31 2026", "what": "Round 01 grantee report submitted"}
+    {"when": "Mar 31 2026", "what": "Round 01 grantee report submitted"},
+    {"when": "May 2026", "what": "On-chain check: zero outbound; full ~$21,250 budget still in Safe"}
   ],
   "resources": [
     {"label": "Onchain Island website", "url": "https://www.onchainisland.co/", "type": "site"},
@@ -122,12 +124,12 @@
     {"label": "Kolektivo on Instagram", "url": "https://www.instagram.com/kolektivocw/", "type": "social"}
   ],
   "operatorChecks": [
-    "Confirm the reported $6,600 remaining balance against the Safe's actual $21,245.84 holding before publishing any finance figure.",
-    "Obtain receipts or bank records for the $14,650 fiat spend; the program Safe shows zero outbound transfers.",
-    "Verify whether an open grant round ran — the evals found no call, no applicant pool, and no selection process.",
-    "Confirm how conflicts of interest were handled, since most funded items went to Kolektivo's own team and working groups.",
-    "Reclassify the ≥$5,250 of 'local projects' spend that appears to be Kolektivo's own operations against the reported '$0 operations'.",
-    "Check the Outcome 1 'Realized' label and the Slavery Heritage Fund evidence link, which does not mention Kolektivo or Pionero."
+    "! Your report shows $6,600 remaining but the Safe holds $21,245.84 — please reconcile before any finance figure is published.",
+    "! Please provide receipts or bank records for the $14,650 fiat spend; the program Safe shows zero outbound transfers.",
+    "Did an open grant round run? The evaluations found no call, no applicant pool, and no selection process.",
+    "! Most funded items went to Kolektivo's own team and working groups — how were conflicts of interest handled?",
+    "! ≥$5,250 of 'local projects' spend appears to be Kolektivo's own operations, against a reported '$0 operations' — please reclassify or explain.",
+    "Please review the Outcome 1 'Realized' label and the Slavery Heritage Fund evidence link, which does not mention Kolektivo or Pionero."
   ],
   "fundingNote": "Recorded disbursements are empty because the program Safe has made zero outbound transfers and still holds essentially the full ~$21,250 combined budget. The grantee reports $14,650 of fiat spending with on-chain 'stables txs still to run', but no receipts or transaction records were provided, so none of it is verifiable.",
   "links": {

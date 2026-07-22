@@ -29,7 +29,6 @@ const read = (f) => JSON.parse(fs.readFileSync(path.join(DATA, f), "utf8"));
 const round = read("round01.json");
 const fund = read("fund.json");
 const experts = read("experts.json");
-const BLOB = round.meta.repoBlobBase;
 const ACC = round.accents || {};
 
 const grantees = round.order.map((slug) => {
@@ -108,7 +107,6 @@ function footer(draft) {
         <li><a href="experts.html">Expert Network</a></li>
       </ul></div>
       <div class="footer__col"><h4>Connect</h4><ul>
-        <li><a href="${attr(round.meta.repo)}" target="_blank" rel="noopener">GitHub ↗</a></li>
         <li><a href="${attr(experts.meta.twitter)}" target="_blank" rel="noopener">X ↗</a></li>
         <li><a href="${attr(fund.meta.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a></li>
       </ul></div>
@@ -168,7 +166,7 @@ function narrativeScroll() {
     let inner;
     if (c.type === "dimensions") {
       const items = c.items.map((it) => `<div class="chdim"><span class="chdim__ic">${dimShapes[it.name] || ""}</span><div><h3>${esc(it.name)}</h3><p>${esc(it.note)}</p></div></div>`).join("");
-      inner = `<p class="chlead ctext">${wordify(c.lead)}</p><div class="chdims">${items}</div>${c.rail ? `<p class="chrail">${esc(c.rail)}</p>` : ""}`;
+      inner = `<p class="chlead chlead--wide ctext">${wordify(c.lead)}</p><div class="chdims">${items}</div>${c.rail ? `<p class="chrail">${esc(c.rail)}</p>` : ""}`;
     } else if (c.type === "round") {
       const r = (fund.rounds || []).find((x) => x.num === c.num) || {};
       const stats = (r.stats || []).map((s) => `<div class="chstat"><b>${esc(s.value)}</b><span>${esc(s.label)}</span></div>`).join("");
@@ -321,7 +319,7 @@ function round01Page() {
 
 <section class="section section--ink" id="findings">
   <div class="wrap">
-    ${sectionHead("02", "What we found", round.findings.lede, "38ch")}
+    ${sectionHead("02", "What we found", round.findings.lede, "56ch")}
     <div class="found2">
       <div class="prose reveal">${round.findings.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
       ${insights ? `<div class="reveal"><p class="eyebrow" style="color:var(--lime);margin-bottom:1rem">What it taught us</p><ul class="insights">${insights}</ul></div>` : ""}
@@ -343,7 +341,6 @@ function round01Page() {
     <div class="prose reveal">${round.method.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
     <div class="btnrow reveal" style="margin-top:1.8rem">
       <a class="btn" href="https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947" target="_blank" rel="noopener">Progress &amp; reflections report →</a>
-      <a class="btn" href="${attr(round.meta.repo)}" target="_blank" rel="noopener">All evaluations on GitHub →</a>
     </div>
   </div>
 </section>`;
@@ -402,8 +399,9 @@ function expertsPage() {
   ];
   const roster = rosterMembers.map((m, i) => {
     const isOp = isOperator(m);
-    return `<li class="${isOp ? "is-op" : ""}"><button type="button" class="roster__btn" data-expert="${i}">${esc(m.name)}</button>${isOp ? `<span class="role">Operator</span>` : ""}</li>`;
+    return `<li class="${isOp ? "is-op" : ""}"><button type="button" class="roster__btn" data-expert="${i}">${esc(m.name)}</button>${m.round01 ? `<span class="r01mark" title="Served as a Round 01 expert">R01</span>` : ""}</li>`;
   }).join("");
+  const r01Legend = rosterMembers.some((m) => m.round01) ? `<p class="roster__legend"><span class="r01mark">R01</span> served as a Round 01 expert</p>` : "";
   const expertsData = JSON.stringify(rosterMembers.map((m) => ({ name: m.name, ens: m.ens || "", img: m.img || "", why: m.why || "" }))).replace(/</g, "\\u003c");
   const roles = e.round01.roles.map((r) => `<div class="dcard reveal"><div class="dcard__k">Role</div><h3>${esc(r.name)}</h3><p>${esc(r.body)}</p></div>`).join("");
   const joinLinks = e.join.links.map((l) => `<a class="btn ${l.primary ? "btn--lime" : ""}" href="${attr(l.href)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join("");
@@ -422,7 +420,7 @@ function expertsPage() {
 
 <section class="section" id="what">
   <div class="wrap">
-    ${sectionHead("01", "What it is", e.what.lede)}
+    ${sectionHead("01", "What it is", e.what.lede, "42ch")}
     <div class="prose reveal">${e.what.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
     <div class="statband">${e.stats.map(statBlock).join("")}</div>
   </div>
@@ -442,6 +440,7 @@ function expertsPage() {
       <div class="graphbox graphbox--sm reveal">${expertGraph()}</div>
     </div>
     <ul class="roster reveal">${roster}</ul>
+    ${r01Legend}
     <p class="rosternote reveal">${esc(e.roster.note)}</p>
   </div>
 </section>
@@ -506,7 +505,7 @@ function projectPage(g, i) {
   const sig = g.signatureStory || {};
   const storyList = (g.stories && g.stories.length) ? g.stories : ((sig.title || sig.text) ? [{ title: sig.title, text: sig.text, quote: sig.quote, quoteAttribution: sig.quoteAttribution }] : []);
   const sigBlock = storyList.length
-    ? `<div class="stories">${storyList.map((s, si) => `<figure class="signature" style="${accentVar}"><p class="eyebrow signature__label">Story ${si + 1}</p>${s.text ? `<p class="signature__text">${esc(s.text)}</p>` : ""}${s.quote && String(s.quote).trim() ? `<blockquote class="signature__quote">“${esc(s.quote)}”${s.quoteAttribution ? `<span class="signature__cite">${esc(s.quoteAttribution)}</span>` : ""}</blockquote>` : ""}</figure>`).join("")}</div>` : "";
+    ? `<div class="stories">${storyList.map((s, si) => `<figure class="signature" style="${accentVar}"><p class="eyebrow signature__label">Story ${si + 1}</p>${s.text ? `<p class="signature__text">${esc(s.text)}</p>` : ""}${s.quote && String(s.quote).trim() ? `<blockquote class="signature__quote"><span class="signature__mark" aria-hidden="true">“</span>${esc(s.quote)}${s.quoteAttribution ? `<span class="signature__cite">${esc(s.quoteAttribution)}</span>` : ""}</blockquote>` : ""}</figure>`).join("")}</div>` : "";
   const storiesSection = sigBlock ? `<section class="gsec" style="${accentVar}"><div class="wrap">${gHead("Stories from the ground")}${sigBlock}</div></section>` : "";
   const outs = (g.outcomes || []).map((o) => `<div class="outcome"><span class="ostat" data-s="${attr(o.status)}">${esc(o.status)}</span><span>${esc(o.text)}</span></div>`).join("");
   const v = g.verdict || {};
@@ -517,8 +516,14 @@ function projectPage(g, i) {
   const focus = new Set((g.localismFocus || []).map((s) => String(s).trim()));
   const dimstrip = DIMS6.map((d) => `<div class="dimstrip__item${focus.has(d) ? " is-on" : ""}"><span class="dimstrip__ic">${dimShapes[d] || ""}</span><span class="dimstrip__nm">${esc(d)}</span></div>`).join("");
   const mini = grantMiniMap(g);
-  const opChecks = (g.operatorChecks && g.operatorChecks.length)
-    ? `<section class="opcheck" style="${accentVar}"><div class="wrap"><div class="opcheck__box reveal"><p class="opcheck__label">⚠ Temporary · operator review — validate before publishing</p><ul class="opcheck__list">${g.operatorChecks.map((c) => `<li>${esc(c)}</li>`).join("")}</ul><p class="opcheck__note">Internal review aid — to be removed before this retrospective goes public.</p></div></div></section>`
+  // "! "-prefixed checks are integrity-critical (money trails, reconciliation,
+  // conflicts of interest, declarations) — grouped first under their own header
+  // so it's unambiguous what must be answered vs what is editorial cleanup.
+  const opAll = g.operatorChecks || [];
+  const opIntegrity = opAll.filter((c) => c.startsWith("! ")).map((c) => c.slice(2));
+  const opEditorial = opAll.filter((c) => !c.startsWith("! "));
+  const opChecks = opAll.length
+    ? `<section class="opcheck" style="${accentVar}"><div class="wrap"><div class="opcheck__box reveal"><p class="opcheck__label">⚠ Temporary · questions for the grantee — answers needed before publishing</p>${opIntegrity.length ? `<p class="opcheck__sub opcheck__sub--int">Must be answered — financial integrity</p><ul class="opcheck__list opcheck__list--int">${opIntegrity.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}${opEditorial.length ? `<p class="opcheck__sub">Clarifications &amp; corrections</p><ul class="opcheck__list">${opEditorial.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}<p class="opcheck__note">Internal review aid — to be removed before this retrospective goes public.</p></div></div></section>`
     : "";
   const teamSection = (g.team && g.team.length)
     ? `<section class="gsec" style="${accentVar}"><div class="wrap">${gHead("The team")}<ul class="teamlist">${g.team.map((m) => `<li><span class="tm__name">${esc(m.name)}</span>${m.role ? `<span class="tm__role">${esc(m.role)}</span>` : ""}</li>`).join("")}</ul></div></section>`
@@ -528,19 +533,37 @@ function projectPage(g, i) {
     const disb = g.funding.disbursements || [];
     const maxA = Math.max(1, ...disb.map((d) => Number(d.amount) || 0));
     const fmt = (n) => "$" + (Number(n) || 0).toLocaleString("en-US");
-    const bar = `<div class="fundbar"><div class="fundbar__seg fundbar__seg--grant" style="flex:${G || 1}"><b>${fmt(G)}</b><span>Localism Fund grant</span></div>${M > 0 ? `<div class="fundbar__seg fundbar__seg--match" style="flex:${M}"><b>${fmt(M)}</b><span>Matched locally</span></div>` : ""}</div>`;
+    // Actuals (spent/unspent) run against the full committed pool (grant +
+    // matched) — several hubs paid disbursements from co-funding while the
+    // grant sat idle, so grant-only math would misstate those pages.
+    const MC = Number(g.funding.matchCommitted) || 0;
     const total = G + M;
-    const totalBox = total > 0 ? `<div class="fundtotal"><span class="fundtotal__l">Total committed</span><span class="fundtotal__v">${fmt(total)}</span></div>` : "";
+    const spent = disb.reduce((sum, d) => sum + (Number(d.amount) || 0), 0);
+    const variance = total - spent;
+    const isOver = variance < 0;
+    const pctVariance = total > 0 ? Math.round((Math.abs(variance) / total) * 100) : 0;
+    const varianceTone = isOver ? "mid" : pctVariance <= 10 ? "ok" : pctVariance <= 60 ? "mid" : "high";
+    const varianceBox = `<div class="fundtotal fundtotal--variance" data-tone="${varianceTone}"><span class="fundtotal__l">${isOver ? "Exceeds committed" : "Unspent"}</span><span class="fundtotal__v">${fmt(Math.abs(variance))}${pctVariance > 0 ? `<span class="fundtotal__pct"> (${pctVariance}%)</span>` : ""}</span></div>`;
+    // matchNote marks a disparity between the co-funding the report claims
+    // and what the evaluation could verify — amber-flag the box and say why.
+    const matchNote = g.funding.matchNote || "";
+    const matchedBox = (M > 0 || MC > 0) ? `<div class="fundtotal fundtotal--matched"${matchNote ? ` data-flag="1"` : ""}><span class="fundtotal__l">Matched locally${matchNote ? ` <span class="fundtotal__warn" aria-hidden="true">⚠</span>` : ""}</span><span class="fundtotal__v">${fmt(M)}${MC > 0 && MC !== M ? `<span class="fundtotal__pct"> of ${fmt(MC)} committed</span>` : ""}</span></div>` : "";
+    const totalBox = total > 0 ? `<div class="fundtotals">
+      <div class="fundtotal"><span class="fundtotal__l">Localism Fund grant</span><span class="fundtotal__v">${fmt(G)}</span></div>
+      ${matchedBox}
+      <div class="fundtotal fundtotal--spent"><span class="fundtotal__l">Actually spent</span><span class="fundtotal__v">${fmt(spent)}</span></div>
+      ${variance !== 0 ? varianceBox : ""}
+    </div>${matchNote ? `<p class="fundtotals__note">⚠ Matching disparity: ${esc(matchNote)}</p>` : ""}` : "";
     const stream = disb.length
       ? `<div class="stream">${disb.map((d) => `<div class="stream__row"><span class="stream__to">${esc(d.to)}</span><span class="stream__track"><span class="stream__fill" style="width:${Math.max(5, Math.round((Number(d.amount) || 0) / maxA * 100))}%"></span></span><span class="stream__amt">${fmt(d.amount)}</span><span class="stream__for">${esc(d.purpose)}</span></div>`).join("")}</div>`
       : `<p class="stream__none">No grant funds were verifiably disbursed to independent local projects — the money stayed in the program treasury or covered the hub's own costs.</p>`;
     const note = g.fundingNote ? `<div class="fundnote reveal"><span class="fundnote__ic" aria-hidden="true">!</span><div><p class="fundnote__h">Why the money didn't move as planned</p><p>${esc(g.fundingNote)}</p></div></div>` : "";
-    return `<section class="gsec" style="${accentVar}"><div class="wrap">${gHead("The money — granted vs matched")}${bar}${totalBox}${stream}${note}</div></section>`;
+    return `<section class="gsec" style="${accentVar}"><div class="wrap">${gHead("The money — granted vs matched")}${totalBox}${stream}${note}</div></section>`;
   })() : "";
   const corrRows = (g.correlation || []).map((c) => `<div class="corr__row reveal">
-      <div class="corr__proposed">${esc(c.proposed)}</div>
-      <div class="corr__mid"><span class="corr__status" data-s="${attr(c.status)}">${esc(c.status)}</span></div>
-      <div class="corr__outcome">${esc(c.outcome)}</div>
+      <div class="corr__proposed">${esc(c.proposed ?? c.claim)}</div>
+      <div class="corr__mid">${c.status ? `<span class="corr__status" data-s="${attr(c.status)}">${esc(c.status)}</span>` : ""}</div>
+      <div class="corr__outcome">${esc(c.outcome ?? c.delivered ?? c.reality)}${c.note ? ` <span class="corr__notetext">${esc(c.note)}</span>` : ""}</div>
     </div>`).join("");
   const compare = (g.correlation && g.correlation.length) ? `
 <section class="gsec" style="${accentVar}">
@@ -588,6 +611,12 @@ function projectPage(g, i) {
 
 <section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">${esc(g.whyItMattered)}</p></div></section>
 
+<section class="gsec gsec--gallery" style="${accentVar}"><div class="wrap">
+  ${gHead("Project gallery")}
+  <div class="pgal reveal">${Array.from({ length: 4 }, () => `<div class="pgal__tile" aria-hidden="true"><svg class="pgal__ic" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="16" width="60" height="48" rx="4"/><circle cx="27" cy="32" r="6"/><path d="M10 54l16-16 12 12 10-10 22 22"/></svg></div>`).join("")}</div>
+  <p class="pgal__note">Photos from the ground — coming soon.</p>
+</div></section>
+
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("Where it focuses")}
   ${(g.dimensionEvidence && g.dimensionEvidence.length)
@@ -598,6 +627,10 @@ function projectPage(g, i) {
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("By the numbers")}
   <div class="pstats">${(g.stats || []).map(statBlock).join("")}</div>
+</div></section>
+
+<section class="gsec" style="${accentVar}"><div class="wrap">
+  ${gHead("Status")}
   <div class="pstatus reveal"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span><p class="pstatus__desc">${esc(g.status)}</p></div>
 </div></section>
 
@@ -623,23 +656,16 @@ ${fundingBlock}
     ${v.line ? `<p class="honest__line">“${esc(v.line)}”</p>` : ""}
     <div class="honest__verdict">
       <span><span class="k">Tier</span><span class="v">${esc(v.tier)}</span></span>
-      <span><span class="k">Score</span><span class="v honest__score">${esc(v.composite)}<span style="color:var(--ink-faint)">/35</span></span></span>
       <span><span class="k">Finances</span><span class="v">${esc(v.financial)}</span></span>
     </div>
     <p>${esc(g.honesty)}</p>
   </div>
 </div></section>
 
-<section class="gsec" style="${accentVar}"><div class="wrap">
-  ${gHead("Sources & evidence")}
-  <div class="sources reveal">
-    ${source(BLOB + encodeURI(g.links.evaluation), "Full evaluation", "The four-phase AI assessment, verified")}
-    ${source(BLOB + encodeURI(g.links.stewardEval), "Steward companion", "Human judgement & follow-ups")}
-    ${source(BLOB + encodeURI(g.links.report), "Grantee report", "What the hub told us")}
-    ${source(BLOB + encodeURI(g.links.application), "Original application", "What they set out to do")}
-  </div>
-  ${g.resources && g.resources.length ? `<p class="ghead ghead--sub">External links &amp; media</p>${resourceLinks}` : ""}
-</div></section>
+${g.resources && g.resources.length ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  ${gHead("External links & media")}
+  ${resourceLinks}
+</div></section>` : ""}
 
 ${opChecks}
 

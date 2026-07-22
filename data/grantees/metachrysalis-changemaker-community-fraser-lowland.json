@@ -6,17 +6,17 @@
   "leads": "Daniel Lindenberger & Alka Tandan",
   "place": "Fraser Lowland, British Columbia",
   "region": "British Columbia",
-  "themes": ["community-weaving", "mutual-aid", "bioregional", "emergent"],
+  "themes": ["mutual aid", "community weaving", "bioregionalism"],
   "localismFocus": ["Social", "Economic", "Technological"],
   "tagline": "Weaving isolated changemakers into one living network.",
   "whyItMattered": "Across the Fraser Lowland, dozens of people quietly carry mutual-aid and regeneration work alone, unseen and unconnected. This pilot tried to find them and stitch them into a community where resources, not just money, could flow between projects.",
   "stats": [
-    {"value": "8", "label": "changemakers funded"},
+    {"value": "8 · 6", "label": "changemakers funded · grants paid"},
     {"value": "~$10.8k", "label": "verified on-chain to six recipients"},
     {"value": "22", "label": "nominees & applicants engaged"}
   ],
   "story": [
-    "Thaumazo set out to find eight local changemakers, weave them into a Discord and the open-source Community Mycelium platform, and let a sociocratic vote allocate the grants. Reality simplified the plan: only eight people finished their profiles in time, exactly matching the eight grants — so the competitive vote was quietly retired, and with it the one zero-sum moment in the process.",
+    "Thaumazo set out to find eight local changemakers, weave them into a Discord and the open-source Community Mycelium platform, and let a sociocratic vote allocate the grants. Reality simplified the plan: only eight people finished their profiles in time, exactly matching the eight grants — so the competitive vote was retired — disclosed candidly — and with it the one zero-sum moment in the process.",
     "The real work was relational. 1:1 onboarding calls, weekly drop-ins, in-person game sessions, a potluck, and a 'mycelial mapping' exercise that treated money as just one of eight kinds of resource. People who'd been working in isolation started recognising each other's work — and helping.",
     "The clearest proof came when participants spotted a synergy and one gifted surplus goods to another, redirecting items bound for landfill to a peer-led community supporting unhoused people, arriving just ahead of an atmospheric storm.",
     "Honest texture runs through it: low turnout, busy leaders hard to schedule, a $2,000 loss when co-funding was briefly held as ETH. The Ethereum layer stayed minimal, and — quietly — the entire Localism Fund grant never moved."
@@ -39,7 +39,7 @@
     {"text": "Previously fragmented changemakers formed a small living cohort, with cross-project support offers and at least one CBC-corroborated mutual-aid linkage", "status": "Emerging"},
     {"text": "Participants gained new ways to scope right-sized projects and map the many forms of capital flowing through their work", "status": "Emerging"},
     {"text": "A reusable open-source platform (Community Mycelium) was advanced and put into real use by a handful of local members", "status": "Realized"},
-    {"text": "The promised on-chain layer — attestations, facet tokens, on-chain governance, dashboards — and a 'bioregional financing' model", "status": "Expected"}
+    {"text": "The promised on-chain layer — attestations, facet tokens, on-chain governance, dashboards — and a 'bioregional financing' model", "status": "Not delivered"}
   ],
   "status": "Continuing as a community — but the LF grant is still undisbursed and the financial record needs correcting",
   "verdict": {
@@ -48,7 +48,7 @@
     "financial": "Contradicted by on-chain evidence",
     "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant is still sitting undisbursed as cUSD on Celo (every grant that landed was paid from co-funding), and the Part 3 financial summary overstates disbursement and does not reconcile."
   },
-  "honesty": "The community work is genuine and the team is candid about its failures, but the central financial fact is undisclosed: the full $11,200 Localism Fund grant never moved — it sits as cUSD on Celo while all six grants were paid from co-funding USDC on Ethereum. The report's '$0 remaining' is false on-chain, 'disbursed to local projects' is overstated, and the totals don't reconcile. No funds are missing — the grant is simply idle, and the report doesn't say so.",
+  "honesty": "The community work is genuine and the team is candid about its shortcomings, but the central financial fact is undisclosed: the full $11,200 Localism Fund grant never moved — it sits as cUSD on Celo while all six grants were paid from co-funding USDC on Ethereum. The report's '$0 remaining' doesn't match what's on-chain, 'disbursed to local projects' is overstated, and the totals don't reconcile. No funds are missing — the grant is simply idle, and the report doesn't say so.",
   "proposed": {
     "summary": "Find and fund eight local changemakers through a peer-nominated, sociocratically governed bioregional grant round.",
     "points": [
@@ -75,6 +75,7 @@
   "funding": {
     "granted": 11200,
     "matched": 10000,
+    "matchCommitted": 10000,
     "disbursements": [
       {"to": "Kelly Graham Tick — Hospice RMT pilot", "amount": 1800, "purpose": "Weekly no-charge RMT treatment for hospice patients and their families"},
       {"to": "Chad Kohalyk — Canadian Fiscal Hosting Network", "amount": 1797, "purpose": "Exploring fiscal sponsorship for small mission-aligned projects lacking legal nonprofit structure"},
@@ -123,8 +124,9 @@
     {"when": "Dec 17, 2025", "what": "$11,200 LF grant received as cUSD on Celo"},
     {"when": "Jan–Mar 2026", "what": "Cohort onboarded; drop-ins and mycelial mapping"},
     {"when": "Mar 29–Apr 4, 2026", "what": "Six micro-grants paid from co-funding"},
-    {"when": "Apr 2026", "what": "LF grant still idle, undisbursed on Celo"},
-    {"when": "Apr 4, 2026", "what": "Grantee report finalised and submitted"}
+    {"when": "Apr 4, 2026", "what": "Grantee report finalised and submitted"},
+    {"when": "Jun 8, 2026", "what": "On-chain verification: the $11,200 LF grant still undisbursed on Celo"},
+    {"when": "Jun 2026", "what": "On-chain verification confirms the LF grant still undisbursed on Celo"}
   ],
   "resources": [
     {"label": "Metachrysalis (framework site)", "url": "https://metachrysalis.org/", "type": "site"},
@@ -137,12 +139,12 @@
     {"label": "Community Discord", "url": "https://discord.gg/c4HUku4tJe", "type": "social"}
   ],
   "operatorChecks": [
-    "Confirm the $11,200 LF grant is still undisbursed as cUSD on Celo and obtain a deployment plan and timeline.",
-    "Request a corrected Part 3 financial summary that reconciles with on-chain figures and uses one currency.",
-    "Confirm current status and timing of the two unpaid grants — Jane Diopko and Cans for a Cause / Katryna Cole.",
-    "Verify evidence for the $10,000 Scott Nelson co-funding, since the Kraken inbound carries no donor identity on-chain.",
-    "Resolve the Economic (4.5) and Technological (5) self-scores against the report's own 'Minimal' Ethereum text.",
-    "Confirm the promised on-chain layer — attestations, facet tokens, dashboards — was dropped; reflect it as a change."
+    "! The $11,200 LF grant is still undisbursed as cUSD on Celo — what is the deployment plan and timeline?",
+    "! Please provide a corrected Part 3 financial summary that reconciles with on-chain figures and uses one currency.",
+    "! What is the status and timing of the two unpaid grants — Jane Diopko and Cans for a Cause / Katryna Cole?",
+    "! Can you evidence the $10,000 Scott Nelson co-funding? The Kraken inbound carries no donor identity on-chain.",
+    "Please revisit the Economic (4.5) and Technological (5) self-scores against your report's own 'Minimal' Ethereum description.",
+    "Was the promised on-chain layer — attestations, facet tokens, dashboards — dropped? If so it should be reflected as a change."
   ],
   "fundingNote": "Of the recorded funding, the entire $11,200 Localism Fund grant never moved — it remains as cUSD on Celo with zero outbound transfers. All six disbursed grants were paid from co-funding USDC on Ethereum, and two of the eight funded projects were never paid.",
   "links": {

@@ -6,13 +6,13 @@
   "leads": "Anthony Amio (@amioantho)",
   "place": "UNIZIK campus, Awka, Nigeria",
   "region": "South-East Nigeria",
-  "themes": ["solar energy", "internet access", "web3", "campus hub"],
+  "themes": ["solar", "internet access", "campus hub"],
   "localismFocus": ["Technological", "Ecological", "Social"],
   "tagline": "A solar-powered hub where the grid rarely stays on",
   "whyItMattered": "South-East Nigeria has high crypto awareness but chronic power cuts and weak internet that stifle local builders. TAS built a real off-grid solar and Starlink hub on campus so students finally have a reliable place for deep digital work.",
   "stats": [
     {"value": "1", "label": "solar/internet hub built & activated"},
-    {"value": "40+", "label": "students using the hub"},
+    {"value": "40+", "label": "students reported using the hub"},
     {"value": "$14,840", "label": "combined budget, fully traceable on-chain"}
   ],
   "story": [
@@ -79,8 +79,8 @@
       "outcome": "Hub activated as a co-learning space with student partnerships; sustained education and the ReFi ecosystem shift are early-stage, not yet evidenced."
     },
     {
-      "proposed": "Run a local grant round disbursing to local projects.",
-      "status": "Pivoted",
+      "proposed": "Round 01 intent: distribute funds to third-party local projects.",
+      "status": "Changed",
       "outcome": "Ran as a direct organisational self-build, exactly as the application proposed; $0 third-party grants on-chain, spend itemized to a ₦15,925,000 build."
     },
     {
@@ -99,11 +99,12 @@
   "funding": {
     "granted": 7840,
     "matched": 7000,
+    "matchCommitted": 7000,
     "disbursements": [
       {"to": "Switch Electric", "amount": 3300, "purpose": "Solar system and smart-meter gateway installation (vendor; team member is also a Greenpill Nigeria steward) — not a third-party grant"},
-      {"to": "Anthony Amio (operator wallet, amioantho.eth)", "amount": 6700, "purpose": "UNIZIK hub build — operator's own EOA (a Safe signer) used as a Naira-cash conduit for itemized vendor and labour costs (container, transport, fabrication, interior, Starlink); self-build, not a grant"},
-      {"to": "NodeBridge Africa", "amount": 1800, "purpose": "Ethereum staking node hardware (vendor) — not a third-party grant"},
-      {"to": "Nansel Rimsah (team)", "amount": 1000, "purpose": "Website design, marketing materials and graphics — internal team payment, not a grant"}
+      {"to": "Anthony Amio (operator wallet, amioantho.eth)", "amount": 6700, "purpose": "UNIZIK hub build — operator's own EOA (a Safe signer) used as a Naira-cash conduit for itemized vendor and labour costs (container, transport, fabrication, interior, Starlink)"},
+      {"to": "NodeBridge Africa", "amount": 1800, "purpose": "Ethereum staking node hardware (vendor)"},
+      {"to": "Nansel Rimsah (team)", "amount": 1000, "purpose": "Website design, marketing materials and graphics — internal team payment"}
     ]
   },
   "stories": [
@@ -150,14 +151,15 @@
     {"label": "Program Safe wallet (multi-chain)", "url": "https://app.safe.global/home?safe=celo:0x0216d92acF90b5E9Ab6d8808ADEAc87037F00A73", "type": "wallet"}
   ],
   "operatorChecks": [
-    "Re-label '$11,800 disbursed to local projects' — on-chain there were no third-party grantees; the budget funded Greenpill Nigeria's own hub build.",
-    "Confirm how the ~$6,700 to operator wallet amioantho.eth (a Safe signer) was disclosed — operator = recipient = signer.",
-    "Fix the 2.2 table — rows 1 and 2 cite the same Celo tx; the $2,000 staking-bond row has no recipient or tx.",
-    "Clarify how much of the $7,000 co-funding is external vs internal — two of three co-funders are Greenpill Nigeria/Network.",
-    "Confirm the second UNN hub status (land only) and whether the Owerri pilot will migrate.",
-    "Note the staking nodes are in place but not yet live — the self-sustaining revenue/yield thesis is unproven."
+    "Please confirm '$11,800 disbursed to local projects' should be re-labelled — on-chain there were no third-party grantees; the budget funded Greenpill Nigeria's own hub build.",
+    "! How was the ~$6,700 paid to operator wallet amioantho.eth (a Safe signer) disclosed? Operator = recipient = signer.",
+    "Please fix the 2.2 table — rows 1 and 2 cite the same Celo tx, and the $2,000 staking-bond row has no recipient or tx.",
+    "! How much of the $7,000 co-funding is external vs internal? Two of three co-funders are Greenpill Nigeria/Network entities.",
+    "What is the second UNN hub's status (land only), and will the Owerri pilot migrate?",
+    "! Where is the reported '$2,540 remaining'? The Safe is near-empty; ~$2,031 was swapped post-report into the Green Goods DAI vault (2026-03-28). Is that the $2,000 staking-bond earmark?",
+    "When will the staking nodes go live? The self-sustaining revenue/yield thesis is unproven until they do."
   ],
-  "fundingNote": "The money moved and is fully traceable, but it funded a self-build, not a grant round: there were no third-party local grantees on-chain. The budget built one solar hub at UNIZIK (the second was deferred, as pre-flagged), with the largest single flow — ~$6,700 to a Safe signer's own wallet — acting as a Naira-cash conduit for itemised vendor and labour costs.",
+  "fundingNote": "The money moved and is fully traceable, but it funded a self-build, not a grant round: every flow below went to vendors or the team, with no third-party local grantees on-chain. The budget built one solar hub at UNIZIK (the second was deferred, as pre-flagged), with the largest single flow — ~$6,700 to a Safe signer's own wallet — acting as a Naira-cash conduit for itemised vendor and labour costs.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/tech-and-sun-tas-round-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/tech-and-sun-tas-round-steward-eval.md",

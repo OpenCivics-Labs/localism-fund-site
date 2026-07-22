@@ -4,9 +4,9 @@
   "title": "Twelve local hubs, one year, and what really happened.",
   "dek": "In late 2025 the Localism Fund backed twelve community hubs across six continents to run their own local grant programs — using Ethereum as the rails. This is the honest retrospective: what each one set out to do, what they actually did, and what the money really touched.",
   "intro": [
-    "The Localism Fund exists on a simple bet: that the people closest to a place are the ones best placed to regenerate it — and that open, on-chain money can move trust and resources to them without a middle layer skimming the meaning out.",
-    "Round 01 put that bet to work. Rather than fund projects directly, the Fund funded twelve local hubs to each run their own grant program — choosing local projects, moving money, and reporting back. Each received roughly $8,000–$18,000 and four months. The brief: distribute it locally, on Ethereum, and tell us honestly what happened.",
-    "Four months on, every hub submitted a report. We read all twelve against their original applications, traced the money on-chain where we could, and wrote an evaluation for each. What follows is a project-by-project account — grockable at a glance, with the full evidence a click away."
+    "The Localism Fund exists on a simple belief: that the people closest to a place are the ones best placed to regenerate it — and that resources can move directly to them when real accountability and transparency are built into how they flow.",
+    "Round 01 put that belief to work. Rather than fund projects directly, the Fund funded twelve local hubs to each run their own grant program — choosing local projects, moving money, and reporting back. Each received roughly $5,600–$18,000 and four months. The brief: distribute it locally, on Ethereum, and tell us honestly what happened.",
+    "Four months on, every hub submitted a report. We read all twelve against their original applications, traced the money on-chain where we could, and wrote an evaluation for each. What follows is a project-by-project account — clear at a glance, and honest about where the evidence runs out."
   ],
   "findings": {
     "lede": "The headline isn't the spending. It's the gap between designing a local grant round and actually running one.",
@@ -32,7 +32,7 @@
     { "value": "$125k", "label": "matching pool" },
     { "value": "28", "label": "applications received" },
     { "value": "12", "label": "local programs selected" },
-    { "value": "$100k+", "label": "verified local co-funding" }
+    { "value": "$98k", "label": "local co-funding committed" }
   ],
   "insights": [
     { "lead": "Running a local round is harder than funding one.", "body": "Most hubs did real local work; far fewer completed an open round that actually reached independent local projects on-chain." },
@@ -67,9 +67,7 @@
   ],
   "meta": {
     "evaluationPeriod": "June 2026",
-    "status": "draft",
-    "repo": "https://github.com/montymerlin/localism-fund-docs",
-    "repoBlobBase": "https://github.com/montymerlin/localism-fund-docs/blob/main/"
+    "status": "draft"
   },
   "locations": {
     "gen-ukraine-grant-program-01": [[49.0, 31.0]],

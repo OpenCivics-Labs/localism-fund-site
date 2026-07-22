@@ -123,7 +123,11 @@
       p = Math.max(0, Math.min(0.9999, p));
       setActive(Math.floor(p * N));
       var rect = report.getBoundingClientRect();
-      var engaged = rect.top < window.innerHeight * 0.5 && rect.bottom > window.innerHeight * 0.5;
+      // .stage is sticky and releases once the report's remaining scroll room
+      // drops below one viewport — that's exactly when the footer starts
+      // revealing, so disengage there rather than at the viewport midpoint
+      // (otherwise the fixed TOC floats over the incoming footer).
+      var engaged = rect.top < window.innerHeight * 0.5 && rect.bottom > window.innerHeight;
       if (tocEl) tocEl.classList.toggle("is-visible", engaged);
       if (barEl) {
         barEl.classList.toggle("is-visible", engaged);

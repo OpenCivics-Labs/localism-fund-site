@@ -6,14 +6,14 @@
   "leads": "Cauê Tomaz (Coi) & Nick Haaz",
   "place": "Federated bioregional hubs across Brazil — Rio, São Paulo, Recife, Bahia, Minas",
   "region": "Brazil",
-  "themes": ["coordination", "regeneration", "web3", "governance"],
+  "themes": ["coordination", "regeneration", "governance"],
   "localismFocus": ["Technological", "Social", "Political"],
   "tagline": "Wiring scattered Brazilian regen hubs into one commons.",
-  "whyItMattered": "Brazil is rich in regenerative initiatives but they work in fragmented isolation, losing memory and momentum. This was an honest attempt to build shared coordination infrastructure so dispersed local capacity could find each other and act together.",
+  "whyItMattered": "Brazil is rich in regenerative initiatives but they work in fragmented isolation, losing memory and momentum between projects. GreenPill Brasil used the grant to build and test a coordination system — conviction voting, a local Sarafu credit currency, and matching funds for verified work — meant to let dispersed local capacity find each other and act together.",
   "stats": [
     {"value": "~$4k", "label": "verified grants to local partners"},
-    {"value": "~20", "label": "energizers onboarded to Web3"},
-    {"value": "~300", "label": "Atlantic Forest trees registered"}
+    {"value": "~20", "label": "energizers in active onboarding"},
+    {"value": "~300", "label": "Atlantic Forest trees reported registered"}
   ],
   "story": [
     "The plan was a tidy machine: bioregional hubs apply through Gardens conviction voting, earn Sarafu credits, unlock 1×–3× matching on verified delivery. Reality arrived as cognitive overload. Wallets wouldn't connect, staking failed, and participants drowned in tools and frameworks before any real work began.",
@@ -48,7 +48,7 @@
     "financial": "Contradicted by on-chain evidence",
     "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile and whose claimed $19,600 disbursed to local projects is contradicted on-chain (only ~$4,000 of real post-grant local grants is verifiable)."
   },
-  "honesty": "The program is real, intellectually serious, and distinctively Ethereum-native — and the team is candid about its own failures. But the financial account does not reconcile: the headline disbursement figure is contradicted on-chain, with co-funders double-counted as grantees and treasury liquidity counted as grants out. The core local-grant-round mandate became, in practice, an internal onboarding and coordination program.",
+  "honesty": "The program is real, intellectually serious, and distinctively Ethereum-native — and the team is candid about its own shortcomings. But the financial account does not reconcile: the headline disbursement figure is contradicted on-chain, with co-funders double-counted as grantees and treasury liquidity counted as grants out. The core local-grant-round mandate became, in practice, an internal onboarding and coordination program — and funds also flowed to organisations linked to two of the program's own stewards, with no formal conflict-of-interest mechanism in place.",
   "proposed": {
     "summary": "Federate Brazil's scattered regen hubs into one commons, incubating local initiatives on Ethereum coordination rails.",
     "points": [
@@ -74,9 +74,12 @@
   ],
   "funding": {
     "granted": 14560,
-    "matched": 13000,
+    "matched": 0,
+    "matchCommitted": 13000,
+    "matchNote": "The reported $13,000 could not be verified as new external co-funding \u2014 co-funders were double-counted as grantees and ~$4,000 was the hub's own treasury.",
     "disbursements": [
-      {"to": "AgroforestDAO", "amount": 1000, "purpose": "Matching grant to partner agroforestry org (cUSD, on-chain verified, 3 Apr 2026)"}
+      {"to": "AgroforestDAO", "amount": 1000, "purpose": "Matching grant to partner agroforestry org (cUSD, on-chain verified, 3 Apr 2026)"},
+      {"to": "Fabulosa Lab / ARO", "amount": 3000, "purpose": "Matching grant (cUSD, on-chain verified, 8 Apr 2026; recipient also appears as a co-funder — see operator checks)"}
     ]
   },
   "stories": [
@@ -133,14 +136,14 @@
     {"label": "GreenPill Brasil Strategic Framework (doc)", "url": "https://docs.google.com/document/d/1M0RuFePdPiixxom9lOHpO7S8gqUgis2Db53ZiJU3p70/edit?usp=sharing", "type": "doc"}
   ],
   "operatorChecks": [
-    "Confirm no published figure restates the report's $19,600 disbursed; on-chain only ~$4,000 of local-project grants is verifiable.",
-    "Verify the REGA/Agroecology Commons $1,000 is never shown as disbursed — that transfer never occurred on-chain.",
-    "Re-check the $13,000 matched figure before publishing; evals show co-funders double-counted as grantees, $4k own-treasury, and a non-existent REGA leg.",
-    "Confirm dimension claims aren't over-stated — independent scoring was 16/30 vs the grantee's self-reported 23/30 (Cultural +2).",
-    "Note the unresolved conflict-of-interest: steward orgs (AgroforestDAO, Regen Rio) received funds with no formal COI mechanism.",
-    "Get participant consent before publishing any signature-story quotes; quote fields are currently empty and unverified."
+    "! Your report states $19,600 disbursed to local projects, but only ~$4,000 of local-project grants is verifiable on-chain — please reconcile.",
+    "! The REGA/Agroecology Commons $1,000 shows no on-chain transfer — did this disbursement actually occur?",
+    "! Please substantiate the $13,000 matched figure — the evaluation found co-funders double-counted as grantees, $4k of own-treasury funds, and one leg that never occurred.",
+    "Independent scoring put the dimensions at 16/30 vs your self-reported 23/30 — please review the self-scores (Cultural +2 in particular).",
+    "! Grants reached organisations tied to two of your own stewards (AgroforestDAO, Regen Rio) with no formal COI mechanism — how were these decisions handled?",
+    "Please confirm participant consent for any signature-story quotes before publication; quote fields are currently empty and unverified."
   ],
-  "fundingNote": "A late payout (2 Feb 2026) and a pivot away from the proposed conviction-voting funnel meant only ~$4,000 of genuine post-grant grants reached third-party local projects (AgroforestDAO $1k, Fabulosa/ARO $3k). Most of the grant stayed in the hub's own treasury as BRLm pool liquidity, governance-token issuance, and team operations rather than moving out to independent local initiatives as planned.",
+  "fundingNote": "A late payout (2 Feb 2026) and a pivot away from the proposed conviction-voting funnel meant only ~$4,000 of genuine post-grant grants reached third-party local projects (AgroforestDAO $1k, Fabulosa/ARO $3k). Most of the grant stayed in the hub's own treasury as BRLm pool liquidity, governance-token issuance, and team operations rather than moving out to independent local initiatives as planned. The $13,000 co-funding the report claims could not be verified as new external money — co-funders were double-counted as grantees and $4,000 was the hub's own treasury — so no verified matched figure is shown.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/greenpill-brasil-commons-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/greenpill-brasil-commons-steward-eval.md",

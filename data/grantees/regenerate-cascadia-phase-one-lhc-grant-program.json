@@ -6,18 +6,18 @@
   "leads": "Brandon Letsinger, with Taya Seidler & Clare Attwell",
   "place": "Cascadia bioregion — ten landscapes from the Salish Sea to the Willamette Valley",
   "region": "Cascadia",
-  "themes": ["bioregionalism", "storytelling", "cohort", "regeneration"],
+  "themes": ["bioregionalism", "storytelling", "cohort building"],
   "localismFocus": ["Cultural", "Social", "Ecological"],
   "tagline": "Ten landscapes learn to tell their own story.",
-  "whyItMattered": "Watershed-scale care across Cascadia needs social infrastructure that doesn't yet exist. This was an honest attempt to build the relational layer first — gathering scattered place-based groups into one cohort and helping each articulate its landscape before any larger capital flows.",
+  "whyItMattered": "Watershed-scale care across Cascadia needs social infrastructure that doesn't yet exist. Regenerate Cascadia's Landscape Hub Cultivator gathered ten scattered place-based groups into a season-long cohort, each articulating its landscape and story before any larger capital flows — with the grant pledged to per-group stipends inside that already-funded pilot.",
   "stats": [
     {"value": "10", "label": "landscape groups, 38 stewards"},
-    {"value": "~474", "label": "live Showcase attendees"},
+    {"value": "~474", "label": "reported live Showcase attendees"},
     {"value": "$12,480", "label": "LF grant received (verified)"}
   ],
   "story": [
     "When the Localism Fund approval landed in late October 2025, the Landscape Hub Cultivator pilot was just getting underway. Regenerate Cascadia had launched its community platform and begun onboarding stewards from across the bioregion. The grant read as confirmation that building social infrastructure first, then routing funding through it, was legible to funders beyond traditional philanthropy.",
-    "The early weeks were relationship work. A Welcome Ceremony opened the cohort; stewards met weekly across three time-zone tracks, in office hours and steward calls. Each of the ten Landscape Groups did deep listening at home — surfacing stories, naming wisdom keepers, mapping what health and harm look like in their place, all scaffolded by a shared story-deck template.",
+    "The early weeks were relationship work. A Welcome Ceremony had already opened the cohort in early October, before the approval landed; stewards met weekly across three time-zone tracks, in office hours and steward calls. Each of the ten Landscape Groups did deep listening at home — surfacing stories, naming wisdom keepers, mapping what health and harm look like in their place, all scaffolded by a shared story-deck template.",
     "The hardest part was holding tension between moving fast enough for a January Showcase and slowly enough to listen with care. Groups arrived at wildly different stages — some with years of shared history, others convening for the first time. A single program design could not optimally serve both, and the team is candid that pacing was uneven and the online platform under-performed.",
     "The best moment came at the two-day Landscapes Showcase, where all ten groups presented to roughly 474 live attendees and nearly 1,000 registrations. Printed binders went to NoVo Foundation in person. The program has since entered Phase Two mapping, with a flow-funding pilot planned for later in 2026."
   ],
@@ -48,7 +48,7 @@
     "financial": "Contradicted by on-chain evidence",
     "line": "A real, well-delivered cohort-building program with strong cultural/social localism and honest reflections, but its central financial claims are contradicted on-chain — the $12,480 grant is undisbursed and still in the program wallet, and the money section does not internally reconcile."
   },
-  "honesty": "The program is genuinely real and reasonably well-delivered, and the team is unusually candid about its own limits. But the financial section cannot be relied on as submitted: it claims all funds distributed, yet the grant has made zero outbound transfers and still sits in the wallet, the totals self-contradict, and a standing crypto treasury is presented as co-funding raised. The most likely read is careless reporting of an off-chain-paid program, not missing money — but it needs correction.",
+  "honesty": "The program is genuinely real and reasonably well-delivered, and the team is unusually candid about its own limits. But the financial section cannot be relied on as submitted: it claims all funds distributed, yet the grant has made zero outbound transfers and still sits in the wallet, the totals self-contradict, and a standing crypto treasury is presented as co-funding raised. The most likely read is an inaccurate write-up of an off-chain-paid program, not missing money — but it needs correction.",
   "proposed": {
     "summary": "Run Phase One of the Landscape Hub Cultivator, seeding regenerative landscape groups across Cascadia social-infrastructure-first.",
     "points": [
@@ -100,7 +100,9 @@
   ],
   "funding": {
     "granted": 12480,
-    "matched": 8000,
+    "matched": 0,
+    "matchCommitted": 8000,
+    "matchNote": "The reported $8,000 'on-chain match' is pre-existing USDGLO treasury accrued ~11 months before the round, not co-funding raised for this program.",
     "disbursements": []
   },
   "stories": [
@@ -113,7 +115,7 @@
     {
       "title": "Ten landscapes find their voice at the Showcase",
       "text": "Over two days in early 2026, all ten Landscape Groups presented place-based narratives to roughly 474 live attendees, with nearly 1,000 registrations. For the first time a public audience could see the full breadth of the bioregion through the voices of people rooted in it. Printed binders went in person to NoVo Foundation.",
-      "quote": "The Showcase Presentation slide deck and guidance I found very helpful at this stage of things, and I am very appreciative that our group now has our story down, articulated and out there. It helped our group move along quite a bit.",
+      "quote": "The Showcase Presentation slide deck and guidance I found very helpful at this stage of things, and I am very appreciative that our group now has our story down, articulated and out there… It helped our group move along quite a bit.",
       "quoteAttribution": "Cory Sevin, Whatcom steward"
     },
     {
@@ -153,12 +155,12 @@
     {"label": "Program wallet (Celo, via Blockscout)", "url": "https://celo.blockscout.com/address/0xa1cE98594e6844d850Db9Db9FE01b9595D445ca4", "type": "wallet"}
   ],
   "operatorChecks": [
-    "Obtain off-chain ledger and receipts for the ten $2,000 stipends — the program wallet shows zero outbound transfers, ~$20,750 still held.",
-    "Correct the 2.1 status ('all funds distributed') — on-chain the $12,480 grant is still parked in the wallet.",
-    "Reconcile 3.1's contradictory figures — $33,244 'disbursed' vs $6,708 spent vs $26,536 remaining vs 2.2's $20,000.",
-    "Reclassify the '$8,000 on-chain match' — it is pre-existing USDGLO accrued ~11 months before the round, not co-funding raised.",
-    "Probe the undisclosed off-chain disbursement: the application promised on-chain transfers and a public per-landscape dashboard (0 delivered).",
-    "Examine conflicts — equal stipends were set centrally by a delivery team whose members lead funded groups; 2.3 asserts none arose."
+    "! Please provide the off-chain ledger and receipts for the ten $2,000 stipends — the program wallet shows zero outbound transfers, ~$20,750 still held.",
+    "Please correct the 2.1 status ('all funds distributed') — on-chain the $12,480 grant is still parked in the wallet.",
+    "! Please reconcile 3.1's contradictory figures — $33,244 'disbursed' vs $6,708 spent vs $26,536 remaining vs 2.2's $20,000.",
+    "! The '$8,000 on-chain match' is pre-existing USDGLO accrued ~11 months before the round — please confirm so it can be reclassified, or evidence new co-funding.",
+    "! The application promised on-chain transfers and a public per-landscape dashboard — why were disbursements moved off-chain without disclosure?",
+    "! Equal stipends were set centrally by a delivery team whose members lead funded groups, yet 2.3 asserts no conflicts arose — please explain how this was handled."
   ],
   "fundingNote": "Recorded disbursements are empty because the program wallet has made zero outbound transfers — the $12,480 grant (plus ~$8,250 USDGLO) is still parked on-chain. The ten Phase-1 stipends, if paid, went off-chain through the 501(c)(3) and aren't evidenced (the report itself notes only ~$6,700 'paid out or in process'), and the financial summary doesn't reconcile.",
   "links": {

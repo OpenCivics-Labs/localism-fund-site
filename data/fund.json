@@ -40,7 +40,7 @@
       "status": "live",
       "statusLabel": "Retrospective live",
       "href": "round-01.html",
-      "dek": "Twelve local hubs across six continents, each given roughly $8k–$18k and four months to run their own local grant program on Ethereum. The full, honest retrospective — project by project.",
+      "dek": "Twelve local hubs across six continents, each given roughly $5.6k–$18k and four months to run their own local grant program on Ethereum. The full, honest retrospective — project by project.",
       "stats": [
         { "value": "12", "label": "local hubs" },
         { "value": "11", "label": "regions" },
@@ -124,10 +124,11 @@
         "emph": "The money to solve them, almost never is." },
       { "toc": "The model", "type": "statement",
         "text": "So we don't fund projects from above.",
-        "emph": "We back the local hubs themselves — and resource them to do the work their own way." },
+        "emph": "We back local hubs of people in a place — and resource them to do the work their own way." },
       { "toc": "Open rails", "type": "statement",
-        "text": "The money runs on open, credibly-neutral rails — reaching communities directly.",
-        "sub": "Ethereum is the infrastructure here, not the point." },
+        "text": "The money travels on open rails.",
+        "emph": "Funds reach communities directly, and every transfer leaves a public record.",
+        "sub": "Ethereum provides the rails — plumbing, not the point." },
       { "toc": "Four dimensions", "type": "dimensions",
         "lead": "We back localism across four dimensions.",
         "items": [
@@ -136,10 +137,10 @@
           { "name": "Cultural", "note": "Identity, story and heritage — the ties that make belonging and resilience." },
           { "name": "Ecological", "note": "Stewardship of land and commons — watershed care and bioregional thinking." }
         ],
-        "rail": "All four carried on open rails." },
+        "rail": "" },
       { "toc": "Accountability", "type": "statement",
         "text": "Then we do the unglamorous part:",
-        "emph": "read every report, trace the money on-chain, and publish an honest account — what worked, and what didn't." },
+        "emph": "read every report, trace the grantee activity, and publish an honest account — what happened, and what didn't." },
       { "toc": "Round 01", "type": "round", "num": "01", "cta": "Explore Round 01",
         "text": "Round 01 was the first test.",
         "emph": "Twelve hubs. Six continents. Four months.",
@@ -153,10 +154,10 @@
     ]
   },
   "partners": {
-    "lede": "Localism Fund is a partnership, not a platform — stewarded, funded, and built with aligned organisations.",
+    "lede": "No one runs this alone — the Fund is stewarded, funded, and built with aligned organisations.",
     "groups": [
       { "name": "Lead Stewardship", "items": [
-        { "name": "OpenCivics Network", "note": "civic innovation, network coordination, operations", "domain": "opencivics.co" },
+        { "name": "OpenCivics Labs", "note": "civic innovation, network coordination, operations", "domain": "opencivics.co" },
         { "name": "Regen Coordination", "note": "regenerative finance, localism strategy, ecosystem connections", "domain": "regen.network" }
       ] },
       { "name": "Funding", "items": [
@@ -179,7 +180,6 @@
     { "q": "Who can apply?", "a": "Local hubs — community organisations, chapters, or coalitions anchored in a place — ready to run their own local grant program: local focus, Ethereum alignment, public-goods orientation, impact + on-chain reporting, operational capacity, and ethical/compliance alignment. Round 01 also required ≥ $5k local co-funding and a qualifying evaluation from ≥ 4 experts." }
   ],
   "meta": {
-    "repo": "https://github.com/montymerlin/localism-fund-docs",
     "site": "https://www.localism.fund",
     "linkedin": "https://www.linkedin.com/company/localismfund"
   }

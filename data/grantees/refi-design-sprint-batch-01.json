@@ -6,20 +6,20 @@
   "leads": "Raffaele Izzia (lead facilitator); Lorenzo Di Ciaccio (Ridaje, beneficiary)",
   "place": "Veracura Space, Rome — Italy's capital and its dense Third Sector fabric",
   "region": "Italy (Rome)",
-  "themes": ["regeneration", "social enterprise", "attestation", "web3"],
+  "themes": ["social enterprise", "regeneration", "attestations"],
   "localismFocus": ["Ecological", "Social", "Technological"],
   "tagline": "Four days that turned a gardener's data into public proof.",
   "whyItMattered": "Ridaje does real ecological and social work — maintaining Rome's green spaces while employing people rebuilding their lives — but that impact stayed locked in a manual process, invisible to funders. The sprint built infrastructure to make it visible, verifiable, and fundable.",
   "stats": [
-    {"value": "$4,630", "label": "community grant to Ridaje (verified)"},
+    {"value": "$4,630", "label": "community grant to Ridaje (transfer verified on-chain)"},
     {"value": "~140 hrs", "label": "paid gardening work funded"},
     {"value": "1 of 2", "label": "planned sprints delivered"}
   ],
   "story": [
-    "The first thing ReFi Italia did after the December 2025 payout was not run a sprint — it was research. A distributed Italian team spent months adapting the Google Ventures sprint for non-crypto-native social cooperatives, in Italian, on tiny budgets. In January they selected Ridaje, a Rome cooperative maintaining 19 green spaces while employing people leaving homelessness and incarceration.",
+    "The first thing ReFi Italia did after the December 2025 payout was not run a sprint — it was research. A distributed Italian team spent months adapting the Google Ventures sprint for non-crypto-native social cooperatives, in Italian,. In January they selected Ridaje, a Rome cooperative maintaining 19 green spaces while employing people leaving homelessness and incarceration.",
     "The sprint ran February 24-27, 2026 at Veracura Space: 18 hours over four days. They mapped Ridaje's value chain and confronted a hard constraint — gardeners would not change their five-minute routine — splitting data into off-chain (timestamped) and on-chain (validated). Lorenzo Di Ciaccio, Ridaje's founder, was the Decider; every critical call was his.",
     "Within days of closing, ReFi Italia released OpenGarden — an open-source, EAS-native attestation protocol never named in the original plan. The same team that facilitated the design built the protocol, so four days turned directly into working infrastructure. A $4,630 community grant funded ~140 hours of paid gardening: real jobs, real green space, and the first verified impact data.",
-    "Today one of two planned sprints is complete; the second (a rural reforestation and solidarity-purchasing group near Verona) is selected and in planning. The delivered work is solid and on-chain verified. Most of the headline impact — the dashboard, mainnet deployment, enterprise interest — is still honestly labelled as emerging."
+    "Today one of two planned sprints is complete; the second (a rural reforestation and solidarity-purchasing group near Verona) is selected and in planning. The delivered work is solid and on-chain verified. Most of the headline impact — the dashboard, mainnet deployment, enterprise interest — Ferrovie dello Stato identified as the strategic anchor — is still honestly labelled as emerging."
   ],
   "signatureStory": {
     "title": "The DAJE voucher that nobody knew about",
@@ -39,7 +39,7 @@
     {"text": "Ridaje gained on-chain infrastructure it controls — an open verification protocol designed around its operations, a wallet and multisig, and access to web3 funding ecosystems previously closed to it", "status": "Realized"},
     {"text": "~140 hours of paid gardening work for people in social reinsertion is underway, generating the first real verified impact data", "status": "Emerging"},
     {"text": "A replicable sprint methodology and an open-source protocol now exist, with a cross-territorial network of 7 organisations across Rome, Sicily, and Veneto", "status": "Emerging"},
-    {"text": "A reporting dashboard meant to cut Lorenzo's admin from 8-12h to under 2h/month, plus mainnet deployment and enterprise interest, remain to be validated", "status": "Expected"}
+    {"text": "A reporting dashboard meant to cut Lorenzo's admin from 8-12h to under 2h/month, plus mainnet deployment and enterprise interest — Ferrovie dello Stato identified as the strategic anchor, remain to be validated", "status": "Expected"}
   ],
   "status": "Active and early — one sprint delivered and verified, one in planning; most impact still emerging",
   "verdict": {
@@ -48,7 +48,7 @@
     "financial": "Mostly verified",
     "line": "Solid — a credible, on-chain-verified first sprint and a genuine open-source protocol, honestly reported; the main clarifications needed are the community-grant recipient's identity, conflict-of-interest disclosure, and the absent Declaration."
   },
-  "honesty": "Every load-bearing claim verifies: the financial flows on independent block explorers, OpenGarden in the public repo, the attestations on testnet — and the team notably under-claimed its own attestation count. The honest caveats are that this is one of two planned sprints, the community-grant recipient address could not be independently tied to Ridaje, conflict of interest went unaddressed (the operator was both facilitator and a co-funder), and most outcomes are still emerging rather than realized.",
+  "honesty": "Every load-bearing claim verifies: the financial flows on independent block explorers, OpenGarden in the public repo, the attestations on testnet — and the team notably under-claimed its own attestation count. The honest caveats are that this is one of two planned sprints, the community-grant recipient address could not be independently tied to Ridaje, conflict of interest went unaddressed (the operator was both facilitator and a co-funder), and most outcomes are still emerging rather than realized. The application's original KPIs (active wallets, community-led transactions, treasury growth) were quietly replaced and never reported against.",
   "proposed": {
     "summary": "Productise the Rifai Sicilia pilot into a repeatable high-touch onboarding sprint for established non-crypto-native Italian regenerative organisations.",
     "points": [
@@ -80,6 +80,7 @@
   "funding": {
     "granted": 9520,
     "matched": 9000,
+    "matchCommitted": 8500,
     "disbursements": [
       {"to": "ReFi Italia", "amount": 2315, "purpose": "Sprint 1 facilitation, travel, and accommodation"},
       {"to": "Veracura", "amount": 1390, "purpose": "Sprint 1 venue, logistics, food and beverage"},
@@ -130,12 +131,12 @@
     {"label": "Ridaje (sprint beneficiary)", "url": "https://www.ridaje.com/", "type": "site"}
   ],
   "operatorChecks": [
-    "Confirm the Safe 0xCCC0710f…Ebdb24 that received the $4,630 is Ridaje-controlled via a signer list or public reference.",
-    "Resolve the conflict-of-interest disclosure gap: ReFi Italia was paid facilitation from the treasury while also a co-funder.",
-    "Obtain the completed and signed Declaration section, which is absent from the submitted report.",
-    "Confirm whether the Grassroots Economics voucher pool and Rifai Sicilia/YOMI in-kind co-funding were dropped, and why.",
-    "Reconcile the team: Antonio Paglino (named Technical Steward) is absent, and the 1.3 headcount lists two uncredited names.",
-    "Confirm the community-grant token: it moved as cUSD on Celo but parts of the report say USDC."
+    "! Can you show the Safe 0xCCC0710f…Ebdb24 that received the $4,630 is Ridaje-controlled — via a signer list or public reference?",
+    "! ReFi Italia was paid facilitation from the treasury while also being a co-funder — please provide the missing conflict-of-interest disclosure.",
+    "! Please provide the completed and signed Declaration section, absent from the submitted report.",
+    "Were the Grassroots Economics voucher pool and the Rifai Sicilia/YOMI in-kind co-funding dropped, and why?",
+    "Please reconcile the team list: Antonio Paglino (named Technical Steward) is absent, and the 1.3 headcount includes two uncredited names.",
+    "Which token did the community grant move as? It shows cUSD on Celo but parts of the report say USDC."
   ],
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-design-sprint-batch-01-evaluation.md",

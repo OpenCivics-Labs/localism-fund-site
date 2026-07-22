@@ -6,7 +6,7 @@
   "leads": "Jomari Peterson, with Walter Lewis",
   "place": "Homewood, a historically Black neighborhood in Pittsburgh marked by deep roots and decades of disinvestment",
   "region": "Pittsburgh, PA",
-  "themes": ["affordable housing", "community renewal", "on-chain coordination", "land trust"],
+  "themes": ["affordable housing", "community renewal"],
   "localismFocus": ["Technological", "Social", "Economic"],
   "tagline": "Built the rails for community housing, but never ran the round",
   "whyItMattered": "Homewood has trusted institutions and people doing the work, but no shared system tying participation, funding, and ownership together. The intent was to keep long-time residents in place through housing repair and community-directed reinvestment.",
@@ -39,7 +39,7 @@
     {"text": "A working infrastructure layer (multisig, MVP, legal scaffolding) now exists that could support a housing model later", "status": "Realized"},
     {"text": "Alignment between HCV and a coordination model for participation, funding, and decisions", "status": "Emerging"},
     {"text": "A pathway to asset-backed community participation, conditional on closing the parcels in escrow", "status": "Expected"},
-    {"text": "Housing repaired, residents supported, or microgrants distributed", "status": "Expected"}
+    {"text": "Housing repaired, residents supported, or microgrants distributed — contingent on new funding, none yet confirmed", "status": "Expected"}
   ],
   "status": "Infrastructure built; the funded housing grant round did not happen",
   "verdict": {
@@ -70,8 +70,10 @@
     {"name": "Kellie Ware", "role": "Board Member, community representation"}
   ],
   "funding": {
-    "granted": 10000,
+    "granted": 11200,
     "matched": 10000,
+    "matchCommitted": 10000,
+    "matchNote": "$9,000 of the co-funding round-tripped back to the co-funder's own address, and the application's named foundation partners never appear on-chain \u2014 the sole co-funder is an unidentified 'Angel Source' wallet.",
     "disbursements": [
       {"to": "Off-chain escrow (unlabelled EOAs)", "amount": 10000, "purpose": "Land-acquisition escrow for parcels; the $9,000 leg round-tripped to the co-funder's own address. Not a local-project grant."},
       {"to": "Dr. Ears (developer)", "amount": 9930, "purpose": "Developmental support for the platform build; forwarded onward to a developer contract. Operations, not a local-project grant."},
@@ -109,12 +111,12 @@
     {"claim": "$10,000 disbursed to local projects", "reality": "$0 reached an identifiable local housing project; $10,000 went to undefined off-chain land-acquisition escrow EOAs."},
     {"claim": "Funded to run a community housing micro-grant round", "reality": "No open call, no applicants, no community voting, and no housing microgrants were run; the round never happened."},
     {"claim": "Changes from plan framed as delay (section 1.2)", "reality": "The pivot from a housing grant round to a platform build was not disclosed as a change of direction."},
-    {"claim": "Ethereum rated 'Meaningful'; MVP showcased on-chain", "reality": "Ethereum functioned as a custody rail with funds off-ramped; the showcase platform runs on the Movement testnet, not Ethereum mainnet."}
+    {"claim": "Ethereum rated 'Meaningful'; MVP showcased on-chain", "reality": "Ethereum functioned as a custody rail with most funds paid off-chain: 0 attestations, minimal on-chain activity, no community transacting — the evidence supports 'Peripheral', not 'Meaningful'."}
   ],
   "timeline": [
     {"when": "Oct 2025", "what": "Application submitted to Localism Fund Round 01"},
     {"when": "Dec 2025", "what": "Co-funding and Localism Fund grant received on-chain"},
-    {"when": "Dec 2025", "what": "Multisig stood up; The Village MVP platform built"},
+    {"when": "Dec 2025", "what": "Multisig stood up; platform development begins"},
     {"when": "Dec 2025 – Jan 2026", "what": "Two land parcels moved into escrow"},
     {"when": "By Apr 2026", "what": "Housing grant round never run; no microgrants"},
     {"when": "Apr 2026", "what": "Grantee report submitted"}
@@ -125,18 +127,19 @@
     {"label": "Homewood community plan (Homewood Collaborative)", "url": "https://homewood-collaborative.org/community-plan", "type": "doc"},
     {"label": "Legal & compliance framework for community-based tokenization", "url": "https://hajjmedia.com/legal/legal-documents-checklist", "type": "doc"},
     {"label": "Homewood Children's Village", "url": "https://hcvpgh.org/", "type": "site"},
-    {"label": "Faith & Cryptocurrency (book)", "url": "https://www.amazon.com/dp/B0G5JC2SGP", "type": "doc"},
+    {"label": "Faith & Cryptocurrency (book — pre-dates the grant)", "url": "https://www.amazon.com/dp/B0G5JC2SGP", "type": "doc"},
     {"label": "Application on Karma GAP", "url": "https://app.karmahq.xyz/localism-fund/browse-applications/APP-FOPJBCV2-WZ3JEQ", "type": "karma"}
   ],
   "operatorChecks": [
-    "Confirm who controls the two escrow EOAs and what the $10,000 land-acquisition actually purchased before publishing.",
-    "Verify why the $9,000 escrow leg and $970 legal leg round-tripped to the co-funder's own address.",
-    "Reclassify the $9,930 'Dr. Ears' developer payment as operations, not a disbursement to local projects.",
-    "Confirm the program is described as a platform build, not a completed housing grant round; no open call or community vote occurred.",
-    "Substantiate or drop the unevidenced '27 new wallets' claim and the 'Meaningful' Ethereum rating.",
-    "Reconcile the 3.1 spend categories that sum to $21,100 against the $21,000 total."
+    "! Who controls the two escrow EOAs, and what did the $10,000 land-acquisition payment actually purchase?",
+    "! Why did the $9,000 escrow leg and the $970 legal leg round-trip back to the co-funder's own address?",
+    "! The $9,930 'Dr. Ears' payment was developer operations, not a local-project disbursement — please confirm so it can be reclassified.",
+    "Please confirm the program should be described as a platform build rather than a completed housing grant round — no open call or community vote occurred.",
+    "Can you substantiate the '27 new wallets' claim and the 'Meaningful' Ethereum rating? Otherwise both will be dropped or hedged.",
+    "! Did any of the application's named co-funders — R.K. Mellon, Heinz Endowments, Hillman — materialize? The sole on-chain co-funder is an unidentified 'Angel Source' wallet.",
+    "! Your 3.1 spend categories sum to $21,100 against the $21,000 total — please reconcile."
   ],
-  "fundingNote": "Recorded disbursements moved fully on-chain and are traceable, but none reached a local housing project: the $10,000 'disbursed to local projects' went to off-chain land-acquisition escrow (with $9,000 round-tripping to the co-funder), the largest spend was a developer pass-through, and 0% funded the promised housing microgrants.",
+  "fundingNote": "The $11,200 allocation arrived as ~$10,989 USDC net of bridge fees. Recorded disbursements moved fully on-chain and are traceable, but none reached a local housing project: the $10,000 'disbursed to local projects' went to off-chain land-acquisition escrow (with $9,000 round-tripping to the co-funder), the largest spend was a developer pass-through, and 0% funded the promised housing microgrants.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/homewood-housing-circle-community-renewal-affordable-housing-platform-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/homewood-housing-circle-community-renewal-affordable-housing-platform-steward-eval.md",

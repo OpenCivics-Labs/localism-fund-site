@@ -45,6 +45,8 @@
     "tier": "Incomplete",
     "composite": 18,
     "financial": "Largely verified",
+    "tag": "Unaccounted for · ~$3,200 / 41%",
+    "pullbackNote": "About $3,200 in COPm went to an unidentified contract between September and November 2026.",
     "line": "A real, on-chain-verifiable program from a proven team whose financials largely hold up, with one genuine defect ($7,000 of pre-grant co-funding double-counted as spend) and low additionality."
   },
   "honesty": "The money moves cleanly on-chain and is fully accounted for, but the report claims more scale than the numbers support: a $7,000 pre-grant co-funding deposit is double-counted as spend, the flagship subsidy program predates the grant, the application's $5k-cash-plus-$5k-in-kind co-funding quietly became a flat $7,000 with the in-kind absent, and order-of-magnitude target misses (250 to ~78 beneficiaries, 5 to 2 nodes, no English course) went undisclosed.",

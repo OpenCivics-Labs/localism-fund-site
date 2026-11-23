@@ -52,7 +52,7 @@ if (fs.existsSync(MEETUP_DIR)) {
 
 const tierDot = { "Completed": "var(--tier-solid)", "Unclear": "var(--tier-mixed)", "Incomplete": "var(--tier-follow)", "Active": "var(--tier-active)", "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
 // Money tag shown beside a status, e.g. "Funds returned · ~$3,900". Return-request tags are added only after the grantee has been asked.
-const moneyTag = (t) => (Array.isArray(t) ? t : t ? [t] : []).map((x) => `<span class="tier tier--tag${/^(Return of funds requested|Accounting requested)/.test(x) ? " tier--pullback" : ""}">${esc(x)}</span>`).join("");
+const moneyTag = (t) => (Array.isArray(t) ? t : t ? [t] : []).map((x) => `<span class="tier tier--tag${/^(Return of funds requested|Unaccounted for)/.test(x) ? " tier--pullback" : ""}">${esc(x)}</span>`).join("");
 const chips = (arr, cls = "chip") => (arr || []).map((t) => `<span class="${cls}">${esc(t)}</span>`).join("");
 const statBlock = (s) => `<div class="stat reveal"><div class="stat__value">${esc(s.value)}</div><div class="stat__label">${esc(s.label)}</div></div>`;
 const sectionHead = (num, title, lede, ledeMax) => `<div class="section__head section__head--plain reveal">
@@ -525,7 +525,7 @@ function projectPage(g, i) {
   const opIntegrity = opAll.filter((c) => c.startsWith("! ")).map((c) => c.slice(2));
   const opEditorial = opAll.filter((c) => !c.startsWith("! "));
   const opChecks = opAll.length
-    ? `<section class="opcheck" style="${accentVar}"><div class="wrap"><div class="opcheck__box reveal"><p class="opcheck__label">Unanswered questions</p><p class="opcheck__intro">${v && v.tag && [].concat(v.tag).some((t) => /^(Return of funds requested|Accounting requested)/.test(t)) ? "We’ve asked this grantee to return or account for funds. These questions remain unanswered. This page is our final assessment; if the grantee gets in touch, we’ll update it." : "These questions to the grantee remain unanswered. This page is our final assessment; if the grantee gets in touch, we’ll update it."}</p>${opIntegrity.length ? `<p class="opcheck__sub opcheck__sub--int">About the money</p><ul class="opcheck__list opcheck__list--int">${opIntegrity.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}${opEditorial.length ? `<p class="opcheck__sub">Other clarifications</p><ul class="opcheck__list">${opEditorial.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}</div></div></section>`
+    ? `<section class="opcheck" style="${accentVar}"><div class="wrap"><div class="opcheck__box reveal"><p class="opcheck__label">Unanswered questions</p><p class="opcheck__intro">${[].concat((v && v.tag) || []).some((t) => /^Return of funds requested/.test(t)) ? "We’ve asked this grantee to return funds. " : [].concat((v && v.tag) || []).some((t) => /^Unaccounted for/.test(t)) ? "We couldn’t confirm where some of this grant went. " : ""}These questions remain unanswered. This page is our final assessment; if the grantee gets in touch, we’ll update it.</p>${opIntegrity.length ? `<p class="opcheck__sub opcheck__sub--int">About the money</p><ul class="opcheck__list opcheck__list--int">${opIntegrity.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}${opEditorial.length ? `<p class="opcheck__sub">Other clarifications</p><ul class="opcheck__list">${opEditorial.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}</div></div></section>`
     : "";
   const teamSection = (g.team && g.team.length)
     ? `<section class="gsec" style="${accentVar}"><div class="wrap">${gHead("The team")}<ul class="teamlist">${g.team.map((m) => `<li><span class="tm__name">${esc(m.name)}</span>${m.role ? `<span class="tm__role">${esc(m.role)}</span>` : ""}</li>`).join("")}</ul></div></section>`
@@ -628,7 +628,7 @@ function projectPage(g, i) {
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("Status")}
-  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><div class="pstatus__text"><p class="pstatus__desc">${esc(g.status)}</p>${v.pullbackNote ? `<p class="pstatus__why"><b>Why we’re asking:</b> ${esc(v.pullbackNote)}</p>` : ""}</div></div>
+  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><div class="pstatus__text"><p class="pstatus__desc">${esc(g.status)}</p>${v.pullbackNote ? `<p class="pstatus__why"><b>${[].concat(v.tag || []).some((t) => /^Return of funds requested/.test(t)) ? "Why we’re asking" : "What we found"}:</b> ${esc(v.pullbackNote)}</p>` : ""}</div></div>
 </div></section>
 
 <section class="gsec" style="${accentVar}"><div class="wrap">

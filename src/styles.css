@@ -1035,14 +1035,17 @@ html.snap .beat { scroll-snap-align: center; }
 
 .opcard__period { display: block; font-size: 0.8rem; color: var(--ink-faint); margin-top: 0.15rem; font-variant-numeric: tabular-nums; }
 
-/* Round status summary: one card per status, side by side on desktop */
-.tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.8rem; }
-.tiers .tierpill { display: grid; gap: 0.35rem; align-content: start; border-radius: 14px; padding: 0.9rem 1.1rem; }
-.tierpill__head { display: flex; align-items: center; gap: 0.55rem; }
+/* Round status summary: one line on desktop */
+.tiers { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; align-items: center; }
+.tiers .tierpill { display: inline-flex; align-items: center; gap: 0.5rem; white-space: nowrap; border-radius: 999px; padding: 0.5rem 1rem; }
+.tierpill__head { display: inline-flex; align-items: center; gap: 0.5rem; }
 .tierpill__head b { line-height: 1; }
-.tierpill__name { font-family: var(--display); font-size: 1.05rem; }
-.tierpill__note { font-size: 0.88rem; line-height: 1.45; color: var(--ink-faint); }
+.tierpill__name { font-family: var(--display); font-size: 1.02rem; }
+.tierpill__note { font-size: 0.88rem; color: var(--ink-faint); }
+.tierpill__note::before { content: "· "; }
 .section--ink .tierpill__note { color: color-mix(in srgb, var(--paper) 65%, transparent); }
+@media (min-width: 900px){ .tiers { flex-wrap: nowrap; } }
+@media (max-width: 899px){ .tiers .tierpill { white-space: normal; border-radius: 14px; } }
 
 .pstatus__why { margin: 0.5rem 0 0; font-size: 0.92rem; color: var(--ink-soft); }
 .pstatus__why b { color: var(--tier-follow); font-weight: 650; }

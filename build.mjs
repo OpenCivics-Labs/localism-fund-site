@@ -545,7 +545,7 @@ function projectPage(g, i) {
     const isOver = variance < 0;
     const pctVariance = total > 0 ? Math.round((Math.abs(variance) / total) * 100) : 0;
     const varianceTone = isOver ? "mid" : pctVariance <= 10 ? "ok" : pctVariance <= 60 ? "mid" : "high";
-    const varianceBox = `<div class="fundtotal fundtotal--variance" data-tone="${varianceTone}"><span class="fundtotal__l">${isOver ? "Exceeds committed" : "Unspent"}</span><span class="fundtotal__v">${fmt(Math.abs(variance))}${pctVariance > 0 ? `<span class="fundtotal__pct"> (${pctVariance}%)</span>` : ""}</span></div>`;
+    const varianceBox = `<div class="fundtotal fundtotal--variance" data-tone="${varianceTone}"><span class="fundtotal__l">${isOver ? "Exceeds committed" : M > 0 ? "Unspent or untraced" : "Unspent"}</span><span class="fundtotal__v">${fmt(Math.abs(variance))}${pctVariance > 0 ? `<span class="fundtotal__pct"> (${pctVariance}%)</span>` : ""}</span></div>`;
     // matchNote marks a disparity between the co-funding the report claims
     // and what the evaluation could verify — amber-flag the box and say why.
     const matchNote = g.funding.matchNote || "";
@@ -553,9 +553,9 @@ function projectPage(g, i) {
     const totalBox = total > 0 ? `<div class="fundtotals">
       <div class="fundtotal"><span class="fundtotal__l">Localism Fund grant</span><span class="fundtotal__v">${fmt(G)}</span></div>
       ${matchedBox}
-      <div class="fundtotal fundtotal--spent"><span class="fundtotal__l">Actually spent</span><span class="fundtotal__v">${fmt(spent)}</span></div>
+      <div class="fundtotal fundtotal--spent"><span class="fundtotal__l">Spending we traced</span><span class="fundtotal__v">${fmt(spent)}</span></div>
       ${variance !== 0 ? varianceBox : ""}
-    </div>${matchNote ? `<p class="fundtotals__note">⚠ Matching disparity: ${esc(matchNote)}</p>` : ""}` : "";
+    </div>${matchNote ? `<p class="fundtotals__note">⚠ Matching disparity: ${esc(matchNote)}</p>` : ""}${M > 0 ? `<p class="fundtotals__how">How this is worked out: the grant plus matched funds, minus the payments we could trace. We traced how the Localism Fund grant was spent, but not the matched funds, so part of the “unspent or untraced” figure may be co-funding spent in ways we didn’t track.</p>` : ""}` : "";
     const stream = disb.length
       ? `<div class="stream">${disb.map((d) => `<div class="stream__row"><span class="stream__to">${esc(d.to)}</span><span class="stream__track"><span class="stream__fill" style="width:${Math.max(5, Math.round((Number(d.amount) || 0) / maxA * 100))}%"></span></span><span class="stream__amt">${fmt(d.amount)}</span><span class="stream__for">${esc(d.purpose)}</span></div>`).join("")}</div>`
       : `<p class="stream__none">No grant funds were verifiably disbursed to independent local projects — the money stayed in the program treasury or covered the hub's own costs.</p>`;

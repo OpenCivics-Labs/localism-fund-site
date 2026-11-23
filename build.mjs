@@ -611,6 +611,11 @@ function projectPage(g, i) {
   </div>
 </header>
 
+<section class="gsec" style="${accentVar}"><div class="wrap">
+  ${gHead("Status")}
+  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><div class="pstatus__text"><p class="pstatus__desc">${esc(g.status)}</p>${v.pullbackNote ? `<p class="pstatus__why"><b>${[].concat(v.tag || []).some((t) => /^Return of funds requested/.test(t)) ? "Why we’re asking" : "What we found"}:</b> ${esc(v.pullbackNote)}</p>` : ""}</div></div>
+</div></section>
+
 <section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">${esc(g.whyItMattered)}</p></div></section>
 
 
@@ -626,10 +631,6 @@ function projectPage(g, i) {
   <div class="pstats">${(g.stats || []).map(statBlock).join("")}</div>
 </div></section>
 
-<section class="gsec" style="${accentVar}"><div class="wrap">
-  ${gHead("Status")}
-  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><div class="pstatus__text"><p class="pstatus__desc">${esc(g.status)}</p>${v.pullbackNote ? `<p class="pstatus__why"><b>${[].concat(v.tag || []).some((t) => /^Return of funds requested/.test(t)) ? "Why we’re asking" : "What we found"}:</b> ${esc(v.pullbackNote)}</p>` : ""}</div></div>
-</div></section>
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("The story")}

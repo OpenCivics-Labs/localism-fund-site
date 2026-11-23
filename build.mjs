@@ -296,7 +296,7 @@ function round01Page() {
     </a>`;
   }).join("\n");
   const tierPills = (round.tierSummary || []).map((t) =>
-    `<span class="tierpill"><span class="dot" style="background:${tierDot[t.tier] || "var(--ink)"}"></span><b>${esc(t.count)}</b> ${esc(t.tier)} <span style="color:var(--ink-faint)">· ${esc(t.note)}</span></span>`
+    `<div class="tierpill"><span class="tierpill__head"><span class="dot" style="background:${tierDot[t.tier] || "var(--ink)"}"></span><b>${esc(t.count)}</b><span class="tierpill__name">${esc(t.tier)}</span></span><span class="tierpill__note">${esc(t.note)}</span></div>`
   ).join("");
   const statbar = (round.byNumbers || []).map((s) => `<div class="statbar__item"><div class="statbar__v">${esc(s.value)}</div><div class="statbar__l">${esc(s.label)}</div></div>`).join("");
   const insights = (round.insights || []).map((i) => `<li><b>${esc(i.lead)}</b> ${esc(i.body)}</li>`).join("");

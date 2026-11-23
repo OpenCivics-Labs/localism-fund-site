@@ -613,11 +613,6 @@ function projectPage(g, i) {
 
 <section class="why" style="${accentVar}"><div class="wrap"><p class="why__statement reveal">${esc(g.whyItMattered)}</p></div></section>
 
-<section class="gsec gsec--gallery" style="${accentVar}"><div class="wrap">
-  ${gHead("Project gallery")}
-  <div class="pgal reveal">${Array.from({ length: 4 }, () => `<div class="pgal__tile" aria-hidden="true"><svg class="pgal__ic" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="16" width="60" height="48" rx="4"/><circle cx="27" cy="32" r="6"/><path d="M10 54l16-16 12 12 10-10 22 22"/></svg></div>`).join("")}</div>
-  <p class="pgal__note">Photos from the ground — coming soon.</p>
-</div></section>
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("Where it focuses")}
@@ -633,13 +628,18 @@ function projectPage(g, i) {
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("Status")}
-  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><p class="pstatus__desc">${esc(g.status)}</p></div>
+  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><div class="pstatus__text"><p class="pstatus__desc">${esc(g.status)}</p>${v.pullbackNote ? `<p class="pstatus__why"><b>Why we’re asking:</b> ${esc(v.pullbackNote)}</p>` : ""}</div></div>
 </div></section>
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("The story")}
   <div class="prose reveal">${(g.story || []).map((p) => `<p>${esc(p)}</p>`).join("")}</div>
 </div></section>
+${g.gallery && g.gallery.length ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  ${gHead("Project gallery")}
+  <div class="gallery reveal">${g.gallery.map((ph) => `<figure class="gallery__item"><a href="${attr(ph.src)}" target="_blank" rel="noopener"><img src="${attr(ph.src)}" alt="${attr(ph.caption || "")}" loading="lazy"></a><figcaption>${esc(ph.caption || "")}</figcaption></figure>`).join("")}</div>
+  <p class="gallery__credit">Photos provided by the grantee.</p>
+</div></section>` : ""}
 ${storiesSection}
 ${teamSection}
 ${compare}
@@ -663,12 +663,6 @@ ${fundingBlock}
     <p>${esc(g.honesty)}</p>
   </div>
 </div></section>
-
-${g.gallery && g.gallery.length ? `<section class="gsec" style="${accentVar}"><div class="wrap">
-  ${gHead("Photos")}
-  <div class="gallery reveal">${g.gallery.map((ph) => `<figure class="gallery__item"><a href="${attr(ph.src)}" target="_blank" rel="noopener"><img src="${attr(ph.src)}" alt="${attr(ph.caption || "")}" loading="lazy"></a><figcaption>${esc(ph.caption || "")}</figcaption></figure>`).join("")}</div>
-  <p class="gallery__credit">Photos provided by the grantee.</p>
-</div></section>` : ""}
 
 ${g.resources && g.resources.length ? `<section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("External links & media")}
@@ -837,7 +831,7 @@ ${strengths ? `<section class="gsec" style="${accentVar}"><div class="wrap">
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   <p class="ghead reveal">Status &amp; payouts</p>
-  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(x.status || "Active")}">${esc(x.status || ((x.payout || {}).label || "Approved"))}</span>${moneyTag(x.tag)}</span><p class="pstatus__desc">${x.payout ? `<b>${esc(x.payout.received)} received</b> (${esc(x.payout.label)}). ${esc(x.payout.detail)} ${(x.payout || {}).label === "Fully paid" ? "The full grant has been paid." : (x.status || "Active") === "Active" ? "Remaining releases depend on activity updates filed via Karma GAP, through the round’s close at the end of January 2027." : "This grant has closed at the amount received."}` : "Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period."}</p></div>
+  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(x.status || "Active")}">${esc(x.status || ((x.payout || {}).label || "Approved"))}</span>${moneyTag(x.tag)}</span><div class="pstatus__text"><p class="pstatus__desc">${x.payout ? `<b>${esc(x.payout.received)} received</b> (${esc(x.payout.label)}). ${esc(x.payout.detail)} ${(x.payout || {}).label === "Fully paid" ? "The full grant has been paid." : (x.status || "Active") === "Active" ? "Remaining releases depend on activity updates filed via Karma GAP, through the round’s close at the end of January 2027." : "This grant has closed at the amount received."}` : "Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period."}</p>${x.pullbackNote ? `<p class="pstatus__why"><b>Why we’re asking:</b> ${esc(x.pullbackNote)}</p>` : ""}</div></div>
   <div class="sources reveal" style="margin-top:clamp(1.6rem,4vw,2.6rem)">
     ${x.appLink ? source(x.appLink, "Original application", `What they proposed — on Karma GAP${x.submitted ? ` · submitted ${esc(x.submitted)}` : ""}`) : ""}
     ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results & reports", "Live tracker on the Localism Fund portal")}

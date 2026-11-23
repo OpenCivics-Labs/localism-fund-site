@@ -41,9 +41,9 @@
     {"text": "A reusable open-source platform (Community Mycelium) was advanced and put into real use by a handful of local members", "status": "Realized"},
     {"text": "The promised on-chain layer — attestations, facet tokens, on-chain governance, dashboards — and a 'bioregional financing' model", "status": "Not delivered"}
   ],
-  "status": "Continuing as a community — the LF grant sat idle until June 2026, then left through a bridge; where it went isn't confirmed",
+  "status": "Continuing as a community — the LF grant sat idle until June 2026, then moved through a bridge to unidentified wallets; whether it reached projects isn't confirmed",
   "verdict": {
-    "tier": "Unclear",
+    "tier": "Incomplete",
     "composite": 18,
     "financial": "Contradicted by on-chain evidence",
     "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant sat undisbursed on Celo for six months (every grant that landed was paid from co-funding) before being bridged out on 25 Jun 2026 to a destination not yet confirmed, and the report's financial summary overstates disbursement and does not reconcile."
@@ -127,7 +127,8 @@
     {"when": "Apr 4, 2026", "what": "Grantee report finalised and submitted"},
     {"when": "Jun 8, 2026", "what": "On-chain verification: the $11,200 LF grant still undisbursed on Celo"},
     {"when": "Jun 2026", "what": "On-chain verification confirms the LF grant still undisbursed on Celo"},
-    {"when": "2026-06-25", "what": "Full $11,200 LF grant bridged out of the Celo Safe; destination not yet confirmed"}
+    {"when": "2026-06-25", "what": "Full $11,200 LF grant bridged out of the Celo Safe; destination not yet confirmed"},
+    {"when": "2026-06-29", "what": "Grant (about $11,030 USDC) sent from the Base Safe to an individual’s wallet and forwarded the same day"}
   ],
   "resources": [
     {"label": "Metachrysalis (framework site)", "url": "https://metachrysalis.org/", "type": "site"},
@@ -140,14 +141,14 @@
     {"label": "Community Discord", "url": "https://discord.gg/c4HUku4tJe", "type": "social"}
   ],
   "operatorChecks": [
-    "! The $11,200 LF grant was bridged out of the Celo Safe on 25 Jun 2026. Where did it go, and has it reached the two unpaid grantees or other projects?",
+    "! The $11,200 LF grant was bridged to your Base Safe on 25 Jun 2026 and sent on 29 Jun to 0xFfa2…D297. Whose wallet is that, and which projects or costs did the money pay?",
     "! Please provide a corrected financial summary that reconciles with on-chain figures and uses one currency.",
     "! What is the status and timing of the two unpaid grants — Jane Diopko and Cans for a Cause / Katryna Cole?",
     "! Can you evidence the $10,000 Scott Nelson co-funding? The Kraken inbound carries no donor identity on-chain.",
     "Please revisit the Economic and Technological self-scores against your report's own 'Minimal' Ethereum description.",
     "Was the promised on-chain layer — attestations, facet tokens, dashboards — dropped? If so it should be reflected as a change."
   ],
-  "fundingNote": "The entire $11,200 Localism Fund grant sat as cUSD on Celo with zero outbound transfers for six months, then was bridged out in full on 25 Jun 2026; where it went is not yet confirmed. All six disbursed grants were paid from co-funding USDC on Ethereum, and two of the eight funded projects had not been paid at the June check.",
+  "fundingNote": "The entire $11,200 Localism Fund grant sat as cUSD on Celo with zero outbound transfers for six months. On 25 Jun 2026 it was bridged to the program’s own Safe on Base (about $11,030 USDC), and on 29 Jun sent on to an individual’s wallet, which forwarded it the same day to another unidentified wallet. Whether it reached projects is not confirmed. All six grants paid by June came from co-funding USDC on Ethereum. The report says the whole $21,200 budget was spent or committed, including $2,500 CAD to each of eight projects and $5,157.50 CAD for coordination.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/metachrysalis-changemaker-community-fraser-lowland-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/metachrysalis-changemaker-community-fraser-lowland-steward-eval.md",

@@ -46,7 +46,8 @@
     "tier": "Incomplete",
     "composite": 16,
     "financial": "Contradicted by on-chain evidence",
-    "tag": "Return of funds requested · $12,480 · Unspent",
+    "tag": "Return of funds requested · $12,480",
+    "pullbackNote": "The $12,480 grant has never left the program wallet, while the report says it was all distributed.",
     "line": "A real, well-delivered cohort-building program with strong cultural/social localism and honest reflections, but its central financial claims are contradicted on-chain — the $12,480 grant is undisbursed and still in the program wallet, and the money section does not internally reconcile."
   },
   "honesty": "The program is genuinely real and reasonably well-delivered, and the team is unusually candid about its own limits. But the financial section cannot be relied on as submitted: it claims all funds distributed, yet the grant has made zero outbound transfers and still sits in the wallet, the totals self-contradict, and a standing crypto treasury is presented as co-funding raised. The most likely read is an inaccurate write-up of an off-chain-paid program, not missing money — but it needs correction.",

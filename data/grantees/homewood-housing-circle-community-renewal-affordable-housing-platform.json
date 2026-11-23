@@ -46,7 +46,8 @@
     "tier": "Incomplete",
     "composite": 14,
     "financial": "Fully traceable on-chain, but the local-project disbursement claim is contradicted",
-    "tag": "Accounting requested · $10,000 · Not used for its purpose",
+    "tag": "Accounting requested · $10,000",
+    "pullbackNote": "$10,000 went to a land escrow for a housing grant round that didn’t happen, and $9,000 of it went back to the co-funder.",
     "line": "Needs Follow-Up: the grant is 100% on-chain-traceable and the wallet is empty, but none of it reached a local housing project, and the pivot from a housing grant round to a platform build is not disclosed."
   },
   "honesty": "This program built genuine technical infrastructure and kept an exemplary, fully transparent money trail, but it did not run the housing grant round it was funded for: no open call, no community vote, and $0 to any local housing project. Spend went to platform development, an off-chain land escrow that partly round-tripped to the co-funder, legal, and gas, and that change of direction was framed as delay rather than disclosed as a pivot.",

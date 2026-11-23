@@ -46,7 +46,7 @@
     "tier": "Incomplete",
     "composite": 15,
     "financial": "Reported $19,600 withdrawn by the grantee; reconciliation pending",
-    "tag": ["Funds returned · ~$3,900", "Return of funds requested · $4,000"],
+    "tag": ["Funds returned · ~$3,900 / 27%", "Return of funds requested · $4,000 / 27%"],
     "pullbackNote": "$3,000 sits unspent in the ARO/Fabulosa multisig, and REGA’s $1,000 was never sent.",
     "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile: GPBR has withdrawn its claimed $19,600 disbursed to local projects. On-chain, $4,000 went to two partner wallets and $3,000 of that is still unspent; GPBR describes both payments as grants to local partners."
   },

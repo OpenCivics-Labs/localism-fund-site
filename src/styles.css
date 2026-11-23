@@ -27,6 +27,7 @@
   --tier-solid:  #4e7d3f;
   --tier-mixed:  #c98a2b;
   --tier-follow: #b06a4b;
+  --tier-active: #3d6f8c;
 
   --maxw: 1180px;
   --prose: 72ch;
@@ -216,6 +217,20 @@ h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.02; l
 .tier[data-tier="Solid"] { background: color-mix(in srgb, var(--tier-solid) 16%, var(--card)); color: var(--tier-solid); }
 .tier[data-tier="Mixed"] { background: color-mix(in srgb, var(--tier-mixed) 18%, var(--card)); color: color-mix(in srgb, var(--tier-mixed) 78%, var(--ink)); }
 .tier[data-tier="Needs Follow-Up"], .tier[data-tier="Significant Concerns"] { background: color-mix(in srgb, var(--tier-follow) 16%, var(--card)); color: var(--tier-follow); }
+.tier[data-tier="Completed"] { background: color-mix(in srgb, var(--tier-solid) 16%, var(--card)); color: var(--tier-solid); }
+.tier[data-tier="Unclear"] { background: color-mix(in srgb, var(--tier-mixed) 18%, var(--card)); color: color-mix(in srgb, var(--tier-mixed) 78%, var(--ink)); }
+.tier[data-tier="Incomplete"] { background: color-mix(in srgb, var(--tier-follow) 16%, var(--card)); color: var(--tier-follow); }
+.tier[data-tier="Active"] { background: color-mix(in srgb, var(--tier-active) 16%, var(--card)); color: var(--tier-active); }
+.tier--tag { background: var(--card); color: var(--ink); border: 1px solid var(--line); text-transform: none; letter-spacing: 0; }
+.tier--pullback { border-color: color-mix(in srgb, var(--tier-follow) 55%, var(--line)); color: var(--tier-follow); }
+.pcard__tiers, .pstatus__tiers { display: inline-flex; flex-wrap: wrap; gap: 0.35rem; justify-content: flex-end; align-items: center; }
+.pstatus__tiers { flex: none; justify-content: flex-start; margin-top: 0.15rem; }
+/* ---------- grantee photos ---------- */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.9rem; margin-top: 0.4rem; }
+.gallery__item { margin: 0; display: grid; gap: 0.35rem; align-content: start; }
+.gallery__item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--r-sm); border: 1px solid var(--line); background: var(--card); display: block; }
+.gallery__item figcaption { font-size: 0.82rem; color: var(--ink-soft, var(--ink)); line-height: 1.4; }
+.gallery__credit { margin-top: 0.8rem; font-size: 0.8rem; color: var(--ink-faint, var(--ink)); }
 
 /* ---------- project page ---------- */
 .phero { --accent:#c4623d; position: relative; padding: clamp(2.6rem, 8vh, 5rem) 0 clamp(2rem,5vh,3rem); background: var(--paper-2); overflow: hidden; }
@@ -1017,3 +1032,5 @@ html.snap .beat { scroll-snap-align: center; }
 .revnotes li { padding: 0.15rem 0 0.15rem 1.1rem; border-left: 2px solid var(--lime-deep); font-family: var(--serif); font-style: italic; color: var(--ink-2); line-height: 1.5; }
 .howlist.gaps { color: var(--ink-soft); }
 .howlist.gaps li::marker { color: var(--ink-faint); }
+
+.opcard__period { display: block; font-size: 0.8rem; color: var(--ink-faint); margin-top: 0.15rem; font-variant-numeric: tabular-nums; }

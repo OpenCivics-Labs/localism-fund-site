@@ -50,7 +50,9 @@ if (fs.existsSync(MEETUP_DIR)) {
   }
 }
 
-const tierDot = { "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
+const tierDot = { "Completed": "var(--tier-solid)", "Unclear": "var(--tier-mixed)", "Incomplete": "var(--tier-follow)", "Active": "var(--tier-active)", "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
+// Money tag shown beside a status, e.g. "Funds returned · ~$3,900". Return-request tags are added only after the grantee has been asked.
+const moneyTag = (t) => (Array.isArray(t) ? t : t ? [t] : []).map((x) => `<span class="tier tier--tag${/^Return of funds requested/.test(x) ? " tier--pullback" : ""}">${esc(x)}</span>`).join("");
 const chips = (arr, cls = "chip") => (arr || []).map((t) => `<span class="${cls}">${esc(t)}</span>`).join("");
 const statBlock = (s) => `<div class="stat reveal"><div class="stat__value">${esc(s.value)}</div><div class="stat__label">${esc(s.label)}</div></div>`;
 const sectionHead = (num, title, lede, ledeMax) => `<div class="section__head section__head--plain reveal">
@@ -286,7 +288,7 @@ function round01Page() {
   const cards = grantees.map((g, i) => {
     const n = String(i + 1).padStart(2, "0");
     return `<a class="pcard reveal" style="--accent:#4a7339" href="${attr(g.slug)}.html">
-      <div class="pcard__top"><span class="pcard__num">${n}</span><span class="tier" data-tier="${attr(g.verdict.tier)}">${esc(g.verdict.tier)}</span></div>
+      <div class="pcard__top"><span class="pcard__num">${n}</span><span class="pcard__tiers"><span class="tier" data-tier="${attr(g.verdict.tier)}">${esc(g.verdict.tier)}</span>${moneyTag(g.verdict.tag)}</span></div>
       <div class="pcard__name">${esc(g.name)}</div>
       <div class="pcard__place">${esc(g.place)}</div>
       <p class="pcard__tag">${esc(g.tagline)}</p>
@@ -358,14 +360,14 @@ function operatorsPage() {
     const avatar = p.img
       ? `<span class="opcard__avatar opcard__avatar--photo"><img src="assets/img/operators/${attr(p.img)}" alt="${attr(p.name)}"></span>`
       : `<span class="opcard__avatar" aria-hidden="true">${esc(ini)}</span>`;
-    return `<div class="opcard reveal">${avatar}<div class="opcard__body"><b>${esc(p.name)}</b><span class="opcard__org">${esc(p.org)}</span>${p.bio ? `<p class="opcard__bio">${esc(p.bio)}</p>` : ""}</div></div>`;
+    return `<div class="opcard reveal">${avatar}<div class="opcard__body"><b>${esc(p.name)}</b><span class="opcard__org">${esc(p.org)}</span>${p.period ? `<span class="opcard__period">${esc(p.period)}</span>` : ""}${p.bio ? `<p class="opcard__bio">${esc(p.bio)}</p>` : ""}</div></div>`;
   }).join("");
   const resp = (o.responsibilities || []).map((r) => `<div class="dcard reveal"><h3>${esc(r.name)}</h3><p>${esc(r.body)}</p></div>`).join("");
   const body = `
 <header class="hero" data-darknav>
   <div class="wrap">
     <p class="eyebrow hero__kicker reveal">Localism Fund · Operators</p>
-    <h1 class="reveal">Who runs it.</h1>
+    <h1 class="reveal">Who conducts the fund.</h1>
     <p class="hero__dek reveal">${esc(o.blurb || "")}</p>
   </div>
 </header>
@@ -631,7 +633,7 @@ function projectPage(g, i) {
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("Status")}
-  <div class="pstatus reveal"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span><p class="pstatus__desc">${esc(g.status)}</p></div>
+  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(v.tier)}">${esc(v.tier)}</span>${moneyTag(v.tag)}</span><p class="pstatus__desc">${esc(g.status)}</p></div>
 </div></section>
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
@@ -655,12 +657,18 @@ ${fundingBlock}
   <div class="honest reveal" style="${accentVar}">
     ${v.line ? `<p class="honest__line">“${esc(v.line)}”</p>` : ""}
     <div class="honest__verdict">
-      <span><span class="k">Tier</span><span class="v">${esc(v.tier)}</span></span>
+      <span><span class="k">Status</span><span class="v">${esc(v.tier)}${v.tag ? ` · ${esc([].concat(v.tag).join(" · "))}` : ""}</span></span>
       <span><span class="k">Finances</span><span class="v">${esc(v.financial)}</span></span>
     </div>
     <p>${esc(g.honesty)}</p>
   </div>
 </div></section>
+
+${g.gallery && g.gallery.length ? `<section class="gsec" style="${accentVar}"><div class="wrap">
+  ${gHead("Photos")}
+  <div class="gallery reveal">${g.gallery.map((ph) => `<figure class="gallery__item"><a href="${attr(ph.src)}" target="_blank" rel="noopener"><img src="${attr(ph.src)}" alt="${attr(ph.caption || "")}" loading="lazy"></a><figcaption>${esc(ph.caption || "")}</figcaption></figure>`).join("")}</div>
+  <p class="gallery__credit">Photos provided by the grantee.</p>
+</div></section>` : ""}
 
 ${g.resources && g.resources.length ? `<section class="gsec" style="${accentVar}"><div class="wrap">
   ${gHead("External links & media")}
@@ -703,7 +711,7 @@ function round02Page() {
   const cards = meetups.map((m, i) => {
     const n = String(i + 1).padStart(2, "0");
     return `<a class="pcard reveal" style="--accent:#4a7339" href="${attr(m.slug)}.html">
-      <div class="pcard__top"><span class="pcard__num">${n}</span><span class="chip">${esc(m.country)}</span></div>
+      <div class="pcard__top"><span class="pcard__num">${n}</span><span class="pcard__tiers">${(meetupExtra[m.slug] || {}).status ? `<span class="tier" data-tier="${attr(meetupExtra[m.slug].status)}">${esc(meetupExtra[m.slug].status)}</span>` : ""}${moneyTag((meetupExtra[m.slug] || {}).tag)}<span class="chip">${esc(m.country)}</span></span></div>
       <div class="pcard__name">${esc(m.name)}</div>
       <div class="pcard__place">${esc(m.place)}</div>
       <p class="pcard__tag">${esc((meetupExtra[m.slug] || {}).tagline || "A year of consistent, open Ethereum gatherings.")}</p>
@@ -829,7 +837,7 @@ ${strengths ? `<section class="gsec" style="${accentVar}"><div class="wrap">
 
 <section class="gsec" style="${accentVar}"><div class="wrap">
   <p class="ghead reveal">Status &amp; payouts</p>
-  <div class="pstatus reveal"><span class="tier" data-tier="Solid">${esc((x.payout || {}).label || "Approved")}</span><p class="pstatus__desc">${x.payout ? `<b>${esc(x.payout.received)} received.</b> ${esc(x.payout.detail)} Remaining releases continue quarterly against activity updates filed via Karma GAP.` : "Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period."}</p></div>
+  <div class="pstatus reveal"><span class="pstatus__tiers"><span class="tier" data-tier="${attr(x.status || "Active")}">${esc(x.status || ((x.payout || {}).label || "Approved"))}</span>${moneyTag(x.tag)}</span><p class="pstatus__desc">${x.payout ? `<b>${esc(x.payout.received)} received</b> (${esc(x.payout.label)}). ${esc(x.payout.detail)} ${(x.payout || {}).label === "Fully paid" ? "The full grant has been paid." : (x.status || "Active") === "Active" ? "Remaining releases depend on activity updates filed via Karma GAP, through the round’s close at the end of January 2027." : "This grant has closed at the amount received."}` : "Selected in the first wave and onboarding now. Disbursement begins once the Post-Approval Form is complete, then runs quarterly across the twelve-month period."}</p></div>
   <div class="sources reveal" style="margin-top:clamp(1.6rem,4vw,2.6rem)">
     ${x.appLink ? source(x.appLink, "Original application", `What they proposed — on Karma GAP${x.submitted ? ` · submitted ${esc(x.submitted)}` : ""}`) : ""}
     ${source("https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "Round 02 results & reports", "Live tracker on the Localism Fund portal")}

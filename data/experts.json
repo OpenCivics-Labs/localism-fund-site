@@ -459,18 +459,21 @@
     "items": [
       {
         "name": "Monty Merlin Bryant",
+        "period": "Operator · 2025 – present",
         "org": "ReFi DAO & Regen Coordination",
         "img": "monty.jpeg",
         "bio": "Regenerative finance practitioner, community builder, and systems entrepreneur working at the intersection of Web3, AI, nature finance, and economic transformation."
       },
       {
         "name": "Patricia Parkinson",
+        "period": "Operator · 2025 – present",
         "org": "OpenCivics",
         "img": "patricia.jpg",
         "bio": "Participation systems architect, ontological designer, and civic innovator with over twenty years leading development programs across Southeast Asia and the Pacific Islands."
       },
       {
         "name": "Benjamin Life",
+        "period": "Operator · 2025 – June 2026 · now a backup signer on the fund Safe",
         "org": "OpenCivics",
         "img": "benjamin.jpg",
         "bio": "Civic innovator, researcher, and artist working at the intersection of regenerative crypto-economics, bioregional coordination, and participatory systems design."

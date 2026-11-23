@@ -43,7 +43,7 @@
   ],
   "status": "Infrastructure built; the funded housing grant round did not happen",
   "verdict": {
-    "tier": "Needs Follow-Up",
+    "tier": "Incomplete",
     "composite": 14,
     "financial": "Fully traceable on-chain, but the local-project disbursement claim is contradicted",
     "line": "Needs Follow-Up: the grant is 100% on-chain-traceable and the wallet is empty, but none of it reached a local housing project, and the pivot from a housing grant round to a platform build is not disclosed."

@@ -42,9 +42,9 @@
     { "lead": "The cleanest delivery came from existing trust.", "body": "GEN Ukraine's ecovillage network and a Rome gardening co-op moved fastest — relationships, not tooling, carried the round." }
   ],
   "tierSummary": [
-    { "tier": "Solid", "count": 2, "note": "credible, well-evidenced delivery" },
-    { "tier": "Mixed", "count": 5, "note": "real work; meaningful gaps to resolve" },
-    { "tier": "Needs Follow-Up", "count": 5, "note": "significant unresolved questions" }
+    { "tier": "Completed", "count": 2, "note": "the money went where the grant said, and we can see it" },
+    { "tier": "Unclear", "count": 6, "note": "the money moved, but where it ended up isn’t confirmed yet" },
+    { "tier": "Incomplete", "count": 4, "note": "the funded work didn’t happen, or the money is unused" }
   ],
   "order": [
     "gen-ukraine-grant-program-01",

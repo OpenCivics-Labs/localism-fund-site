@@ -1,4 +1,5 @@
 {
+  "status": "Completed",
   "tagline": "A national community decentralising ownership across Quito, Guayaquil, and Cuenca.",
   "organizer": "Alex Padilla (Representing ETH Ecuador)",
   "submitted": "December 5, 2025",
@@ -44,6 +45,6 @@
   "payout": {
     "received": "$1,500 of $3,000",
     "label": "Initial + Q1 paid",
-    "detail": "First quarterly $750 verified on-chain on 26 Jun 2026 to the wallet named in the application; the initial $750 was paid in the January 2026 onboarding batches."
+    "detail": "Paid: $750 on 10 Jan 2026; $750 on 26 Jun 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
   }
 }

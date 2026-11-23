@@ -42,7 +42,7 @@
   ],
   "status": "Programs delivered; reporting and financial accountability under follow-up",
   "verdict": {
-    "tier": "Needs Follow-Up",
+    "tier": "Unclear",
     "composite": 13,
     "financial": "LF receipt of $5,600 verified on-chain; the disbursement breakdown doesn't reconcile with itself and couldn't be verified as local-project grants",
     "line": "Needs Follow-Up — builder programs genuinely ran in both regions, but no local grant round was operated, the $5,600 was sent to three personal wallets (one a program-Safe signer) before the program began, and the report's financial breakdown doesn't reconcile with itself."

@@ -42,7 +42,7 @@
   ],
   "status": "One hub live and activated; second hub land-only; staking not yet live",
   "verdict": {
-    "tier": "Mixed",
+    "tier": "Completed",
     "composite": 21,
     "financial": "Partially verified — totals and co-funding verify to the dollar, full spend traceable on-chain, build itemized to ₦15,925,000; but 'disbursed to local projects' is misclassified and the largest share went to the operator's own wallet.",
     "line": "A genuine, fully on-chain-traceable solar/internet hub was built and activated, but this was a self-build, not a local grant round; 'disbursed to local projects' misclassifies an internal build (the largest share to the operator's own wallet), and several Localism Dimensions are over-scored."
@@ -148,7 +148,10 @@
     {"label": "Process documentation — Regen Coordination Hub thread", "url": "https://hub.regencoordination.xyz/t/tech-sun-round-by-greenpill-nigeria/393", "type": "doc"},
     {"label": "TAS HUB structural drawing (PDF)", "url": "https://drive.google.com/file/d/13CH3EXhMONQNFOMBBkPTd4Z-b947E410/view?usp=drivesdk", "type": "deck"},
     {"label": "Greenpill Nigeria on X", "url": "https://x.com/greenpill9ja", "type": "social"},
-    {"label": "Program Safe wallet (multi-chain)", "url": "https://app.safe.global/home?safe=celo:0x0216d92acF90b5E9Ab6d8808ADEAc87037F00A73", "type": "wallet"}
+    {"label": "Program Safe wallet (multi-chain)", "url": "https://app.safe.global/home?safe=celo:0x0216d92acF90b5E9Ab6d8808ADEAc87037F00A73", "type": "wallet"},
+    {"label": "TAS documentation and playbook (GitHub)", "url": "https://github.com/Greenpill9ja/tas-documentation", "type": "doc"},
+    {"label": "Tech and Sun website", "url": "https://techandsun.com", "type": "site"},
+    {"label": "Tech and Sun on X (@techandsunhubs)", "url": "https://x.com/techandsunhubs", "type": "social"}
   ],
   "operatorChecks": [
     "Please confirm '$11,800 disbursed to local projects' should be re-labelled — on-chain there were no third-party grantees; the budget funded Greenpill Nigeria's own hub build.",

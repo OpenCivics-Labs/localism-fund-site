@@ -3,7 +3,7 @@
   "name": "GreenPill Brasil Commons",
   "shortName": "GreenPill Brasil",
   "hub": "GreenPill Brasil",
-  "leads": "Cauê Tomaz (Coi) & Nick Haaz",
+  "leads": "Cauê Tomaz (Coi)",
   "place": "Federated bioregional hubs across Brazil — Rio, São Paulo, Recife, Bahia, Minas",
   "region": "Brazil",
   "themes": ["coordination", "regeneration", "governance"],
@@ -11,7 +11,7 @@
   "tagline": "Wiring scattered Brazilian regen hubs into one commons.",
   "whyItMattered": "Brazil is rich in regenerative initiatives but they work in fragmented isolation, losing memory and momentum between projects. GreenPill Brasil used the grant to build and test a coordination system — conviction voting, a local Sarafu credit currency, and matching funds for verified work — meant to let dispersed local capacity find each other and act together.",
   "stats": [
-    {"value": "~$4k", "label": "verified grants to local partners"},
+    {"value": "$4k", "label": "sent to two partner wallets; $3k of it still unspent"},
     {"value": "~20", "label": "energizers in active onboarding"},
     {"value": "~300", "label": "Atlantic Forest trees reported registered"}
   ],
@@ -30,7 +30,7 @@
   "delivered": [
     "Pivoted from a stalled conviction-voting funnel to an energizer-first, participation-driven model where eligibility emerged from real contribution",
     "Onboarded ~20 energizers into Web3 tooling, 10+ actively issuing Sarafu vouchers, with coordination cells (Troikas) forming around real work",
-    "~$4,000 in verified post-grant matching grants to local partners (AgroforestDAO $1k, Fabulosa/ARO $3k)",
+    "$1,000 sent to AgroforestDAO (GPBR says its program was completed) and $3,000 to the ARO/Fabulosa multisig, still unspent there (checked 23 Nov 2026)",
     "Produced ~8 canonical governance documents, a Nonviolent Communication practice, and a diagnostic/sensemaking framework born from an early conflict",
     "Ran a live on-chain coordination stack — Safe treasury, Gardens, Sarafu pools, a Balaio incentive system, and 13 verified EAS attestations",
     "Connected ecological restoration to coordination infrastructure via a Silvi Atlantic-Forest campaign — ~300 trees registered across ~15 projects"
@@ -41,14 +41,15 @@
     {"text": "A multi-tool on-chain coordination stack was tested under real conditions, with direct feedback loops to protocol teams", "status": "Emerging"},
     {"text": "Ecological restoration linked to Web3 coordination through the Silvi Atlantic-Forest tree-registration campaign", "status": "Emerging"}
   ],
-  "status": "Active and evolving; consolidating over expanding — financial reporting needs follow-up",
+  "status": "Financial reconciliation and downstream accountability pending",
   "verdict": {
-    "tier": "Needs Follow-Up",
+    "tier": "Unclear",
     "composite": 15,
-    "financial": "Contradicted by on-chain evidence",
-    "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile and whose claimed $19,600 disbursed to local projects is contradicted on-chain (only ~$4,000 of real post-grant local grants is verifiable)."
+    "financial": "Reported $19,600 withdrawn by the grantee; reconciliation pending",
+    "tag": ["Funds returned · ~$3,900", "Return of funds requested · $4,000"],
+    "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile: GPBR has withdrawn its claimed $19,600 disbursed to local projects. On-chain, $4,000 went to two partner wallets and $3,000 of that is still unspent; GPBR describes both payments as grants to local partners."
   },
-  "honesty": "The program is real, intellectually serious, and distinctively Ethereum-native — and the team is candid about its own shortcomings. But the financial account does not reconcile: the headline disbursement figure is contradicted on-chain, with co-funders double-counted as grantees and treasury liquidity counted as grants out. The core local-grant-round mandate became, in practice, an internal onboarding and coordination program — and funds also flowed to organisations linked to two of the program's own stewards, with no formal conflict-of-interest mechanism in place.",
+  "honesty": "The program is real, intellectually serious, and distinctively Ethereum-native — and the team is candid about its own shortcomings. But the financial account does not reconcile: the headline disbursement figure is contradicted on-chain, and GPBR has since withdrawn it. The evaluation also found co-funders counted as grantees and treasury liquidity counted as grants out; GPBR disputes this. The core local-grant-round mandate became, in practice, an internal onboarding and coordination program. Funds also went to AgroforestDAO and Regen Rio, whose leads GPBR’s own April report listed among the program’s stewards; one of them has since said he was not a steward. There was no formal conflict-of-interest disclosure or recusal process, which GPBR acknowledges. GPBR says participants did not review their own experiments.",
   "proposed": {
     "summary": "Federate Brazil's scattered regen hubs into one commons, incubating local initiatives on Ethereum coordination rails.",
     "points": [
@@ -62,7 +63,6 @@
     {"name": "Cauê Marcell Tomaz (Coi)", "role": "Steward — program coordination, strategy design, governance architecture, onboarding design"},
     {"name": "Nick Haaz", "role": "Steward — local program design and implementation, governance activation, documentation"},
     {"name": "Luisa Fosco", "role": "Steward — local program design, onboarding and facilitation"},
-    {"name": "Diogo Jorge", "role": "Steward — local program design, operational support"},
     {"name": "Beni Bara Ale", "role": "Energizer — Troika methodology and local articulation in São Paulo"},
     {"name": "Deroila Marinho", "role": "Energizer — local coordination, governance activation, participant engagement"},
     {"name": "Gustavo Cavalcanti", "role": "Energizer — cross-group articulation"},
@@ -76,10 +76,10 @@
     "granted": 14560,
     "matched": 0,
     "matchCommitted": 13000,
-    "matchNote": "The reported $13,000 could not be verified as new external co-funding \u2014 co-funders were double-counted as grantees and ~$4,000 was the hub's own treasury.",
+    "matchNote": "GPBR reports $13,000 of co-funding from six sources: Fabulosa/ARO $3,000, Regen Rio 1 $4,000, REGA $1,000, AgroforestDAO $1,000, GreenPill Brasil $2,000 and GreenPill Network $2,000. By GPBR’s own description, $4,000 of this is Regen Rio liquidity that predates the grant and $4,000 comes from GPBR and its parent network. Localism Fund has not verified any of the $13,000 as new external co-funding, so none is counted as matched.",
     "disbursements": [
       {"to": "AgroforestDAO", "amount": 1000, "purpose": "Matching grant to partner agroforestry org (cUSD, on-chain verified, 3 Apr 2026)"},
-      {"to": "Fabulosa Lab / ARO", "amount": 3000, "purpose": "Matching grant (cUSD, on-chain verified, 8 Apr 2026; recipient also appears as a co-funder — see operator checks)"}
+      {"to": "Fabulosa Lab / ARO", "amount": 3000, "purpose": "Matching grant (cUSD, on-chain verified, 8 Apr 2026; still unspent in the recipient multisig as of 23 Nov 2026; recipient also appears as a co-funder)"}
     ]
   },
   "stories": [
@@ -113,7 +113,7 @@
     {"proposed": "Fixed 10/60/30 credit cycle on Sarafu Pools", "delivered": "Replaced by the Balaio task-based distribution and onboarding-incentive system", "note": "The original model lacked flexibility; Balaio enabled task-based rewards and quests"},
     {"proposed": "SROI as the primary evaluation framework", "delivered": "Reframed as a 'sensemaking' signalling pool that participants largely didn't engage with", "note": "Initial implementation proved too abstract to operationalise early"},
     {"proposed": "Support 20–25 regenerative initiatives; 1,000+ trees; 50 onboarded", "delivered": "4–6 main programs funded; ~300 trees registered; ~25–30 onboarded", "note": "Headline targets fell well short; a late (2 Feb) payout compressed the runway"},
-    {"proposed": "100% publicly auditable funds, ~$26k matching out to local programs", "delivered": "~$4,000 of verified post-grant grants to local partners; the rest held as treasury liquidity and ops", "note": "The core local-grant-round mandate became, in practice, an internal onboarding and coordination program"}
+    {"proposed": "100% publicly auditable funds, ~$26k matching out to local programs", "delivered": "$4,000 sent to two partner wallets ($3,000 of it still unspent); GPBR says the rest was used as Commons liquidity and operations", "note": "The core local-grant-round mandate became, in practice, an internal onboarding and coordination program"}
   ],
   "timeline": [
     {"when": "Feb 2026", "what": "Received $14,560 cUSD from Localism Fund"},
@@ -133,17 +133,30 @@
     {"label": "GPBR Journey Intro (video, PT)", "url": "https://youtu.be/MVXTda2ize0", "type": "video"},
     {"label": "Atlantic Forest Tree Registry (Silvi)", "url": "https://app.silvi.earth", "type": "dashboard"},
     {"label": "GreenPill Brasil (Instagram)", "url": "https://www.instagram.com/p/DVOFks7jtmX/", "type": "social"},
-    {"label": "GreenPill Brasil Strategic Framework (doc)", "url": "https://docs.google.com/document/d/1M0RuFePdPiixxom9lOHpO7S8gqUgis2Db53ZiJU3p70/edit?usp=sharing", "type": "doc"}
+    {"label": "GreenPill Brasil Strategic Framework (doc)", "url": "https://docs.google.com/document/d/1M0RuFePdPiixxom9lOHpO7S8gqUgis2Db53ZiJU3p70/edit?usp=sharing", "type": "doc"},
+    {"label": "Mutirão do Morro da Redenção, Primavera de 2025 (AgroforestDAO, video)", "url": "https://youtu.be/6J1cOnk0sBs", "type": "video"},
+    {"label": "AgroforestDAO on the program (X)", "url": "https://x.com/i/status/2080323931249004786", "type": "social"},
+    {"label": "GreenPill Brasil (Instagram post)", "url": "https://www.instagram.com/p/DXuFjuVnHUp/", "type": "social"},
+    {"label": "GreenPill Brasil (Instagram post)", "url": "https://www.instagram.com/p/DWZnD5wESl7/", "type": "social"}
+  ],
+  "gallery": [
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-08-30-harvest-basket.png", "caption": "Harvest basket (GPBR says it’s from the AgroforestDAO planting)"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/cacau-florescer-chocolate.webp", "caption": "Cacau Florescer chocolate"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-04-25-gardens-signal-submissions.png", "caption": "Gardens signal tasks, April 2026"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-06-01-serra-grande-map.png", "caption": "Serra Grande, Bahia"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-04-07-silvi-mombucaba-vila-operaria.png", "caption": "Silvi tree project: MOMBUCABA Vila Operária"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-04-08-community-call.png", "caption": "Community call, 8 April 2026"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-04-24-ilhas-abundancia-sync-green-goods.png", "caption": "Ilhas Abundância sync call, 24 April 2026"},
+    {"src": "assets/img/grantees/greenpill-brasil-commons/2026-08-30-community-call-presentation.png", "caption": "Community call, August 2026"}
   ],
   "operatorChecks": [
-    "! Your report states $19,600 disbursed to local projects, but only ~$4,000 of local-project grants is verifiable on-chain — please reconcile.",
-    "! The REGA/Agroecology Commons $1,000 shows no on-chain transfer — did this disbursement actually occur?",
-    "! Please substantiate the $13,000 matched figure — the evaluation found co-funders double-counted as grantees, $4k of own-treasury funds, and one leg that never occurred.",
+    "! Please itemise the $5,560 of Commons operating liquidity by transaction.",
+    "Please share the on-chain data spreadsheet; the link isn’t shared with us.",
+    "! The $3,000 in the ARO/Fabulosa multisig is still unspent. What is the plan for it?",
     "Independent scoring put the dimensions at 16/30 vs your self-reported 23/30 — please review the self-scores (Cultural +2 in particular).",
-    "! Grants reached organisations tied to two of your own stewards (AgroforestDAO, Regen Rio) with no formal COI mechanism — how were these decisions handled?",
     "Please confirm participant consent for any signature-story quotes before publication; quote fields are currently empty and unverified."
   ],
-  "fundingNote": "A late payout (2 Feb 2026) and a pivot away from the proposed conviction-voting funnel meant only ~$4,000 of genuine post-grant grants reached third-party local projects (AgroforestDAO $1k, Fabulosa/ARO $3k). Most of the grant stayed in the hub's own treasury as BRLm pool liquidity, governance-token issuance, and team operations rather than moving out to independent local initiatives as planned. The $13,000 co-funding the report claims could not be verified as new external money — co-funders were double-counted as grantees and $4,000 was the hub's own treasury — so no verified matched figure is shown.",
+  "fundingNote": "Confirmed on-chain: $1,000 went to AgroforestDAO (3 Apr 2026) and $3,000 to the ARO/Fabulosa multisig (8 Apr 2026), where it is still unspent (checked 23 Nov 2026). REGA’s $1,000 was never sent, and the GPBR treasury still holds about that amount. The mediation Safe set up during the Regen Rio dispute returned 19,999 cREAL (about $3,900) to Localism Fund on 22 Sep 2026. GPBR says that AgroforestDAO’s program was completed, that ARO/Fabulosa was an experiment proposed by a GPBR steward, that $4,000 was allocated to Regen Rio 2 and about $3,800 of it later moved into mediation custody, and that the remaining $5,560 served as operating liquidity and infrastructure for the GPBR Commons. These statements are not verified, and the $5,560 has not been itemised.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/greenpill-brasil-commons-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/greenpill-brasil-commons-steward-eval.md",

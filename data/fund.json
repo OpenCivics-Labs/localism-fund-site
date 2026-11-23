@@ -51,9 +51,9 @@
       "num": "02",
       "title": "Local Meetups LATAM",
       "status": "live",
-      "statusLabel": "Underway",
+      "statusLabel": "Wrapping up",
       "href": "round-02.html",
-      "dek": "A lighter, content-first round with the Ethereum Foundation's Ethereum Everywhere team — a $30k pool seeding ten grassroots Ethereum meetups across Latin America.",
+      "dek": "A lighter, content-first round begun with the Ethereum Foundation's Ethereum Everywhere team — a $30k pool seeding ten grassroots Ethereum meetups across Latin America, now run by Localism Fund to its close.",
       "stats": [
         { "value": "$30k", "label": "pool" },
         { "value": "10", "label": "meetups" },
@@ -64,8 +64,8 @@
   "round02": {
     "kicker": "Localism Fund · Round 02",
     "heroTitle": "Local Meetups",
-    "statusLabel": "Underway",
-    "dek": "A lighter, content-first round seeding grassroots Ethereum meetups across Latin America — run in partnership with the Ethereum Foundation's Ethereum Everywhere team.",
+    "statusLabel": "Wrapping up",
+    "dek": "A lighter, content-first round seeding grassroots Ethereum meetups across Latin America — begun with the Ethereum Foundation's Ethereum Everywhere team, and now run by Localism Fund through to its close.",
     "idea": {
       "lede": "Where Round 01 funded twelve hubs to run full grant programs, Round 02 goes smaller and more frequent — backing the local meetups where communities actually gather.",
       "paragraphs": [
@@ -116,7 +116,7 @@
     },
     "status": {
       "lede": "Where it stands",
-      "body": "Round 02 is underway. All ten meetups completed onboarding and received their initial $750 in January 2026, and quarterly releases began in May — $12,000 of the $30,000 pool has been disbursed on-chain so far, with activity updates filed via Karma GAP. If you run a local community and want to hear when the next round opens, get in touch.",
+      "body": "Round 02 is wrapping up. This year the Ethereum Foundation restructured and the Ethereum Everywhere team, which ran the round with us, was dissolved; quarterly reviews and payments stalled after June. Localism Fund now runs the round directly through to its close, including reviews, payments and final reporting. All ten meetups received their initial $750 in January 2026, and quarterly releases followed for the meetups that kept reporting: $13,500 of the $30,000 pool has been paid out on-chain (as of 23 Nov 2026). Grantees have until 4 December to complete their Karma reports. We'll then publish a write-up of each meetup series and a retrospective on the round, which closes at the end of January 2027. If you run a local community and want to hear when the next round opens, get in touch.",
       "links": [
         { "label": "Round 02 results & reports", "href": "https://www.localism.fund/2cc06d2570f280598c8ad093d9fedc8f", "primary": true },
         { "label": "Read the progress report", "href": "https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "primary": false }
@@ -158,9 +158,9 @@
         "emph": "Twelve hubs. Six continents. Four months.",
         "sub": "In this round, each hub ran its own local grant program. Some delivered beautifully. Some didn't. All of it is public." },
       { "toc": "Round 02", "type": "round", "num": "02", "cta": "Round 02 — Local Meetups",
-        "text": "Round 02 is underway.",
+        "text": "Round 02 is wrapping up.",
         "emph": "Ten grassroots Ethereum gatherings across Latin America.",
-        "sub": "Run with the Ethereum Everywhere team to back a year of open monthly gatherings — sustaining the momentum of Devconnect in the rooms where communities actually meet." },
+        "sub": "Begun with the Ethereum Everywhere team to back a year of open monthly gatherings, and now run by Localism Fund through to its close — sustaining the momentum of Devconnect in the rooms where communities actually meet." },
       { "toc": "Expert Network", "type": "experts" },
       { "toc": "Partners", "type": "partners" }
     ]

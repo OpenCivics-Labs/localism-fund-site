@@ -1,5 +1,5 @@
 {
-  "status": "Completed",
+  "status": "Incomplete",
   "tagline": "Onboarding Costa Rica's real economies — coffee, producers, local stewards — onto Ethereum rails.",
   "organizer": "Karla Cordoba Brenes (Representing Cripto Cafe / CofiBlocks)",
   "submitted": "December 5, 2025",
@@ -47,5 +47,23 @@
     "received": "$1,500 of $3,000",
     "label": "Initial + Q1 paid",
     "detail": "Paid: $750 on 10 Jan 2026; $750 on 16 May 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "Monthly coffee-based Ethereum onboarding in San José reached producers and newcomers. The series held its last event in May.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 10 Jan",
+        "what": "Two free, in-person meetups (24 Jan and 21 Feb) with Ethereum and Starknet wallet onboarding.",
+        "verdict": "Delivered and reported"
+      },
+      {
+        "quarter": "Q2",
+        "paid": "$750 · 16 May",
+        "what": "Two meetups reported (25 and 28 Apr) and one more on 16 May. One mixed several chains and another centred on AI, so it’s a judgement call whether two were Ethereum-focused.",
+        "verdict": "Partly met"
+      }
+    ]
   }
 }

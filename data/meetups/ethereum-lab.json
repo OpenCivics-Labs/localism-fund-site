@@ -1,5 +1,5 @@
 {
-  "status": "Completed",
+  "status": "Incomplete",
   "tagline": "Four years of Ethereum Bolivia momentum, structured into a year-long builder pathway.",
   "organizer": "Ayrton Paredes (Representing Ethereum Bolivia / Ethereum Lab)",
   "submitted": "December 3, 2025",
@@ -48,5 +48,23 @@
     "received": "$1,500 of $3,000",
     "label": "Initial + Q1 paid",
     "detail": "Paid: $750 on 10 Jan 2026; $750 on 16 May 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "The DeFi study cohort in Santa Cruz ran through April with one public pitch event. The planned privacy programme didn’t surface. Two August events ran under Ethereum Bolivia.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 10 Jan",
+        "what": "About six DeFi study sessions and one public pitch meetup (25 Mar), all free and in person. Only the pitch was explicitly open to the public.",
+        "verdict": "Partly met"
+      },
+      {
+        "quarter": "Q2",
+        "paid": "$750 · 16 May",
+        "what": "An update on the April mini-hackathon that closed the cohort. No second open session was found.",
+        "verdict": "Below the two-meetup minimum"
+      }
+    ]
   }
 }

@@ -48,5 +48,35 @@
     "received": "$3,000 of $3,000",
     "label": "Fully paid",
     "detail": "Paid: $750 on 19 Jan 2026; $750 on 16 May 2026; $1,500 on 23 Nov 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "The plan was ten educational meetups for Cartagena residents and visitors; children’s Ethereum workshops extended that audience.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 19 Jan",
+        "what": "Two free public meetups (Impacto & ReFi; wallet security), backed by Luma listings, recaps and POAPs.",
+        "verdict": "Delivered and reported"
+      },
+      {
+        "quarter": "Q2",
+        "paid": "$750 · 16 May",
+        "what": "A public DAO meetup and three children’s Ethereum workshops.",
+        "verdict": "Delivered and reported"
+      },
+      {
+        "quarter": "Q3",
+        "paid": "$750 · 23 Nov",
+        "what": "Three free public sessions: CROPS, DeSci and tourism, and digital dollars. A private product showcase isn’t counted.",
+        "verdict": "Delivered and reported"
+      },
+      {
+        "quarter": "Q4",
+        "paid": "$750 · 23 Nov",
+        "what": "A free public retreat in Barú is set for 26 Nov, with a second activity planned.",
+        "verdict": "In progress"
+      }
+    ]
   }
 }

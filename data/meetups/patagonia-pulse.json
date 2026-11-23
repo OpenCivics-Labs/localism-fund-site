@@ -48,5 +48,17 @@
     "received": "$750 of $3,000",
     "label": "Initial paid",
     "detail": "Paid: $750 on 10 Jan 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "Monthly Spanish-language Ethereum education in Buenos Aires didn’t go beyond announcements in the public record.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 10 Jan",
+        "what": "A January update announced February and March plans. No meetup was found on Luma, X or POAP.",
+        "verdict": "No meetup found"
+      }
+    ]
   }
 }

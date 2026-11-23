@@ -1,5 +1,5 @@
 {
-  "status": "Completed",
+  "status": "Incomplete",
   "tagline": "A national community decentralising ownership across Quito, Guayaquil, and Cuenca.",
   "organizer": "Alex Padilla (Representing ETH Ecuador)",
   "submitted": "December 5, 2025",
@@ -46,5 +46,23 @@
     "received": "$1,500 of $3,000",
     "label": "Initial + Q1 paid",
     "detail": "Paid: $750 on 10 Jan 2026; $750 on 26 Jun 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "The first quarter reached Cuenca and Guayaquil. The planned Quito component, builder squads and ZK/legal tracks didn’t surface, and from May the public programme mostly served other ecosystems.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 10 Jan",
+        "what": "Eight in-person events in Cuenca and Guayaquil, including a hackathon, found in the public record. Karma has two general updates.",
+        "verdict": "Delivered, not fully reported"
+      },
+      {
+        "quarter": "Q2",
+        "paid": "$750 · 26 Jun",
+        "what": "At most one free in-person event (25 Apr), mainly networking. Later events served other ecosystems.",
+        "verdict": "Below the two-meetup minimum"
+      }
+    ]
   }
 }

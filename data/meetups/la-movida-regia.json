@@ -1,5 +1,5 @@
 {
-  "status": "Completed",
+  "status": "Incomplete",
   "tagline": "Ethereum infrastructure and staking, grounded in Monterrey's institutions — where 40 government processes already run on-chain.",
   "organizer": "0xDonPepe (Representing Ethereum Monterrey)",
   "submitted": "November 11, 2025",
@@ -48,5 +48,23 @@
     "received": "$1,500 of $3,000",
     "label": "Initial + Q1 paid",
     "detail": "Paid: $750 on 10 Jan 2026; $750 on 16 May 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "Planned staking, validator and node-operations workshops gave way to AI workshops and a cultural collaboration. The June CROPS session returned to Ethereum.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 10 Jan",
+        "what": "Two free public workshops in February and a co-hosted art event in March with two Ethereum talks.",
+        "verdict": "Delivered and reported"
+      },
+      {
+        "quarter": "Q2",
+        "paid": "$750 · 16 May",
+        "what": "One free public CROPS meetup (25 Jun). A May Pizza Party was advertised, but a second series event wasn’t found.",
+        "verdict": "Below the two-meetup minimum"
+      }
+    ]
   }
 }

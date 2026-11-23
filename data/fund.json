@@ -102,17 +102,19 @@
         "The remaining $2,250 is released quarterly, contingent on activity updates filed via Karma GAP."
       ]
     },
+    "evaluation": {"lede": "How the round went (as of 23 Nov 2026)", "paragraphs": ["Localism Fund has paid $13,500 to ten organisers for 18 quarters of local Ethereum meetups in Latin America. In seven funded quarters, at least two qualifying meetups were documented on Karma. Public event records showed two more quarters where the Karma reporting was incomplete.", "Five quarters fell short of the two-meetup minimum on the available evidence, and for one quarter we found plans but no meetup. Two quarters partly met the bar, and one is still in progress.", "Second payments went out in May and late June, after some organisers had already held their events, and one community received its third-quarter funding in November. The review credits events when they happened and allows for organisers who covered costs while waiting. Grantees can correct their Karma reports until 4 December."], "totals": [{"verdict": "Delivered and reported", "quarters": 7, "dai": 5250}, {"verdict": "Delivered, not fully reported", "quarters": 2, "dai": 1500}, {"verdict": "Below the two-meetup minimum", "quarters": 5, "dai": 3750}, {"verdict": "No meetup found", "quarters": 1, "dai": 750}, {"verdict": "Partly met", "quarters": 2, "dai": 1500}, {"verdict": "In progress", "quarters": 1, "dai": 750}]},
     "payouts": {
       "lede": "The money so far — verified on-chain",
-      "asOf": "22 Jul 2026",
-      "summary": "Every payment is public: funds move from the Localism Fund Safe on Ethereum (0x749e…111E) as $750 DAI releases. Sixteen payments totalling $12,000 of the $30,000 pool have been made so far.",
+      "asOf": "23 Nov 2026",
+      "summary": "Every payment is public: funds move from the Localism Fund Safe on Ethereum (0x749e…111E) as $750 DAI releases. Seventeen payments totalling $13,500 of the $30,000 pool have been made so far.",
       "batches": [
         {"when": "10 Jan 2026", "what": "Six initial payments of $750 — first onboarding wave"},
         {"when": "19 Jan 2026", "what": "Four initial payments of $750 — all ten meetups now paid"},
         {"when": "16 May 2026", "what": "Four first-quarterly releases of $750"},
-        {"when": "26 Jun 2026", "what": "Two first-quarterly releases of $750"}
+        {"when": "26 Jun 2026", "what": "Two first-quarterly releases of $750"},
+          {"when": "23 Nov 2026", "what": "Ethereum Cartagena’s third and fourth releases, $1,500 in one payment"}
       ],
-      "note": "Five meetups' payments are directly attributable to the payout wallet listed on their Karma page (La Movida Regia, Cripto Café, Ethereum Cartagena, ETH Ecuador, Web3 Café). The remaining payments went to wallets not published on Karma, so they are attributed by batch count rather than named per meetup."
+      "note": "Every payment is matched to its meetup in Localism Fund’s treasury ledger."
     },
     "status": {
       "lede": "Where it stands",

@@ -48,5 +48,17 @@
     "received": "$750 of $3,000",
     "label": "Initial paid",
     "detail": "Paid: $750 on 19 Jan 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "The monthly technical series kept its São Paulo venue and recordings, but only the March and June meetups surfaced during the year, and neither was reported on Karma.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 19 Jan",
+        "what": "One free hybrid meetup in São Paulo on Ethereum interoperability (18 Mar, recorded). Nothing reported on Karma.",
+        "verdict": "Below the two-meetup minimum"
+      }
+    ]
   }
 }

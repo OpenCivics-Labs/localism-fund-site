@@ -49,5 +49,23 @@
     "received": "$1,500 of $3,000",
     "label": "Initial + Q1 paid",
     "detail": "Paid: $750 on 10 Jan 2026; $750 on 26 Jun 2026. All payments are recorded in Localism Fund’s treasury ledger (as of 23 Nov 2026)."
+  },
+  "report": {
+    "asOf": "23 Nov 2026",
+    "change": "Six Rio meetups kept the format for newcomers. MetaMask co-hosted them, and the grant money stayed unused.",
+    "quarters": [
+      {
+        "quarter": "Q1",
+        "paid": "$750 · 10 Jan",
+        "what": "Three free in-person meetups in Rio (23 Jan, 28 Feb, 27 Mar), co-branded as MetaMask Community Builder Nights.",
+        "verdict": "Delivered and reported"
+      },
+      {
+        "quarter": "Q2",
+        "paid": "$750 · 26 Jun",
+        "what": "Three more free in-person events (30 Apr, 14 May, 25 Jun) found on Luma and X; none reported on Karma.",
+        "verdict": "Delivered, not fully reported"
+      }
+    ]
   }
 }

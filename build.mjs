@@ -52,6 +52,7 @@ if (fs.existsSync(MEETUP_DIR)) {
 
 const tierDot = { "Completed": "var(--tier-solid)", "Unclear": "var(--tier-mixed)", "Incomplete": "var(--tier-follow)", "Active": "var(--tier-active)", "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
 // Money tag shown beside a status, e.g. "Funds returned · ~$3,900". Return-request tags are added only after the grantee has been asked.
+const qVerdict = (v) => `<span class="qv" data-v="${attr(/^Delivered/.test(v) ? "ok" : v === "In progress" ? "active" : v === "Partly met" ? "mid" : "low")}">${esc(v)}</span>`;
 const moneyTag = (t) => (Array.isArray(t) ? t : t ? [t] : []).map((x) => `<span class="tier tier--tag${/^(Return of funds requested|Unaccounted for)/.test(x) ? " tier--pullback" : ""}">${esc(x)}</span>`).join("");
 const chips = (arr, cls = "chip") => (arr || []).map((t) => `<span class="${cls}">${esc(t)}</span>`).join("");
 const statBlock = (s) => `<div class="stat reveal"><div class="stat__value">${esc(s.value)}</div><div class="stat__label">${esc(s.label)}</div></div>`;
@@ -763,6 +764,7 @@ ${r.payouts ? `<section class="section section--ink" id="payouts">
   <div class="wrap">
     ${sectionHead("05", r.status.lede)}
     <div class="prose reveal" style="max-width:62ch"><p>${esc(r.status.body)}</p></div>
+    ${r.evaluation ? `<h3 class="evalh reveal">${esc(r.evaluation.lede)}</h3><div class="prose reveal" style="max-width:62ch">${r.evaluation.paragraphs.map((t) => `<p>${esc(t)}</p>`).join("")}</div><div class="qtable-wrap reveal"><table class="qtable qtable--totals"><thead><tr><th>Assessment of the funded quarter</th><th class="num">Quarters</th><th class="num">Paid</th></tr></thead><tbody>${r.evaluation.totals.map((t) => `<tr><td>${qVerdict(t.verdict)}</td><td class="num">${esc(t.quarters)}</td><td class="num">$${Number(t.dai).toLocaleString("en-US")}</td></tr>`).join("")}<tr class="qtotal"><td>Total paid</td><td class="num">${r.evaluation.totals.reduce((a, t) => a + t.quarters, 0)}</td><td class="num">$${r.evaluation.totals.reduce((a, t) => a + t.dai, 0).toLocaleString("en-US")}</td></tr></tbody></table></div>` : ""}
     <div class="btnrow reveal" style="margin-top:1.6rem">${links}</div>
   </div>
 </section>`;
@@ -839,6 +841,13 @@ ${strengths ? `<section class="gsec" style="${accentVar}"><div class="wrap">
     ${source("https://gov.gitcoin.co/t/localism-fund-initial-progress-reflections-report/24947", "Progress & reflections report", "How Round 02 was designed")}
   </div>
 </div></section>
+${x.report ? `
+<section class="gsec" style="${accentVar}"><div class="wrap">
+  <p class="ghead reveal">Quarter by quarter</p>
+  <p class="qintro reveal">${esc(x.report.change)}</p>
+  <div class="qtable-wrap reveal"><table class="qtable"><thead><tr><th>Quarter</th><th>Paid</th><th>What happened</th><th>Assessment</th></tr></thead><tbody>${x.report.quarters.map((q) => `<tr><th scope="row">${esc(q.quarter)}</th><td class="qpaid">${esc(q.paid)}</td><td>${esc(q.what)}</td><td>${qVerdict(q.verdict)}</td></tr>`).join("")}</tbody></table></div>
+  <p class="qnote">As of ${esc(x.report.asOf)}, from Karma reports and public event records. Each quarter needs at least two free, in-person Ethereum meetups. Grantees can correct their Karma reports until 4 December.</p>
+</div></section>` : ""}
 
 <nav class="pnav">
   <a class="prev" href="${attr(prev.slug)}.html"><div class="dir">← Previous</div><div class="nm">${esc(prev.name)}</div></a>

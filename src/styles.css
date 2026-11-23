@@ -1043,3 +1043,5 @@ html.snap .beat { scroll-snap-align: center; }
 
 .pstatus__why { margin: 0.5rem 0 0; font-size: 0.92rem; color: var(--ink-soft); }
 .pstatus__why b { color: var(--tier-follow); font-weight: 650; }
+
+.opcheck__intro { margin: 0.2rem 0 0.8rem; font-size: 0.92rem; color: var(--ink-soft); }

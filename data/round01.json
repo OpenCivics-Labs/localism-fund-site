@@ -43,7 +43,7 @@
   ],
   "tierSummary": [
     { "tier": "Completed", "count": 3, "note": "the money went where the grant said: shown on-chain, or for one grant accepted on the grantee’s report" },
-    { "tier": "Incomplete", "count": 9, "note": "the funded work isn’t finished, or we can’t yet see where the money went" }
+    { "tier": "Incomplete", "count": 9, "note": "the funded work wasn’t finished, or we couldn’t see where the money went" }
   ],
   "order": [
     "gen-ukraine-grant-program-01",

@@ -158,12 +158,12 @@
     {"label": "Velyka Rodyna solar — Sarafu report", "url": "https://sarafu.network/reports/3888", "type": "doc"}
   ],
   "operatorChecks": [
-    "! How was the $900 House of Warmth / Energy-Efficient Doors payment split? It routed through a shared coordinator address and can't be separated on-chain.",
-    "! Ohra's reported $500 shows ~$550 on-chain — please confirm the correct figure and the real top-up transaction (the cited hash 0x888a83ce appears wrong).",
-    "! Does the 2 ETH Octant line count as co-funding distinct from GEN Ukraine's own prior grant? Please also evidence the $950 off-chain co-funding.",
-    "! Which funded projects had a coordinator with a community tie, and how was each conflict of interest handled? (~92% of proposals were funded.)",
-    "Water harvesting and biodiversity priority areas were dropped without being flagged — please confirm this change so it can be surfaced before publishing.",
-    "Please share working project-post links (the notion.so status URLs don't resolve) and the completed second-leg top-up transactions missing from your financial table."
+    "! The $900 for House of Warmth / Energy-Efficient Doors went through a shared coordinator address. Could you tell us how it was split?",
+    "! Ohra’s reported $500 shows as about $550 on-chain, and the cited transaction (0x888a83ce) doesn’t seem to match. Could you confirm the figure and the transaction?",
+    "! Does the 2 ETH Octant line count as co-funding separate from GEN Ukraine’s own earlier grant? Could you also share evidence for the $950 of off-chain co-funding?",
+    "Some coordinators had ties to the communities they funded, and about 92% of proposals were funded. Could you tell us how conflicts of interest were handled?",
+    "The water harvesting and biodiversity priorities seem to have been set aside. Could you confirm, so the page can describe the change accurately?",
+    "Could you share working links for the project posts (the Notion status links don’t open) and the second-leg top-up transactions?"
   ],
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/gen-ukraine-grant-program-01-evaluation.md",

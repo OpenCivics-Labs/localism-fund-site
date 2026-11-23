@@ -123,13 +123,13 @@
     {"label": "Program wallet / Safe multisig (Celo)", "url": "https://app.safe.global/home?safe=celo:0x08eec9137F67f0A772a7b48Ee388Fe5F91A6cA3f", "type": "wallet"}
   ],
   "operatorChecks": [
-    "! Who received the three payments totalling $5,600 that left the program Safe on 10–11 Dec 2025, and what did each payment fund?",
-    "! One $1,000 payment went to a program-Safe signer — please explain this against your report's 'no conflicts of interest' statement.",
-    "! Your report gives co-funding as $2,500, $5,000 and $5,600 in different places, with no on-chain trace — how much was actually raised, from whom, and where can it be verified?",
-    "Did any application or selection round take place? Your report states no competitive selection process ran.",
-    "How does the '63 local projects funded' figure in your report reconcile with the three projects named elsewhere — Drip, Geinz and Pitbox?",
-    "Was Karma GAP milestone tracking ever set up? The Borderless project page shows no LF grant or program milestones.",
-    "! Please provide the signed Declaration attesting your figures and disclosing changes — it is missing from the submitted report."
+    "! Three payments totalling $5,600 left the program Safe on 10–11 Dec 2025. Could you tell us who received each one and what it paid for?",
+    "! One $1,000 payment went to a signer of the program Safe. Could you explain the arrangement, since the report states there were no conflicts of interest?",
+    "! The report gives co-funding as $2,500, $5,000 and $5,600 in different places, and we couldn’t find it on-chain. How much was raised, from whom, and where can we see it?",
+    "Did an application or selection round take place? The report says no competitive selection ran.",
+    "The report mentions 63 local projects funded and, elsewhere, three named projects (Drip, Geinz and Pitbox). Could you help us reconcile the two?",
+    "Was Karma GAP milestone tracking set up? We couldn’t find the grant or its milestones on the Borderless project page.",
+    "Could you send the signed Declaration section? It wasn’t included in the submitted report."
   ],
   "fundingNote": "The three outflows above are the full on-chain record: the entire $5,600 left the program Safe within ~48 hours of receipt, in three lump payments to personal wallets (one a signer of the program treasury), weeks before the activities ran. None could be reconciled as grants to identifiable local projects, and the report books the same $5,600 twice as both 'disbursed to local projects' and 'program operations'.",
   "links": {

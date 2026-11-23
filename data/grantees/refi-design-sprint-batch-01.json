@@ -133,12 +133,13 @@
     {"label": "Ridaje (sprint beneficiary)", "url": "https://www.ridaje.com/", "type": "site"}
   ],
   "operatorChecks": [
-    "! Can you show the Safe 0xCCC0710f…Ebdb24 that received the $4,630 is Ridaje-controlled — via a signer list or public reference?",
-    "! ReFi Italia was paid facilitation from the treasury while also being a co-funder — please provide the missing conflict-of-interest disclosure.",
-    "! Please provide the completed and signed Declaration section, absent from the submitted report.",
-    "Were the Grassroots Economics voucher pool and the Rifai Sicilia/YOMI in-kind co-funding dropped, and why?",
-    "Please reconcile the team list: Antonio Paglino (named Technical Steward) is absent, and the report's team headcount includes two uncredited names.",
-    "Which token did the community grant move as? It shows cUSD on Celo but parts of the report say USDC."
+    "! $4,890 of the grant has been in the program wallet since March 2026. Is the second sprint still planned, and when?",
+    "! Could you show that the Safe 0xCCC0710f…Ebdb24, which received $4,630, is controlled by Ridaje, through a signer list or a public reference?",
+    "ReFi Italia was paid for facilitation and was also a co-funder. Could you add a short conflict-of-interest note?",
+    "Could you send the signed Declaration section? It wasn’t included in the submitted report.",
+    "Were the Grassroots Economics voucher pool and the Rifai Sicilia / YOMI in-kind co-funding set aside, and why?",
+    "Could you check the team list? Antonio Paglino, named as Technical Steward, isn’t listed, and the headcount includes two people not named.",
+    "Which token did the community grant move as? It shows as cUSD on Celo, but parts of the report say USDC."
   ],
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-design-sprint-batch-01-evaluation.md",

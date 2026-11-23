@@ -153,12 +153,12 @@
     {"label": "Outbound transfer to coordinator wallet (pre-bridge leg, Celo)", "url": "https://celo.blockscout.com/tx/0xa81f1eef7ad3d6c1bd4cf439a15ed0134a0f648ae4a6c423b937e8eb89a9baf1", "type": "dashboard"}
   ],
   "operatorChecks": [
-    "! Did any funds reach an independent local-project or savings-group wallet? All ~$4,069 in outflows went to operator-controlled wallets.",
-    "! Please trace the ~$2,500 bridge shortfall: 7,800 cUSD left via a coordinator's personal EOA and only 5,300 USDT returned to the Safe.",
-    "! Please reconcile the financials — $7,568 vs $4,068 'disbursed' totals, and reported $6,232 remaining vs ~$560 actually held.",
-    "! The tx hash 0x4cda… is reused (one transfer shown as three disbursements) — please provide the correct transactions.",
-    "When will the community-validated round seeding ~$1k into 10 groups run? The core deliverable hasn't launched.",
-    "Please provide non-paywalled evidence for the 138 participants / 3 workshops / 15 new groups (the current X links return HTTP 402)."
+    "! 7,800 cUSD went out through a coordinator’s personal wallet and 5,300 USDT came back to the Safe. Could you help us trace the difference of about $2,500?",
+    "! Did any funds reach an independent local project or savings-group wallet? The outflows we can see all went to wallets run by the program team.",
+    "! The report gives $7,568 and $4,068 as totals disbursed, and $6,232 remaining. The Safe held about $560 in June and is now empty. Could you help us reconcile these?",
+    "! One transaction (0x4cda…) appears three times in the disbursement table. Could you share the correct transactions?",
+    "Is the community-validated round, seeding about $1,000 into 10 groups, still planned? When will it run?",
+    "Could you share evidence for the 138 participants, 3 workshops and 15 new groups that we can open? The X links currently don’t load for us."
   ],
   "fundingNote": "The funded local grant round never launched, so $0 reached an independent local project. The outflows above are what's known: ~$4,069 went to the team's own operator wallets for lanterns, the computer lab and platform costs, and a further ~$2,500 never returned from a personal-wallet bridge, which the financial summary doesn't reconcile. After the report, a further ~$5,674 left the Safe to operator wallets and a bridge (Apr–May 2026), leaving ~$560.",
   "links": {

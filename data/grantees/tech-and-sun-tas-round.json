@@ -156,13 +156,13 @@
     {"label": "Tech and Sun on YouTube", "url": "https://youtube.com/post/Ugkx6pYOhCHvhbzfZ5hLry91WyGrjtyQzIlZ", "type": "video"}
   ],
   "operatorChecks": [
-    "Please confirm '$11,800 disbursed to local projects' should be re-labelled — on-chain there were no third-party grantees; the budget funded Greenpill Nigeria's own hub build.",
-    "! How was the ~$6,700 paid to operator wallet amioantho.eth (a Safe signer) disclosed? Operator = recipient = signer.",
-    "Please fix your report's disbursement table — rows 1 and 2 cite the same Celo tx, and the $2,000 staking-bond row has no recipient or tx.",
-    "! How much of the $7,000 co-funding is external vs internal? Two of three co-funders are Greenpill Nigeria/Network entities.",
-    "What is the second UNN hub's status (land only), and will the Owerri pilot migrate?",
-    "! Where is the reported '$2,540 remaining'? The Safe is near-empty; ~$2,031 was swapped post-report into the Green Goods DAI vault (2026-03-28). Is that the $2,000 staking-bond earmark?",
-    "When will the staking nodes go live? The self-sustaining revenue/yield thesis is unproven until they do."
+    "! About $6,700 was paid through amioantho.eth, a signer of the program Safe, for vendor and labour costs. Could you add a short note on how this was agreed and disclosed?",
+    "! How much of the $7,000 co-funding came from outside Greenpill Nigeria and Greenpill Network?",
+    "! The report shows $2,540 remaining. The Safe is now nearly empty, and about $2,031 was moved into the Green Goods DAI vault on 28 Mar 2026. Is that the $2,000 set aside for the staking bond?",
+    "The report lists $11,800 as disbursed to local projects. Since the budget built Greenpill Nigeria’s own hub, would you describe it as a hub build rather than grants to local projects?",
+    "In the disbursement table, rows 1 and 2 cite the same Celo transaction, and the $2,000 staking-bond row has no recipient or transaction. Could you update it?",
+    "What is the status of the second hub at UNN, and will the Owerri pilot move there?",
+    "When will the staking nodes go live?"
   ],
   "fundingNote": "The money moved and is fully traceable, but it funded a self-build, not a grant round: every flow below went to vendors or the team, with no third-party local grantees on-chain. The budget built one solar hub at UNIZIK (the second was deferred, as pre-flagged), with the largest single flow — ~$6,700 to a Safe signer's own wallet — acting as a Naira-cash conduit for itemised vendor and labour costs.",
   "links": {

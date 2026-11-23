@@ -125,12 +125,12 @@
     {"label": "Kolektivo on Instagram", "url": "https://www.instagram.com/kolektivocw/", "type": "social"}
   ],
   "operatorChecks": [
-    "! Your report shows $6,600 remaining, but the Safe held $21,245.84 in June. On 16 Sep 2026 the $11,200 grant left in one transfer to 0xAFcC…4eEe. Whose wallet is it, and what did the money pay for?",
-    "! Please provide receipts or bank records for the $14,650 fiat spend; the program Safe showed no outbound transfers until 16 Sep 2026.",
-    "Did an open grant round run? The evaluations found no call, no applicant pool, and no selection process.",
-    "! Most funded items went to Kolektivo's own team and working groups — how were conflicts of interest handled?",
-    "! ≥$5,250 of 'local projects' spend appears to be Kolektivo's own operations, against a reported '$0 operations' — please reclassify or explain.",
-    "Please review the Outcome 1 'Realized' label and the Slavery Heritage Fund evidence link, which does not mention Kolektivo or Pionero."
+    "! On 16 Sep 2026 the $11,200 grant left the Safe in one transfer to 0xAFcC…4eEe. Whose wallet is this, and what did the money pay for?",
+    "! Could you share receipts or bank records for the $14,650 of spending paid in fiat?",
+    "! Some of the ‘local projects’ spending (at least $5,250) looks like Kolektivo’s own operations, while the report shows $0 for operations. Could you explain how it was categorised?",
+    "Most funded items went to Kolektivo’s own team and working groups. How were conflicts of interest handled?",
+    "Did an open grant round run? We couldn’t find a call, applicant pool or selection process.",
+    "Could you look again at the ‘Realized’ label on Outcome 1? The Slavery Heritage Fund link doesn’t mention Kolektivo or Pionero."
   ],
   "fundingNote": "The program Safe made no outbound transfers for nine months and held essentially the full ~$21,250 combined budget at the June check. On 16 Sep 2026 the full $11,200 grant left in one transfer to an individual's wallet not yet identified; the $10,050 of co-funding is still in the Safe (checked 23 Nov 2026). The grantee reports $14,650 of fiat spending with on-chain 'stables txs still to run', but no receipts or transaction records were provided, so none of it is verifiable.",
   "links": {

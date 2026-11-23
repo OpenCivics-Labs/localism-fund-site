@@ -133,10 +133,10 @@
     {"src": "assets/img/grantees/regenerant-catalunya/2026-01-19-ecological-institutions-slide-on-call.jpg", "caption": "The allocation protocol, shown on a call, 19 January 2026"}
   ],
   "operatorChecks": [
-    "! Please share the transactions that paid each of the 11 projects from the 15 Sep 2026 transfers.",
-    "Please name the two other wallets that received the coordination fee.",
-    "Miceli (€6,000) and La Fundició (€5,000): you say ReFi Barcelona converted both euro payments, which is why both arrived from one wallet. Please share a record of the two payments.",
-    "Did the Phase-2 Web3 pilots (Silvi, Gainforest, Hypercerts, Sarafu) run? The report itemises almost none."
+    "! Could you share the payments to each of the 11 projects from the 15 Sep 2026 transfers?",
+    "Could you name the two other wallets that received the coordination fee?",
+    "You’ve told us ReFi Barcelona converted Miceli’s (€6,000) and La Fundició’s (€5,000) euro payments, which is why both arrived from one wallet. Could you share a record of the two payments?",
+    "Did the Phase-2 Web3 pilots (Silvi, Gainforest, Hypercerts, Sarafu) run?"
   ],
   "fundingNote": "The $18,000 sat in the program Safe for nine months. On 15 Sep 2026 the whole program balance left through cross-chain bridge services: the $18,000 grant on Celo (about $11,190 of it passed first through an individual’s wallet) and the ~$6,622 of co-funding on Optimism. Where it arrived can’t be seen from these chains, and which projects received money is not yet confirmed. Regenerant says partners’ paperwork and Spain’s summer pause caused the delay. Before that, the only outflow was a $5,812 coordination fee paid from co-funding, within the 20% operations budget set out in the application.",
   "links": {

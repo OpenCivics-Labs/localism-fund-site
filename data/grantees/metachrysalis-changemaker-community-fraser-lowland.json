@@ -142,11 +142,11 @@
     {"label": "Community Discord", "url": "https://discord.gg/c4HUku4tJe", "type": "social"}
   ],
   "operatorChecks": [
-    "! Please provide a corrected financial summary that reconciles with on-chain figures and uses one currency.",
-    "! What is the status and timing of the two unpaid grants — Jane Diopko and Cans for a Cause / Katryna Cole?",
-    "! Can you evidence the $10,000 Scott Nelson co-funding? The Kraken inbound carries no donor identity on-chain.",
-    "Please revisit the Economic and Technological self-scores against your report's own 'Minimal' Ethereum description.",
-    "Was the promised on-chain layer — attestations, facet tokens, dashboards — dropped? If so it should be reflected as a change."
+    "Could you share a financial summary in one currency? The report’s tables give different totals.",
+    "What is the status of the grants to Jane Diopko and to Cans for a Cause (Katryna Cole)?",
+    "If possible, could you share a record of the $10,000 co-funding from Scott Nelson? The incoming transfer on-chain doesn’t name the donor.",
+    "Could you look again at the Economic and Technological self-scores, given the report describes the Ethereum layer as ‘Minimal’?",
+    "Were the attestations, facet tokens and dashboards set aside? If so, we’ll show that as a change of plan."
   ],
   "fundingNote": "The entire $11,200 Localism Fund grant sat as cUSD on Celo with zero outbound transfers for six months. On 25 Jun 2026 it was bridged to the program’s own Safe on Base (about $11,030 USDC), and on 29 Jun sent on to an individual’s wallet, which forwarded it the same day to another unidentified wallet. Whether it reached projects is not confirmed. All six grants paid by June came from co-funding USDC on Ethereum. The report says the whole $21,200 budget was spent or committed, including $2,500 CAD to each of eight projects and $5,157.50 CAD for coordination. Localism Fund accepts this account: the trail is consistent with the grant being cashed out to pay in Canadian dollars, though the payments themselves aren’t visible on-chain.",
   "links": {

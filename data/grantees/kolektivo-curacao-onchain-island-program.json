@@ -11,7 +11,7 @@
   "tagline": "An island ecosystem building toward onchain regeneration",
   "whyItMattered": "Curaçao is a Small Island Developing State on the front lines of climate change and economic vulnerability, with high youth unemployment and brain drain. Kolektivo, an established local impact network, ran stakeholder workshops, a research report, and a public-facing Onchain Island platform during the grant period — though the grant itself has yet to be deployed — as early groundwork toward channelling onchain tools and institutional partnerships into local regeneration and a more self-determined island economy.",
   "stats": [
-    {"value": "$11,200", "label": "LF grant — left the Safe on 16 Sep 2026; recipient not yet identified"},
+    {"value": "$11,200", "label": "LF grant — left the Safe on 16 Sep 2026; recipient not identified"},
     {"value": "0", "label": "outbound on-chain transactions"},
     {"value": "5", "label": "stakeholder events & workshops reported"}
   ],
@@ -40,16 +40,16 @@
     {"text": "A tokenized biodiversity-credit project to fund reef restoration with World Nature Fund backing reported as approved, with fundraising and restoration still ahead", "status": "Emerging"},
     {"text": "Genuine stakeholder alignment formed across government, finance and conservation institutions behind the Onchain Island vision", "status": "Emerging"}
   ],
-  "status": "Early-stage ecosystem work real; grant moved out on 16 Sep 2026 to an unidentified wallet; finances under follow-up",
+  "status": "Early-stage ecosystem work real; the grant moved out on 16 Sep 2026 to an unidentified wallet",
   "verdict": {
     "tier": "Incomplete",
     "composite": 15,
-    "financial": "The $11,200 LF grant and $10,050 co-funding are verified inbound on-chain. The grant left the Safe in one transfer on 16 Sep 2026 to an individual's wallet not yet identified; the co-funding is still there. The $14,650 reported spend has no on-chain support and no receipts — not yet verifiable.",
+    "financial": "The $11,200 LF grant and $10,050 co-funding are verified inbound on-chain. The grant left the Safe in one transfer on 16 Sep 2026 to an individual's wallet not identified; the co-funding is still there. The $14,650 reported spend has no on-chain support and no receipts — not yet verifiable.",
     "tag": "Unaccounted for · $11,200 / 100%",
     "pullbackNote": "The $11,200 grant went in one transfer to an individual’s wallet on 16 Sep 2026, and no receipts were shared for the $14,650 reported as spent.",
-    "line": "Needs Follow-Up — a credible local organisation did genuine early-stage ecosystem work, but the Localism Fund grant sat undeployed for nine months and then left in a single transfer to an unidentified wallet, the $14,650 reported spend is unverifiable, and the funded local grant round was never run."
+    "line": "A credible local organisation did genuine early-stage ecosystem work, but the Localism Fund grant sat undeployed for nine months and then left in a single transfer to an unidentified wallet, the $14,650 reported spend is unverifiable, and the funded local grant round was never run."
   },
-  "honesty": "This is a real, established organisation doing genuine ecosystem-building — but very little is verified progress attributable to the grant. The Localism Fund's $11,200 did not move on-chain for nine months — at the June check the program Safe held essentially the full ~$21,250 combined budget, contradicting the reported $6,600 remaining — and on 16 Sep 2026 it left in a single transfer to a wallet not yet identified; the $14,650 of fiat spend has no receipts; the co-funding came from Kolektivo's own wallet rather than the institutions named in the application; and no open grant round was run. The report is candid about its pivots and shortcomings, but scores its own impact higher than the evidence supports. The fair read: a real, early-stage program reported in a way that overstates delivery and does not yet account for the funds.",
+  "honesty": "This is a real, established organisation doing genuine ecosystem-building — but very little is verified progress attributable to the grant. The Localism Fund's $11,200 did not move on-chain for nine months — at the June check the program Safe held essentially the full ~$21,250 combined budget, contradicting the reported $6,600 remaining — and on 16 Sep 2026 it left in a single transfer to a wallet not identified; the $14,650 of fiat spend has no receipts; the co-funding came from Kolektivo's own wallet rather than the institutions named in the application; and no open grant round was run. The report is candid about its pivots and shortcomings, but scores its own impact higher than the evidence supports. The fair read: a real, early-stage program reported in a way that overstates delivery and does not yet account for the funds.",
   "proposed": {
     "summary": "An onchain innovation program to fund local regenerative initiatives and accelerate Web3 adoption across Curaçao's economy.",
     "points": [
@@ -134,7 +134,7 @@
     "Did an open grant round run? We couldn’t find a call, applicant pool or selection process.",
     "Could you look again at the ‘Realized’ label on Outcome 1? The Slavery Heritage Fund link doesn’t mention Kolektivo or Pionero."
   ],
-  "fundingNote": "The program Safe made no outbound transfers for nine months and held essentially the full ~$21,250 combined budget at the June check. On 16 Sep 2026 the full $11,200 grant left in one transfer to an individual's wallet not yet identified; the $10,050 of co-funding is still in the Safe (checked 23 Nov 2026). The grantee reports $14,650 of fiat spending with on-chain 'stables txs still to run', but no receipts or transaction records were provided, so none of it is verifiable.",
+  "fundingNote": "The program Safe made no outbound transfers for nine months and held essentially the full ~$21,250 combined budget at the June check. On 16 Sep 2026 the full $11,200 grant left in one transfer to an individual's wallet not identified; the $10,050 of co-funding is still in the Safe (checked 23 Nov 2026). The grantee reports $14,650 of fiat spending with on-chain 'stables txs still to run', but no receipts or transaction records were provided, so none of it is verifiable.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/kolektivo-curacao-onchain-island-program-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/kolektivo-curacao-onchain-island-program-steward-eval.md",

@@ -61,7 +61,7 @@
   ],
   "method": [
     "Each project was evaluated twice. An AI evaluation worked through four phases — structural completeness, evidence and on-chain financial verification, substantive assessment against the application, and a synthesis with a composite score out of 35. Every financial finding was then independently re-verified by a second, adversarial pass before being committed.",
-    "A steward companion sits alongside each one, carrying the human judgement and the follow-up questions the Fund will actually send. Both are still drafts: this site is a working retrospective, not a final verdict.",
+    "A steward companion sits alongside each one, carrying the human judgement and the questions put to each grantee. These are our final assessments; if a grantee gets in touch, we’ll update their page.",
     "Where a block explorer wouldn't resolve, we say so rather than guess. \"We couldn't verify this\" and \"the evidence contradicts this\" are kept strictly apart throughout."
   ],
   "meta": {

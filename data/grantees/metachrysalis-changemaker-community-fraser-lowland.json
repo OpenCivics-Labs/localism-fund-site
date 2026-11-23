@@ -47,9 +47,9 @@
     "composite": 18,
     "financial": "Contradicted by on-chain evidence",
     "tag": "Accepted as reported",
-    "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant sat undisbursed on Celo for six months (every grant that landed was paid from co-funding) before being bridged out on 25 Jun 2026 to a destination not yet confirmed, and the report's financial summary overstates disbursement and does not reconcile."
+    "line": "A sincere, relationship-rich local program with six clean on-chain micro-grants and a real open-source platform, but the entire $11,200 Localism Fund grant sat undisbursed on Celo for six months (every grant that landed was paid from co-funding) before being bridged out on 25 Jun 2026 and, by the grantee’s account, used for its projects and coordination, and the report's financial summary overstates disbursement and does not reconcile."
   },
-  "honesty": "The community work is genuine and the team is candid about its shortcomings, but the central financial fact is undisclosed: the full $11,200 Localism Fund grant did not move for six months — it sat as cUSD on Celo while all six grants were paid from co-funding USDC on Ethereum — and on 25 Jun 2026 it was bridged out to a destination not yet confirmed. The report's '$0 remaining' doesn't match what's on-chain, 'disbursed to local projects' is overstated, and the totals don't reconcile. At the June check no funds were missing — the grant was simply idle, and the report didn't say so.",
+  "honesty": "The community work is genuine and the team is candid about its shortcomings, but the central financial fact is undisclosed: the full $11,200 Localism Fund grant did not move for six months — it sat as cUSD on Celo while all six grants were paid from co-funding USDC on Ethereum — and on 25 Jun 2026 it was bridged out; by the grantee’s account it paid for its projects and coordination. The report's '$0 remaining' doesn't match what's on-chain, 'disbursed to local projects' is overstated, and the totals don't reconcile. At the June check no funds were missing — the grant was simply idle, and the report didn't say so.",
   "proposed": {
     "summary": "Find and fund eight local changemakers through a peer-nominated, sociocratically governed bioregional grant round.",
     "points": [
@@ -89,7 +89,7 @@
   "stories": [
     {
       "title": "The grant that sat still",
-      "text": "The six grants that reached projects were all paid from co-funding USDC on Ethereum. The entire $11,200 Localism Fund grant arrived as cUSD on Celo in December and sat there untouched until 25 Jun 2026, when it was bridged out in full; where it went is not yet confirmed. The report's claim of '$0 remaining' was false on-chain at the time.",
+      "text": "The six grants that reached projects were all paid from co-funding USDC on Ethereum. The entire $11,200 Localism Fund grant arrived as cUSD on Celo in December and sat there untouched until 25 Jun 2026, when it was bridged out in full; by the grantee’s account it went to its projects and coordination. The report's claim of '$0 remaining' was false on-chain at the time.",
       "quote": "",
       "quoteAttribution": ""
     },
@@ -128,7 +128,7 @@
     {"when": "Apr 4, 2026", "what": "Grantee report finalised and submitted"},
     {"when": "Jun 8, 2026", "what": "On-chain verification: the $11,200 LF grant still undisbursed on Celo"},
     {"when": "Jun 2026", "what": "On-chain verification confirms the LF grant still undisbursed on Celo"},
-    {"when": "2026-06-25", "what": "Full $11,200 LF grant bridged out of the Celo Safe; destination not yet confirmed"},
+    {"when": "2026-06-25", "what": "Full $11,200 LF grant bridged out of the Celo Safe to the program’s Safe on Base"},
     {"when": "2026-06-29", "what": "Grant (about $11,030 USDC) sent from the Base Safe to an individual’s wallet and forwarded the same day"}
   ],
   "resources": [

@@ -12,14 +12,14 @@
   "whyItMattered": "Catalonia has one of Europe's most developed cooperative economies, but deep skepticism toward crypto. Regenerant Catalunya used the grant to put matching funds on-chain for two cooperative networks — Miceli in rural Catalonia and La Fundició in L'Hospitalet — testing whether on-chain tools could strengthen that work without betraying its values, and leaving a candid record of where the rails reach grassroots communities and where they don't.",
   "stats": [
     {"value": "$12,432", "label": "local co-funding raised on-chain, pre-grant"},
-    {"value": "$18,000", "label": "left the Safe on 15 Sep 2026; recipients not yet confirmed"},
+    {"value": "$18,000", "label": "left the Safe on 15 Sep 2026; recipients not confirmed"},
     {"value": "11", "label": "projects onboarded across 2 cooperative networks"}
   ],
   "story": [
     "Regenerant Catalunya set out to channel matching funds into regenerative projects through two established cooperative networks: Miceli in rural Catalonia, and La Fundició in the dense, working-class streets of L'Hospitalet. The team raised €11,000 of local co-funding and put it on-chain before the Localism Fund grant even arrived.",
     "The grant landed late, on 16 December 2025, at roughly half the figure first floated. That delay cascaded into the holiday break, compressed Phase 1, and triggered a hard trust test — the kickoff ran before the matching money was in. Eleven projects were onboarded; eight new wallets opened; 29 Karma activity reports filed across both networks.",
     "Then the team pivoted honestly. Rather than force one approach, they tailored per network: Miceli, more receptive, onto a Safe multisig to co-manage funds; La Fundició, opting out of crypto entirely, toward a compliant bank off-ramp and fiat conviction voting. Off-ramping in Spain, they found, was close to inviable without a legal entity.",
-    "Today the books reconcile on-chain to the dollar — among the cleanest in the cohort. But the defining fact is the one the report doesn't dress up: for nine months after payout, no grant money left the Safe. The full $18,000 moved out on 15 Sep 2026, and which projects received it is not yet confirmed. Before that, the only money that moved was the operator's coordination fee."
+    "Today the books reconcile on-chain to the dollar — among the cleanest in the cohort. But the defining fact is the one the report doesn't dress up: for nine months after payout, no grant money left the Safe. The full $18,000 moved out on 15 Sep 2026, and which projects received it is not confirmed. Before that, the only money that moved was the operator's coordination fee."
   ],
   "signatureStory": {
     "title": "\"How do we know this isn't a scam?\"",
@@ -33,22 +33,22 @@
     "Ran 4 workshops (kickoff, Karma onboarding, wallet setup, Safe multisig), with a final wrap-up pending at report time, and built a trilingual EN/ES/CA public knowledge base plus an open GitHub methodology repo",
     "Pivoted mid-stream from project-level to network-level engagement, tailoring tools to each partner's actual readiness rather than imposing a uniform approach",
     "Established a Safe multisig on Celo and began onboarding Miceli project leads as co-signers for collective fund governance",
-    "Grant funds left the Safe on 15 Sep 2026, nine months after payout; payments to the 11 projects are not yet confirmed"
+    "Grant funds left the Safe on 15 Sep 2026, nine months after payout; payments to the 11 projects are not confirmed"
   ],
   "outcomes": [
     {"text": "Miceli invited ReFi Barcelona to become a member cooperative and a collaborator on its Bioregional Financing Facility — a structural partnership well beyond the program's scope", "status": "Realized"},
-    {"text": "Funds committed to 11 regenerative projects across two networks, but distribution still pending — the first concrete channel between global ReFi and the Catalan solidarity economy is open, not yet flowing", "status": "Expected"},
+    {"text": "Funds committed to 11 regenerative projects across two networks; the money left the Safe in September, but payments to the projects weren’t shared", "status": "Expected"},
     {"text": "A documented methodology for bridging cooperative/ESS ecosystems with Web3 — including, honestly, where the tooling still fails grassroots communities", "status": "Emerging"},
     {"text": "Collective fund governance piloted per network: a Safe multisig for Miceli, fiat conviction voting for La Fundició — both still onboarding", "status": "Expected"}
   ],
-  "status": "Grant moved out of the program Safe on 15 Sep 2026; payments to the 11 projects not yet confirmed",
+  "status": "Grant moved out of the program Safe on 15 Sep 2026; payments to the 11 projects not confirmed",
   "verdict": {
     "tier": "Incomplete",
     "composite": 21,
     "financial": "Mostly verified",
     "tag": "Unaccounted for · $18,000 / 100%",
     "pullbackNote": "The full $18,000 left the program Safe through cross-chain bridges on 15 Sep 2026, and the payments to the 11 projects haven’t been shared.",
-    "line": "A candid, financially transparent, well-anchored program whose books reconcile on-chain to the dollar, held back by a nine-month delay in its core deliverable: the $18,000 left the Safe only on 15 Sep 2026, and its arrival at local projects is not yet confirmed."
+    "line": "A candid, financially transparent, well-anchored program whose books reconcile on-chain to the dollar, held back by a nine-month delay in its core deliverable: the $18,000 left the Safe only on 15 Sep 2026, and its arrival at local projects is not confirmed."
   },
   "honesty": "This is among the cohort's cleanest financial reports — every figure, including the uncomfortable ones, reconciles on-chain to the dollar, and the co-funding genuinely arrived early. But the central fact is a delivery one, not an integrity one: for nine months after payout no grant money left the Safe, and running the program without distributing funds was reported as a timing detail rather than named as the material gap it was.",
   "proposed": {
@@ -102,7 +102,7 @@
     {"dimension": "Ecological", "evidence": "Ecological impact flows through the grantees' own work rather than activities the program ran: Simbiosi Fluvial regenerating the Fluvià river watershed, Resilience Earth advising municipalities on bioregional governance, and La Granja del Tilo preserving agroecological systems in the Parc Agrari del Baix Llobregat. The program kept an ecological lens via bioregionalism but ran no restoration directly."}
   ],
   "correlation": [
-    {"proposed": "Disburse ≥€1,000 per project in two 50/50 phases across Nov 2025–Feb 2026", "delivered": "The $18,000 grant and the ~$6,622 of co-funding left the Safe through cross-chain bridges on 15 Sep 2026, nine months after payout; payments to the 11 projects are not yet confirmed."},
+    {"proposed": "Disburse ≥€1,000 per project in two 50/50 phases across Nov 2025–Feb 2026", "delivered": "The $18,000 grant and the ~$6,622 of co-funding left the Safe through cross-chain bridges on 15 Sep 2026, nine months after payout; payments to the 11 projects are not confirmed."},
     {"proposed": "Run a human-council evaluation (adapted from GG23) over Phase 1 allocations", "delivered": "Dropped in favour of a flat €1,000-per-project allocation — a sensible simplification for a small curated cohort"},
     {"proposed": "Collect on-chain Karma GAP impact records across the cohort", "delivered": "Delivered: 11 projects filed 29 Karma activity reports — though decoupled from any funding consequence, and in a format projects are unlikely to reuse"},
     {"proposed": "Pilot Web3/ReFi adoption tools (Silvi, Gainforest, Hypercerts/Ecocerts, Sarafu, dMRV)", "delivered": "Essentially none delivered; one real adoption — Miceli's Safe multisig — with signer onboarding still in progress"},
@@ -116,7 +116,7 @@
     {"when": "Mar 2026", "what": "$5,812 operations fee paid; grant funds still held"},
     {"when": "Apr 2026", "what": "Miceli invited ReFi Barcelona as member cooperative"},
     {"when": "2026-04-05", "what": "Grantee report submitted; $24,622 undistributed at the time"},
-    {"when": "2026-09-15", "what": "Full $18,000 grant moved out of the program Safe; payments to projects not yet confirmed"}
+    {"when": "2026-09-15", "what": "Full $18,000 grant moved out of the program Safe; payments to projects not confirmed"}
   ],
   "resources": [
     {"label": "Regenerant Catalunya — program site & knowledge base (EN/ES/CA)", "url": "https://regenerant.refibcn.cat/", "type": "site"},
@@ -140,7 +140,7 @@
     "You’ve told us ReFi Barcelona converted Miceli’s (€6,000) and La Fundició’s (€5,000) euro payments, which is why both arrived from one wallet. Could you share a record of the two payments?",
     "Did the Phase-2 Web3 pilots (Silvi, Gainforest, Hypercerts, Sarafu) run?"
   ],
-  "fundingNote": "The $18,000 sat in the program Safe for nine months. On 15 Sep 2026 the whole program balance left through cross-chain bridge services: the $18,000 grant on Celo (about $11,190 of it passed first through an individual’s wallet) and the ~$6,622 of co-funding on Optimism. Where it arrived can’t be seen from these chains, and which projects received money is not yet confirmed. Regenerant says partners’ paperwork and Spain’s summer pause caused the delay. Before that, the only outflow was a $5,812 coordination fee paid from co-funding, within the 20% operations budget set out in the application.",
+  "fundingNote": "The $18,000 sat in the program Safe for nine months. On 15 Sep 2026 the whole program balance left through cross-chain bridge services: the $18,000 grant on Celo (about $11,190 of it passed first through an individual’s wallet) and the ~$6,622 of co-funding on Optimism. Where it arrived can’t be seen from these chains, and which projects received money is not confirmed. Regenerant says partners’ paperwork and Spain’s summer pause caused the delay. Before that, the only outflow was a $5,812 coordination fee paid from co-funding, within the 20% operations budget set out in the application.",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/regenerant-catalunya-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/regenerant-catalunya-steward-eval.md",

@@ -13,13 +13,13 @@
   "stats": [
     {"value": "2", "label": "local nodes funded (Cartagena & Amazonas)"},
     {"value": "9", "label": "community activities across nodes"},
-    {"value": "~$2,300", "label": "disbursed to nodes by June; ~$3,200 more since, to a contract not yet identified"}
+    {"value": "~$2,300", "label": "disbursed to nodes by June; ~$3,200 more since, to a contract not identified"}
   ],
   "story": [
     "The $7,840 grant landed on-chain on 9 December 2025. The plan was ambitious: scale a subsidy program from 50 to 250 people, fund five nodes, and run an English course. Reality was smaller and more modest.",
     "ReFi Colombia opened a mini-grants round for its nodes. Only two applied, Cartagena and Amazonas, and both were funded. Their first applications were incomplete, so the team held a meeting to walk through expectations, metrics and reporting before releasing funds.",
     "Cartagena ran five activities and Amazonas four, weaving mangrove and native-tree planting, urban gardens and circular-economy workshops together with first wallets and POAPs. Weather and a safety incident forced postponements; the team adapted each time.",
-    "At the June check most of the grant, roughly $4,250, was still held in the treasury. Since September about $3,200 more has gone out, in COPm, to a contract not yet identified, and about $1,000 remains (23 Nov 2026). The English course remains in preparation, and the flagship subsidy program, though genuinely live, predates this grant and barely grew."
+    "At the June check most of the grant, roughly $4,250, was still held in the treasury. Since September about $3,200 more has gone out, in COPm, to a contract not identified, and about $1,000 remains (23 Nov 2026). The English course remains in preparation, and the flagship subsidy program, though genuinely live, predates this grant and barely grew."
   ],
   "signatureStory": {
     "title": "Regenerative Roots: planting in the Amazon after the flood",
@@ -33,14 +33,14 @@
     "Kept the ReFi Medellin subsidy smart contract live, with a public Dune dashboard and TuCOP wallet claiming",
     "Used POAPs and wallets for event onboarding across nodes (9 POAP drops; 26 new wallets reported)",
     "Maintained on-chain transparency via a public Safe and dashboard as promised",
-    "English course not launched at the June check; most of the remaining grant has since moved (about $3,200 in COPm to a contract not yet identified), leaving about $1,000"
+    "English course not launched at the June check; most of the remaining grant has since moved (about $3,200 in COPm to a contract not identified), leaving about $1,000"
   ],
   "outcomes": [
     {"text": "Two local nodes strengthened their capacity to run regenerative activities and onboard communities to Web3, with real cross-node collaboration", "status": "Emerging"},
     {"text": "The subsidy program kept supporting low-income participants with weekly payments, but it predates the grant and grew only modestly (~50 to 65-78)", "status": "Realized"},
     {"text": "Stronger alliances with local youth and environmental organisations, and demand for the still-pending English course", "status": "Expected"}
   ],
-  "status": "Continuing; round ongoing. Since September most of the remaining grant has gone to a contract not yet identified; about $1,000 is left",
+  "status": "Continuing; round ongoing. Since September most of the remaining grant has gone to a contract not identified; about $1,000 is left",
   "verdict": {
     "tier": "Incomplete",
     "composite": 18,
@@ -138,7 +138,7 @@
     "Several targets changed (about 78 subsidies against 250, 2 nodes against 5, no English course yet). Could you add these to the changes-from-plan section?",
     "Could you share working links for the ‘1,700 transactions’ figure and the POAP collector counts?"
   ],
-  "fundingNote": "By the June check only ~$2,280 of the $7,840 grant had reached the two nodes, with roughly $4,250–4,700 held in the Safe. Since September about $3,200 more (10.5M COPm) has gone to a contract not yet identified (0x988A…5082), and about $1,000 remains (checked 23 Nov 2026). The list below shows itemised, on-chain-verifiable outflows to June; the report's own totals run slightly higher (e.g. $690 claimed for tools vs the $80 Canva row verified, $150 claimed paid to social media vs the $49 instalment verified).",
+  "fundingNote": "By the June check only ~$2,280 of the $7,840 grant had reached the two nodes, with roughly $4,250–4,700 held in the Safe. Since September about $3,200 more (10.5M COPm) has gone to a contract not identified (0x988A…5082), and about $1,000 remains (checked 23 Nov 2026). The list below shows itemised, on-chain-verifiable outflows to June; the report's own totals run slightly higher (e.g. $690 claimed for tools vs the $80 Canva row verified, $150 claimed paid to social media vs the $49 instalment verified).",
   "links": {
     "evaluation": "rounds/01-local-grant-programs/grantee-report-eval/refi-colombia-evaluation.md",
     "stewardEval": "rounds/01-local-grant-programs/grantee-report-eval/refi-colombia-steward-eval.md",

@@ -41,11 +41,11 @@
     {"text": "A multi-tool on-chain coordination stack was tested under real conditions, with direct feedback loops to protocol teams", "status": "Emerging"},
     {"text": "Ecological restoration linked to Web3 coordination through the Silvi Atlantic-Forest tree-registration campaign", "status": "Emerging"}
   ],
-  "status": "Financial reconciliation and downstream accountability pending",
+  "status": "Active program; its reported spending doesn’t reconcile, and $4,000 of the grant is unspent",
   "verdict": {
     "tier": "Incomplete",
     "composite": 15,
-    "financial": "Reported $19,600 withdrawn by the grantee; reconciliation pending",
+    "financial": "Reported $19,600 withdrawn by the grantee; the remaining figures don’t reconcile",
     "tag": ["Funds returned · ~$3,900 / 27%", "Return of funds requested · $4,000 / 27%"],
     "pullbackNote": "$3,000 sits unspent in the ARO/Fabulosa multisig, and REGA’s $1,000 was never sent.",
     "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile: GPBR has withdrawn its claimed $19,600 disbursed to local projects. On-chain, $4,000 went to two partner wallets and $3,000 of that is still unspent; GPBR describes both payments as grants to local partners."

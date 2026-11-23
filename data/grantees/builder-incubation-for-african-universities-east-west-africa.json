@@ -45,7 +45,6 @@
     "tier": "Incomplete",
     "composite": 13,
     "financial": "LF receipt of $5,600 verified on-chain; the disbursement breakdown doesn't reconcile with itself and couldn't be verified as local-project grants",
-    "tag": "Return of funds requested · $5,600 / 100%",
     "pullbackNote": "All $5,600 went to three personal wallets within 48 hours, before activities ran, and no grant round took place.",
     "line": "Builder programs genuinely ran in both regions, but no local grant round was operated, the $5,600 was sent to three personal wallets (one a program-Safe signer) before the program began, and the report's financial breakdown doesn't reconcile with itself."
   },

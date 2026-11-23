@@ -46,7 +46,7 @@
     "tier": "Unclear",
     "composite": 15,
     "financial": "Reported $19,600 withdrawn by the grantee; reconciliation pending",
-    "tag": ["Funds returned · ~$3,900", "Return of funds requested · $4,000"],
+    "tag": ["Funds returned · ~$3,900", "Return of funds requested · $4,000 · Unspent"],
     "line": "A genuinely active, technically rich Ethereum-coordination program whose financial report does not reconcile: GPBR has withdrawn its claimed $19,600 disbursed to local projects. On-chain, $4,000 went to two partner wallets and $3,000 of that is still unspent; GPBR describes both payments as grants to local partners."
   },
   "honesty": "The program is real, intellectually serious, and distinctively Ethereum-native — and the team is candid about its own shortcomings. But the financial account does not reconcile: the headline disbursement figure is contradicted on-chain, and GPBR has since withdrawn it. The evaluation also found co-funders counted as grantees and treasury liquidity counted as grants out; GPBR disputes this. The core local-grant-round mandate became, in practice, an internal onboarding and coordination program. Funds also went to AgroforestDAO and Regen Rio, whose leads GPBR’s own April report listed among the program’s stewards; one of them has since said he was not a steward. There was no formal conflict-of-interest disclosure or recusal process, which GPBR acknowledges. GPBR says participants did not review their own experiments.",
@@ -137,7 +137,9 @@
     {"label": "Mutirão do Morro da Redenção, Primavera de 2025 (AgroforestDAO, video)", "url": "https://youtu.be/6J1cOnk0sBs", "type": "video"},
     {"label": "AgroforestDAO on the program (X)", "url": "https://x.com/i/status/2080323931249004786", "type": "social"},
     {"label": "GreenPill Brasil (Instagram post)", "url": "https://www.instagram.com/p/DXuFjuVnHUp/", "type": "social"},
-    {"label": "GreenPill Brasil (Instagram post)", "url": "https://www.instagram.com/p/DWZnD5wESl7/", "type": "social"}
+    {"label": "GreenPill Brasil (Instagram post)", "url": "https://www.instagram.com/p/DWZnD5wESl7/", "type": "social"},
+    {"label": "AgroforestDAO (X)", "url": "https://x.com/agroforestdao", "type": "social"},
+    {"label": "GPBR Commons Pool (Sarafu)", "url": "https://sarafu.network/pools/0x195C3A7F88a0cc3cce1f39a83A334E8Cfbd6Aa6A", "type": "dashboard"}
   ],
   "gallery": [
     {"src": "assets/img/grantees/greenpill-brasil-commons/2026-08-30-harvest-basket.png", "caption": "Harvest basket (GPBR says it’s from the AgroforestDAO planting)"},

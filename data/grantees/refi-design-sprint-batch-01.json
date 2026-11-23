@@ -46,7 +46,7 @@
     "tier": "Incomplete",
     "composite": 26,
     "financial": "Mostly verified",
-    "tag": "Return of funds requested · $4,890",
+    "tag": "Return of funds requested · $4,890 · Unspent",
     "line": "Solid — a credible, on-chain-verified first sprint and a genuine open-source protocol, honestly reported; the main clarifications needed are the community-grant recipient's identity, conflict-of-interest disclosure, and the absent Declaration."
   },
   "honesty": "Every load-bearing claim verifies: the financial flows on independent block explorers, OpenGarden in the public repo, the attestations on testnet — and the team notably under-claimed its own attestation count. The honest caveats are that this is one of two planned sprints, the community-grant recipient address could not be independently tied to Ridaje, conflict of interest went unaddressed (the operator was both facilitator and a co-funder), and most outcomes are still emerging rather than realized. The application's original KPIs (active wallets, community-led transactions, treasury growth) were quietly replaced and never reported against.",

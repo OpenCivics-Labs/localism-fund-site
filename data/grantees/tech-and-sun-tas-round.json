@@ -151,7 +151,9 @@
     {"label": "Program Safe wallet (multi-chain)", "url": "https://app.safe.global/home?safe=celo:0x0216d92acF90b5E9Ab6d8808ADEAc87037F00A73", "type": "wallet"},
     {"label": "TAS documentation and playbook (GitHub)", "url": "https://github.com/Greenpill9ja/tas-documentation", "type": "doc"},
     {"label": "Tech and Sun website", "url": "https://techandsun.com", "type": "site"},
-    {"label": "Tech and Sun on X (@techandsunhubs)", "url": "https://x.com/techandsunhubs", "type": "social"}
+    {"label": "Tech and Sun on X (@techandsunhubs)", "url": "https://x.com/techandsunhubs", "type": "social"},
+    {"label": "TAS Creative Series (LinkedIn)", "url": "https://www.linkedin.com/posts/tas-hubs-presents-tas-creative-series-10-share-7471136528208138240-xAGx/", "type": "social"},
+    {"label": "Tech and Sun on YouTube", "url": "https://youtube.com/post/Ugkx6pYOhCHvhbzfZ5hLry91WyGrjtyQzIlZ", "type": "video"}
   ],
   "operatorChecks": [
     "Please confirm '$11,800 disbursed to local projects' should be re-labelled — on-chain there were no third-party grantees; the budget funded Greenpill Nigeria's own hub build.",

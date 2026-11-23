@@ -52,7 +52,7 @@ if (fs.existsSync(MEETUP_DIR)) {
 
 const tierDot = { "Completed": "var(--tier-solid)", "Unclear": "var(--tier-mixed)", "Incomplete": "var(--tier-follow)", "Active": "var(--tier-active)", "Solid": "var(--tier-solid)", "Mixed": "var(--tier-mixed)", "Needs Follow-Up": "var(--tier-follow)", "Significant Concerns": "var(--tier-follow)" };
 // Money tag shown beside a status, e.g. "Funds returned · ~$3,900". Return-request tags are added only after the grantee has been asked.
-const moneyTag = (t) => (Array.isArray(t) ? t : t ? [t] : []).map((x) => `<span class="tier tier--tag${/^Return of funds requested/.test(x) ? " tier--pullback" : ""}">${esc(x)}</span>`).join("");
+const moneyTag = (t) => (Array.isArray(t) ? t : t ? [t] : []).map((x) => `<span class="tier tier--tag${/^(Return of funds requested|Accounting requested)/.test(x) ? " tier--pullback" : ""}">${esc(x)}</span>`).join("");
 const chips = (arr, cls = "chip") => (arr || []).map((t) => `<span class="${cls}">${esc(t)}</span>`).join("");
 const statBlock = (s) => `<div class="stat reveal"><div class="stat__value">${esc(s.value)}</div><div class="stat__label">${esc(s.label)}</div></div>`;
 const sectionHead = (num, title, lede, ledeMax) => `<div class="section__head section__head--plain reveal">

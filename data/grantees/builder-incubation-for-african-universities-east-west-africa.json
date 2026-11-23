@@ -45,6 +45,7 @@
     "tier": "Unclear",
     "composite": 13,
     "financial": "LF receipt of $5,600 verified on-chain; the disbursement breakdown doesn't reconcile with itself and couldn't be verified as local-project grants",
+    "tag": "Accounting requested · $5,600 · Unaccounted for",
     "line": "Needs Follow-Up — builder programs genuinely ran in both regions, but no local grant round was operated, the $5,600 was sent to three personal wallets (one a program-Safe signer) before the program began, and the report's financial breakdown doesn't reconcile with itself."
   },
   "honesty": "The builder programs are real and the organisations capable, but this did not run as a Round 01 local grant program: no application or selection round took place, and the full $5,600 left the program wallet within ~48 hours of arrival, to three unidentified personal wallets (one a signer of the program treasury), weeks before the activities ran. Co-funding has no on-chain trace and the report's money figures don't reconcile. The honest read is meaningful activity with real accountability gaps, pending the grantee's answers.",
